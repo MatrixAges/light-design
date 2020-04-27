@@ -1,0 +1,143 @@
+@keyframes loadingCircle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+.btn::after {
+  display: none;
+}
+.btn:not([size='mini']) {
+  width: auto;
+  margin: 0;
+}
+.btn .loading {
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.btn .icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+.btn.size_small {
+  padding: 0 16rpx;
+  font-size: 20rpx;
+  height: 48rpx;
+  line-height: 1;
+}
+.btn.size_small.type_primary .loading,
+.btn.size_small.type_warning .loading,
+.btn.size_small.type_success .loading,
+.btn.size_small.type_error .loading {
+  width: calc(12rpx * 2);
+  height: calc(12rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='white' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.size_small.type_border .loading,
+.btn.size_small.type_default .loading,
+.btn.size_small.type_dashed .loading {
+  width: calc(12rpx * 2);
+  height: calc(12rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='red' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.size_normal {
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  height: 64rpx;
+  line-height: 1;
+}
+.btn.size_normal.type_primary .loading,
+.btn.size_normal.type_warning .loading,
+.btn.size_normal.type_success .loading,
+.btn.size_normal.type_error .loading {
+  width: calc(15rpx * 2);
+  height: calc(15rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='15' height='15' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='white' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.size_normal.type_border .loading,
+.btn.size_normal.type_default .loading,
+.btn.size_normal.type_dashed .loading {
+  width: calc(15rpx * 2);
+  height: calc(15rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='15' height='15' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='%23ccc' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.size_large {
+  padding: 0 32rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 1;
+}
+.btn.size_large.type_primary .loading,
+.btn.size_large.type_warning .loading,
+.btn.size_large.type_success .loading,
+.btn.size_large.type_error .loading {
+  width: calc(20rpx * 2);
+  height: calc(20rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='white' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.size_large.type_border .loading,
+.btn.size_large.type_default .loading,
+.btn.size_large.type_dashed .loading {
+  width: calc(20rpx * 2);
+  height: calc(20rpx * 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='red' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
+}
+.btn.type_primary {
+  background-color: var(--_color_primary);
+  color: white;
+}
+.btn.type_border {
+  background-color: transparent;
+  color: var(--_color_primary);
+  border: 2rpx solid var(--_color_primary);
+}
+.btn.type_default {
+  background-color: whitesmoke;
+  color: black;
+}
+.btn.type_dashed {
+  background-color: transparent;
+  color: black;
+  border: 2rpx dashed #eee;
+}
+.btn.type_warning {
+  background-color: var(--_color_warning);
+  color: white;
+}
+.btn.type_success {
+  background-color: var(--_color_success);
+  color: white;
+}
+.btn.type_error {
+  background-color: var(--_color_error);
+  color: white;
+}
+.btn.type_ghost {
+  background-color: transparent;
+  color: black;
+}
+.btn.shape_circle {
+  border-radius: 300rpx;
+}
+.btn.shape_normal {
+  border-radius: var(--_radius_normal);
+}
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

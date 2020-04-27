@@ -1,0 +1,79 @@
+<button
+      class="btn size_{{size}} type_{{type}} shape_{{shape}} {{disabled?'disabled':''}}"
+      lang="{{lang}}"
+      plain="{{plain}}"
+      form-type="{{form-type}}"
+      open-type="{{open-type}}"
+      session-from="{{session-from}}"
+      app-parameter="{{app-parameter}}"
+      hover-stay-time="{{hover-stay-time}}"
+      hover-start-time="{{hover-start-time}}"
+      hover-stop-propagation="{{hover-stop-propagation}}"
+      send-message-img="{{send-message-img}}"
+      send-message-path="{{send-message-path}}"
+      show-message-card="{{show-message-card}}"
+      send-message-title="{{send-message-title}}"
+      binderror="{{binderror}}"
+      bindcontact="{{bindcontact}}"
+      bindlaunchapp="{{bindlaunchapp}}"
+      bindgetuserinfo="{{bindgetuserinfo}}"
+      bindopensetting="{{bindopensetting}}"
+      bindgetphonenumber="{{bindgetphonenumber}}"
+      wx:if="{{!url}}"
+>
+      <view
+            class="loading"
+            wx:if="{{loading}}"
+      ></view>
+      <image
+            class="icon"
+            mode="widthFix"
+            src="{{iconPath}}"
+            wx:if="{{iconPath}}"
+      ></image>
+      <slot name="icon"></slot>
+      <slot></slot>
+</button>
+<navigator
+      wx:else
+      url="{{url}}"
+      target="{{target}}"
+      open-type="{{url-open-type}}"
+>
+      <button
+            class="btn {{size}} {{type}} {{shape}} {{block?'block':''}}"
+            iconPath="{{iconPath}}"
+            disabled="{{disabled}}"
+            plain="{{plain}}"
+            loading="{{loading}}"
+            lang="{{lang}}"
+            form-type="{{form-type}}"
+            open-type="{{open-type}}"
+            session-from="{{session-from}}"
+            app-parameter="{{app-parameter}}"
+            hover-stay-time="{{hover-stay-time}}"
+            hover-start-time="{{hover-start-time}}"
+            hover-stop-propagation="{{hover-stop-propagation}}"
+            send-message-img="{{send-message-img}}"
+            send-message-path="{{send-message-path}}"
+            show-message-card="{{show-message-card}}"
+            send-message-title="{{send-message-title}}"
+            binderror="{{binderror}}"
+            bindcontact="{{bindcontact}}"
+            bindlaunchapp="{{bindlaunchapp}}"
+            bindgetuserinfo="{{bindgetuserinfo}}"
+            bindopensetting="{{bindopensetting}}"
+            bindgetphonenumber="{{bindgetphonenumber}}"
+            wx:if="{{!url}}"
+      >
+
+            <image
+                  class="icon"
+                  mode="widthFix"
+                  src="{{iconPath}}"
+                  wx:if="{{iconPath}}"
+            ></image>
+            <slot name="icon"></slot>
+            <slot></slot>
+      </button>
+</navigator>

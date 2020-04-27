@@ -1,0 +1,17 @@
+{
+      "pages": [
+            "pages/index/index",
+            "pages/Btn/index"
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#fff",
+            "navigationBarTitleText": "Light Design",
+            "navigationBarTextStyle": "black"
+      },
+      "usingComponents": {
+            "Btn": "/components/Btn/index"
+      },
+      "style": "v2",
+      "sitemapLocation": "sitemap.json"
+}

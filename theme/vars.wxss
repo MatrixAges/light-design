@@ -1,0 +1,8 @@
+page {
+  letter-spacing: 0.6rpx;
+  --_color_primary: #e64340;
+  --_color_warning: #faad14;
+  --_color_success: #52c41a;
+  --_color_error: #f5222d;
+  --_radius_normal: 12rpx;
+}
