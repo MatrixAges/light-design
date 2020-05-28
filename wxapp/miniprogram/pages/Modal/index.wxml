@@ -1,0 +1,73 @@
+<view
+      class="option_items w_100 border_box flex flex_column"
+      catchtap="onOption"
+>
+      <button
+            class="btn_option"
+            mark:position="center"
+      >默认弹出</button>
+      <button
+            class="btn_option"
+            mark:position="top"
+      >顶部弹出</button>
+      <button
+            class="btn_option"
+            mark:position="bottom"
+      >底部弹出</button>
+      <button
+            class="btn_option"
+            mark:position="left"
+      >左侧弹出</button>
+      <button
+            class="btn_option"
+            mark:position="right"
+      >右侧弹出</button>
+      <button
+            class="btn_option"
+            mark:position="center"
+            mark:maskVisible="{{false}}"
+            bind:onClose="onClose"
+      >没有遮罩</button>
+</view>
+
+<Modaling
+      visible="{{visible_center}}"
+      position="center"
+>
+      <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+</Modaling>
+
+<Modaling
+      visible="{{visible_top}}"
+      position="top"
+>
+      <view class="bg_white p_32 radius_10 border_box">顶部显示的内容</view>
+</Modaling>
+
+<Modaling
+      visible="{{visible_bottom}}"
+      position="bottom"
+>
+      <view class="bg_white p_32 radius_10 border_box">底部显示的内容</view>
+</Modaling>
+
+<Modaling
+      visible="{{visible_left}}"
+      position="left"
+>
+      <view class="bg_white p_32 radius_10 border_box">左侧显示的内容</view>
+</Modaling>
+
+<Modaling
+      visible="{{visible_right}}"
+      position="right"
+>
+      <view class="bg_white p_32 radius_10 border_box">右侧显示的内容</view>
+</Modaling>
+
+<Modaling
+      visible="{{visible_nomask}}"
+      maskVisible="{{false}}"
+>
+      <view class="bg_white p_32 radius_10 border_box">没有遮罩显示的内容</view>
+</Modaling>

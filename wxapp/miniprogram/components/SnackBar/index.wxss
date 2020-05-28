@@ -1,0 +1,81 @@
+.fixed_dialog_wrap .dialog {
+  position: fixed;
+  width: 100%;
+  padding: 18rpx;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+}
+.fixed_dialog_wrap .dialog .content_wrap {
+  width: 100%;
+  padding: 36rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 24rpx;
+  box-shadow: 0 0 10rpx #eee;
+}
+.fixed_dialog_wrap .dialog .content_wrap.main {
+  background-color: var(--color_main);
+  color: white;
+}
+.fixed_dialog_wrap .dialog .content_wrap.main .right .btn_confirm {
+  border-color: white;
+  color: white;
+  background-color: var(--color_main);
+}
+.fixed_dialog_wrap .dialog .content_wrap.white {
+  background-color: white;
+  color: black;
+}
+.fixed_dialog_wrap .dialog .content_wrap.white .right .btn_confirm {
+  border-color: black;
+  color: black;
+  background-color: transparent;
+}
+.fixed_dialog_wrap .dialog .content_wrap .left {
+  width: calc(100% - 120rpx);
+  padding-right: 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.fixed_dialog_wrap .dialog .content_wrap .left .title {
+  font-size: 28rpx;
+  line-height: 1;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fixed_dialog_wrap .dialog .content_wrap .left .title.has_description {
+  font-weight: bold;
+}
+.fixed_dialog_wrap .dialog .content_wrap .left .description {
+  font-size: 24rpx;
+  margin-top: 16rpx;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.4;
+}
+.fixed_dialog_wrap .dialog .content_wrap .right .btn_confirm {
+  width: 120rpx;
+  height: 60rpx;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200rpx;
+  border: 2rpx solid white;
+  color: white;
+  font-size: 28rpx;
+  font-weight: bold;
+  background-color: var(--color_main);
+  transition: all ease 0.3s;
+}
+.fixed_dialog_wrap .dialog .content_wrap .right .btn_confirm:active {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

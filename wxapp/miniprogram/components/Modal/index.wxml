@@ -1,0 +1,20 @@
+<view
+      class="fixed_dialog_wrap"
+      catchtouchmove="catchtouchmove"
+      style="z-index:{{zIndex}}"
+      wx:if="{{_visible}}"
+>
+      <view class="dialog_wrap">
+            <view
+                  class="mask"
+                  style="background-color: {{maskBackgroundColor}};transition: all ease {{duration/1000}}s;"
+                  catchtap="{{maskClosable?'onClose':''}}"
+            ></view>
+            <view
+                  class="dialog {{position}}"
+                  style="{{style}};transition: all ease {{duration/1000}}s;"
+            >
+                  <slot></slot>
+            </view>
+      </view>
+</view>

@@ -1,0 +1,58 @@
+<view
+      class="option_items w_100 border_box flex flex_column"
+      catchtap="onOption"
+>
+      <button
+            class="btn_option"
+            mark:type="default"
+      >默认弹出</button>
+      <button
+            class="btn_option"
+            mark:type="noTitle"
+      >没有标题</button>
+      <button
+            class="btn_option"
+            mark:type="scroll"
+      >横向滚动模式</button>
+      <button
+            class="btn_option"
+            mark:type="vertical"
+      >垂直显示</button>
+      <button
+            class="btn_option"
+            mark:type="column"
+      >自定义个数</button>
+</view>
+
+<ActionSheeting
+      visible="{{visible_default}}"
+      title="分享"
+      list="{{list}}"
+      bind:onOption="onAction"
+></ActionSheeting>
+
+<ActionSheeting
+      visible="{{visible_noTitle}}"
+      list="{{list}}"
+></ActionSheeting>
+
+<ActionSheeting
+      visible="{{visible_scroll}}"
+      title="分享"
+      list="{{list}}"
+      scroll="{{true}}"
+></ActionSheeting>
+
+<ActionSheeting
+      visible="{{visible_vertical}}"
+      title="分享"
+      list="{{list}}"
+      vertical="{{true}}"
+></ActionSheeting>
+
+<ActionSheeting
+      visible="{{visible_column}}"
+      title="分享"
+      list="{{list}}"
+      column="{{4}}"
+></ActionSheeting>

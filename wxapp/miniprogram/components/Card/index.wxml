@@ -1,0 +1,20 @@
+<view
+      class="card_wrap"
+      style="width:{{width?width:'100%'}};background:{{bgColor?bgColor:'white'}};"
+>
+      <view class="card">
+            <slot name="title"></slot>
+            <view
+                  class="title_wrap"
+                  wx:if="{{title}}"
+            >
+                  <text
+                        class="title"
+                        style="color:{{color?color:'black'}}"
+                  >{{title}}</text>
+            </view>
+            <view class="content">
+                  <slot></slot>
+            </view>
+      </view>
+</view>

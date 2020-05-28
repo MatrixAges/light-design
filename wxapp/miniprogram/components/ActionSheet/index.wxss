@@ -1,0 +1,134 @@
+.fixed_dialog_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.fixed_dialog_wrap .dialog_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed_dialog_wrap .dialog_wrap .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.3s;
+}
+.fixed_dialog_wrap .dialog_wrap .mask.visible {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.fixed_dialog_wrap .dialog_wrap .mask.hidden {
+  background-color: transparent;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog {
+  width: 100%;
+  padding: 48rpx 24rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all ease 0.3s;
+  background-color: whitesmoke;
+  border-radius: 40rpx;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.visible {
+  transform: translateY(0);
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.hidden {
+  transform: translateY(120%);
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical {
+  padding-bottom: 0;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items {
+  max-height: 60vh;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items .action_item {
+  width: 100%;
+  padding: 18rpx 48rpx;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items .action_item .flex_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items .action_item .flex_wrap .icon_wrap {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items .action_item .flex_wrap .name {
+  width: calc(100% - 80rpx);
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  text-align: left;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .title {
+  width: 100%;
+  margin-bottom: 24rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: black;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items.scroll {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item {
+  padding: 24rpx 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: transparent;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item:active {
+  background-color: #eee;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item::after {
+  display: none;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap .icon_wrap {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 64rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap .icon_wrap .icon_action {
+  width: 48rpx;
+  height: 48rpx;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap .name {
+  font-size: 24rpx;
+  font-weight: normal;
+  line-height: 1;
+}

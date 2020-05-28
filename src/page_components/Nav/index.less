@@ -1,0 +1,96 @@
+@import '../../styles/vars.less';
+
+._local {
+      :global {
+            .link_items {
+                  .link_item {
+                        width: @width_index_body;
+                        padding: 24px;
+                        margin-bottom: 40px;
+                        overflow: hidden;
+                        background: @color_background;
+                        border-radius: 20px;
+
+                        .detail {
+                              width: calc(~'100% - 160px');
+                              padding-right: 24px;
+
+                              .tags {
+                                    .tag {
+                                          padding: 6px;
+                                          border-radius: 100px;
+                                          color: black;
+                                          border: 1px solid rgba(0, 0, 0, 0.03);
+                                          margin-right: 10px;
+
+                                          &:last-child {
+                                                margin-right: 0;
+                                          }
+
+                                          .icon {
+                                                width: 16px;
+                                                height: 16px;
+                                                border-radius: 16px;
+                                                background-color: @color_main;
+                                                color: white;
+                                                font-size: 12px;
+                                                font-weight: bold;
+                                                line-height: 1;
+                                          }
+
+                                          .text {
+                                                line-height: 1;
+                                                margin: 0 4px;
+                                                font-size: 16px;
+                                          }
+                                    }
+                              }
+                        }
+
+                        .img_wrap {
+                              width: 160px;
+                              height: 120px;
+                              overflow: hidden;
+
+                              .img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-radius: 4px;
+                              }
+                        }
+                  }
+
+                  @media screen and (max-width:1000px) {
+                        .link_item {
+                              width: @width_index_body_mobile;
+                              flex-direction: column-reverse;
+
+                              .detail {
+                                    width: 100%;
+
+                                    .name {
+                                          line-height: 1;
+                                          margin-bottom: 10px;
+                                          font-size: 24px;
+                                    }
+
+                                    .description {
+                                          font-size: 12px;
+                                    }
+
+                                    .tags {
+                                          margin-top: 20px;
+                                    }
+                              }
+
+                              .img_wrap {
+                                    width: 100%;
+                                    height: 240px;
+                                    margin-bottom: 30px;
+                              }
+                        }
+                  }
+            }
+      }
+}

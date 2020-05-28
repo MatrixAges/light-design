@@ -1,0 +1,48 @@
+.fixed_dialog_wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      .dialog_wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .mask {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+            }
+
+            .dialog {
+                  display: flex;
+
+                  &.top{
+                        position: absolute;
+                        top: 0;
+                  }
+
+                  &.bottom{
+                        position: absolute;
+                        bottom: 0;
+                  }
+
+                  &.left{
+                        position: absolute;
+                        left: 0;
+                  }
+
+                  &.right{
+                        position: absolute;
+                        right: 0;
+                  }
+            }
+      }
+}

@@ -1,0 +1,68 @@
+<view
+      class="fixed_dialog_wrap"
+      catchtouchmove="catchtouchmove"
+      style="z-index:{{zIndex}}"
+      wx:if="{{_visible}}"
+>
+      <view class="dialog_wrap">
+            <view
+                  class="mask"
+                  style="background-color: {{maskBackgroundColor}};"
+            ></view>
+            <view
+                  class="dialog"
+                  style="{{style}};"
+            >
+                  <view class="dialog_items">
+                        <swiper
+                              class="swiper"
+                              indicator-dots="{{indicatorDots}}"
+                              indicator-color="rgba(0, 0, 0, 0.2)"
+                              indicator-active-color="rgba(255, 255, 255, 0.8)"
+                              current="{{current}}"
+                              bindchange="onChange"
+                        >
+                              <block
+                                    wx:for="{{_list}}"
+                                    wx:key="index"
+                              >
+                                    <swiper-item>
+                                          <navigator
+                                                class="swiper_item"
+                                                url="{{item.url}}"
+                                                path="{{item.path}}"
+                                                app-id="{{item.appId}}"
+                                                target="{{item.target}}"
+                                                version="{{item.version}}"
+                                          >
+                                                <image
+                                                      class="img"
+                                                      mode="aspectFill"
+                                                      src="{{item.imgSrc}}"
+                                                ></image>
+                                          </navigator>
+                                    </swiper-item>
+                              </block>
+                        </swiper>
+                  </view>
+                  <view class="footer">
+                        <text class="title">{{_list[current].title?_list[current].title:''}}</text>
+                        <view class="right_options">
+                              <button
+                                    class="btn btn_prev {{current===0?'disabled':''}}"
+                                    catchtap="onPrev"
+                                    wx:if="{{_list.length!==1}}"
+                              >
+                                    <text>上一个</text>
+                              </button>
+                              <button
+                                    class="btn btn_next"
+                                    catchtap="{{current===_list.length-1?'onClose':'onNext'}}"
+                              >
+                                    <text>{{current===_list.length-1?'关闭':'下一个'}}</text>
+                              </button>
+                        </view>
+                  </view>
+            </view>
+      </view>
+</view>

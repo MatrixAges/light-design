@@ -1,0 +1,16 @@
+@import '../../styles/vars.less';
+
+._local {
+      :global {
+            .section {
+                  width: @width_index_body;
+            }
+
+            @media screen and (max-width:1000px) {
+                  .section {
+                        width: @width_index_body_mobile;
+                        overflow-x: scroll;
+                  }
+            }
+      }
+}

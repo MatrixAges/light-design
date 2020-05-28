@@ -1,0 +1,14 @@
+<view
+      class="section_wrap"
+      style="background:{{bgColor?bgColor:'white'}};color:{{color?color:'black'}}"
+>
+      <view class="section">
+            <text
+                  class="title"
+                  wx:if="{{title}}"
+            >{{title}}</text>
+            <view class="content">
+                  <slot></slot>
+            </view>
+      </view>
+</view>

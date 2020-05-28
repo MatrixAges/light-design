@@ -1,0 +1,8 @@
+<view
+      id="ripple"
+      class="ripple_wrap"
+>
+      <view class="content">
+            <slot></slot>
+      </view>
+</view>

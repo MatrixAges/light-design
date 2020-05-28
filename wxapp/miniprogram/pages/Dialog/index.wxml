@@ -1,0 +1,123 @@
+<view
+      class="option_items w_100 border_box flex flex_column"
+      catchtap="onOption"
+>
+      <button
+            class="btn_option"
+            mark:type="default"
+      >默认弹出</button>
+      <button
+            class="btn_option"
+            mark:type="noTitle"
+      >没有标题</button>
+      <button
+            class="btn_option"
+            mark:type="custom"
+      >自定义内容</button>
+      <button
+            class="btn_option"
+            mark:type="bottom"
+      >底部弹出</button>
+      <button
+            class="btn_option"
+            mark:type="vertical"
+      >纵向按钮</button>
+      <button
+            class="btn_option"
+            mark:type="showClose"
+      >显示关闭按钮</button>
+      <button
+            class="btn_option"
+            mark:type="noMask"
+      >没有遮罩</button>
+      <button
+            class="btn_option"
+            mark:type="cantClosable"
+      >点击遮罩不可关闭弹窗</button>
+      <button
+            class="btn_option"
+            mark:type="changeBodyStyle"
+      >修改弹窗样式</button>
+</view>
+
+<Dialoging
+      visible="{{visible_default}}"
+      title="警告"
+>
+      确认删除改商品？
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_noTitle}}"
+      title=""
+>
+      确认删除改商品？
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_custom}}"
+      custom="{{true}}"
+>
+      <view
+            class="w_100 border_box white text_center"
+            style="padding: 240rpx 0;background-color: var(--color_main);"
+      >确认删除改商品？</view>
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_bottom}}"
+      title="警告"
+      bottom="{{true}}"
+>
+      确认删除改商品？
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_vertical}}"
+      title="警告"
+      custom="{{true}}"
+      cancelVisible="{{false}}"
+>
+      <view
+            class="w_100 border_box white text_center"
+            style="padding: 240rpx 0;background-color: var(--color_main);"
+      >展示部分</view>
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_showClose}}"
+      title="警告"
+      custom="{{true}}"
+      cancelVisible="{{false}}"
+      closeVisible="{{true}}"
+>
+      <view
+            class="w_100 border_box white text_center"
+            style="padding: 240rpx 0;background-color: var(--color_main);"
+      >展示部分</view>
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_noMask}}"
+      title="警告"
+      bottom="{{true}}"
+      maskVisible="{{false}}"
+>
+      确认删除改商品？
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_cantClosable}}"
+      title="警告"
+      maskClosable="{{false}}"
+>
+      确认删除改商品？
+</Dialoging>
+
+<Dialoging
+      visible="{{visible_changeBodyStyle}}"
+      title="警告"
+      bodyStyle="border-radius:0;background-color:black;color:white"
+>
+      确认删除改商品？
+</Dialoging>

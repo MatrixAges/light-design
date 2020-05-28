@@ -1,0 +1,19 @@
+<view
+      class="option_items w_100 border_box flex flex_column"
+      catchtap="onOption"
+>
+      <button
+            class="btn_option"
+            mark:type="default"
+      >默认弹出</button>
+      <button
+            class="btn_option"
+            mark:type="showMask"
+      >显示遮罩</button>
+</view>
+
+<Loading visible="{{visible_default}}"></Loading>
+<Loading
+      visible="{{visible_showMask}}"
+      maskVisible="{{true}}"
+></Loading>

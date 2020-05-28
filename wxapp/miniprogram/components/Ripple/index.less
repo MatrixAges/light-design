@@ -1,0 +1,26 @@
+.ripple_wrap {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      border: none;
+      background-color: transparent;
+
+      &::after {
+            display: none;
+      }
+
+      .content {
+            background-position: center;
+            transition: all 0.8s;
+
+            &:hover {
+                  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+            }
+
+            &:active {
+                  background-color: #6eb9f7;
+                  background-size: 100%;
+                  transition: all 0s;
+            }
+      }
+}
