@@ -1,0 +1,48 @@
+<view class="menu_items_wrap w_100 border_box">
+      <view class="menu_items w_100 border_box flex flex_column">
+            <view
+                  class="menu_item w_100 border_box flex flex_column"
+                  wx:for="{{menu_items}}"
+                  wx:key="index"
+            >
+                  <view class="title_wrap w_100 border_box flex justify_between align_center">
+                        <navigator
+                              class="title"
+                              url="{{'/com/'+item.path}}"
+                        >{{item.name}}</navigator>
+                        <view
+                              class="icon_close_wrap flex justify_center align_center"
+                              catchtap="back"
+                        >
+                              <image
+                                    class="icon_close"
+                                    mode="widthFix"
+                                    src="/image/icon_close.svg"
+                                    alt="icon_close"
+                              ></image>
+                        </view>
+                  </view>
+                  <view class="components w_100 border_box flex flex_column">
+                        <navigator
+                              class="component w_100 border_box flex justify_between align_center"
+                              wx:for="{{item.components}}"
+                              wx:key="idx"
+                              wx:for-item="it"
+                              wx:for-index="idx"
+                              url="{{'/com/'+item.path+'/'+it.name}}"
+                        >
+                              <view class="left flex align_end">
+                                    <span class="name"> {{it.name}}</span>
+                                    <span class="description"> {{it.description}}</span>
+                              </view>
+                              <image
+                                    class="mark"
+                                    mode="widthFix"
+                                    src="/image/icon_right.svg"
+                                    alt="icon_right"
+                              ></image>
+                        </navigator>
+                  </view>
+            </view>
+      </view>
+</view>

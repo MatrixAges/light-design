@@ -1,33 +1,32 @@
 {
       "compilerOptions": {
-            "target": "es5",
-            "lib": [
-                  "dom",
-                  "dom.iterable",
-                  "esnext"
-            ],
-            "paths": {
-                  "@/*": [
-                        "./*"
-                  ]
-            },
+            "strictNullChecks": true,
+            "noImplicitAny": true,
+            "module": "CommonJS",
+            "target": "ES5",
             "allowJs": false,
-            "skipLibCheck": true,
-            "esModuleInterop": true,
-            "allowSyntheticDefaultImports": true,
+            "experimentalDecorators": true,
+            "noImplicitThis": true,
+            "noImplicitReturns": true,
+            "alwaysStrict": true,
+            "inlineSourceMap": false,
+            "inlineSources": false,
+            "noFallthroughCasesInSwitch": true,
+            "noUnusedLocals": true,
+            "noUnusedParameters": true,
             "strict": true,
-            "forceConsistentCasingInFileNames": true,
-            "module": "esnext",
-            "moduleResolution": "node",
-            "resolveJsonModule": true,
-            "isolatedModules": true,
-            "noEmit": false,
-            "jsx": "react",
-            "baseUrl": "src"
+            "removeComments": true,
+            "pretty": true,
+            "strictPropertyInitialization": true,
+            "lib": [
+                  "es5"
+            ],
+            "typeRoots": [
+                  "./typings"
+            ]
       },
       "include": [
-            "@types",
-            "src"
+            "./**/*.ts"
       ],
       "exclude": [
             "node_modules"

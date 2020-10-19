@@ -1,0 +1,3 @@
+@import './styles/atom-miniapp.min.wxss';
+@import './styles/init.wxss';
+@import './styles/vars.wxss';
