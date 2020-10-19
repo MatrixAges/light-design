@@ -1,6 +1,7 @@
 {
       "pages": [
-            "pages/index/index"
+            "pages/index/index",
+            "pages/Button/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -9,5 +10,8 @@
             "navigationBarTextStyle": "black"
       },
       "style": "v2",
-      "sitemapLocation": "sitemap.json"
+      "sitemapLocation": "sitemap.json",
+      "usingComponents": {
+            "Button": "/components/Button/index"
+      }
 }

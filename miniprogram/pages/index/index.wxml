@@ -6,10 +6,9 @@
                   wx:key="index"
             >
                   <view class="title_wrap w_100 border_box flex justify_between align_center">
-                        <navigator
+                        <view
                               class="title"
-                              url="{{'/com/'+item.path}}"
-                        >{{item.name}}</navigator>
+                        >{{item.name}}</view>
                         <view
                               class="icon_close_wrap flex justify_center align_center"
                               catchtap="back"
@@ -29,7 +28,7 @@
                               wx:key="idx"
                               wx:for-item="it"
                               wx:for-index="idx"
-                              url="{{'/com/'+item.path+'/'+it.name}}"
+                              url="{{'/pages/'+it.name+'/index'}}"
                         >
                               <view class="left flex align_end">
                                     <span class="name"> {{it.name}}</span>
