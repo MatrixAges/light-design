@@ -5,7 +5,7 @@
   },
   "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
-  "libVersion": "2.8.2",
+  "libVersion": "2.13.1",
   "projectname": "light-design",
   "scripts": {
     "beforeCompile": "npm run tsc",
@@ -13,8 +13,8 @@
     "beforeUpload": "npm run tsc"
   },
   "setting": {
-    "urlCheck": true,
-    "es6": true,
+    "urlCheck": false,
+    "es6": false,
     "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
@@ -29,7 +29,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
+    "compileHotReLoad": true,
     "useMultiFrameRuntime": false,
     "useApiHook": true,
     "babelSetting": {
@@ -37,6 +37,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": true,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -46,5 +47,37 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "appid": "wx8e159e25f6ee6b4e",
-  "condition": {}
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/Button/index",
+          "pathName": "pages/Button/index",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

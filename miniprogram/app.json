@@ -12,6 +12,6 @@
       "style": "v2",
       "sitemapLocation": "sitemap.json",
       "usingComponents": {
-            "Button": "/components/Button/index"
+            "_Button": "/components/Button/index"
       }
 }

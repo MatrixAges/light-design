@@ -1,0 +1,157 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">按钮类型 [type]</text>
+            <view class="examples flex justify_between flex_wrap">
+                  <view class="example">
+                        <_Button type="primary">primary</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="border">border</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="default">default</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="dashed">dashed</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="warning">warning</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="success">success</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="error">error</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button type="ghost">ghost</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">按钮大小 [size]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              size="large"
+                              type="default"
+                        >large</_Button>
+                  </view>
+                  <view class="example mr_24">
+                        <_Button
+                              size="normal"
+                              type="default"
+                        >normal</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button
+                              size="small"
+                              type="default"
+                        >small</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">按钮形状 [shape]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              shape="rect"
+                              type="default"
+                        >rect</_Button>
+                  </view>
+                  <view class="example mr_24">
+                        <_Button
+                              shape="normal"
+                              type="default"
+                        >normal</_Button>
+                  </view>
+                  <view class="example">
+                        <_Button
+                              shape="circle"
+                              type="default"
+                        >circle</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">宽度自适应 [mode]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              mode="fixed"
+                              type="default"
+                        >fixed</_Button>
+                  </view>
+                  <view class="example mr_24">
+                        <_Button
+                              mode="padding"
+                              type="default"
+                        >padding padding</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">可点击 [disabled]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              disabled="{{true}}"
+                              type="default"
+                        >true</_Button>
+                  </view>
+                  <view class="example mr_24">
+                        <_Button
+                              disabled="{{false}}"
+                              type="default"
+                        >false</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">加载中 [loading]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              loading="{{true}}"
+                              mode="fixed"
+                              type="default"
+                        >true</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">添加图标 [iconPath]</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              iconPath="https://matrixage.github.io/atom.css/assets/images/github.png"
+                              type="default"
+                        >github</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">配合button使用</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button type="default">
+                              <button style="background-color: transparent;color: black;">button</button>
+                        </_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex flex_column">
+            <text class="title">配合navigator使用</text>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button type="default">
+                              <navigator
+                                    class="w_100 h_100 flex justify_center align_center"
+                                    url="/pages/index/index"
+                              >button</navigator>
+                        </_Button>
+                  </view>
+            </view>
+      </view>
+</view>
