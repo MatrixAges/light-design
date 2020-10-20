@@ -1,29 +1,73 @@
 .card_wrap {
       display: flex;
+      box-sizing: border-box;
       width: 100%;
       background-color: white;
-      border-radius: var(--radius_normal);
-      margin-bottom: 18rpx;
       overflow: hidden;
 
+      &.bordered {
+            .card {
+                  .title_wrap {
+                        border: 2rpx solid rgba(245, 245, 245, 0.72);
+                        border-bottom: none;
+
+                  }
+
+                  .content {
+                        border: 2rpx solid rgba(245, 245, 245, 0.72);
+                        border-top: none;
+                  }
+            }
+      }
+
+      &.shadow {
+            box-shadow: 0 0 30rpx #eee;
+      }
+
       .card {
+            display: flex;
+            flex-direction: column;
             width: 100%;
 
             .title_wrap {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
                   width: 100%;
-                  padding: 24rpx;
+                  padding: 0 48rpx;
+                  padding-top: 48rpx;
                   box-sizing: border-box;
-                  border-bottom: 2rpx solid whitesmoke;
 
                   .title {
-                        font-size: 30rpx;
+                        font-size: 32rpx;
                   }
             }
 
             .content {
                   width: 100%;
                   padding: 48rpx;
+                  padding-top: 24rpx;
                   box-sizing: border-box;
+
+                  &.no_padding {
+                        padding: 0;
+                  }
+
+                  &.has_title {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                  }
+
+                  &.no_title {
+                        border-top: 2rpx solid rgba(245, 245, 245, 0.72);
+                  }
+
+                  &.media {
+                        padding: 36rpx 48rpx;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        border-top: none;
+                  }
             }
       }
 }

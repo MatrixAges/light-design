@@ -4,9 +4,14 @@ Component({
         multipleSlots: true
     },
     properties: {
-        bgColor: String,
-        color: String,
+        title: String,
         width: String,
-        title: String
+        color: String,
+        bgColor: String,
+        bordered: Boolean,
+        noPadding: Boolean,
+        shadow: Boolean,
+        media: Boolean,
+        radius: Number
     }
 });

@@ -23,7 +23,5 @@ Component({
         iconPath: String,
         disabled: Boolean,
         loading: Boolean
-    },
-    data: {},
-    methods: {}
+    }
 });

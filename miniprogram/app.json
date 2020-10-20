@@ -1,7 +1,9 @@
 {
       "pages": [
             "pages/index/index",
-            "pages/Button/index"
+            "pages/Button/index",
+            "pages/ActionSheet/index",
+            "pages/Card/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -12,6 +14,8 @@
       "style": "v2",
       "sitemapLocation": "sitemap.json",
       "usingComponents": {
-            "_Button": "/components/Button/index"
+            "_Button": "/components/Button/index",
+            "_ActionSheet": "/components/ActionSheet/index",
+            "_Card": "/components/Card/index"
       }
 }

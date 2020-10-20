@@ -1,3 +1,6 @@
+page {
+  background-color: transparent;
+}
 .menu_items_wrap {
   padding: 36px;
 }

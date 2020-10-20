@@ -9,8 +9,8 @@
   "projectname": "light-design",
   "scripts": {
     "beforeCompile": "npm run tsc",
-    "beforePreview": "npm run tsc",
-    "beforeUpload": "npm run tsc"
+    "beforePreview": "npm run compile",
+    "beforeUpload": "npm run compile"
   },
   "setting": {
     "urlCheck": false,
@@ -29,7 +29,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
+    "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
     "useApiHook": true,
     "babelSetting": {
@@ -75,6 +75,20 @@
           "id": -1,
           "name": "pages/Button/index",
           "pathName": "pages/Button/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/ActionSheet/index",
+          "pathName": "pages/ActionSheet/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/Card/index",
+          "pathName": "pages/Card/index",
           "scene": null
         }
       ]

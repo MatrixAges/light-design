@@ -114,14 +114,15 @@
   align-items: center;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap .icon_wrap {
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 64rpx;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  width: 80rpx;
+  height: 80rpx;
   margin-bottom: 18rpx;
+  border-radius: 64rpx;
+  background-color: white;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .action_items .action_item .flex_wrap .icon_wrap .icon_action {
   width: 48rpx;
