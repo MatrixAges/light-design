@@ -3,7 +3,8 @@
             "pages/index/index",
             "pages/Button/index",
             "pages/ActionSheet/index",
-            "pages/Card/index"
+            "pages/Card/index",
+            "pages/Dialog/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -16,6 +17,7 @@
       "usingComponents": {
             "_Button": "/components/Button/index",
             "_ActionSheet": "/components/ActionSheet/index",
-            "_Card": "/components/Card/index"
+            "_Card": "/components/Card/index",
+            "_Dialog": "/components/Dialog/index"
       }
 }

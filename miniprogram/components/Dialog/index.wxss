@@ -33,7 +33,7 @@
   transform-origin: center center;
   background-color: white;
   color: black;
-  border-radius: var(--radius_normal);
+  border-radius: 24rpx;
   overflow: hidden;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.bottom {
@@ -120,7 +120,6 @@
   font-weight: normal;
   line-height: 1;
   letter-spacing: 2rpx;
-  border-radius: 0;
   background-color: transparent;
   border-radius: 100rpx;
 }
@@ -135,7 +134,7 @@
   background-color: #ddd;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .options_wrap .options .btn.btn_ok {
-  background-color: var(--color_main);
+  background-color: black;
   color: white;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .options_wrap .options .btn.btn_ok:active {

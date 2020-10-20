@@ -117,7 +117,7 @@
                         <_Card
                               title="Primary"
                               width="100%"
-                              bgColor="#1e87f0"
+                              bgColor="red"
                               color="white"
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

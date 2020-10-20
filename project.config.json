@@ -89,6 +89,13 @@
           "id": -1,
           "name": "pages/Card/index",
           "pathName": "pages/Card/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/Dialog/index",
+          "pathName": "pages/Dialog/index",
           "scene": null
         }
       ]
