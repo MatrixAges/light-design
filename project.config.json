@@ -96,6 +96,13 @@
           "id": -1,
           "name": "pages/Dialog/index",
           "pathName": "pages/Dialog/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/DialogQueue/index",
+          "pathName": "pages/DialogQueue/index",
           "scene": null
         }
       ]

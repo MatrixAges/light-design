@@ -26,7 +26,7 @@
                                     wx:for="{{_list}}"
                                     wx:key="index"
                               >
-                                    <swiper-item>
+                                    <swiper-item style="width: 100%;">
                                           <navigator
                                                 class="swiper_item"
                                                 url="{{item.url}}"
@@ -36,7 +36,7 @@
                                                 version="{{item.version}}"
                                           >
                                                 <image
-                                                      class="img"
+                                                      class="img w_100"
                                                       mode="aspectFill"
                                                       src="{{item.imgSrc}}"
                                                 ></image>

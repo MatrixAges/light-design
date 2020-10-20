@@ -60,7 +60,10 @@ Component({
 			const _that = this
 
 			if (new_val) {
-				_that.setData({ _visible: true })
+				_that.setData({
+					current: 0,
+					_visible: true
+				})
 
 				setTimeout(() => {
 					_that.setData({

@@ -48,7 +48,10 @@ Component({
         visible: function (new_val) {
             var _that = this;
             if (new_val) {
-                _that.setData({ _visible: true });
+                _that.setData({
+                    current: 0,
+                    _visible: true
+                });
                 setTimeout(function () {
                     _that.setData({
                         maskBackgroundColor: 'rgba(0,0,0,0.6)',

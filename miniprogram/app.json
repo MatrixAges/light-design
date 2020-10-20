@@ -4,7 +4,8 @@
             "pages/Button/index",
             "pages/ActionSheet/index",
             "pages/Card/index",
-            "pages/Dialog/index"
+            "pages/Dialog/index",
+            "pages/DialogQueue/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -18,6 +19,7 @@
             "_Button": "/components/Button/index",
             "_ActionSheet": "/components/ActionSheet/index",
             "_Card": "/components/Card/index",
-            "_Dialog": "/components/Dialog/index"
+            "_Dialog": "/components/Dialog/index",
+            "_DialogQueue": "/components/DialogQueue/index"
       }
 }
