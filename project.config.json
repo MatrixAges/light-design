@@ -97,6 +97,12 @@
         {
           "name": "pages/Loading/index",
           "pathName": "pages/Loading/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Modal/index",
+          "pathName": "pages/Modal/index",
           "scene": null
         }
       ]

@@ -30,12 +30,13 @@
 }
 .btn .loading {
   display: inline-block;
-  margin-right: 10rpx;
 }
 .btn .icon {
   width: 36rpx;
   height: 36rpx;
-  margin-right: 10rpx;
+}
+.btn .text.has_left {
+  margin-left: 10rpx;
 }
 .btn.size_small {
   font-size: 20rpx;
@@ -119,6 +120,11 @@
   background-color: #000000;
   color: white;
 }
+.btn.type_primary.ghost {
+  border: 2rpx solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
 .btn.type_border {
   background-color: transparent;
   color: #000000;
@@ -126,6 +132,10 @@
 }
 .btn.type_default {
   background-color: whitesmoke;
+  color: black;
+}
+.btn.type_default.ghost {
+  background-color: transparent;
   color: black;
 }
 .btn.type_dashed {
@@ -137,17 +147,28 @@
   background-color: #faad14;
   color: white;
 }
+.btn.type_warning.ghost {
+  border: 2rpx solid #faad14;
+  background-color: transparent;
+  color: #faad14;
+}
 .btn.type_success {
   background-color: #52c41a;
   color: white;
+}
+.btn.type_success.ghost {
+  border: 2rpx solid #52c41a;
+  background-color: transparent;
+  color: #52c41a;
 }
 .btn.type_error {
   background-color: #d62d0e;
   color: white;
 }
-.btn.type_ghost {
+.btn.type_error.ghost {
+  border: 2rpx solid #d62d0e;
   background-color: transparent;
-  color: black;
+  color: #d62d0e;
 }
 .btn.shape_circle {
   border-radius: 300rpx;

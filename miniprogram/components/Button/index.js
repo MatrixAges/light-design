@@ -20,6 +20,7 @@ Component({
             type: String,
             value: 'fixed'
         },
+        ghost: Boolean,
         iconPath: String,
         disabled: Boolean,
         loading: Boolean

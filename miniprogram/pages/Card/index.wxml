@@ -19,96 +19,6 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">操作项</text>
-                  <text class="attr">option</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Card
-                              title="标题"
-                              width="100%"
-                              bordered
-                        >
-                              <image
-                                    slot="option"
-                                    mode="widthFix"
-                                    src="/image/icon_right.svg"
-                                    style="width: 20rpx;height: 20rpx;"
-                              ></image>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
-                        </_Card>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">无内边距</text>
-                  <text class="attr">padding</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Card
-                              width="100%"
-                              bordered
-                              noPadding
-                        >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
-                        </_Card>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义标题</text>
-                  <text class="attr">title</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Card
-                              width="100%"
-                              bordered
-                              noPadding
-                        >
-                              <view
-                                    class="font_bold bg_color_222 white"
-                                    slot="title"
-                                    style="padding: 30rpx 48rpx;font-size: 32rpx;"
-                              >自定义标题</view>
-                              <view
-                                    class="text_justify"
-                                    style="padding: 36rpx 48rpx;"
-                              >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua.
-                              </view>
-                        </_Card>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义颜色</text>
-                  <text class="attr">color</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Card
-                              title="标题"
-                              width="100%"
-                              bordered
-                              color="gray"
-                        >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
-                        </_Card>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">自定义背景</text>
                   <text class="attr">bgColor</text>
             </view>
@@ -215,6 +125,96 @@
                               <view>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                               </view>
+                        </_Card>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义颜色</text>
+                  <text class="attr">color</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Card
+                              title="标题"
+                              width="100%"
+                              bordered
+                              color="gray"
+                        >
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua.
+                        </_Card>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">操作项</text>
+                  <text class="attr">option</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Card
+                              title="标题"
+                              width="100%"
+                              bordered
+                        >
+                              <image
+                                    slot="option"
+                                    mode="widthFix"
+                                    src="/image/icon_right.svg"
+                                    style="width: 20rpx;height: 20rpx;"
+                              ></image>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua.
+                        </_Card>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义标题</text>
+                  <text class="attr">title</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Card
+                              width="100%"
+                              bordered
+                              noPadding
+                        >
+                              <view
+                                    class="font_bold bg_color_222 white"
+                                    slot="title"
+                                    style="padding: 30rpx 48rpx;font-size: 32rpx;"
+                              >自定义标题</view>
+                              <view
+                                    class="text_justify"
+                                    style="padding: 36rpx 48rpx;"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </view>
+                        </_Card>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">无内边距</text>
+                  <text class="attr">padding</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Card
+                              width="100%"
+                              bordered
+                              noPadding
+                        >
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua.
                         </_Card>
                   </view>
             </view>

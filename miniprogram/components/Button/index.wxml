@@ -1,5 +1,5 @@
 <button
-      class="btn mode_{{mode}} size_{{size}} type_{{type}} shape_{{shape}} {{disabled?'disabled':''}}"
+      class="btn mode_{{mode}} {{ghost?'ghost':''}} size_{{size}} type_{{type}} shape_{{shape}} {{disabled?'disabled':''}}"
       wx:if="{{!url}}"
 >
       <view
@@ -13,5 +13,7 @@
             wx:if="{{iconPath}}"
       ></image>
       <slot name="icon"></slot>
-      <slot></slot>
+      <view class="text {{iconPath||loading?'has_left':''}}">
+            <slot></slot>
+      </view>
 </button>

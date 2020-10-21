@@ -6,7 +6,8 @@
             "pages/Card/index",
             "pages/Dialog/index",
             "pages/DialogQueue/index",
-            "pages/Loading/index"
+            "pages/Loading/index",
+            "pages/Modal/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -22,6 +23,7 @@
             "_Card": "/components/Card/index",
             "_Dialog": "/components/Dialog/index",
             "_DialogQueue": "/components/DialogQueue/index",
-            "_Loading": "/components/Loading/index"
+            "_Loading": "/components/Loading/index",
+            "_Modal": "/components/Modal/index"
       }
 }

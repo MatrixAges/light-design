@@ -9,15 +9,6 @@
                         <_Button type="primary">primary</_Button>
                   </view>
                   <view class="example mr_24 mb_24">
-                        <_Button type="border">border</_Button>
-                  </view>
-                  <view class="example mr_24 mb_24">
-                        <_Button type="default">default</_Button>
-                  </view>
-                  <view class="example mr_24 mb_24">
-                        <_Button type="dashed">dashed</_Button>
-                  </view>
-                  <view class="example mr_24 mb_24">
                         <_Button type="warning">warning</_Button>
                   </view>
                   <view class="example mr_24 mb_24">
@@ -26,8 +17,52 @@
                   <view class="example mr_24">
                         <_Button type="error">error</_Button>
                   </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button type="default">default</_Button>
+                  </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button type="border">border</_Button>
+                  </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button type="dashed">dashed</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">幽灵按钮</text>
+                  <text class="attr">ghost</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24 mb_24">
+                        <_Button
+                              type="primary"
+                              ghost
+                        >primary</_Button>
+                  </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button
+                              type="warning"
+                              ghost
+                        >warning</_Button>
+                  </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button
+                              type="success"
+                              ghost
+                        >success</_Button>
+                  </view>
                   <view class="example mr_24">
-                        <_Button type="ghost">ghost</_Button>
+                        <_Button
+                              type="error"
+                              ghost
+                        >error</_Button>
+                  </view>
+                  <view class="example mr_24 mb_24">
+                        <_Button
+                              type="default"
+                              ghost
+                        >default</_Button>
                   </view>
             </view>
       </view>
@@ -146,9 +181,32 @@
             <view class="examples flex flex_wrap">
                   <view class="example mr_24">
                         <_Button
-                              iconPath="https://matrixage.github.io/atom.css/assets/images/github.png"
+                              mode="padding"
+                              iconPath="https://matrixage.github.io/atom.css/assets/images/microsoft.png"
                               type="default"
-                        >github</_Button>
+                        >Microsoft</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义图标</text>
+                  <text class="attr">icon</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example mr_24">
+                        <_Button
+                              mode="padding"
+                              type="default"
+                        >
+                              <image
+                                    slot="icon"
+                                    mode="widthFix"
+                                    style="width: 24rpx;height: 24rpx;margin-right: 10rpx;"
+                                    src="https://matrixage.github.io/atom.css/assets/images/apple.png"
+                              ></image>
+                              apple
+                        </_Button>
                   </view>
             </view>
       </view>
@@ -160,7 +218,9 @@
             <view class="examples flex flex_wrap">
                   <view class="example mr_24">
                         <_Button type="default">
-                              <button style="background-color: transparent;color: black;">button</button>
+                              <button
+                                    style="background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
+                              >button</button>
                         </_Button>
                   </view>
             </view>

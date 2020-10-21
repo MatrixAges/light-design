@@ -19,7 +19,7 @@
   align-items: center;
 }
 .loading_wrap.maskVisible {
-  background-color: whitesmoke;
+  background-color: white;
 }
 .loading_wrap .loading {
   position: relative;
