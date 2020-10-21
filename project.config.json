@@ -48,28 +48,16 @@
   "simulatorPluginLibVersion": {},
   "appid": "wx8e159e25f6ee6b4e",
   "condition": {
-    "search": {
-      "current": -1,
-      "list": []
-    },
-    "conversation": {
-      "current": -1,
-      "list": []
-    },
     "plugin": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "gamePlugin": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": [
         {
           "id": -1,
@@ -103,6 +91,12 @@
           "id": -1,
           "name": "pages/DialogQueue/index",
           "pathName": "pages/DialogQueue/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Loading/index",
+          "pathName": "pages/Loading/index",
           "scene": null
         }
       ]

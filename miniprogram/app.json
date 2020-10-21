@@ -5,7 +5,8 @@
             "pages/ActionSheet/index",
             "pages/Card/index",
             "pages/Dialog/index",
-            "pages/DialogQueue/index"
+            "pages/DialogQueue/index",
+            "pages/Loading/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -20,6 +21,7 @@
             "_ActionSheet": "/components/ActionSheet/index",
             "_Card": "/components/Card/index",
             "_Dialog": "/components/Dialog/index",
-            "_DialogQueue": "/components/DialogQueue/index"
+            "_DialogQueue": "/components/DialogQueue/index",
+            "_Loading": "/components/Loading/index"
       }
 }
