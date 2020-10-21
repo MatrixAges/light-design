@@ -7,7 +7,8 @@
             "pages/Dialog/index",
             "pages/DialogQueue/index",
             "pages/Loading/index",
-            "pages/Modal/index"
+            "pages/Modal/index",
+            "pages/SnackBar/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -24,6 +25,7 @@
             "_Dialog": "/components/Dialog/index",
             "_DialogQueue": "/components/DialogQueue/index",
             "_Loading": "/components/Loading/index",
-            "_Modal": "/components/Modal/index"
+            "_Modal": "/components/Modal/index",
+            "_SnackBar": "/components/SnackBar/index"
       }
 }

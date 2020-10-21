@@ -103,6 +103,12 @@
         {
           "name": "pages/Modal/index",
           "pathName": "pages/Modal/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/SnackBar/index",
+          "pathName": "pages/SnackBar/index",
           "scene": null
         }
       ]
