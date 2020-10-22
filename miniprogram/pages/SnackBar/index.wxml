@@ -19,4 +19,178 @@
                   </view>
             </view>
       </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">没有描述</text>
+                  <text class="attr">description</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="description"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_description}}"
+                              title="更多内容请登录"
+                              okText="登录"
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自动关闭</text>
+                  <text class="attr">autoClose</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="autoClose"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_autoClose}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              autoClose
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">关闭时间</text>
+                  <text class="attr">duration</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="duration"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_duration}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              duration="{{5000}}"
+                              autoClose
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">弹出位置</text>
+                  <text class="attr">position</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="position"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_position}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              position="top"
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">具体位置</text>
+                  <text class="attr">bottom</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="bottom"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_bottom}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              bottom="{{60}}"
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">切换主题</text>
+                  <text class="attr">theme</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="theme"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_theme}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              theme="white"
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">小尺寸</text>
+                  <text class="attr">mini</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="mini"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_mini}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              mini
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义</text>
+                  <text class="attr">slot</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="slot"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_slot}}"
+                              title="您的账户余额不足，请尽快充值"
+                              custom
+                              mini
+                        >
+                              <image
+                                    style="width: 30rpx;height: 30rpx;background-color: white;border-radius: 30rpx;"
+                                    mode="widthFix"
+                                    src="/image/icon_close.svg"
+                                    mark:type="slot"
+                                    catchtap="hide"
+                              ></image>
+                        </_SnackBar>
+                  </view>
+            </view>
+      </view>
 </view>

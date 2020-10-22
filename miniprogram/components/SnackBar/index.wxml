@@ -8,15 +8,19 @@
             class="dialog"
             style="{{style}}"
       >
-            <view class="content_wrap {{theme}}">
+            <view class="content_wrap {{theme}} {{mini?'mini':''}}">
                   <view class="left">
                         <text class="title {{description?'has_description':''}}">{{title}}</text>
                         <text
                               class="description"
                               wx:if="{{description}}"
-                        >{{description}}</text>
+                        >{{description}}{{slot}}</text>
                   </view>
-                  <view class="right">
+                  <slot wx:if="{{custom}}"></slot>
+                  <view
+                        class="right"
+                        wx:else
+                  >
                         <button
                               class="btn_confirm"
                               catchtap="onOk"

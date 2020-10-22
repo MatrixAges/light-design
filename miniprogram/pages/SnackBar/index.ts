@@ -1,15 +1,23 @@
 Page({
-      data: {
+	data: {
 		visible_default: false
 	},
-	onOption (e: any) {
+	onOption ({ mark: { type } }: any) {
 		const _that = this
-		const { mark: { type } } = e
 
 		if (!type) return
 
 		_that.setData({
 			[`visible_${type}`]: true
+		})
+	},
+	hide ({ mark: { type } }: any) {
+		const _that = this
+
+		if (!type) return
+
+		_that.setData({
+			[`visible_${type}`]: false
 		})
 	}
 })

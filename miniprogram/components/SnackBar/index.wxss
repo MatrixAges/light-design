@@ -1,5 +1,6 @@
 .fixed_dialog_wrap .dialog {
   position: fixed;
+  left: 0;
   width: 100%;
   padding: 18rpx;
   box-sizing: border-box;
@@ -10,18 +11,23 @@
   padding: 36rpx;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 24rpx;
   box-shadow: 0 0 10rpx #eee;
 }
+.fixed_dialog_wrap .dialog .content_wrap.mini {
+  padding: 24rpx 32rpx;
+  border-radius: 16rpx;
+}
 .fixed_dialog_wrap .dialog .content_wrap.main {
-  background-color: var(--color_main);
+  background-color: #222;
   color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.main .right .btn_confirm {
   border-color: white;
   color: white;
-  background-color: var(--color_main);
+  background-color: #222;
 }
 .fixed_dialog_wrap .dialog .content_wrap.white {
   background-color: white;
@@ -72,7 +78,7 @@
   color: white;
   font-size: 28rpx;
   font-weight: bold;
-  background-color: var(--color_main);
+  background-color: #222;
   transition: all ease 0.3s;
 }
 .fixed_dialog_wrap .dialog .content_wrap .right .btn_confirm:active {

@@ -1,6 +1,9 @@
+@color_main: #222;
+
 .fixed_dialog_wrap {
       .dialog {
             position: fixed;
+            left: 0;
             width: 100%;
             padding: 18rpx;
             box-sizing: border-box;
@@ -11,29 +14,35 @@
                   padding: 36rpx;
                   box-sizing: border-box;
                   display: flex;
+                  justify-content: space-between;
                   align-items: center;
                   border-radius: 24rpx;
                   box-shadow: 0 0 10rpx #eee;
 
-                  &.main{
-                        background-color: var(--color_main);
+                  &.mini {
+                        padding: 24rpx 32rpx;
+                        border-radius: 16rpx;
+                  }
+
+                  &.main {
+                        background-color: @color_main;
                         color: white;
 
-                        .right{
-                              .btn_confirm{
+                        .right {
+                              .btn_confirm {
                                     border-color: white;
                                     color: white;
-                                    background-color: var(--color_main);
+                                    background-color: @color_main;
                               }
                         }
                   }
 
-                  &.white{
-                        background-color:white;
+                  &.white {
+                        background-color: white;
                         color: black;
 
-                        .right{
-                              .btn_confirm{
+                        .right {
+                              .btn_confirm {
                                     border-color: black;
                                     color: black;
                                     background-color: transparent;
@@ -86,10 +95,10 @@
                               color: white;
                               font-size: 28rpx;
                               font-weight: bold;
-                              background-color: var(--color_main);
+                              background-color: @color_main;
                               transition: all ease 0.3s;
 
-                              &:active{
+                              &:active {
                                     transform: scale(1.05);
                                     filter: brightness(1.2);
                               }

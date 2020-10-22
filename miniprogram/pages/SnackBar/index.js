@@ -3,14 +3,24 @@ Page({
     data: {
         visible_default: false
     },
-    onOption: function (e) {
-        var _a;
+    onOption: function (_a) {
+        var _b;
+        var type = _a.mark.type;
         var _that = this;
-        var type = e.mark.type;
         if (!type)
             return;
-        _that.setData((_a = {},
-            _a["visible_" + type] = true,
-            _a));
+        _that.setData((_b = {},
+            _b["visible_" + type] = true,
+            _b));
+    },
+    hide: function (_a) {
+        var _b;
+        var type = _a.mark.type;
+        var _that = this;
+        if (!type)
+            return;
+        _that.setData((_b = {},
+            _b["visible_" + type] = false,
+            _b));
     }
 });

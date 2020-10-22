@@ -12,8 +12,8 @@ Component({
 		visible: {
 			type: Boolean,
 			value: false
-            },
-            theme: {
+		},
+		theme: {
 			type: String,
 			value: 'main' // main | white
 		},
@@ -52,6 +52,14 @@ Component({
 		zIndex: {
 			type: Number,
 			value: 100
+            },
+            mini: {
+			type: Boolean,
+			value: false
+		},
+		custom: {
+			type: Boolean,
+			value: false
 		}
 	},
 	data: {
