@@ -7,7 +7,88 @@
             <view class="examples flex flex_wrap">
                   <view class="example">
                         <_Ripple>
-                              <_Button>Ripple</_Button>
+                              <_Button type="border">Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定颜色</text>
+                  <text class="attr">color</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple color="red">
+                              <_Button type="border">Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">绑定方法</text>
+                  <text class="attr">event</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple>
+                              <_Button
+                                    type="border"
+                                    bindtap="click"
+                              >Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定圆角</text>
+                  <text class="attr">radius</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple radius="{{100}}">
+                              <_Button
+                                    type="border"
+                                    shape="circle"
+                              >Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">幽灵按钮</text>
+                  <text class="attr">ghost</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple>
+                              <_Button ghost>Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">任意使用</text>
+                  <text class="attr">slot</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple color="white">
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                                    bgColor="black"
+                                    color="white"
+                                    radius="{{8}}"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
                         </_Ripple>
                   </view>
             </view>

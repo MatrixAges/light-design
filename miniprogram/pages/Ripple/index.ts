@@ -11,5 +11,11 @@ Page({
 		_that.setData({
 			[`visible_${type}`]: true
 		})
+	},
+	click () {
+		wx.showToast({
+			icon: 'none',
+			title: 'clicked'
+		})
 	}
 })

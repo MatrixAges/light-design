@@ -40,7 +40,11 @@ Component({
     properties: {
         color: {
             type: String,
-            value: 'rgba(0, 0, 0, 0.3)'
+            value: 'rgba(0, 0, 0, 0.2)'
+        },
+        radius: {
+            type: Number,
+            value: 8
         }
     },
     data: {
@@ -70,26 +74,28 @@ Component({
                 return;
             if (!e.detail.x || !e.detail.y)
                 return;
-            _that.setData({ visible: true });
-            wx.nextTick(function () {
+            if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop)
+                return;
+            _that.setData({ visible: true }, function () {
                 _this.setStyle(e);
             });
         },
         setStyle: function (e) {
             return __awaiter(this, void 0, void 0, function () {
-                var _that, _a, width, height, left, top, offset_x, offset_y, limitX, limitY, limit, scale, styles, timer;
-                return __generator(this, function (_b) {
-                    switch (_b.label) {
+                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, styles, timer;
+                return __generator(this, function (_c) {
+                    switch (_c.label) {
                         case 0:
                             _that = this;
+                            _a = e.currentTarget, left = _a.offsetLeft, top = _a.offsetTop;
                             return [4, _that.getRect()];
                         case 1:
-                            _a = _b.sent(), width = _a.width, height = _a.height, left = _a.left, top = _a.top;
+                            _b = _c.sent(), width = _b.width, height = _b.height;
                             offset_x = e.detail.x - left;
                             offset_y = e.detail.y - top;
-                            limitX = Math.max(offset_x, width - offset_x);
-                            limitY = Math.max(offset_y, height - offset_y);
-                            limit = Math.max(limitX, limitY);
+                            limit_x = Math.max(offset_x, width - offset_x);
+                            limit_y = Math.max(offset_y, height - offset_y);
+                            limit = Math.max(limit_x, limit_y);
                             scale = limit / 9;
                             styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n\t\t\t\topacity: 0.25;\n\t\t\t\ttransform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });

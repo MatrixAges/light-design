@@ -1,3 +1,5 @@
+// inspired by geist-ui component button
+
 const default_styles = `
       left: '';
       top: '';
@@ -9,7 +11,11 @@ Component({
 	properties: {
 		color: {
 			type: String,
-			value: 'rgba(0, 0, 0, 0.3)'
+			value: 'rgba(0, 0, 0, 0.2)'
+		},
+		radius: {
+			type: Number,
+			value: 8
 		}
 	},
 	data: {
@@ -17,7 +23,12 @@ Component({
 		styles: ''
 	},
 	methods: {
-		getRect (): Promise<{ width: number; height: number; left: number; top: number }> {
+		getRect (): Promise<{
+			width: number
+			height: number
+			left: number
+			top: number
+		}> {
 			const _that = this
 
 			return new Promise((resolve) => {
@@ -36,25 +47,24 @@ Component({
 			if (_that.data.visible) return
 			if (!e || typeof e !== 'object') return
 			if (!e.detail.x || !e.detail.y) return
+			if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop) return
 
-			_that.setData({ visible: true })
-
-			wx.nextTick(() => {
+			_that.setData({ visible: true }, () => {
 				this.setStyle(e)
 			})
 		},
 		async setStyle (e) {
 			const _that = this
+			const { currentTarget: { offsetLeft: left, offsetTop: top } } = e
 
-			const { width, height, left, top } = await _that.getRect()
+			const { width, height } = await _that.getRect()
 			const offset_x = e.detail.x - left
 			const offset_y = e.detail.y - top
-			const limitX = Math.max(offset_x, width - offset_x)
-			const limitY = Math.max(offset_y, height - offset_y)
+			const limit_x = Math.max(offset_x, width - offset_x)
+			const limit_y = Math.max(offset_y, height - offset_y)
+			const limit = Math.max(limit_x, limit_y)
+			const scale = limit / 9
 
-			const limit = Math.max(limitX, limitY)
-                  const scale = limit / 9
-                  
 			const styles = `
 				left: ${offset_x}px;
 				top: ${offset_y}px;

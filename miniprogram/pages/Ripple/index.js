@@ -12,5 +12,11 @@ Page({
         _that.setData((_a = {},
             _a["visible_" + type] = true,
             _a));
+    },
+    click: function () {
+        wx.showToast({
+            icon: 'none',
+            title: 'clicked'
+        });
     }
 });

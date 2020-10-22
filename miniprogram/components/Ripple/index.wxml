@@ -1,16 +1,19 @@
 <view
       id="ripple"
-      class="ripple_wrap"
+      class="content_wrap"
+      catchtap="trigger"
 >
       <view
-            class="ripple"
-            style="{{styles}}"
+            class="ripple_wrap"
+            style="border-radius: {{radius}}rpx;"
             wx:if="{{visible}}"
-      ></view>
-      <view
-            class="content"
-            catchtap="trigger"
       >
+            <view
+                  class="ripple"
+                  style="background-color:{{color}};{{styles}}"
+            ></view>
+      </view>
+      <view class="content">
             <slot></slot>
       </view>
 </view>

@@ -1,28 +1,31 @@
-.ripple_wrap {
+.content_wrap {
   position: relative;
   padding: 0;
   margin: 0;
   display: flex;
   background-color: transparent;
+}
+.content_wrap .ripple_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
-.ripple_wrap::after {
-  display: none;
-}
-.ripple_wrap .ripple {
+.content_wrap .ripple_wrap .ripple {
   position: absolute;
   left: -100%;
   top: -100%;
-  z-index: 1;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgba(95, 19, 19, 0.1);
   transform: translate(-50%, -50%);
   transition-property: opacity, transform;
   transition-duration: 0.3s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease;
 }
-.ripple_wrap .content {
+.content_wrap .content {
   background-position: center;
 }
