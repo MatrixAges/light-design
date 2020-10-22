@@ -2,7 +2,15 @@
       id="ripple"
       class="ripple_wrap"
 >
-      <view class="content">
+      <view
+            class="ripple"
+            style="{{styles}}"
+            wx:if="{{visible}}"
+      ></view>
+      <view
+            class="content"
+            catchtap="trigger"
+      >
             <slot></slot>
       </view>
 </view>

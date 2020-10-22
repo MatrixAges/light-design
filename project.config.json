@@ -109,6 +109,12 @@
         {
           "name": "pages/SnackBar/index",
           "pathName": "pages/SnackBar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Ripple/index",
+          "pathName": "pages/Ripple/index",
           "scene": null
         }
       ]

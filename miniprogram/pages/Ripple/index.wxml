@@ -1,0 +1,15 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">default</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Ripple>
+                              <_Button>Ripple</_Button>
+                        </_Ripple>
+                  </view>
+            </view>
+      </view>
+</view>

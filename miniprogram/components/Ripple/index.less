@@ -1,26 +1,31 @@
 .ripple_wrap {
+      position: relative;
       padding: 0;
       margin: 0;
       display: flex;
-      border: none;
       background-color: transparent;
+      overflow: hidden;
 
       &::after {
             display: none;
       }
 
+      .ripple {
+            position: absolute;
+            left: -100%;
+            top: -100%;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(95, 19, 19, 0.1);
+            transform: translate(-50%, -50%);
+            transition-property: opacity, transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in;
+      }
+
       .content {
             background-position: center;
-            transition: all 0.8s;
-
-            &:hover {
-                  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-            }
-
-            &:active {
-                  background-color: #6eb9f7;
-                  background-size: 100%;
-                  transition: all 0s;
-            }
       }
 }

@@ -8,7 +8,8 @@
             "pages/DialogQueue/index",
             "pages/Loading/index",
             "pages/Modal/index",
-            "pages/SnackBar/index"
+            "pages/SnackBar/index",
+            "pages/Ripple/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -26,6 +27,7 @@
             "_DialogQueue": "/components/DialogQueue/index",
             "_Loading": "/components/Loading/index",
             "_Modal": "/components/Modal/index",
-            "_SnackBar": "/components/SnackBar/index"
+            "_SnackBar": "/components/SnackBar/index",
+            "_Ripple": "/components/Ripple/index"
       }
 }
