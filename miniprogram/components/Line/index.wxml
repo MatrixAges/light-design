@@ -1,0 +1,11 @@
+<view
+      class="line_wrap {{thin?'thin':''}} {{box?'box':''}}"
+      style="width:{{box?'auto':width}};height:{{box?'auto':height}};background-color:{{color}};border-radius:{{radius}}rpx;"
+>
+      <slot></slot>
+      <view
+            class="box {{thin?'thin':''}}"
+            style="border:{{borderSize}}rpx solid {{color}};border-radius:{{radius*(thin?2:1)}}rpx;"
+            wx:if="{{box}}"
+      ></view>
+</view>

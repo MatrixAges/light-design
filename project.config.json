@@ -115,6 +115,13 @@
         {
           "name": "pages/Ripple/index",
           "pathName": "pages/Ripple/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Line/index",
+          "pathName": "pages/Line/index",
+          "query": "",
           "scene": null
         }
       ]

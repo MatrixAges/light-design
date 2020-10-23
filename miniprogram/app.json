@@ -9,7 +9,8 @@
             "pages/Loading/index",
             "pages/Modal/index",
             "pages/SnackBar/index",
-            "pages/Ripple/index"
+            "pages/Ripple/index",
+            "pages/Line/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -28,6 +29,7 @@
             "_Loading": "/components/Loading/index",
             "_Modal": "/components/Modal/index",
             "_SnackBar": "/components/SnackBar/index",
-            "_Ripple": "/components/Ripple/index"
+            "_Ripple": "/components/Ripple/index",
+            "_Line": "/components/Line/index"
       }
 }

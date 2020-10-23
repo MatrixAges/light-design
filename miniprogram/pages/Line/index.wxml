@@ -1,0 +1,131 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">default</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line></_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定宽度</text>
+                  <text class="attr">width</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line width="50%"></_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定高度</text>
+                  <text class="attr">height</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line height="10rpx"></_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定圆角</text>
+                  <text class="attr">radius</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line
+                              height="10rpx"
+                              radius="{{10}}"
+                        ></_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">0.5px线条</text>
+                  <text class="attr">thin</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line thin></_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">包裹对象</text>
+                  <text class="attr">slot</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line
+                              radius="{{8}}"
+                              box
+                        >
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
+                        </_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">边界颜色</text>
+                  <text class="attr">color</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line
+                              color="red"
+                              radius="{{8}}"
+                              box
+                        >
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
+                        </_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">0.5px边界</text>
+                  <text class="attr">thin</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line
+                              radius="{{8}}"
+                              box
+                              thin
+                        >
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
+                        </_Line>
+                  </view>
+            </view>
+      </view>
+</view>
