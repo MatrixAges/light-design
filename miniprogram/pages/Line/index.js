@@ -1,2 +1,9 @@
 "use strict";
-Page({});
+Page({
+    click: function () {
+        wx.showToast({
+            icon: 'none',
+            title: 'clicked'
+        });
+    }
+});

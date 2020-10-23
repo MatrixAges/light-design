@@ -82,6 +82,30 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">0.5px边界</text>
+                  <text class="attr">thin</text>
+            </view>
+            <view class="examples flex align_center">
+                  <view class="example w_100">
+                        <_Line
+                              radius="{{8}}"
+                              box
+                              thin
+                        >
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
+                        </_Line>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">边界颜色</text>
                   <text class="attr">color</text>
             </view>
@@ -106,24 +130,27 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">0.5px边界</text>
-                  <text class="attr">thin</text>
+                  <text class="title">配合使用</text>
+                  <text class="attr">for button</text>
             </view>
             <view class="examples flex align_center">
-                  <view class="example w_100">
+                  <view class="example flex">
                         <_Line
+                              class="mr_24"
+                              radius="{{8}}"
+                              box
+                              catchtap="click"
+                        >
+                              <_Button ghost>Primary</_Button>
+                        </_Line>
+                        <_Line
+                              class="mr_24"
                               radius="{{8}}"
                               box
                               thin
+                              catchtap="click"
                         >
-                              <_Card
-                                    title="Primary"
-                                    width="100%"
-                              >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua.
-                              </_Card>
+                              <_Button ghost>Primary</_Button>
                         </_Line>
                   </view>
             </view>

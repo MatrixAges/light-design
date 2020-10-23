@@ -1,6 +1,6 @@
 <view
       class="line_wrap {{thin?'thin':''}} {{box?'box':''}}"
-      style="width:{{box?'auto':width}};height:{{box?'auto':height}};background-color:{{color}};border-radius:{{radius}}rpx;"
+      style="width:{{box?'auto':width}};height:{{box?'auto':height}};background-color:{{box?'transparent':color}};border-radius:{{radius}}rpx;"
 >
       <slot></slot>
       <view
