@@ -29,7 +29,10 @@
                               mark:index="{{index}}"
                         >
                               <view class="flex_wrap">
-                                    <view class="icon_wrap">
+                                    <view
+                                          class="icon_wrap"
+                                          wx:if="{{item.icon}}"
+                                    >
                                           <image
                                                 class="icon_action"
                                                 mode="widthFix"
@@ -40,6 +43,11 @@
                               </view>
                         </button>
                   </scroll-view>
+                  <button
+                        class="btn_cancel"
+                        catchtap="onClose"
+                        wx:if="{{visibleCancel}}"
+                  >取消</button>
             </view>
       </view>
 </view>

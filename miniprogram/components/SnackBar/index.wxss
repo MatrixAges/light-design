@@ -6,6 +6,9 @@
   box-sizing: border-box;
   transition: all ease 0.3s;
 }
+.fixed_dialog_wrap .dialog.bottom {
+  padding-bottom: calc(18rpx +  env(safe-area-inset-bottom));
+}
 .fixed_dialog_wrap .dialog .content_wrap {
   width: 100%;
   padding: 36rpx;

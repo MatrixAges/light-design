@@ -9,6 +9,10 @@
             box-sizing: border-box;
             transition: all ease 0.3s;
 
+            &.bottom {
+                  padding-bottom: calc(~'18rpx + 'env(safe-area-inset-bottom));
+            }
+
             .content_wrap {
                   width: 100%;
                   padding: 36rpx;

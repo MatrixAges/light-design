@@ -46,8 +46,8 @@ Component({
 			const position_style: any = _that.getPositionStyle()
 
 			if (new_val) {
-				_that.setData({ _visible: true })
-
+                        _that.setData({ _visible: true })
+                        
 				setTimeout(() => {
 					_that.setData({
 						maskBackgroundColor: maskVisible

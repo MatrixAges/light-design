@@ -67,10 +67,9 @@ Component({
                 _that.setData({
                     _visible: true,
                     _duration: 0
-                });
-                setTimeout(function () {
+                }, function () {
                     _that.setData({ style: position_style[position].show });
-                }, 30);
+                });
                 if (autoClose) {
                     setTimeout(function () {
                         _that.setData({ visible: false });

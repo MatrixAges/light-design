@@ -48,7 +48,8 @@ Page({
 
 		_that.setData({
 			[`visible_${type}`]: true
-		})
+            })
+                
 	},
 	onAction (e: any) {
 		console.log(e)

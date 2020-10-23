@@ -24,7 +24,11 @@ Component({
 		vertical: {
 			type: Boolean,
 			value: false
-		},
+            },
+            visibleCancel: {
+			type: Boolean,
+			value: false
+            },
 		column: {
 			type: Number,
 			value: 3
@@ -33,7 +37,7 @@ Component({
 			type: Number,
 			value: 100
 		}
-      },
+	},
 	data: {
 		_visible_dialog_wrap: false,
 		_visible_dialog: false,
@@ -44,14 +48,12 @@ Component({
 			const _that = this
 
 			if (new_val) {
-				_that.setData({ _visible_dialog_wrap: true })
-
-				setTimeout(() => {
+				_that.setData({ _visible_dialog_wrap: true }, () => {
 					_that.setData({
 						_visible_dialog: true,
 						_visible_mask: true
 					})
-				}, 30)
+				})
 			} else {
 				_that.setData({
 					_visible_dialog: false,
@@ -77,9 +79,9 @@ Component({
 			const _that = this
 			const { mark: { index } } = e
 
-                  if (!index) return
-                  
-                  _that.setData({ visible: false })
+			if (!index) return
+
+			_that.setData({ visible: false })
 
 			_that.triggerEvent('onOption', { index: index })
 		},

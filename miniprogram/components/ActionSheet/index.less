@@ -33,6 +33,7 @@
             .dialog {
                   width: 100%;
                   padding: 48rpx 24rpx;
+                  padding-bottom: calc(~'48rpx + 'env(safe-area-inset-bottom));
                   box-sizing: border-box;
                   position: absolute;
                   bottom: 0;
@@ -153,6 +154,26 @@
                                           line-height: 1;
                                     }
                               }
+                        }
+                  }
+
+                  .btn_cancel {
+                        width: 100%;
+                        height: 88rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        font-size: 28rpx;
+                        font-weight: normal;
+                        color: black;
+                        line-height: 1;
+                        border: none;
+                        // border-top: 2rpx solid #eee;
+                        border-radius: 0rpx;
+                        background-color: transparent;
+
+                        &::after {
+                              display: none;
                         }
                   }
             }

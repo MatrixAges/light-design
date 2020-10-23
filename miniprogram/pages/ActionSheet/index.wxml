@@ -78,6 +78,26 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">显示取消</text>
+                  <text class="attr">visibleCancel</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="visibleCancel"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_ActionSheet
+                              visible="{{visible_visibleCancel}}"
+                              list="{{list}}"
+                              vertical
+                              visibleCancel
+                        ></_ActionSheet>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">行个数</text>
                   <text class="attr">column</text>
             </view>

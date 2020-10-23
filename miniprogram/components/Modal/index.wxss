@@ -30,6 +30,7 @@
 .fixed_dialog_wrap .dialog_wrap .dialog.bottom {
   position: absolute;
   bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.left {
   position: absolute;

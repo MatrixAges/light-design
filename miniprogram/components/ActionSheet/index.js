@@ -21,6 +21,10 @@ Component({
             type: Boolean,
             value: false
         },
+        visibleCancel: {
+            type: Boolean,
+            value: false
+        },
         column: {
             type: Number,
             value: 3
@@ -39,13 +43,12 @@ Component({
         visible: function (new_val) {
             var _that = this;
             if (new_val) {
-                _that.setData({ _visible_dialog_wrap: true });
-                setTimeout(function () {
+                _that.setData({ _visible_dialog_wrap: true }, function () {
                     _that.setData({
                         _visible_dialog: true,
                         _visible_mask: true
                     });
-                }, 30);
+                });
             }
             else {
                 _that.setData({

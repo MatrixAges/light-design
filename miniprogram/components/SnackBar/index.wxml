@@ -5,7 +5,7 @@
       wx:if="{{_visible}}"
 >
       <view
-            class="dialog"
+            class="dialog {{position}}"
             style="{{style}}"
       >
             <view class="content_wrap {{theme}} {{mini?'mini':''}}">

@@ -40,9 +40,12 @@
   width: 100vw;
   position: absolute;
   bottom: 0;
-  border-radius: 40rpx;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-radius: 40rpx;
+}
+.fixed_dialog_wrap .dialog_wrap .dialog.bottom .options_wrap {
+  padding-bottom: calc(36rpx +  env(safe-area-inset-bottom));
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .icon_close {
   width: 16rpx;

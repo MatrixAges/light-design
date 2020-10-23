@@ -52,8 +52,8 @@ Component({
 		zIndex: {
 			type: Number,
 			value: 100
-            },
-            mini: {
+		},
+		mini: {
 			type: Boolean,
 			value: false
 		},
@@ -73,14 +73,15 @@ Component({
 			const position_style: any = _that.getPositionStyle()
 
 			if (new_val) {
-				_that.setData({
-					_visible: true,
-					_duration: 0
-				})
-
-				setTimeout(() => {
-					_that.setData({ style: position_style[position].show })
-				}, 30)
+				_that.setData(
+					{
+						_visible: true,
+						_duration: 0
+					},
+					() => {
+						_that.setData({ style: position_style[position].show })
+					}
+				)
 
 				if (autoClose) {
 					setTimeout(() => {
