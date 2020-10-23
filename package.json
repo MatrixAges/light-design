@@ -1,7 +1,7 @@
 {
       "name": "light-design",
       "version": "1.0.0",
-      "description": "The component lib which close to nature.",
+      "description": "Components close to nature.",
       "scripts": {
             "compile": "./node_modules/typescript/bin/tsc",
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
