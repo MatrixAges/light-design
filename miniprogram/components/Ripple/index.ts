@@ -16,7 +16,7 @@ Component({
 		radius: {
 			type: Number,
 			value: 8
-		}
+            }
 	},
 	data: {
 		visible: false,

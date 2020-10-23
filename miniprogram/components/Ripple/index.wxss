@@ -1,8 +1,8 @@
 .content_wrap {
   position: relative;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
   background-color: transparent;
 }
 .content_wrap .ripple_wrap {
@@ -12,6 +12,8 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  border: 2rpx solid transparent;
   overflow: hidden;
 }
 .content_wrap .ripple_wrap .ripple {

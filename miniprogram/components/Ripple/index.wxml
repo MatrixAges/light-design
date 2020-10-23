@@ -5,7 +5,7 @@
 >
       <view
             class="ripple_wrap"
-            style="border-radius: {{radius}}rpx;"
+            style="border-radius:{{radius}}rpx;"
             wx:if="{{visible}}"
       >
             <view

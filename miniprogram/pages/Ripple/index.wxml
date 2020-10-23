@@ -6,7 +6,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_Ripple>
+                        <_Ripple >
                               <_Button type="border">Ripple</_Button>
                         </_Ripple>
                   </view>
