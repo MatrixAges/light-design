@@ -6,9 +6,12 @@
 >
       <view
             class="dialog {{position}}"
-            style="{{style}}"
+            style="{{style}};{{cover?'padding:0':''}}"
       >
-            <view class="content_wrap {{theme}} {{mini?'mini':''}}">
+            <view
+                  class="content_wrap {{theme}} {{mini?'mini':''}}"
+                  style="{{cover?'border-radius:0':''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
+            >
                   <view class="left">
                         <text class="title {{description?'has_description':''}}">{{title}}</text>
                         <text

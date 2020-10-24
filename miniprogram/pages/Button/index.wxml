@@ -120,6 +120,17 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义样式</text>
+                  <text class="attr">custom</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_Button bgColor="red" color="white">custom</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">宽度自适应</text>
                   <text class="attr">mode</text>
             </view>
@@ -135,6 +146,28 @@
                               mode="padding"
                               type="default"
                         >padding padding</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义宽度</text>
+                  <text class="attr">width</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_Button width="100%">custom width</_Button>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义高度</text>
+                  <text class="attr">height</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_Button width="100%" height="100rpx">custom height</_Button>
                   </view>
             </view>
       </view>

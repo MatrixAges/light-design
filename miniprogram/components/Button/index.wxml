@@ -1,5 +1,6 @@
 <button
       class="btn mode_{{mode}} {{ghost?'ghost':''}} size_{{size}} type_{{type}} shape_{{shape}} {{disabled?'disabled':''}}"
+      style="{{width?'width:'+width:''}};{{height?'height:'+height:''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}}"
       wx:if="{{!url}}"
 >
       <view

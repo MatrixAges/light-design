@@ -193,4 +193,88 @@
                   </view>
             </view>
       </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">全部覆盖</text>
+                  <text class="attr">cover</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="cover"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_cover}}"
+                              title="更多内容请登录"
+                              description="登录后可享受更多服务，快登录吧"
+                              okText="登录"
+                              cover
+                        ></_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">组合使用</text>
+                  <text class="attr">composition</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="composition"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_composition}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              custom
+                              mini
+                              cover
+                              
+                        >
+                              <image
+                                    style="width: 30rpx;height: 30rpx;background-color: white;border-radius: 30rpx;"
+                                    mode="widthFix"
+                                    src="/image/icon_close.svg"
+                                    mark:type="composition"
+                                    catchtap="hide"
+                              ></image>
+                        </_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义样式</text>
+                  <text class="attr">styles</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="styles"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_SnackBar
+                              visible="{{visible_styles}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              color="white"
+                              bgColor="red"
+                              custom
+                              mini
+                              cover
+                        >
+                              <image
+                                    style="width: 30rpx;height: 30rpx;background-color: white;border-radius: 30rpx;"
+                                    mode="widthFix"
+                                    src="/image/icon_close.svg"
+                                    mark:type="styles"
+                                    catchtap="hide"
+                              ></image>
+                        </_SnackBar>
+                  </view>
+            </view>
+      </view>
 </view>

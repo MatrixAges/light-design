@@ -29,6 +29,18 @@ Component({
 			type: Number,
 			value: 0
 		},
+		cover: {
+			type: Boolean,
+			value: false
+		},
+		color: {
+			type: String,
+			value: ''
+		},
+		bgColor: {
+			type: String,
+			value: ''
+		},
 		title: {
 			type: String,
 			value: ''

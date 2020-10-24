@@ -19,9 +19,25 @@ Component({
 			type: String,
 			value: 'fixed' // 'fixed' | 'padding'
 		},
+		width: {
+			type: String,
+			value: ''
+		},
+		height: {
+			type: String,
+			value: ''
+		},
+		color: {
+			type: String,
+			value: ''
+		},
+		bgColor: {
+			type: String,
+			value: ''
+		},
 		ghost: Boolean,
 		iconPath: String,
 		disabled: Boolean,
 		loading: Boolean
-      }
+	}
 })
