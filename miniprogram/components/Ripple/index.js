@@ -99,9 +99,8 @@ Component({
                             scale = limit / 6;
                             duration_ratio = Math.floor(Math.max(width, height) / 81);
                             duration_time = 0.3 + duration_ratio * 0.1;
-                            console.log(duration_time);
                             styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n                        opacity: 0.25;\n                        transition-duration: " + (e.type === 'longpress'
-                                ? duration_time * 2
+                                ? duration_time * 3
                                 : duration_time) + "s;\n                        transform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });
                             if (e.type === 'tap') {

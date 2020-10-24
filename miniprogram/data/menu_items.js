@@ -15,6 +15,10 @@ exports.default = [
                 description: '文字'
             },
             {
+                name: 'Line',
+                description: '线条'
+            },
+            {
                 name: 'Icon',
                 description: '图标'
             },

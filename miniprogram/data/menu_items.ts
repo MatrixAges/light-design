@@ -18,6 +18,10 @@ export default [
 			{
 				name: 'Text',
 				description: '文字'
+                  },
+                  {
+				name: 'Line',
+				description: '线条'
 			},
 			{
 				name: 'Icon',

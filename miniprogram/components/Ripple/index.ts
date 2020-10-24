@@ -72,7 +72,7 @@ Component({
 				top: ${offset_y}px;
                         opacity: 0.25;
                         transition-duration: ${e.type === 'longpress'
-					? duration_time * 2
+					? duration_time * 3
 					: duration_time}s;
                         transform: translate(-50%, -50%) scale(${scale});
 			`
