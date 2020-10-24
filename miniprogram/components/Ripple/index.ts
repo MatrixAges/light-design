@@ -42,7 +42,7 @@ Component({
 			})
 		},
 		trigger (e) {
-                  const _that = this
+			const _that = this
 
 			if (_that.data.visible) return
 			if (!e.detail.x || !e.detail.y) return
@@ -64,25 +64,29 @@ Component({
 			const limit_y = Math.max(offset_y, height - offset_y)
 			const limit = Math.max(limit_x, limit_y)
 			const scale = limit / 6
+			const duration_ratio = Math.floor(Math.max(width, height) / 81)
+			const duration_time = 0.3 + duration_ratio * 0.1
 
 			const styles = `
 				left: ${offset_x}px;
 				top: ${offset_y}px;
                         opacity: 0.25;
-                        transition-duration: ${e.type === 'longpress' ? 1.2 : 0.3}s;
+                        transition-duration: ${e.type === 'longpress'
+					? duration_time * 2
+					: duration_time}s;
                         transform: translate(-50%, -50%) scale(${scale});
 			`
 
 			_that.setData({ styles })
 
-                  if (e.type === 'tap') {
-                        const timer = setTimeout(() => {
-                              _that.reset()
-                              clearTimeout(timer)
-                        }, 300)
-                  }
+			if (e.type === 'tap') {
+				const timer = setTimeout(() => {
+					_that.reset()
+					clearTimeout(timer)
+				}, duration_time * 1000)
+			}
 		},
-            reset() {
+		reset () {
 			this.setData({
 				styles: default_styles,
 				visible: false

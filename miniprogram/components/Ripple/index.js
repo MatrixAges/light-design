@@ -82,7 +82,7 @@ Component({
         },
         setStyle: function (e) {
             return __awaiter(this, void 0, void 0, function () {
-                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, styles, timer_1;
+                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, duration_ratio, duration_time, styles, timer_1;
                 return __generator(this, function (_c) {
                     switch (_c.label) {
                         case 0:
@@ -97,13 +97,18 @@ Component({
                             limit_y = Math.max(offset_y, height - offset_y);
                             limit = Math.max(limit_x, limit_y);
                             scale = limit / 6;
-                            styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n                        opacity: 0.25;\n                        transition-duration: " + (e.type === 'longpress' ? 1.2 : 0.3) + "s;\n                        transform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
+                            duration_ratio = Math.floor(Math.max(width, height) / 81);
+                            duration_time = 0.3 + duration_ratio * 0.1;
+                            console.log(duration_time);
+                            styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n                        opacity: 0.25;\n                        transition-duration: " + (e.type === 'longpress'
+                                ? duration_time * 2
+                                : duration_time) + "s;\n                        transform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });
                             if (e.type === 'tap') {
                                 timer_1 = setTimeout(function () {
                                     _that.reset();
                                     clearTimeout(timer_1);
-                                }, 300);
+                                }, duration_time * 1000);
                             }
                             return [2];
                     }
