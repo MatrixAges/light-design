@@ -96,7 +96,7 @@ Component({
                             limit_x = Math.max(offset_x, width - offset_x);
                             limit_y = Math.max(offset_y, height - offset_y);
                             limit = Math.max(limit_x, limit_y);
-                            scale = limit / 9;
+                            scale = limit / 6;
                             styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n\t\t\t\topacity: 0.25;\n\t\t\t\ttransform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });
                             timer = setTimeout(function () {

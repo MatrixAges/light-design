@@ -63,7 +63,7 @@ Component({
 			const limit_x = Math.max(offset_x, width - offset_x)
 			const limit_y = Math.max(offset_y, height - offset_y)
 			const limit = Math.max(limit_x, limit_y)
-			const scale = limit / 9
+			const scale = limit / 6
 
 			const styles = `
 				left: ${offset_x}px;
