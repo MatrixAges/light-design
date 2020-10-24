@@ -70,9 +70,9 @@ Component({
             var _that = this;
             if (_that.data.visible)
                 return;
-            if (!e || typeof e !== 'object')
-                return;
             if (!e.detail.x || !e.detail.y)
+                return;
+            if (!e || typeof e !== 'object')
                 return;
             if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop)
                 return;
@@ -82,7 +82,7 @@ Component({
         },
         setStyle: function (e) {
             return __awaiter(this, void 0, void 0, function () {
-                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, styles, timer;
+                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, styles, timer_1;
                 return __generator(this, function (_c) {
                     switch (_c.label) {
                         case 0:
@@ -97,12 +97,14 @@ Component({
                             limit_y = Math.max(offset_y, height - offset_y);
                             limit = Math.max(limit_x, limit_y);
                             scale = limit / 6;
-                            styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n\t\t\t\topacity: 0.25;\n\t\t\t\ttransform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
+                            styles = "\n\t\t\t\tleft: " + offset_x + "px;\n\t\t\t\ttop: " + offset_y + "px;\n                        opacity: 0.25;\n                        transition-duration: " + (e.type === 'longpress' ? 1.2 : 0.3) + "s;\n                        transform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });
-                            timer = setTimeout(function () {
-                                _that.reset();
-                                clearTimeout(timer);
-                            }, 300);
+                            if (e.type === 'tap') {
+                                timer_1 = setTimeout(function () {
+                                    _that.reset();
+                                    clearTimeout(timer_1);
+                                }, 300);
+                            }
                             return [2];
                     }
                 });

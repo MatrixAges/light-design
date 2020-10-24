@@ -16,7 +16,7 @@ Component({
 		radius: {
 			type: Number,
 			value: 8
-            }
+		}
 	},
 	data: {
 		visible: false,
@@ -42,11 +42,11 @@ Component({
 			})
 		},
 		trigger (e) {
-			const _that = this
+                  const _that = this
 
 			if (_that.data.visible) return
-			if (!e || typeof e !== 'object') return
 			if (!e.detail.x || !e.detail.y) return
+			if (!e || typeof e !== 'object') return
 			if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop) return
 
 			_that.setData({ visible: true }, () => {
@@ -68,18 +68,21 @@ Component({
 			const styles = `
 				left: ${offset_x}px;
 				top: ${offset_y}px;
-				opacity: 0.25;
-				transform: translate(-50%, -50%) scale(${scale});
+                        opacity: 0.25;
+                        transition-duration: ${e.type === 'longpress' ? 1.2 : 0.3}s;
+                        transform: translate(-50%, -50%) scale(${scale});
 			`
 
 			_that.setData({ styles })
 
-			const timer = setTimeout(() => {
-				_that.reset()
-				clearTimeout(timer)
-			}, 300)
+                  if (e.type === 'tap') {
+                        const timer = setTimeout(() => {
+                              _that.reset()
+                              clearTimeout(timer)
+                        }, 300)
+                  }
 		},
-		reset () {
+            reset() {
 			this.setData({
 				styles: default_styles,
 				visible: false
