@@ -34,7 +34,7 @@
 .fixed_dialog_wrap .dialog .content_wrap.white {
   background-color: white;
   color: black;
-  box-shadow: 0 0 10rpx #eee;
+  box-shadow: 0 0 30rpx #eee;
 }
 .fixed_dialog_wrap .dialog .content_wrap.white .right .btn_confirm {
   border-color: black;

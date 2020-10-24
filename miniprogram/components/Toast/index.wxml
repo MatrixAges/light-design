@@ -5,18 +5,18 @@
       wx:if="{{_visible}}"
 >
       <view
-            class="dialog {{type}} {{position}}"
+            class="dialog {{position}}"
             style="{{style}};"
       >
             <view
-                  class="content_wrap"
-                  style="{{cover?'border-radius:0':''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
+                  class="content_wrap {{type}}"
+                  style="{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
                   catchtap="onClose"
             >
-                  <text
+                  <view
                         class="icon"
                         wx:if="{{type}}"
-                  ></text>
+                  ></view>
                   <text class="title">{{title}}</text>
             </view>
       </view>

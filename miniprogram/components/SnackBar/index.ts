@@ -4,7 +4,6 @@ interface IPositionStyle {
 }
 
 type SnackBar_enum_position = 'top' | 'bottom'
-
 type SnackBar_IgetPositionStyle = { [key in SnackBar_enum_position]: IPositionStyle }
 
 Component({

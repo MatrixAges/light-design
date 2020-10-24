@@ -137,7 +137,7 @@
   background-color: #ddd;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .options_wrap .options .btn.btn_ok {
-  background-color: black;
+  background-color: #222;
   color: white;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .options_wrap .options .btn.btn_ok:active {

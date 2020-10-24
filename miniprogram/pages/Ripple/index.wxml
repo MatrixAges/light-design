@@ -81,7 +81,7 @@
                               <_Card
                                     title="Primary"
                                     width="100%"
-                                    bgColor="black"
+                                    bgColor="#222"
                                     color="white"
                                     radius="{{8}}"
                               >

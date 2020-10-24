@@ -4,7 +4,6 @@ interface IPositionStyle {
 }
 
 type enum_position = 'center' | 'top' | 'bottom' | 'left' | 'right'
-
 type IgetPositionStyle = { [key in enum_position]: IPositionStyle }
 
 Component({

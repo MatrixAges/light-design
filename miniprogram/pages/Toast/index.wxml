@@ -36,4 +36,51 @@
                   </view>
             </view>
       </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定类型</text>
+                  <text class="attr">type</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example flex flex_wrap">
+                        <_Button
+                              class="mr_24 mb_24"
+                              mark:type="default"
+                              catchtap="onOption"
+                        >default</_Button>
+                        <_Button
+                              class="mb_24"
+                              type="success"
+                              mark:type="success"
+                              catchtap="onOption"
+                        >success</_Button>
+                        <_Button
+                              class="mr_24"
+                              type="warning"
+                              mark:type="warning"
+                              catchtap="onOption"
+                        >warning</_Button>
+                        <_Button
+                              type="error"
+                              mark:type="error"
+                              catchtap="onOption"
+                        >error</_Button>
+                        <_Toast
+                              visible="{{visible_success}}"
+                              title="success Toast"
+                              type="success"
+                        ></_Toast>
+                        <_Toast
+                              visible="{{visible_warning}}"
+                              title="warning Toast"
+                              type="warning"
+                        ></_Toast>
+                        <_Toast
+                              visible="{{visible_error}}"
+                              title="error Toast"
+                              type="error"
+                        ></_Toast>
+                  </view>
+            </view>
+      </view>
 </view>

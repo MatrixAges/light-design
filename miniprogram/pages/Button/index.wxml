@@ -9,10 +9,10 @@
                         <_Button type="primary">primary</_Button>
                   </view>
                   <view class="example mr_24 mb_24">
-                        <_Button type="warning">warning</_Button>
+                        <_Button type="success">success</_Button>
                   </view>
                   <view class="example mr_24 mb_24">
-                        <_Button type="success">success</_Button>
+                        <_Button type="warning">warning</_Button>
                   </view>
                   <view class="example mr_24">
                         <_Button type="error">error</_Button>

@@ -4,7 +4,7 @@ interface IPositionStyle {
 }
 
 type Toastenum_position = 'top' | 'bottom'
-
+type Toastenum_type = 'success' | 'warning' | 'error'
 type ToastIgetPositionStyle = { [key in Toastenum_position]: IPositionStyle }
 
 Component({
@@ -16,6 +16,10 @@ Component({
 		position: {
 			type: String,
 			value: 'bottom' // top | bottom
+            },
+            type: {
+			type: String,
+			value: '' // success | warning | error
 		},
 		color: {
 			type: String,
@@ -65,7 +69,7 @@ Component({
 				)
 
 				const timer_duration = setTimeout(() => {
-					_that.setData({ visible: false })
+					// _that.setData({ visible: false })
 				}, duration)
 
 				_that.setData({ timer_duration })
