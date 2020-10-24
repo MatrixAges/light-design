@@ -20,7 +20,8 @@ Component({
 	},
 	data: {
 		visible: false,
-		styles: ''
+		styles: '',
+		timer_hide: 0
 	},
 	methods: {
 		getRect (): Promise<{
@@ -48,6 +49,9 @@ Component({
 			if (!e.detail.x || !e.detail.y) return
 			if (!e || typeof e !== 'object') return
 			if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop) return
+
+                  clearTimeout(_that.data.timer_hide)
+			_that.reset()
 
 			_that.setData({ visible: true }, () => {
 				this.setStyle(e)
@@ -80,10 +84,12 @@ Component({
 			_that.setData({ styles })
 
 			if (e.type === 'tap') {
-				const timer = setTimeout(() => {
+				const timer_hide = setTimeout(() => {
 					_that.reset()
-					clearTimeout(timer)
+					clearTimeout(timer_hide)
 				}, duration_time * 1000)
+
+				_that.setData({ timer_hide })
 			}
 		},
 		reset () {

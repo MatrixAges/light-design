@@ -56,7 +56,9 @@ Component({
 	data: {
 		_visible: false,
 		maskBackgroundColor: 'rgba(0,0,0,0)',
-		style: ''
+		style: '',
+		timer_show: 0,
+		timer_close: 0
 	},
 	observers: {
 		visible (new_val) {
@@ -69,10 +71,13 @@ Component({
 				? 'transform:translateY(120%)'
 				: 'opacity:0;transform:scale(0);'
 
+			clearTimeout(_that.data.timer_show)
+			clearTimeout(_that.data.timer_close)
+
 			if (new_val) {
 				_that.setData({ _visible: true })
 
-				setTimeout(() => {
+				const timer_show = setTimeout(() => {
 					_that.setData({
 						maskBackgroundColor: maskVisible
 							? 'rgba(0,0,0,0.6)'
@@ -80,15 +85,19 @@ Component({
 						style: style_visible
 					})
 				}, 30)
+
+				_that.setData({ timer_show })
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'rgba(0,0,0,0)',
 					style: style_unvisible
 				})
 
-				setTimeout(() => {
+				const timer_close = setTimeout(() => {
 					_that.setData({ _visible: false })
 				}, 300)
+
+				_that.setData({ timer_close })
 			}
 		}
 	},
@@ -107,13 +116,13 @@ Component({
 			_that.setData({ visible: false })
 
 			_that.triggerEvent('onClose')
-            },
-            onOk() {
-                  const _that = this
+		},
+		onOk () {
+			const _that = this
 
 			_that.setData({ visible: false })
 
 			_that.triggerEvent('onOk')
-            }
+		}
 	}
 })

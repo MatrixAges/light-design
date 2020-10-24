@@ -37,11 +37,13 @@ Component({
     data: {
         _visible_dialog_wrap: false,
         _visible_dialog: false,
-        _visible_mask: false
+        _visible_mask: false,
+        timer_close: 0
     },
     observers: {
         visible: function (new_val) {
             var _that = this;
+            clearTimeout(_that.data.timer_close);
             if (new_val) {
                 _that.setData({ _visible_dialog_wrap: true }, function () {
                     _that.setData({
@@ -55,9 +57,10 @@ Component({
                     _visible_dialog: false,
                     _visible_mask: false
                 });
-                setTimeout(function () {
+                var timer_close = setTimeout(function () {
                     _that.setData({ _visible_dialog_wrap: false });
                 }, 300);
+                _that.setData({ timer_close: timer_close });
             }
         },
         vertical: function (new_val) {

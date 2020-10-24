@@ -42,31 +42,37 @@ Component({
         maskBackgroundColor: '',
         style: '',
         current: 0,
-        indicatorDots: true
+        indicatorDots: true,
+        timer_show: 0,
+        timer_close: 0
     },
     observers: {
         visible: function (new_val) {
             var _that = this;
+            clearTimeout(_that.data.timer_show);
+            clearTimeout(_that.data.timer_close);
             if (new_val) {
                 _that.setData({
                     current: 0,
                     _visible: true
                 });
-                setTimeout(function () {
+                var timer_show = setTimeout(function () {
                     _that.setData({
                         maskBackgroundColor: 'rgba(0,0,0,0.6)',
                         style: 'opacity:1;transform:scale(1);transform-origin:center'
                     });
                 }, 30);
+                _that.setData({ timer_show: timer_show });
             }
             else {
                 _that.setData({
                     maskBackgroundColor: 'transparent',
                     style: 'opacity:0;transform:scale(0);transform-origin:center'
                 });
-                setTimeout(function () {
+                var timer_close = setTimeout(function () {
                     _that.setData({ _visible: false });
                 }, 300);
+                _that.setData({ timer_close: timer_close });
             }
         }
     },

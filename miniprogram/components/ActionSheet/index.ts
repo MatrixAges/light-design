@@ -24,11 +24,11 @@ Component({
 		vertical: {
 			type: Boolean,
 			value: false
-            },
-            visibleCancel: {
+		},
+		visibleCancel: {
 			type: Boolean,
 			value: false
-            },
+		},
 		column: {
 			type: Number,
 			value: 3
@@ -41,11 +41,14 @@ Component({
 	data: {
 		_visible_dialog_wrap: false,
 		_visible_dialog: false,
-		_visible_mask: false
+		_visible_mask: false,
+		timer_close: 0
 	},
 	observers: {
 		visible (new_val) {
 			const _that = this
+
+			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData({ _visible_dialog_wrap: true }, () => {
@@ -60,9 +63,11 @@ Component({
 					_visible_mask: false
 				})
 
-				setTimeout(() => {
+				const timer_close = setTimeout(() => {
 					_that.setData({ _visible_dialog_wrap: false })
 				}, 300)
+
+				_that.setData({ timer_close })
 			}
 		},
 		vertical (new_val) {

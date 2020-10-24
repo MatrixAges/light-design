@@ -37,7 +37,9 @@ Component({
 	data: {
 		_visible: false,
 		maskBackgroundColor: '',
-		style: ''
+		style: '',
+		timer_show: 0,
+		timer_close: 0
 	},
 	observers: {
 		visible (new_val) {
@@ -45,10 +47,13 @@ Component({
 			const { position, duration, maskVisible } = _that.data
 			const position_style: any = _that.getPositionStyle()
 
+			clearTimeout(_that.data.timer_show)
+			clearTimeout(_that.data.timer_close)
+
 			if (new_val) {
-                        _that.setData({ _visible: true })
-                        
-				setTimeout(() => {
+				_that.setData({ _visible: true })
+
+				const timer_show = setTimeout(() => {
 					_that.setData({
 						maskBackgroundColor: maskVisible
 							? 'rgba(0,0,0,0.6)'
@@ -56,15 +61,19 @@ Component({
 						style: position_style[position].show
 					})
 				}, 30)
+
+				_that.setData({ timer_show })
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'transparent',
 					style: position_style[position].hide
 				})
 
-				setTimeout(() => {
+				const timer_close = setTimeout(() => {
 					_that.setData({ _visible: false })
 				}, duration)
+
+				_that.setData({ timer_close })
 			}
 		}
 	},

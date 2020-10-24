@@ -5,25 +5,9 @@ Component({
             type: Boolean,
             value: false
         },
-        theme: {
-            type: String,
-            value: 'main'
-        },
         position: {
             type: String,
             value: 'bottom'
-        },
-        top: {
-            type: Number,
-            value: 0
-        },
-        bottom: {
-            type: Number,
-            value: 0
-        },
-        cover: {
-            type: Boolean,
-            value: false
         },
         color: {
             type: String,
@@ -37,18 +21,6 @@ Component({
             type: String,
             value: ''
         },
-        description: {
-            type: String,
-            value: ''
-        },
-        okText: {
-            type: String,
-            value: 'OK'
-        },
-        autoClose: {
-            type: Boolean,
-            value: false
-        },
         duration: {
             type: Number,
             value: 3000
@@ -56,14 +28,6 @@ Component({
         zIndex: {
             type: Number,
             value: 100
-        },
-        mini: {
-            type: Boolean,
-            value: false
-        },
-        custom: {
-            type: Boolean,
-            value: false
         }
     },
     data: {
@@ -75,7 +39,7 @@ Component({
     observers: {
         visible: function (new_val) {
             var _that = this;
-            var _a = _that.data, position = _a.position, autoClose = _a.autoClose, duration = _a.duration;
+            var _a = _that.data, position = _a.position, duration = _a.duration;
             var position_style = _that.getPositionStyle();
             clearTimeout(_that.data.timer_duration);
             clearTimeout(_that.data.timer_close);
@@ -86,12 +50,10 @@ Component({
                 }, function () {
                     _that.setData({ style: position_style[position].show });
                 });
-                if (autoClose) {
-                    var timer_duration = setTimeout(function () {
-                        _that.setData({ visible: false });
-                    }, duration + 30);
-                    _that.setData({ timer_duration: timer_duration });
-                }
+                var timer_duration = setTimeout(function () {
+                    _that.setData({ visible: false });
+                }, duration);
+                _that.setData({ timer_duration: timer_duration });
             }
             else {
                 _that.setData({ style: position_style[position].hide });
@@ -105,16 +67,14 @@ Component({
     methods: {
         catchtouchmove: function () { },
         getPositionStyle: function () {
-            var _that = this;
-            var _a = _that.data, top = _a.top, bottom = _a.bottom;
             return {
                 top: {
-                    show: "opacity:1;transform:translateY(0);top:" + top + "rpx;",
-                    hide: "opacity:0;transform:translateY(-120%);top:" + top + "rpx;"
+                    show: "opacity:1;transform:translateY(0);top:15vh;",
+                    hide: "opacity:0;transform:translateY(-120%);top:15vh;"
                 },
                 bottom: {
-                    show: "opacity:1;transform:translateY(0);bottom:" + bottom + "rpx;",
-                    hide: "opacity:0;transform:translateY(120%);bottom:" + bottom + "rpx;"
+                    show: "opacity:1;transform:translateY(0);bottom:15vh;",
+                    hide: "opacity:0;transform:translateY(120%);bottom:15vh;"
                 }
             };
         },
@@ -127,11 +87,6 @@ Component({
             var _that = this;
             _that.setData({ visible: false });
             _that.triggerEvent('onClose');
-        },
-        onOk: function () {
-            var _that = this;
-            _that.setData({ visible: false });
-            _that.triggerEvent('onOk');
         }
     }
 });

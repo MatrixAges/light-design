@@ -123,6 +123,11 @@
           "pathName": "pages/Line/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/Toast/index",
+          "pathName": "pages/Toast/index",
+          "scene": null
         }
       ]
     }

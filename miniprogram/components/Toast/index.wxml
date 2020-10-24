@@ -1,0 +1,23 @@
+<view
+      class="fixed_dialog_wrap"
+      catchtouchmove="catchtouchmove"
+      style="z-index:{{zIndex}};"
+      wx:if="{{_visible}}"
+>
+      <view
+            class="dialog {{type}} {{position}}"
+            style="{{style}};"
+      >
+            <view
+                  class="content_wrap"
+                  style="{{cover?'border-radius:0':''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
+                  catchtap="onClose"
+            >
+                  <text
+                        class="icon"
+                        wx:if="{{type}}"
+                  ></text>
+                  <text class="title">{{title}}</text>
+            </view>
+      </view>
+</view>

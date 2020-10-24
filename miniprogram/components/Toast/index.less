@@ -1,0 +1,31 @@
+@color_main: rgba(34, 34, 34, 0.9);
+
+.fixed_dialog_wrap {
+      .dialog {
+            position: fixed;
+            left: 0;
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            transition: all ease 0.3s;
+
+            .content_wrap {
+                  box-sizing: border-box;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding:24rpx 30rpx;
+                  border-radius: 100rpx;
+                  background-color: @color_main;
+                  color: white;
+                  font-size: 26rpx;
+                  line-height: 1;
+
+                  &.white {
+                        background-color: white;
+                        color: black;
+                  }
+            }
+      }
+}

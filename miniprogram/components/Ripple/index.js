@@ -49,7 +49,8 @@ Component({
     },
     data: {
         visible: false,
-        styles: ''
+        styles: '',
+        timer_hide: 0
     },
     methods: {
         getRect: function () {
@@ -76,13 +77,15 @@ Component({
                 return;
             if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop)
                 return;
+            clearTimeout(_that.data.timer_hide);
+            _that.reset();
             _that.setData({ visible: true }, function () {
                 _this.setStyle(e);
             });
         },
         setStyle: function (e) {
             return __awaiter(this, void 0, void 0, function () {
-                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, duration_ratio, duration_time, styles, timer_1;
+                var _that, _a, left, top, _b, width, height, offset_x, offset_y, limit_x, limit_y, limit, scale, duration_ratio, duration_time, styles, timer_hide_1;
                 return __generator(this, function (_c) {
                     switch (_c.label) {
                         case 0:
@@ -104,10 +107,11 @@ Component({
                                 : duration_time) + "s;\n                        transform: translate(-50%, -50%) scale(" + scale + ");\n\t\t\t";
                             _that.setData({ styles: styles });
                             if (e.type === 'tap') {
-                                timer_1 = setTimeout(function () {
+                                timer_hide_1 = setTimeout(function () {
                                     _that.reset();
-                                    clearTimeout(timer_1);
+                                    clearTimeout(timer_hide_1);
                                 }, duration_time * 1000);
+                                _that.setData({ timer_hide: timer_hide_1 });
                             }
                             return [2];
                     }

@@ -76,13 +76,18 @@ Component({
 	},
 	data: {
 		_visible: false,
-		style: ''
+		style: '',
+		timer_duration: 0,
+		timer_close: 0
 	},
 	observers: {
 		visible (new_val) {
 			const _that = this
 			const { position, autoClose, duration } = _that.data
-			const position_style: any = _that.getPositionStyle()
+                  const position_style: any = _that.getPositionStyle()
+                  
+			clearTimeout(_that.data.timer_duration)
+                  clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData(
@@ -96,16 +101,20 @@ Component({
 				)
 
 				if (autoClose) {
-					setTimeout(() => {
+					const timer_duration = setTimeout(() => {
 						_that.setData({ visible: false })
 					}, duration + 30)
+
+					_that.setData({ timer_duration })
 				}
 			} else {
 				_that.setData({ style: position_style[position].hide })
 
-				setTimeout(() => {
+				const timer_close = setTimeout(() => {
 					_that.setData({ _visible: false })
 				}, 300)
+
+				_that.setData({ timer_close })
 			}
 		}
 	},

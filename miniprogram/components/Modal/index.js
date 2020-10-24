@@ -29,16 +29,20 @@ Component({
     data: {
         _visible: false,
         maskBackgroundColor: '',
-        style: ''
+        style: '',
+        timer_show: 0,
+        timer_close: 0
     },
     observers: {
         visible: function (new_val) {
             var _that = this;
             var _a = _that.data, position = _a.position, duration = _a.duration, maskVisible = _a.maskVisible;
             var position_style = _that.getPositionStyle();
+            clearTimeout(_that.data.timer_show);
+            clearTimeout(_that.data.timer_close);
             if (new_val) {
                 _that.setData({ _visible: true });
-                setTimeout(function () {
+                var timer_show = setTimeout(function () {
                     _that.setData({
                         maskBackgroundColor: maskVisible
                             ? 'rgba(0,0,0,0.6)'
@@ -46,15 +50,17 @@ Component({
                         style: position_style[position].show
                     });
                 }, 30);
+                _that.setData({ timer_show: timer_show });
             }
             else {
                 _that.setData({
                     maskBackgroundColor: 'transparent',
                     style: position_style[position].hide
                 });
-                setTimeout(function () {
+                var timer_close = setTimeout(function () {
                     _that.setData({ _visible: false });
                 }, duration);
+                _that.setData({ timer_close: timer_close });
             }
         }
     },

@@ -57,7 +57,9 @@ Component({
     data: {
         _visible: false,
         maskBackgroundColor: 'rgba(0,0,0,0)',
-        style: ''
+        style: '',
+        timer_show: 0,
+        timer_close: 0
     },
     observers: {
         visible: function (new_val) {
@@ -69,9 +71,11 @@ Component({
             var style_unvisible = bottom
                 ? 'transform:translateY(120%)'
                 : 'opacity:0;transform:scale(0);';
+            clearTimeout(_that.data.timer_show);
+            clearTimeout(_that.data.timer_close);
             if (new_val) {
                 _that.setData({ _visible: true });
-                setTimeout(function () {
+                var timer_show = setTimeout(function () {
                     _that.setData({
                         maskBackgroundColor: maskVisible
                             ? 'rgba(0,0,0,0.6)'
@@ -79,15 +83,17 @@ Component({
                         style: style_visible
                     });
                 }, 30);
+                _that.setData({ timer_show: timer_show });
             }
             else {
                 _that.setData({
                     maskBackgroundColor: 'rgba(0,0,0,0)',
                     style: style_unvisible
                 });
-                setTimeout(function () {
+                var timer_close = setTimeout(function () {
                     _that.setData({ _visible: false });
                 }, 300);
+                _that.setData({ timer_close: timer_close });
             }
         }
     },
