@@ -17,29 +17,21 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 24rpx;
+  background-color: #222;
+  color: white;
+}
+.fixed_dialog_wrap .dialog .content_wrap.success {
+  background-color: #52c41a;
+}
+.fixed_dialog_wrap .dialog .content_wrap.warning {
+  background-color: #faad14;
+}
+.fixed_dialog_wrap .dialog .content_wrap.error {
+  background-color: #d62d0e;
 }
 .fixed_dialog_wrap .dialog .content_wrap.mini {
   padding: 24rpx 32rpx;
   border-radius: 16rpx;
-}
-.fixed_dialog_wrap .dialog .content_wrap.main {
-  background-color: #222;
-  color: white;
-}
-.fixed_dialog_wrap .dialog .content_wrap.main .right .btn_confirm {
-  border-color: white;
-  color: white;
-  background-color: #222;
-}
-.fixed_dialog_wrap .dialog .content_wrap.white {
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 30rpx #eee;
-}
-.fixed_dialog_wrap .dialog .content_wrap.white .right .btn_confirm {
-  border-color: black;
-  color: black;
-  background-color: transparent;
 }
 .fixed_dialog_wrap .dialog .content_wrap .left {
   width: calc(100% - 120rpx);

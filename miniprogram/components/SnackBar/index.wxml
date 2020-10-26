@@ -9,7 +9,7 @@
             style="{{style}};{{cover?'padding:0':''}}"
       >
             <view
-                  class="content_wrap {{theme}} {{mini?'mini':''}}"
+                  class="content_wrap {{type}} {{mini?'mini':''}}"
                   style="{{cover?'border-radius:0':''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
             >
                   <view class="left">

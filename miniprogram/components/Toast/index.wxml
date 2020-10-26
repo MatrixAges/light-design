@@ -9,7 +9,7 @@
             style="{{style}};"
       >
             <view
-                  class="content_wrap {{type}}"
+                  class="content_wrap {{type}} {{useColor?'useColor':''}}"
                   style="{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
                   catchtap="onClose"
             >

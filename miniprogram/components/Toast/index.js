@@ -13,6 +13,10 @@ Component({
             type: String,
             value: ''
         },
+        useColor: {
+            type: Boolean,
+            value: false
+        },
         color: {
             type: String,
             value: ''

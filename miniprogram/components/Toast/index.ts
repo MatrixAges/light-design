@@ -16,10 +16,14 @@ Component({
 		position: {
 			type: String,
 			value: 'bottom' // top | bottom
-            },
-            type: {
+		},
+		type: {
 			type: String,
 			value: '' // success | warning | error
+		},
+		useColor: {
+			type: Boolean,
+			value: false
 		},
 		color: {
 			type: String,

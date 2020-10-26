@@ -125,27 +125,6 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">切换主题</text>
-                  <text class="attr">theme</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="theme"
-                              catchtap="onOption"
-                        >Show</_Button>
-                        <_SnackBar
-                              visible="{{visible_theme}}"
-                              title="更多内容请登录"
-                              description="登录后可享受更多服务，快登录吧"
-                              okText="登录"
-                              theme="white"
-                        ></_SnackBar>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">小尺寸</text>
                   <text class="attr">mini</text>
             </view>
@@ -232,7 +211,6 @@
                               custom
                               mini
                               cover
-                              
                         >
                               <image
                                     style="width: 30rpx;height: 30rpx;background-color: white;border-radius: 30rpx;"
@@ -273,6 +251,93 @@
                                     mark:type="styles"
                                     catchtap="hide"
                               ></image>
+                        </_SnackBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定类型</text>
+                  <text class="attr">type</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example flex flex_wrap">
+                        <_Button
+                              class="mb_24 mr_24"
+                              mark:type="type_none"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Button
+                              class="mb_24"
+                              type="success"
+                              mark:type="type_success"
+                              catchtap="onOption"
+                        >success</_Button>
+                        <_Button
+                              class="mr_24"
+                              type="warning"
+                              mark:type="type_warning"
+                              catchtap="onOption"
+                        >warning</_Button>
+                        <_Button
+                              type="error"
+                              mark:type="type_error"
+                              catchtap="onOption"
+                        >error</_Button>
+                        <_SnackBar
+                              visible="{{visible_type_none}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              custom
+                              mini
+                              cover
+                        >
+                              <text
+                                    mark:type="type_none"
+                                    catchtap="hide"
+                              >关闭</text>
+                        </_SnackBar>
+                        <_SnackBar
+                              visible="{{visible_type_success}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              type="success"
+                              custom
+                              mini
+                              cover
+                        >
+                              <text
+                                    mark:type="type_success"
+                                    catchtap="hide"
+                              >关闭</text>
+                        </_SnackBar>
+                        <_SnackBar
+                              visible="{{visible_type_warning}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              type="warning"
+                              custom
+                              mini
+                              cover
+                        >
+                              <text
+                                    mark:type="type_warning"
+                                    catchtap="hide"
+                              >关闭</text>
+                        </_SnackBar>
+                        <_SnackBar
+                              visible="{{visible_type_error}}"
+                              title="您的账户余额不足，请尽快充值"
+                              position="top"
+                              type="error"
+                              custom
+                              mini
+                              cover
+                        >
+                              <text
+                                    mark:type="type_error"
+                                    catchtap="hide"
+                              >关闭</text>
                         </_SnackBar>
                   </view>
             </view>

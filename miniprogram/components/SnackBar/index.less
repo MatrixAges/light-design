@@ -1,4 +1,7 @@
 @color_main: #222;
+@color_success: #52c41a;
+@color_warning: #faad14;
+@color_error: #d62d0e;
 
 .fixed_dialog_wrap {
       .dialog {
@@ -21,37 +24,24 @@
                   justify-content: space-between;
                   align-items: center;
                   border-radius: 24rpx;
+                  background-color: @color_main;
+                  color: white;
+
+                  &.success {
+                        background-color: @color_success;
+                  }
+
+                  &.warning {
+                        background-color: @color_warning;
+                  }
+
+                  &.error {
+                        background-color: @color_error;
+                  }
 
                   &.mini {
                         padding: 24rpx 32rpx;
                         border-radius: 16rpx;
-                  }
-
-                  &.main {
-                        background-color: @color_main;
-                        color: white;
-
-                        .right {
-                              .btn_confirm {
-                                    border-color: white;
-                                    color: white;
-                                    background-color: @color_main;
-                              }
-                        }
-                  }
-
-                  &.white {
-                        background-color: white;
-                        color: black;
-                        box-shadow: 0 0 30rpx #eee;
-
-                        .right {
-                              .btn_confirm {
-                                    border-color: black;
-                                    color: black;
-                                    background-color: transparent;
-                              }
-                        }
                   }
 
                   .left {

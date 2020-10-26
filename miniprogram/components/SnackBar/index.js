@@ -5,9 +5,9 @@ Component({
             type: Boolean,
             value: false
         },
-        theme: {
+        type: {
             type: String,
-            value: 'main'
+            value: ''
         },
         position: {
             type: String,

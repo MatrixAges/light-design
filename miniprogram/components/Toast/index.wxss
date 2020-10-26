@@ -22,26 +22,32 @@
 .fixed_dialog_wrap .dialog .content_wrap .icon {
   width: calc(18rpx * 2);
   height: calc(18rpx * 2);
-  margin-right: 20rpx;
+  margin-right: 16rpx;
 }
 .fixed_dialog_wrap .dialog .content_wrap.success {
-  background-color: #52c41a;
   color: white;
+}
+.fixed_dialog_wrap .dialog .content_wrap.success.useColor {
+  background-color: #52c41a;
 }
 .fixed_dialog_wrap .dialog .content_wrap.success .icon {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik05IDE2LjE3TDUuNTMgMTIuN2MtLjM5LS4zOS0xLjAyLS4zOS0xLjQxIDAtLjM5LjM5LS4zOSAxLjAyIDAgMS40MWw0LjE4IDQuMThjLjM5LjM5IDEuMDIuMzkgMS40MSAwTDIwLjI5IDcuNzFjLjM5LS4zOS4zOS0xLjAyIDAtMS40MS0uMzktLjM5LTEuMDItLjM5LTEuNDEgMEw5IDE2LjE3eiIvPjwvc3ZnPg==');
 }
 .fixed_dialog_wrap .dialog .content_wrap.warning {
-  background-color: #faad14;
   color: white;
+}
+.fixed_dialog_wrap .dialog .content_wrap.warning.useColor {
+  background-color: #faad14;
 }
 .fixed_dialog_wrap .dialog .content_wrap.warning .icon {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiPjxwYXRoIGQ9Ik0xMiA3Yy41NSAwIDEgLjQ1IDEgMXY0YzAgLjU1LS40NSAxLTEgMXMtMS0uNDUtMS0xVjhjMC0uNTUuNDUtMSAxLTF6bS0uMDEtNUM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnpNMTIgMjBjLTQuNDIgMC04LTMuNTgtOC04czMuNTgtOCA4LTggOCAzLjU4IDggOC0zLjU4IDgtOCA4em0xLTNoLTJ2LTJoMnYyeiIvPjwvc3ZnPg==');
   background-size: cover;
 }
 .fixed_dialog_wrap .dialog .content_wrap.error {
-  background-color: #d62d0e;
   color: white;
+}
+.fixed_dialog_wrap .dialog .content_wrap.error.useColor {
+  background-color: #d62d0e;
 }
 .fixed_dialog_wrap .dialog .content_wrap.error .icon {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xOC4zIDUuNzFjLS4zOS0uMzktMS4wMi0uMzktMS40MSAwTDEyIDEwLjU5IDcuMTEgNS43Yy0uMzktLjM5LTEuMDItLjM5LTEuNDEgMC0uMzkuMzktLjM5IDEuMDIgMCAxLjQxTDEwLjU5IDEyIDUuNyAxNi44OWMtLjM5LjM5LS4zOSAxLjAyIDAgMS40MS4zOS4zOSAxLjAyLjM5IDEuNDEgMEwxMiAxMy40MWw0Ljg5IDQuODljLjM5LjM5IDEuMDIuMzkgMS40MSAwIC4zOS0uMzkuMzktMS4wMiAwLTEuNDFMMTMuNDEgMTJsNC44OS00Ljg5Yy4zOC0uMzguMzgtMS4wMiAwLTEuNHoiLz48L3N2Zz4=');

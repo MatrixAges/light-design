@@ -3,18 +3,19 @@ interface IPositionStyle {
 	hide: string
 }
 
-type SnackBar_enum_position = 'top' | 'bottom'
-type SnackBar_IgetPositionStyle = { [key in SnackBar_enum_position]: IPositionStyle }
+type SnackBar_position = 'top' | 'bottom'
+type SnackBar_type = 'success' | 'warning' | 'error'
+type SnackBar_IgetPositionStyle = { [key in SnackBar_position]: IPositionStyle }
 
 Component({
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
-		},
-		theme: {
+            },
+            type: {
 			type: String,
-			value: 'main' // main | white
+			value: '' // success | warning | error
 		},
 		position: {
 			type: String,
