@@ -38,6 +38,45 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义颜色</text>
+                  <text class="attr">custom</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="custom"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Toast
+                              visible="{{visible_custom}}"
+                              title="default Toast"
+                              color="white"
+                              bgColor="linear-gradient(to right,red,blue)"
+                        ></_Toast>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">关闭时间</text>
+                  <text class="attr">duration</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="duration"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Toast
+                              visible="{{visible_duration}}"
+                              title="default Toast"
+                              duration="{{1000}}"
+                        ></_Toast>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">设定类型</text>
                   <text class="attr">type</text>
             </view>
@@ -79,6 +118,56 @@
                               visible="{{visible_error}}"
                               title="error Toast"
                               type="error"
+                        ></_Toast>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">背景色</text>
+                  <text class="attr">useColor</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example flex flex_wrap">
+                        <_Button
+                              class="mr_24 mb_24"
+                              mark:type="default"
+                              catchtap="onOption"
+                        >default</_Button>
+                        <_Button
+                              class="mb_24"
+                              type="success"
+                              mark:type="useColor_success"
+                              catchtap="onOption"
+                        >success</_Button>
+                        <_Button
+                              class="mr_24"
+                              type="warning"
+                              mark:type="useColor_warning"
+                              catchtap="onOption"
+                        >warning</_Button>
+                        <_Button
+                              type="error"
+                              mark:type="useColor_error"
+                              catchtap="onOption"
+                        >error</_Button>
+                        <_Toast
+                              visible="{{visible_useColor_success}}"
+                              title="success Toast"
+                              type="success"
+                              useColor
+                        ></_Toast>
+                        <_Toast
+                              visible="{{visible_useColor_warning}}"
+                              title="warning Toast"
+                              type="warning"
+                              useColor
+                        ></_Toast>
+                        <_Toast
+                              visible="{{visible_useColor_error}}"
+                              title="error Toast"
+                              type="error"
+                              useColor
                         ></_Toast>
                   </view>
             </view>

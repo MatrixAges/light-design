@@ -73,7 +73,7 @@ Component({
 				)
 
 				const timer_duration = setTimeout(() => {
-					// _that.setData({ visible: false })
+					_that.setData({ visible: false })
 				}, duration)
 
 				_that.setData({ timer_duration })

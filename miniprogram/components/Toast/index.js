@@ -59,6 +59,7 @@ Component({
                     _that.setData({ style: position_style[position].show });
                 });
                 var timer_duration = setTimeout(function () {
+                    _that.setData({ visible: false });
                 }, duration);
                 _that.setData({ timer_duration: timer_duration });
             }
