@@ -192,7 +192,7 @@ exports.default = [
             },
             {
                 name: 'Toast',
-                description: '水波纹'
+                description: '消息提示'
             },
             {
                 name: 'SnackBar',
