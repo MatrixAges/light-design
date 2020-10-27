@@ -1,9 +1,17 @@
-@color_main: #222;
+@color_main: black;
 @color_success: #52c41a;
 @color_warning: #faad14;
 @color_error: #d62d0e;
 
+.init {
+      font-size: 15px;
+      line-height: 1;
+      color: black;
+}
+
 .fixed_dialog_wrap {
+      .init();
+
       .dialog {
             position: fixed;
             left: 0;
@@ -11,6 +19,35 @@
             padding: 18rpx;
             box-sizing: border-box;
             transition: all ease 0.3s;
+
+            &.cover {
+                  .content_wrap {
+                        &.mini {
+                              padding: 20rpx 32rpx;
+                              font-size: 24rpx;
+
+                              .left {
+                                    .title {
+                                          font-size: 24rpx;
+                                    }
+
+                                    .description {
+                                          font-size: 24rpx;
+                                    }
+                              }
+                        }
+                  }
+
+                  &.bottom {
+                        .content_wrap {
+                              padding-bottom: calc(~'36rpx + 'env(safe-area-inset-bottom));
+
+                              &.mini {
+                                    padding-bottom: calc(~'24rpx + 'env(safe-area-inset-bottom));
+                              }
+                        }
+                  }
+            }
 
             &.bottom {
                   padding-bottom: calc(~'18rpx + 'env(safe-area-inset-bottom));
@@ -24,24 +61,33 @@
                   justify-content: space-between;
                   align-items: center;
                   border-radius: 24rpx;
-                  background-color: @color_main;
-                  color: white;
+                  background-color: whitesmoke;
+                  color: fade(@color_main, 60);
 
                   &.success {
                         background-color: @color_success;
+                        color: white;
                   }
 
                   &.warning {
                         background-color: @color_warning;
+                        color: white;
                   }
 
                   &.error {
                         background-color: @color_error;
+                        color: white;
                   }
 
                   &.mini {
                         padding: 24rpx 32rpx;
                         border-radius: 16rpx;
+
+                        .left{
+                              .description{
+                                    margin-top: 16rpx;
+                              }
+                        }
                   }
 
                   .left {
@@ -66,7 +112,7 @@
 
                         .description {
                               font-size: 24rpx;
-                              margin-top: 16rpx;
+                              margin-top: 20rpx;
                               overflow: hidden;
                               -o-text-overflow: ellipsis;
                               text-overflow: ellipsis;

@@ -1,4 +1,12 @@
+.init {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
 .card_wrap {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
   display: flex;
   box-sizing: border-box;
   width: 100%;

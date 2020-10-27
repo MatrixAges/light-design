@@ -1,9 +1,12 @@
 page {
   --width_header: 1000px;
   --width_body: 1000px;
+  --radius_button: 6px;
   --radius_normal: 12px;
+  --radius_bottom: 20px;
   --color_border: rgba(245, 245, 245, 0.72);
   --color_hover: rgba(245, 245, 245, 0.6);
+  --color_text_main: rgba(0, 0, 0, 0.6);
   --color_text_sub: #aaaaaa;
   --color_text_desc: rgba(170, 170, 170, 0.72);
 }

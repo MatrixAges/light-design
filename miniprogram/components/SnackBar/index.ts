@@ -148,6 +148,11 @@ Component({
 			_that.setData({ visible: false })
 
 			_that.triggerEvent('onClose')
+            },
+            onLeft () {
+			const _that = this
+
+			_that.triggerEvent('onLeft')
 		},
 		onOk () {
 			const _that = this

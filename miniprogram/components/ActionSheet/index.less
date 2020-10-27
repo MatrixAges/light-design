@@ -1,4 +1,12 @@
+.init {
+      font-size: 15px;
+      line-height: 1.5;
+      color: black;
+}
+
 .fixed_dialog_wrap {
+      .init();
+
       position: fixed;
       top: 0;
       left: 0;
@@ -40,7 +48,7 @@
                   display: flex;
                   flex-direction: column;
                   transition: all ease 0.3s;
-                  background-color: whitesmoke;
+                  background-color: white;
                   border-radius: 40rpx;
                   border-bottom-left-radius: 0;
                   border-bottom-right-radius: 0;
@@ -54,7 +62,13 @@
                   }
 
                   &.vertical {
-                        padding-bottom: 0;
+                        padding-bottom: calc(~'0rpx + 'env(safe-area-inset-bottom));
+
+                        &.textOnly {
+                              padding: 24rpx;
+                              padding-bottom: calc(~'24rpx + 'env(safe-area-inset-bottom));
+                              background-color: whitesmoke;
+                        }
 
                         .action_items {
                               max-height: 60vh;
@@ -63,13 +77,31 @@
                                     width: 100%;
                                     padding: 18rpx 48rpx;
 
+                                    &.textOnly {
+                                          padding: 40rpx 48rpx;
+                                          border-bottom: 2rpx solid rgba(245, 245, 245, 0.72);
+                                          background-color: white;
+
+                                          &:last-child {
+                                                border-bottom: none;
+                                          }
+
+                                          .flex_wrap {
+                                                .name {
+                                                      width: 100%;
+                                                      padding-left: 0;
+                                                      text-align: center;
+                                                      font-size: 28rpx;
+                                                }
+                                          }
+                                    }
+
                                     .flex_wrap {
                                           display: flex;
                                           flex-direction: row;
 
                                           .icon_wrap {
                                                 margin-bottom: 0;
-                                                background-color: transparent;
                                           }
 
                                           .name {
@@ -114,11 +146,11 @@
                               margin: 0;
                               box-sizing: border-box;
                               display: inline-block;
-
                               background-color: transparent;
+                              border-radius: 12rpx;
 
                               &:active {
-                                    background-color: #eee;
+                                    background-color: whitesmoke;
                               }
 
                               &::after {
@@ -140,7 +172,6 @@
                                           height: 80rpx;
                                           margin-bottom: 18rpx;
                                           border-radius: 64rpx;
-                                          background-color: white;
 
                                           .icon_action {
                                                 width: 48rpx;
@@ -168,12 +199,16 @@
                         color: black;
                         line-height: 1;
                         border: none;
-                        // border-top: 2rpx solid #eee;
-                        border-radius: 0rpx;
+                        border-radius: 12rpx;
                         background-color: transparent;
 
                         &::after {
                               display: none;
+                        }
+
+                        &.textOnly {
+                              background-color: white;
+                              margin-top: 18rpx;
                         }
                   }
             }

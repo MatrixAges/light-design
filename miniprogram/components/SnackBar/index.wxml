@@ -5,14 +5,17 @@
       wx:if="{{_visible}}"
 >
       <view
-            class="dialog {{position}}"
+            class="dialog {{position}} {{cover?'cover':''}}"
             style="{{style}};{{cover?'padding:0':''}}"
       >
             <view
                   class="content_wrap {{type}} {{mini?'mini':''}}"
                   style="{{cover?'border-radius:0':''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}};"
             >
-                  <view class="left">
+                  <view
+                        class="left"
+                        catchtap="onLeft"
+                  >
                         <text class="title {{description?'has_description':''}}">{{title}}</text>
                         <text
                               class="description"

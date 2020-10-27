@@ -1,4 +1,12 @@
+.init {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
 .content_wrap {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
   position: relative;
   display: flex;
   padding: 0;

@@ -181,7 +181,7 @@
                         >Show</_Button>
                         <_Dialog
                               visible="{{visible_bodyStyle}}"
-                              bodyStyle="border-radius:0;background-color:#333;color:white"
+                              bodyStyle="border-radius:0;background-color:red;color:white"
                         >
                               结果并不重要，重要的是过程？
                         </_Dialog>

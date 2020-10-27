@@ -1,7 +1,15 @@
 @color_main:#222;
 @radius_normal:24rpx;
 
+.init {
+      font-size: 15px;
+      line-height: 1.6;
+      color: black;
+}
+
 .fixed_dialog_wrap {
+      .init();
+      
       width: 100vw;
       height: 100vh;
       position: fixed;
@@ -47,7 +55,6 @@
                         border-radius: 40rpx;
                         border-bottom-left-radius: 0;
                         border-bottom-right-radius: 0;
-                        border-radius: 40rpx;
 
                         .options_wrap{
                               padding-bottom: calc(~'36rpx + 'env(safe-area-inset-bottom));

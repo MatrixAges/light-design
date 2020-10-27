@@ -24,7 +24,11 @@ Component({
 		vertical: {
 			type: Boolean,
 			value: false
-		},
+            },
+            textOnly: {
+                  type: Boolean,
+			value: false
+            },
 		visibleCancel: {
 			type: Boolean,
 			value: false

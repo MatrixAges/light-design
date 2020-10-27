@@ -1,3 +1,13 @@
+.init {
+  font-size: 15px;
+  line-height: 1;
+  color: black;
+}
+.fixed_dialog_wrap {
+  font-size: 15px;
+  line-height: 1;
+  color: black;
+}
 .fixed_dialog_wrap .dialog {
   position: fixed;
   left: 0;
@@ -5,6 +15,22 @@
   padding: 18rpx;
   box-sizing: border-box;
   transition: all ease 0.3s;
+}
+.fixed_dialog_wrap .dialog.cover .content_wrap.mini {
+  padding: 20rpx 32rpx;
+  font-size: 24rpx;
+}
+.fixed_dialog_wrap .dialog.cover .content_wrap.mini .left .title {
+  font-size: 24rpx;
+}
+.fixed_dialog_wrap .dialog.cover .content_wrap.mini .left .description {
+  font-size: 24rpx;
+}
+.fixed_dialog_wrap .dialog.cover.bottom .content_wrap {
+  padding-bottom: calc(36rpx +  env(safe-area-inset-bottom));
+}
+.fixed_dialog_wrap .dialog.cover.bottom .content_wrap.mini {
+  padding-bottom: calc(24rpx +  env(safe-area-inset-bottom));
 }
 .fixed_dialog_wrap .dialog.bottom {
   padding-bottom: calc(18rpx +  env(safe-area-inset-bottom));
@@ -17,21 +43,27 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 24rpx;
-  background-color: #222;
-  color: white;
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.6);
 }
 .fixed_dialog_wrap .dialog .content_wrap.success {
   background-color: #52c41a;
+  color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.warning {
   background-color: #faad14;
+  color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.error {
   background-color: #d62d0e;
+  color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.mini {
   padding: 24rpx 32rpx;
   border-radius: 16rpx;
+}
+.fixed_dialog_wrap .dialog .content_wrap.mini .left .description {
+  margin-top: 16rpx;
 }
 .fixed_dialog_wrap .dialog .content_wrap .left {
   width: calc(100% - 120rpx);
@@ -53,7 +85,7 @@
 }
 .fixed_dialog_wrap .dialog .content_wrap .left .description {
   font-size: 24rpx;
-  margin-top: 16rpx;
+  margin-top: 20rpx;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -73,7 +105,7 @@
   color: white;
   font-size: 28rpx;
   font-weight: bold;
-  background-color: #222;
+  background-color: black;
   transition: all ease 0.3s;
 }
 .fixed_dialog_wrap .dialog .content_wrap .right .btn_confirm:active {

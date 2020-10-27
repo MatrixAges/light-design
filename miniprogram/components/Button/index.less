@@ -5,7 +5,7 @@
 @loading_size_small: 12;
 @loading_size_normal: 15;
 @loading_size_large: 20;
-@radius_normal: 8rpx;
+@radius_normal: 12rpx;
 
 @keyframes loadingCircle {
       from {
@@ -15,6 +15,12 @@
       to {
             transform: rotate(360deg);
       }
+}
+
+.init {
+      font-size: 15px;
+      line-height: 1;
+      color: black;
 }
 
 .loading_image(@loading_size, @loading_color) {
@@ -28,6 +34,8 @@
 }
 
 .btn {
+      .init();
+
       position: initial;
       display: flex;
       justify-content: center;
@@ -167,7 +175,7 @@
 
       &.type_default {
             background-color: whitesmoke;
-            color: black;
+            color: #222;
 
             &.ghost {
                   background-color: transparent;

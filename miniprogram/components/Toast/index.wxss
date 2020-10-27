@@ -1,3 +1,13 @@
+.init {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
+.fixed_dialog_wrap {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
 .fixed_dialog_wrap .dialog {
   position: fixed;
   left: 0;

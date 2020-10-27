@@ -6,7 +6,15 @@
     transform: rotate(360deg);
   }
 }
+.init {
+  font-size: 15px;
+  line-height: 1;
+  color: black;
+}
 .btn {
+  font-size: 15px;
+  line-height: 1;
+  color: black;
   position: initial;
   display: flex;
   justify-content: center;
@@ -133,7 +141,7 @@
 }
 .btn.type_default {
   background-color: whitesmoke;
-  color: black;
+  color: #222;
 }
 .btn.type_default.ghost {
   background-color: transparent;
@@ -175,7 +183,7 @@
   border-radius: 300rpx;
 }
 .btn.shape_normal {
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 .btn.shape_rect {
   border-radius: 0rpx;

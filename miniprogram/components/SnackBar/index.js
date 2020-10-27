@@ -128,6 +128,10 @@ Component({
             _that.setData({ visible: false });
             _that.triggerEvent('onClose');
         },
+        onLeft: function () {
+            var _that = this;
+            _that.triggerEvent('onLeft');
+        },
         onOk: function () {
             var _that = this;
             _that.setData({ visible: false });

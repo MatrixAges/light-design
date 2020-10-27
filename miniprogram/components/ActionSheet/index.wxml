@@ -9,10 +9,10 @@
                   class="mask {{_visible_mask?'visible':'hidden'}}"
                   catchtap="onClose"
             ></view>
-            <view class="dialog {{_visible_dialog?'visible':'hidden'}} {{vertical?'vertical':''}}">
+            <view class="dialog {{_visible_dialog?'visible':'hidden'}} {{vertical?'vertical':''}} {{textOnly?'textOnly':''}}">
                   <text
                         class="title"
-                        wx:if="{{title}}"
+                        wx:if="{{!textOnly&&title}}"
                   >{{title}}</text>
                   <scroll-view
                         class="action_items {{scroll?'scroll':''}}"
@@ -21,8 +21,8 @@
                         enable-flex="{{true}}"
                         catchtap="onActionItem"
                   >
-                        <button
-                              class="action_item"
+                        <view
+                              class="action_item {{textOnly?'textOnly':''}}"
                               style="width:calc(100%/{{column}} - {{scroll?32:0}}rpx);"
                               wx:for="{{list}}"
                               wx:key="index"
@@ -31,7 +31,7 @@
                               <view class="flex_wrap">
                                     <view
                                           class="icon_wrap"
-                                          wx:if="{{item.icon}}"
+                                          wx:if="{{!textOnly&&item.icon}}"
                                     >
                                           <image
                                                 class="icon_action"
@@ -41,10 +41,10 @@
                                     </view>
                                     <text class="name">{{item.name}}</text>
                               </view>
-                        </button>
+                        </view>
                   </scroll-view>
                   <button
-                        class="btn_cancel"
+                        class="btn_cancel {{textOnly?'textOnly':''}}"
                         catchtap="onClose"
                         wx:if="{{visibleCancel}}"
                   >取消</button>

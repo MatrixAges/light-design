@@ -12,7 +12,15 @@
       }
 }
 
+.init {
+      font-size: 15px;
+      line-height: 1.6;
+      color: black;
+}
+
 .loading_wrap {
+      .init();
+
       position: fixed;
       top: 0;
       left: 0;
@@ -37,7 +45,7 @@
             justify-content: center;
             align-items: center;
             background-color: @bg_color_loading;
-            border-radius: 20rpx;
+            border-radius: 24rpx;
 
             .icon {
                   width: 60rpx;
