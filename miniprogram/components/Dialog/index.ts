@@ -69,7 +69,7 @@ Component({
 				: 'opacity:1;transform:scale(1);'
 			const style_unvisible = bottom
 				? 'transform:translateY(120%)'
-				: 'opacity:0;transform:scale(0);'
+				: 'opacity:0;transform:scale(0.8);'
 
 			clearTimeout(_that.data.timer_show)
 			clearTimeout(_that.data.timer_close)

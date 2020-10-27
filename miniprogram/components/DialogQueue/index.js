@@ -67,7 +67,7 @@ Component({
             else {
                 _that.setData({
                     maskBackgroundColor: 'transparent',
-                    style: 'opacity:0;transform:scale(0);transform-origin:center'
+                    style: 'opacity:0;transform:scale(0.8);transform-origin:center'
                 });
                 var timer_close = setTimeout(function () {
                     _that.setData({ _visible: false });

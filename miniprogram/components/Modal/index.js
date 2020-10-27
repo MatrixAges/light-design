@@ -70,7 +70,7 @@ Component({
             return {
                 center: {
                     show: 'opacity:1;transform:scale(1);transform-origin:center',
-                    hide: 'opacity:0;transform:scale(0);transform-origin:center'
+                    hide: 'opacity:0;transform:scale(0.8);transform-origin:center'
                 },
                 top: {
                     show: 'transform:translateY(0);',
