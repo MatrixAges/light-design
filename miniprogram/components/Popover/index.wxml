@@ -1,0 +1,45 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
+<view
+      class="fixed_dialog_wrap"
+      catchtouchmove="catchtouchmove"
+      style="z-index:{{zIndex}}"
+      wx:if="{{_visible_dialog_wrap}}"
+>
+      <view
+            class="mask"
+            catchtap="onClose"
+      ></view>
+      <view
+            class="dialog {{_visible_dialog?'visible':'hidden'}}"
+            style="{{position[0]?'top:'+position[0]:''}};{{position[1]?'bottom:'+position[1]:''}};{{position[2]?'left:'+position[2]:''}};{{position[3]?'right:'+position[3]:''}};transform-origin:{{transformOrigin}};background:{{bgColor}};color:{{color}};"
+            catchtap="onActionItem"
+      >
+            <view
+                  class="mark"
+                  style="{{mark[0]?'top:'+mark[0]:''}};{{mark[1]?'bottom:'+mark[1]:''}};{{mark[2]?'left:'+mark[2]:''}};{{mark[3]?'right:'+mark[3]:''}};background:{{bgColor}};"
+            ></view>
+            <button
+                  class="action_item"
+                  wx:for="{{list}}"
+                  wx:key="index"
+                  mark:index="{{index}}"
+                  style="color:{{color}};"
+            >
+                  <view
+                        class="icon_wrap"
+                        wx:if="{{item.icon}}"
+                  >
+                        <image
+                              class="icon_action"
+                              mode="widthFix"
+                              src="{{item.icon}}"
+                        ></image>
+                  </view>
+                  <text class="name" style="border-bottom:2rpx solid {{divideColor}};">{{wxs.formatName(item.name)}}</text>
+            </button>
+      </view>
+</view>

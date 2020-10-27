@@ -1,0 +1,108 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">center</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="default"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Popover
+                              visible="{{visible_default}}"
+                              list="{{list}}"
+                              position="{{['100rpx','','','30rpx']}}"
+                        >
+                        </_Popover>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定位置</text>
+                  <text class="attr">position</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="position"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Popover
+                              visible="{{visible_position}}"
+                              list="{{list}}"
+                              position="{{['100rpx','','30rpx','']}}"
+                        >
+                        </_Popover>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设定标记</text>
+                  <text class="attr">mark</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="mark"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Popover
+                              visible="{{visible_mark}}"
+                              list="{{list}}"
+                              position="{{['100rpx','','30rpx','']}}"
+                              mark="{{['-8rpx','','30rpx','']}}"
+                        >
+                        </_Popover>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">动画原点</text>
+                  <text class="attr">transformOrigin</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="transformOrigin"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Popover
+                              visible="{{visible_transformOrigin}}"
+                              list="{{list}}"
+                              position="{{['100rpx','','30rpx','']}}"
+                              mark="{{['-8rpx','','30rpx','']}}"
+                              transformOrigin="top left"
+                        >
+                        </_Popover>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义颜色</text>
+                  <text class="attr">custom</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="custom"
+                              catchtap="onOption"
+                        >Show</_Button>
+                        <_Popover
+                              visible="{{visible_custom}}"
+                              list="{{list_black}}"
+                              position="{{['100rpx','','','30rpx']}}"
+                              bgColor="whitesmoke"
+                              color="black"
+                              divideColor="#eee"
+                        >
+                        </_Popover>
+                  </view>
+            </view>
+      </view>
+</view>

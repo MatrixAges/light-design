@@ -5,33 +5,33 @@ Component({
             type: Boolean,
             value: false
         },
-        title: {
+        position: {
+            type: Array,
+            value: ['', '', '', '']
+        },
+        mark: {
+            type: Array,
+            value: ['-8rpx', '', '', '30rpx']
+        },
+        transformOrigin: {
             type: String,
-            value: ''
+            value: 'top right'
         },
         list: {
             type: Array,
             value: []
         },
-        scroll: {
-            type: Boolean,
-            value: false
+        bgColor: {
+            type: String,
+            value: 'black'
         },
-        vertical: {
-            type: Boolean,
-            value: false
+        color: {
+            type: String,
+            value: 'white'
         },
-        textOnly: {
-            type: Boolean,
-            value: false
-        },
-        visibleCancel: {
-            type: Boolean,
-            value: false
-        },
-        column: {
-            type: Number,
-            value: 3
+        divideColor: {
+            type: String,
+            value: 'rgba(255, 255, 255, 0.15)'
         },
         zIndex: {
             type: Number,
@@ -41,7 +41,6 @@ Component({
     data: {
         _visible_dialog_wrap: false,
         _visible_dialog: false,
-        _visible_mask: false,
         timer_close: 0
     },
     observers: {
@@ -50,27 +49,15 @@ Component({
             clearTimeout(_that.data.timer_close);
             if (new_val) {
                 _that.setData({ _visible_dialog_wrap: true }, function () {
-                    _that.setData({
-                        _visible_dialog: true,
-                        _visible_mask: true
-                    });
+                    _that.setData({ _visible_dialog: true });
                 });
             }
             else {
-                _that.setData({
-                    _visible_dialog: false,
-                    _visible_mask: false
-                });
+                _that.setData({ _visible_dialog: false });
                 var timer_close = setTimeout(function () {
                     _that.setData({ _visible_dialog_wrap: false });
                 }, 300);
                 _that.setData({ timer_close: timer_close });
-            }
-        },
-        vertical: function (new_val) {
-            var _that = this;
-            if (new_val) {
-                _that.setData({ column: 1 });
             }
         }
     },

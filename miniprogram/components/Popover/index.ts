@@ -9,33 +9,33 @@ Component({
 			type: Boolean,
 			value: false
 		},
-		title: {
+		position: {
+			type: Array,
+			value: [ '', '', '', '' ] // top , bottom , left , right
+		},
+		mark: {
+			type: Array,
+			value: [ '-8rpx', '', '', '30rpx' ] // top , bottom , left , right
+		},
+		transformOrigin: {
 			type: String,
-			value: ''
+			value: 'top right'
 		},
 		list: {
 			type: Array,
 			value: []
 		},
-		scroll: {
-			type: Boolean,
-			value: false
+		bgColor: {
+			type: String,
+			value: 'black'
 		},
-		vertical: {
-			type: Boolean,
-			value: false
-            },
-            textOnly: {
-                  type: Boolean,
-			value: false
-            },
-		visibleCancel: {
-			type: Boolean,
-			value: false
+		color: {
+			type: String,
+			value: 'white'
 		},
-		column: {
-			type: Number,
-			value: 3
+		divideColor: {
+			type: String,
+			value: 'rgba(255, 255, 255, 0.15)'
 		},
 		zIndex: {
 			type: Number,
@@ -45,7 +45,6 @@ Component({
 	data: {
 		_visible_dialog_wrap: false,
 		_visible_dialog: false,
-		_visible_mask: false,
 		timer_close: 0
 	},
 	observers: {
@@ -56,29 +55,16 @@ Component({
 
 			if (new_val) {
 				_that.setData({ _visible_dialog_wrap: true }, () => {
-					_that.setData({
-						_visible_dialog: true,
-						_visible_mask: true
-					})
+					_that.setData({ _visible_dialog: true })
 				})
 			} else {
-				_that.setData({
-					_visible_dialog: false,
-					_visible_mask: false
-				})
+				_that.setData({ _visible_dialog: false })
 
 				const timer_close = setTimeout(() => {
 					_that.setData({ _visible_dialog_wrap: false })
 				}, 300)
 
 				_that.setData({ timer_close })
-			}
-		},
-		vertical (new_val) {
-			const _that = this
-
-			if (new_val) {
-				_that.setData({ column: 1 })
 			}
 		}
 	},
@@ -88,7 +74,7 @@ Component({
 			const _that = this
 			const { mark: { index } } = e
 
-			if (index===undefined) return
+			if (index === undefined) return
 
 			_that.setData({ visible: false })
 

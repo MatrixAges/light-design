@@ -1,0 +1,7 @@
+function formatName(name) {
+      return name.substring(0,5)
+}
+
+module.exports = {
+      formatName:formatName
+}

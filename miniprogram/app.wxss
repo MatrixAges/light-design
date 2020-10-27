@@ -13,7 +13,7 @@
   border-bottom: 2rpx solid var(--color_border);
 }
 .example_items .example_item .title_wrap {
-  width: 180rpx;
+  width: 200rpx;
   line-height: 1;
 }
 .example_items .example_item .title_wrap .attr {
@@ -22,6 +22,6 @@
   margin-top: 10rpx;
 }
 .example_items .example_item .examples {
-  width: calc(100% -  180rpx);
+  width: calc(100% -  200rpx);
   box-sizing: border-box;
 }
