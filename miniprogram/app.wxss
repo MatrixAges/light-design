@@ -3,25 +3,36 @@
 @import './styles/vars.wxss';
 .example_items {
   padding: 36px;
-  padding-right: 0;
 }
 .example_items .example_item {
+  flex-direction: column;
   padding: 48rpx 0;
-  padding-right: 36px;
-  border-radius: 8rpx;
+  border-radius: 0rpx;
   background-color: white;
   border-bottom: 2rpx solid var(--color_border);
 }
 .example_items .example_item .title_wrap {
-  width: 200rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   line-height: 1;
+  margin-bottom: 36rpx;
+}
+.example_items .example_item .title_wrap .title {
+  font-weight: 500;
 }
 .example_items .example_item .title_wrap .attr {
   font-size: 26rpx;
   color: var(--color_text_desc);
-  margin-top: 10rpx;
 }
 .example_items .example_item .examples {
-  width: calc(100% -  200rpx);
+  width: 100%;
+  padding: 24rpx;
   box-sizing: border-box;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+.example_items .example_item .examples .example {
+  padding: 12rpx;
 }

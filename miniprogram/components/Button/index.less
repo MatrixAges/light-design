@@ -1,11 +1,11 @@
-@color_main: #222;
+@color_main: black;
 @color_success: #52c41a;
 @color_warning: #faad14;
 @color_error: #d62d0e;
 @loading_size_small: 12;
 @loading_size_normal: 15;
 @loading_size_large: 20;
-@radius_normal: 12rpx;
+@radius_normal: 8rpx;
 
 @keyframes loadingCircle {
       from {
@@ -174,12 +174,14 @@
       }
 
       &.type_default {
-            background-color: whitesmoke;
-            color: #222;
+            background-color: white;
+            color: black;
+            border: 2rpx solid whitesmoke;
 
             &.ghost {
                   background-color: transparent;
                   color: black;
+                  border: none;
             }
       }
 

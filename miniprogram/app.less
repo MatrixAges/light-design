@@ -4,31 +4,42 @@
 
 .example_items {
       padding: 36px;
-      padding-right: 0;
 
       .example_item {
+            flex-direction: column;
             padding: 48rpx 0;
-            padding-right: 36px;
-            border-radius: 8rpx;
+            border-radius: 0rpx;
             background-color: white;
             border-bottom: 2rpx solid var(--color_border);
 
-            @width_title: 200rpx;
-
             .title_wrap {
-                  width: @width_title;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 100%;
                   line-height: 1;
+                  margin-bottom: 36rpx;
+
+                  .title{
+                        font-weight: 500;
+                  }
 
                   .attr {
                         font-size: 26rpx;
                         color: var(--color_text_desc);
-                        margin-top: 10rpx;
                   }
             }
 
             .examples {
-                  width: calc(~'100% - '@width_title);
+                  width: 100%;
+                  padding: 24rpx;
                   box-sizing: border-box;
+                  background-color: whitesmoke;
+                  justify-content: center;
+
+                  .example{
+                        padding: 12rpx;
+                  }
             }
       }
 }

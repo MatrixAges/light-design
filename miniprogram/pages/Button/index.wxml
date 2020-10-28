@@ -5,25 +5,25 @@
                   <text class="attr">type</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="primary">primary</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="success">success</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="warning">warning</_Button>
                   </view>
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button type="error">error</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="default">default</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="border">border</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button type="dashed">dashed</_Button>
                   </view>
             </view>
@@ -34,31 +34,31 @@
                   <text class="attr">ghost</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               type="primary"
                               ghost
                         >primary</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               type="warning"
                               ghost
                         >warning</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               type="success"
                               ghost
                         >success</_Button>
                   </view>
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               type="error"
                               ghost
                         >error</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               type="default"
                               ghost
@@ -72,13 +72,13 @@
                   <text class="attr">size</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               size="large"
                               type="default"
                         >large</_Button>
                   </view>
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               size="normal"
                               type="default"
@@ -98,13 +98,13 @@
                   <text class="attr">shape</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               shape="normal"
                               type="default"
                         >normal</_Button>
                   </view>
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               shape="circle"
                               type="default"
@@ -124,13 +124,13 @@
                   <text class="attr">disabled</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               disabled="{{true}}"
                               type="default"
                         >true</_Button>
                   </view>
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               disabled="{{false}}"
                               type="default"
@@ -158,7 +158,7 @@
                   <text class="attr">loading</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               loading="{{true}}"
                               mode="fixed"
@@ -173,7 +173,7 @@
                   <text class="attr">iconPath</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               mode="padding"
                               iconPath="https://matrixage.github.io/atom.css/assets/images/microsoft.png"
@@ -188,7 +188,7 @@
                   <text class="attr">icon</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               mode="padding"
                               type="default"
@@ -210,7 +210,7 @@
                   <text class="attr">for button</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button type="default">
                               <button
                                     style="background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
@@ -225,7 +225,7 @@
                   <text class="attr">for navigator</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button type="default">
                               <navigator
                                     class="w_100 h_100 flex justify_center align_center"
@@ -241,13 +241,13 @@
                   <text class="attr">mode</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example mr_24 mb_24">
+                  <view class="example">
                         <_Button
                               mode="fixed"
                               type="default"
                         >fixed</_Button>
                   </view>
-                  <view class="example mr_24">
+                  <view class="example">
                         <_Button
                               mode="padding"
                               type="default"
