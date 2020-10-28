@@ -12,10 +12,6 @@ export default [
 		description: '大部分场景下能够使用的组件',
 		components: [
 			{
-				name: 'View',
-				description: '盒子'
-			},
-			{
 				name: 'Text',
 				description: '文字'
                   },
@@ -26,10 +22,6 @@ export default [
 			{
 				name: 'Icon',
 				description: '图标'
-			},
-			{
-				name: 'Scroller',
-				description: '滚动容器'
 			}
 		]
 	},
