@@ -2,25 +2,29 @@
 @import './styles/init.wxss';
 @import './styles/vars.wxss';
 
+page {
+      background-color: #f5f5f5;
+}
+
 .example_items {
-      padding: 36px;
+      padding: 9px;
+      padding-bottom: calc(~'9px + 'env(safe-area-inset-bottom));
 
       .example_item {
+            position: relative;
             flex-direction: column;
-            padding: 48rpx 0;
-            border-radius: 0rpx;
             background-color: white;
             border-bottom: 2rpx solid var(--color_border);
 
             .title_wrap {
                   flex-direction: row;
                   justify-content: space-between;
-                  align-items: center;
                   width: 100%;
+                  padding: 36rpx;
+                  padding-bottom: 0;
                   line-height: 1;
-                  margin-bottom: 36rpx;
 
-                  .title{
+                  .title {
                         font-weight: 500;
                   }
 
@@ -32,12 +36,10 @@
 
             .examples {
                   width: 100%;
-                  padding: 24rpx;
+                  padding: 36rpx 24rpx;
                   box-sizing: border-box;
-                  background-color: whitesmoke;
-                  justify-content: center;
 
-                  .example{
+                  .example {
                         padding: 12rpx;
                   }
             }
