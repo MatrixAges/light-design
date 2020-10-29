@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_default}}"
                               title="分享"
@@ -28,7 +28,7 @@
                         <_Button
                               mark:type="title"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_title}}"
                               list="{{list}}"
@@ -46,7 +46,7 @@
                         <_Button
                               mark:type="scroll"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_scroll}}"
                               title="分享"
@@ -66,7 +66,7 @@
                         <_Button
                               mark:type="vertical"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_vertical}}"
                               list="{{list}}"
@@ -85,7 +85,7 @@
                         <_Button
                               mark:type="textOnly"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_textOnly}}"
                               title="分享"
@@ -107,7 +107,7 @@
                         <_Button
                               mark:type="visibleCancel"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_visibleCancel}}"
                               list="{{list}}"
@@ -127,7 +127,7 @@
                         <_Button
                               mark:type="column"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_ActionSheet
                               visible="{{visible_column}}"
                               title="分享"

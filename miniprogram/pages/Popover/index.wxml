@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Popover
                               visible="{{visible_default}}"
                               list="{{list}}"
@@ -29,7 +29,7 @@
                         <_Button
                               mark:type="position"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Popover
                               visible="{{visible_position}}"
                               list="{{list}}"
@@ -49,7 +49,7 @@
                         <_Button
                               mark:type="mark"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Popover
                               visible="{{visible_mark}}"
                               list="{{list}}"
@@ -70,7 +70,7 @@
                         <_Button
                               mark:type="transformOrigin"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Popover
                               visible="{{visible_transformOrigin}}"
                               list="{{list}}"
@@ -92,7 +92,7 @@
                         <_Button
                               mark:type="custom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Popover
                               visible="{{visible_custom}}"
                               list="{{list_black}}"

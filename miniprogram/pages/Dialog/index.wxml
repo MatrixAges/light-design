@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog visible="{{visible_default}}">
                               结果并不重要，重要的是过程？
                         </_Dialog>
@@ -26,7 +26,7 @@
                         <_Button
                               mark:type="no_title"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               title=""
                               visible="{{visible_no_title}}"
@@ -46,7 +46,7 @@
                         <_Button
                               mark:type="custom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_custom}}"
                               custom
@@ -69,7 +69,7 @@
                         <_Button
                               mark:type="bottom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_bottom}}"
                               bottom
@@ -89,7 +89,7 @@
                         <_Button
                               mark:type="cancelVisible"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_cancelVisible}}"
                               custom
@@ -113,7 +113,7 @@
                         <_Button
                               mark:type="closeVisible"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_closeVisible}}"
                               custom
@@ -137,7 +137,7 @@
                         <_Button
                               mark:type="maskVisible"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_maskVisible}}"
                               maskVisible="{{false}}"
@@ -158,7 +158,7 @@
                         <_Button
                               mark:type="maskClosable"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_maskClosable}}"
                               maskClosable="{{false}}"
@@ -178,7 +178,7 @@
                         <_Button
                               mark:type="bodyStyle"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_bodyStyle}}"
                               bodyStyle="border-radius:0;background-color:red;color:white"
@@ -198,7 +198,7 @@
                         <_Button
                               mark:type="okText"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_okText}}"
                               okText="是的哟～"
@@ -218,7 +218,7 @@
                         <_Button
                               mark:type="cancelText"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Dialog
                               visible="{{visible_cancelText}}"
                               cancelText="～bu bu～"

@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Loading visible="{{visible_default}}"></_Loading>
                   </view>
             </view>
@@ -24,7 +24,7 @@
                         <_Button
                               mark:type="maskVisible"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Loading
                               visible="{{visible_maskVisible}}"
                               maskVisible

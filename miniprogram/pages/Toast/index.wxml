@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Toast
                               visible="{{visible_default}}"
                               title="default Toast"
@@ -27,7 +27,7 @@
                         <_Button
                               mark:type="position"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Toast
                               visible="{{visible_position}}"
                               title="default Toast"
@@ -46,7 +46,7 @@
                         <_Button
                               mark:type="custom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Toast
                               visible="{{visible_custom}}"
                               title="default Toast"
@@ -66,7 +66,7 @@
                         <_Button
                               mark:type="duration"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Toast
                               visible="{{visible_duration}}"
                               title="default Toast"
@@ -84,23 +84,24 @@
                   <view class="example flex flex_wrap">
                         <_Button
                               class="mr_24 mb_24"
+                              type="border"
                               mark:type="default"
                               catchtap="onOption"
                         >default</_Button>
                         <_Button
-                              class="mb_24"
-                              type="success"
+                              class="mr_24 mb_24"
+                              type="border"
                               mark:type="success"
                               catchtap="onOption"
                         >success</_Button>
                         <_Button
-                              class="mr_24"
-                              type="warning"
+                              class="mr_24 mb_24"
+                              type="border"
                               mark:type="warning"
                               catchtap="onOption"
                         >warning</_Button>
                         <_Button
-                              type="error"
+                              type="border"
                               mark:type="error"
                               catchtap="onOption"
                         >error</_Button>
@@ -135,13 +136,13 @@
                               catchtap="onOption"
                         >default</_Button>
                         <_Button
-                              class="mb_24"
+                              class="mr_24 mb_24"
                               type="success"
                               mark:type="useColor_success"
                               catchtap="onOption"
                         >success</_Button>
                         <_Button
-                              class="mr_24"
+                              class="mr_24 mb_24"
                               type="warning"
                               mark:type="useColor_warning"
                               catchtap="onOption"

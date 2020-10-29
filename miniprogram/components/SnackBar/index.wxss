@@ -47,15 +47,15 @@
   color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.success {
-  background-color: #52c41a;
+  background-color: #81C784;
   color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.warning {
-  background-color: #faad14;
+  background-color: #FFB74D;
   color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.error {
-  background-color: #d62d0e;
+  background-color: #E57373;
   color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.mini {

@@ -1,33 +1,42 @@
 @import './styles/atom-miniapp.min.wxss';
 @import './styles/init.wxss';
 @import './styles/vars.wxss';
+page {
+  background-color: var(--color_background);
+}
 .example_items {
+  padding: 36px;
   padding-bottom: calc(0px +  env(safe-area-inset-bottom));
 }
 .example_items .example_item {
   flex-direction: column;
-  border-bottom: 2rpx solid var(--color_border);
+  padding: 36rpx;
+  margin-bottom: 36px;
+  border-top-right-radius: 48rpx;
+  border-bottom-left-radius: 48rpx;
+  background-color: var(--color_background);
+  box-shadow: var(--box_shadow_morphic);
 }
 .example_items .example_item .title_wrap {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 36rpx;
-  padding-bottom: 0;
-  line-height: 1;
+  padding-bottom: 36rpx;
+  border-bottom: 2rpx solid var(--color_border);
 }
 .example_items .example_item .title_wrap .title {
   font-weight: 500;
+  line-height: 1;
 }
 .example_items .example_item .title_wrap .attr {
   font-size: 26rpx;
+  line-height: 1;
   color: var(--color_text_desc);
 }
 .example_items .example_item .examples {
   width: 100%;
-  padding: 36rpx 24rpx;
-  padding-top: 24rpx;
   box-sizing: border-box;
+  padding-top: 36rpx;
 }
 .example_items .example_item .examples .example {
   padding: 12rpx;

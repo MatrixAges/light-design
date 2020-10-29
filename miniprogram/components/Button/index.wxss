@@ -155,31 +155,31 @@
   border: 2rpx dashed #eee;
 }
 .btn.type_warning {
-  background-color: #faad14;
+  background-color: #FFB74D;
   color: white;
 }
 .btn.type_warning.ghost {
-  border: 2rpx solid #faad14;
+  border: 2rpx solid #FFB74D;
   background-color: transparent;
-  color: #faad14;
+  color: #FFB74D;
 }
 .btn.type_success {
-  background-color: #AED581;
+  background-color: #81C784;
   color: white;
 }
 .btn.type_success.ghost {
-  border: 2rpx solid #AED581;
+  border: 2rpx solid #81C784;
   background-color: transparent;
-  color: #AED581;
+  color: #81C784;
 }
 .btn.type_error {
-  background-color: #d62d0e;
+  background-color: #E57373;
   color: white;
 }
 .btn.type_error.ghost {
-  border: 2rpx solid #d62d0e;
+  border: 2rpx solid #E57373;
   background-color: transparent;
-  color: #d62d0e;
+  color: #E57373;
 }
 .btn.shape_circle {
   border-radius: 300rpx;

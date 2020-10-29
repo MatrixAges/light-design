@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal visible="{{visible_default}}">
                               <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
                         </_Modal>
@@ -26,7 +26,7 @@
                         <_Button
                               mark:type="top"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_top}}"
                               position="top"
@@ -46,7 +46,7 @@
                         <_Button
                               mark:type="bottom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_bottom}}"
                               position="bottom"
@@ -66,7 +66,7 @@
                         <_Button
                               mark:type="left"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_left}}"
                               position="left"
@@ -86,7 +86,7 @@
                         <_Button
                               mark:type="right"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_right}}"
                               position="right"
@@ -106,7 +106,7 @@
                         <_Button
                               mark:type="maskVisible"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_maskVisible}}"
                               maskVisible="{{false}}"
@@ -126,7 +126,7 @@
                         <_Button
                               mark:type="maskClosable"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Modal
                               visible="{{visible_maskClosable}}"
                               maskClosable="{{false}}"

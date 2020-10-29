@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_DialogQueue
                               visible="{{visible_default}}"
                               list="{{list}}"

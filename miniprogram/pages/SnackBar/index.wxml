@@ -9,7 +9,7 @@
                         <_Button
                               mark:type="default"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_default}}"
                               title="更多内容请登录"
@@ -29,7 +29,7 @@
                         <_Button
                               mark:type="description"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_description}}"
                               title="更多内容请登录"
@@ -48,7 +48,7 @@
                         <_Button
                               mark:type="autoClose"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_autoClose}}"
                               title="更多内容请登录"
@@ -69,7 +69,7 @@
                         <_Button
                               mark:type="duration"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_duration}}"
                               title="更多内容请登录"
@@ -91,7 +91,7 @@
                         <_Button
                               mark:type="position"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_position}}"
                               title="更多内容请登录"
@@ -112,7 +112,7 @@
                         <_Button
                               mark:type="bottom"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_bottom}}"
                               title="更多内容请登录"
@@ -133,7 +133,7 @@
                         <_Button
                               mark:type="mini"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_mini}}"
                               title="更多内容请登录"
@@ -154,7 +154,7 @@
                         <_Button
                               mark:type="slot"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_slot}}"
                               title="您的账户余额不足，请尽快充值"
@@ -182,7 +182,7 @@
                         <_Button
                               mark:type="cover"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_cover}}"
                               title="更多内容请登录"
@@ -203,7 +203,7 @@
                         <_Button
                               mark:type="composition"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_composition}}"
                               title="您的账户余额不足，请尽快充值"
@@ -233,7 +233,7 @@
                         <_Button
                               mark:type="styles"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_SnackBar
                               visible="{{visible_styles}}"
                               title="您的账户余额不足，请尽快充值"
@@ -263,18 +263,18 @@
             <view class="examples flex flex_wrap">
                   <view class="example flex flex_wrap">
                         <_Button
-                              class="mr_24"
+                              class="mr_24 mb_24"
                               mark:type="type_none"
                               catchtap="onOption"
-                        >Show</_Button>
+                        >显示</_Button>
                         <_Button
-                              class="mr_24"
+                              class="mr_24 mb_24"
                               type="success"
                               mark:type="type_success"
                               catchtap="onOption"
                         >success</_Button>
                         <_Button
-                              class="mr_24"
+                              class="mr_24 mb_24"
                               type="warning"
                               mark:type="type_warning"
                               catchtap="onOption"
