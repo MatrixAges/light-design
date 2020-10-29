@@ -1,0 +1,24 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">default</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example" style="height: 300vh;">
+                        <_Sticky>
+                              <_Card
+                                    title="Primary"
+                                    width="100%"
+                                    bgColor="red"
+                                    color="white"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.
+                              </_Card>
+                        </_Sticky>
+                  </view>
+            </view>
+      </view>
+</view>

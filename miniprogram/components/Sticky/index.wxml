@@ -1,0 +1,3 @@
+<view class="sticky_wrap">
+     <slot></slot>
+</view>

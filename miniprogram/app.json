@@ -11,7 +11,8 @@
             "pages/SnackBar/index",
             "pages/Ripple/index",
             "pages/Toast/index",
-            "pages/Popover/index"
+            "pages/Popover/index",
+            "pages/Sticky/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -33,6 +34,7 @@
             "_Ripple": "/components/Ripple/index",
             "_Line": "/components/Line/index",
             "_Toast": "/components/Toast/index",
-            "_Popover": "/components/Popover/index"
+            "_Popover": "/components/Popover/index",
+            "_Sticky": "/components/Sticky/index"
       }
 }

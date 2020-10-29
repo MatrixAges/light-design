@@ -133,6 +133,13 @@
         {
           "name": "pages/Popover/index",
           "pathName": "pages/Popover/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Sticky/index",
+          "pathName": "pages/Sticky/index",
+          "query": "",
           "scene": null
         }
       ]

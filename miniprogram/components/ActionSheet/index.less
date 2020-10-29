@@ -49,6 +49,7 @@
                   flex-direction: column;
                   transition: all ease 0.3s;
                   background-color: white;
+                  overflow: hidden;
                   border-radius: 40rpx;
                   border-bottom-left-radius: 0;
                   border-bottom-right-radius: 0;
@@ -65,17 +66,17 @@
                         padding-bottom: calc(~'0rpx + 'env(safe-area-inset-bottom));
 
                         &.textOnly {
-                              padding: 24rpx;
-                              padding-bottom: calc(~'24rpx + 'env(safe-area-inset-bottom));
-                              background-color: whitesmoke;
+                              padding: 0rpx;
                         }
 
                         .action_items {
                               max-height: 60vh;
+                              border-bottom:2rpx solid #eee ;
 
                               .action_item {
                                     width: 100%;
                                     padding: 18rpx 48rpx;
+                                    border-radius: 0;
 
                                     &.textOnly {
                                           padding: 40rpx 48rpx;
@@ -190,7 +191,7 @@
 
                   .btn_cancel {
                         width: 100%;
-                        height: 88rpx;
+                        height: 116rpx;
                         display: flex;
                         justify-content: center;
                         align-content: center;
@@ -208,8 +209,8 @@
 
                         &.textOnly {
                               background-color: white;
-                              margin-top: 18rpx;
-                              border-radius: 88rpx;
+                              border-radius: 0;
+                              border-top: 18rpx solid whitesmoke;
                         }
                   }
             }

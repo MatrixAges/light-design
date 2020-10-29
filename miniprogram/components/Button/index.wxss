@@ -164,13 +164,13 @@
   color: #faad14;
 }
 .btn.type_success {
-  background-color: #52c41a;
+  background-color: #AED581;
   color: white;
 }
 .btn.type_success.ghost {
-  border: 2rpx solid #52c41a;
+  border: 2rpx solid #AED581;
   background-color: transparent;
-  color: #52c41a;
+  color: #AED581;
 }
 .btn.type_error {
   background-color: #d62d0e;
