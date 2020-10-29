@@ -1,17 +1,11 @@
 @import './styles/atom-miniapp.min.wxss';
 @import './styles/init.wxss';
 @import './styles/vars.wxss';
-page {
-  background-color: #f5f5f5;
-}
 .example_items {
-  padding: 9px;
-  padding-bottom: calc(9px +  env(safe-area-inset-bottom));
+  padding-bottom: calc(0px +  env(safe-area-inset-bottom));
 }
 .example_items .example_item {
-  position: relative;
   flex-direction: column;
-  background-color: white;
   border-bottom: 2rpx solid var(--color_border);
 }
 .example_items .example_item .title_wrap {
@@ -32,6 +26,7 @@ page {
 .example_items .example_item .examples {
   width: 100%;
   padding: 36rpx 24rpx;
+  padding-top: 24rpx;
   box-sizing: border-box;
 }
 .example_items .example_item .examples .example {

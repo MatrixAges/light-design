@@ -12,7 +12,8 @@ exports.default = [
             },
             {
                 name: 'Line',
-                description: '线条'
+                description: '线条',
+                active: true
             },
             {
                 name: 'Icon',
@@ -42,7 +43,8 @@ exports.default = [
         components: [
             {
                 name: 'Button',
-                description: '按钮'
+                description: '按钮',
+                active: true
             },
             {
                 name: 'Form',
@@ -84,20 +86,14 @@ exports.default = [
         description: '用于展示内容的组件',
         components: [
             {
-                name: 'Title',
-                description: '标题'
+                name: 'Loading',
+                description: '加载中',
+                active: true
             },
             {
                 name: 'Card',
-                description: '卡片'
-            },
-            {
-                name: 'Loading',
-                description: '加载中'
-            },
-            {
-                name: 'Tips',
-                description: '提示'
+                description: '卡片',
+                active: true
             },
             {
                 name: 'Tab',
@@ -168,27 +164,33 @@ exports.default = [
         components: [
             {
                 name: 'ActionSheet',
-                description: '抽屉'
+                description: '抽屉',
+                active: true
             },
             {
                 name: 'Dialog',
-                description: '对话框'
+                description: '对话框',
+                active: true
             },
             {
                 name: 'DialogQueue',
-                description: '对话框队列'
+                description: '对话框队列',
+                active: true
             },
             {
                 name: 'Modal',
-                description: '弹层'
+                description: '弹层',
+                active: true
             },
             {
                 name: 'Toast',
-                description: '消息提示'
+                description: '消息提示',
+                active: true
             },
             {
                 name: 'SnackBar',
-                description: '提示栏'
+                description: '提示栏',
+                active: true
             },
             {
                 name: 'NoticeBar',
@@ -197,11 +199,13 @@ exports.default = [
             {
                 name: 'Popover',
                 description: '弹框',
-                memo: '参考微信右上角加号点出的弹框'
+                memo: '参考微信右上角加号点出的弹框',
+                active: true
             },
             {
                 name: 'Ripple',
-                description: '水波纹'
+                description: '水波纹',
+                active: true
             }
         ]
     },

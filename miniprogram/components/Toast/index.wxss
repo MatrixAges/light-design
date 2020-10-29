@@ -24,7 +24,7 @@
   align-items: center;
   padding: 24rpx 30rpx;
   border-radius: 100rpx;
-  background-color: #222;
+  background-color: black;
   color: white;
   font-size: 26rpx;
   line-height: 1;

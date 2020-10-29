@@ -43,8 +43,8 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 24rpx;
-  background-color: whitesmoke;
-  color: rgba(0, 0, 0, 0.6);
+  background-color: black;
+  color: white;
 }
 .fixed_dialog_wrap .dialog .content_wrap.success {
   background-color: #52c41a;

@@ -263,12 +263,12 @@
             <view class="examples flex flex_wrap">
                   <view class="example flex flex_wrap">
                         <_Button
-                              class="mb_24 mr_24"
+                              class="mr_24"
                               mark:type="type_none"
                               catchtap="onOption"
                         >Show</_Button>
                         <_Button
-                              class="mb_24"
+                              class="mr_24"
                               type="success"
                               mark:type="type_success"
                               catchtap="onOption"

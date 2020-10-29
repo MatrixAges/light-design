@@ -164,10 +164,10 @@
                                     slot="option"
                                     mode="widthFix"
                                     src="/image/icon_right.svg"
-                                    style="width: 20rpx;height: 20rpx;"
+                                    style="width: 24rpx;height: 24rpx;"
                               ></image>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
+                              阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
                         </_Card>
                   </view>
             </view>
@@ -185,10 +185,9 @@
                               noPadding
                         >
                               <view
-                                    class="font_bold bg_color_222 white"
                                     slot="title"
-                                    style="padding: 30rpx 48rpx;font-size: 32rpx;"
-                              >自定义标题</view>
+                                    style="padding: 24rpx 48rpx;font-size: 32rpx;border: 2rpx solid var(--color_border);border-bottom: none;"
+                              >标题</view>
                               <view
                                     class="text_justify"
                                     style="padding: 36rpx 48rpx;"
