@@ -58,7 +58,7 @@
   transform: translateY(120%);
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.vertical {
-  padding: 0 24rpx;
+  padding: 0 0rpx;
   padding-bottom: calc(0rpx +  env(safe-area-inset-bottom));
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.vertical.textOnly {
@@ -74,7 +74,7 @@
   margin-bottom: 0;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items {
-  max-height: 60vh;
+  max-height: 80vh;
 }
 .fixed_dialog_wrap .dialog_wrap .dialog.vertical .action_items .action_item {
   width: 100%;
@@ -188,7 +188,7 @@
   color: black;
   line-height: 1;
   border: none;
-  border-radius: 12rpx;
+  border-radius: 0;
   background-color: transparent;
   border-top: 2rpx solid whitesmoke;
 }
@@ -198,6 +198,5 @@
 .fixed_dialog_wrap .dialog_wrap .dialog .btn_cancel.textOnly {
   height: 100rpx;
   background-color: white;
-  border-radius: 0;
   border-top: 12rpx solid whitesmoke;
 }

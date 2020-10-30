@@ -1,3 +1,12 @@
-<view class="sticky_wrap">
-     <slot></slot>
+<view
+      id="sticky"
+      class="sticky_wrap"
+      style="{{fixed?'height:'+height+'px;'+'z-index:'+zIndex:''}}"
+>
+      <view
+            class="{{fixed?'fixed':''}}"
+            style="{{fixed?'top:'+offsetTop+'px':''}}"
+      >
+            <slot></slot>
+      </view>
 </view>

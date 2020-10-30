@@ -1,4 +1,4 @@
-// inspired by geist-ui component button
+// inspired by geist-ui component button 😊
 
 const default_styles = `
       left: '';

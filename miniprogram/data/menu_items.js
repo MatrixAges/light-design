@@ -8,7 +8,8 @@ exports.default = [
         components: [
             {
                 name: 'Text',
-                description: '文字'
+                description: '文字',
+                active: true
             },
             {
                 name: 'Line',

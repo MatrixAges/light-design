@@ -13,7 +13,8 @@ export default [
 		components: [
 			{
 				name: 'Text',
-				description: '文字'
+				description: '文字',
+				active: true
 			},
 			{
 				name: 'Line',
@@ -94,11 +95,11 @@ export default [
 				name: 'Loading',
 				description: '加载中',
 				active: true
-                  },
-                  {
+			},
+			{
 				name: 'Card',
-                        description: '卡片',
-                        active: true
+				description: '卡片',
+				active: true
 			},
 			{
 				name: 'Tab',
