@@ -8,6 +8,10 @@ type Toastenum_type = 'success' | 'warning' | 'error'
 type ToastIgetPositionStyle = { [key in Toastenum_position]: IPositionStyle }
 
 Component({
+      options: {
+		//@ts-ignore
+		pureDataPattern: /^visible$/
+	},
 	properties: {
 		visible: {
 			type: Boolean,

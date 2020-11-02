@@ -8,6 +8,10 @@ type SnackBar_type = 'success' | 'warning' | 'error'
 type SnackBar_IgetPositionStyle = { [key in SnackBar_position]: IPositionStyle }
 
 Component({
+      options: {
+		//@ts-ignore
+		pureDataPattern: /^visible$/
+	},
 	properties: {
 		visible: {
 			type: Boolean,

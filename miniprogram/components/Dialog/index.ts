@@ -1,4 +1,8 @@
 Component({
+      options: {
+		//@ts-ignore
+		pureDataPattern: /^visible$/
+	},
 	properties: {
 		custom: {
 			type: Boolean,
