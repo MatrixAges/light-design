@@ -1,5 +1,8 @@
 "use strict";
 Component({
+    options: {
+        pureDataPattern: /^visible$/
+    },
     properties: {
         visible: {
             type: Boolean,

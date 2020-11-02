@@ -1,4 +1,4 @@
-page{
+page {
       background-color: transparent;
 }
 
@@ -23,21 +23,26 @@ page{
 
                   .components {
                         .component {
-                              padding: 16px 0px;
-                              border-bottom: 1px solid var(--color_border);
+                              width: calc(~'(100% - 24rpx) / 2');
+                              padding: 32rpx;
+                              margin-right: 24rpx;
+                              margin-bottom: 24rpx;
+                              border-top-right-radius: 36rpx;
+                              border-bottom-left-radius: 36rpx;
+                              box-shadow: var(--box_shadow_morphic);
+                              background-color: white;
 
-                              .name {
-                                    margin-right: 12px;
+                              &:nth-of-type(2n) {
+                                    margin-right: 0;
+                              }
+
+                              &:active {
+                                    background-color: white;
+                                    box-shadow: var(--box_shadow_morphic_active);
                               }
 
                               .description {
-                                    font-size: 13px;
-                                    color: var(--color_text_desc);
-                              }
-
-                              .mark {
-                                    max-width: 10px;
-                                    opacity: 0.1;
+                                    font-size: 26rpx;
                                     color: var(--color_text_desc);
                               }
                         }

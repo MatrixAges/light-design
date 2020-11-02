@@ -56,7 +56,7 @@ Component({
 		visible (new_val) {
 			const _that = this
 
-			clearTimeout(_that.data.timer_close)
+                  clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData({ _visible_dialog_wrap: true }, () => {

@@ -19,9 +19,9 @@
                               ></image>
                         </view>
                   </view>
-                  <view class="components w_100 border_box flex flex_column">
+                  <view class="components w_100 border_box flex flex_wrap">
                         <navigator
-                              class="component w_100 border_box flex justify_between align_center"
+                              class="component w_100 border_box flex flex_column"
                               wx:for="{{item.components}}"
                               wx:key="idx"
                               wx:for-item="it"
@@ -29,16 +29,10 @@
                               url="{{'/pages/'+it.name+'/index'}}"
                               wx:if="{{it.active}}"
                         >
-                              <view class="left flex align_end">
+                              <view class="left flex flex_column">
                                     <span class="name"> {{it.name}}</span>
                                     <span class="description"> {{it.description}}</span>
                               </view>
-                              <image
-                                    class="mark"
-                                    mode="widthFix"
-                                    src="/image/icon_right.svg"
-                                    alt="icon_right"
-                              ></image>
                         </navigator>
                   </view>
             </view>

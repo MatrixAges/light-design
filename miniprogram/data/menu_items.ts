@@ -132,7 +132,8 @@ export default [
 			},
 			{
 				name: 'Sticky',
-				description: '索引列表'
+				description: '粘性布局',
+				active: true
 			},
 			{
 				name: 'Gallery',

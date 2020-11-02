@@ -33,16 +33,25 @@ Component({
         _contentObserver: null,
         _containerObserver: null
     },
+    observers: {
+        disabled: function (new_val) {
+            if (!this._attached)
+                return;
+            new_val ? this.disconnectObserver() : this.initObserver();
+        }
+    },
     lifetimes: {
         attached: function () {
             var _this = this;
+            this.data._attached = true;
+            if (this.data.disabled)
+                return;
             if (this.data.container) {
                 this.data._container = function () {
                     return wx.createSelectorQuery().select(_this.data.container);
                 };
                 this.observerContainer();
             }
-            this.data._attached = true;
             this.initObserver();
         },
         detached: function () {
@@ -91,7 +100,9 @@ Component({
             });
             _contentObserver.relativeToViewport({ top: -offsetTop });
             _contentObserver.observe(target, function (res) {
-                return _that.setFixed(res.boundingClientRect.top);
+                if (_that.data.disabled)
+                    return;
+                _that.setFixed(res.boundingClientRect.top);
             });
             _that.data._contentObserver = _contentObserver;
         },
@@ -115,6 +126,8 @@ Component({
                         top: _containerHeight - height - offsetTop - _relativeTop
                     });
                     _containerObserver.observe(target, function (res) {
+                        if (_that.data.disabled)
+                            return;
                         _that.setFixed(res.boundingClientRect.top);
                     });
                     _that.data._relativeTop = _relativeTop;
