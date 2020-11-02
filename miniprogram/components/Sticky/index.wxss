@@ -1,0 +1,7 @@
+.sticky_wrap {
+  position: relative;
+}
+.sticky_wrap .fixed {
+  position: fixed;
+  top: 0;
+}

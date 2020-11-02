@@ -1,0 +1,35 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">default</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="default"
+                              catchtap="onOption"
+                        >显示</_Button>
+                        <_Loading visible="{{visible_default}}"></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">显示遮罩</text>
+                  <text class="attr">maskVisible</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="maskVisible"
+                              catchtap="onOption"
+                        >显示</_Button>
+                        <_Loading
+                              visible="{{visible_maskVisible}}"
+                              maskVisible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+</view>

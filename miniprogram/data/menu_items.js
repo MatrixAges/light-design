@@ -87,6 +87,11 @@ exports.default = [
         description: '用于展示内容的组件',
         components: [
             {
+                name: 'Landing',
+                description: '页面加载',
+                active: true
+            },
+            {
                 name: 'Loading',
                 description: '加载中',
                 active: true

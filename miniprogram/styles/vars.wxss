@@ -1,4 +1,9 @@
 page {
+  --height_button: 88rpx;
+  --color_main: black;
+  --color_success: #81C784;
+  --color_warning: #FFB74D;
+  --color_error: #E57373;
   --width_header: 1000px;
   --width_body: 1000px;
   --radius_button: 6px;

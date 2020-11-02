@@ -1,17 +1,63 @@
 <view class="example_items w_100 border_box flex flex_column">
+      <view class="tips_wrap w_100 border_box flex relative">
+            <image
+                  class="icon_info absolute"
+                  mode="widthFix"
+                  src="/image/icon_info.svg"
+            ></image>
+            <view class="text">Sticky组件的父元素不能为flex，否则Sticky将无法侦测到子元素是否回到可见区域</view>
+      </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example" style="height: 300vh;">
+            <view class="examples flex flex_column">
+                  <view class="example">
                         <_Sticky>
+                              <_Button>默认效果</_Button>
+                        </_Sticky>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">顶部距离</text>
+                  <text class="attr">offsetTop</text>
+            </view>
+            <view class="examples flex flex_column">
+                  <view
+                        class="example"
+                        style="padding-left: 160rpx;"
+                  >
+                        <_Sticky offsetTop="{{30}}">
+                              <_Button>顶部距离</_Button>
+                        </_Sticky>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">指定容器</text>
+                  <text class="attr">container</text>
+            </view>
+            <view class="examples flex flex_column">
+                  <view
+                        id="container"
+                        class="example"
+                        style="height: 650px; background-color: #E0E0E0;"
+                  >
+                        <view style="height: 200px; background-color: #eee;"></view>
+                        <_Sticky
+                              offsetTop="{{30}}"
+                              container="#container"
+                        >
                               <_Card
                                     title="Primary"
-                                    width="100%"
+                                    width="auto"
                                     bgColor="red"
                                     color="white"
+                                    radius="{{8}}"
                               >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
@@ -22,3 +68,5 @@
             </view>
       </view>
 </view>
+
+<view style="height: 100vh;"></view>

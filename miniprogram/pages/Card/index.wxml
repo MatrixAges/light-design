@@ -9,6 +9,7 @@
                         <_Card
                               title="标题"
                               width="100%"
+                              radius="{{8}}"
                               bordered
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -29,6 +30,7 @@
                               width="100%"
                               bgColor="red"
                               color="white"
+                              radius="{{8}}"
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                               ut labore et dolore magna aliqua.
@@ -45,9 +47,10 @@
                   <view class="example">
                         <_Card
                               width="100%"
-                              noPadding
                               bgColor="#222"
                               color="white"
+                              radius="{{8}}"
+                              noPadding
                         >
                               <view
                                     style="padding:30rpx 48rpx;padding-bottom: 24rpx;font-size: 48rpx;font-weight: 200;">
@@ -74,6 +77,7 @@
                         <_Card
                               title="标题"
                               width="100%"
+                              radius="{{8}}"
                               shadow
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -92,9 +96,9 @@
                         <_Card
                               title="标题"
                               width="100%"
+                              radius="{{24}}"
                               shadow
                               bordered
-                              radius="{{24}}"
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                               ut labore et dolore magna aliqua.
@@ -111,6 +115,7 @@
                   <view class="example">
                         <_Card
                               width="100%"
+                              radius="{{8}}"
                               bordered
                               shadow
                               media
@@ -139,8 +144,9 @@
                         <_Card
                               title="标题"
                               width="100%"
-                              bordered
                               color="gray"
+                              radius="{{8}}"
+                              bordered
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                               ut labore et dolore magna aliqua.
@@ -158,6 +164,7 @@
                         <_Card
                               title="标题"
                               width="100%"
+                              radius="{{8}}"
                               bordered
                         >
                               <image
@@ -166,8 +173,10 @@
                                     src="/image/icon_right.svg"
                                     style="width: 24rpx;height: 24rpx;"
                               ></image>
-                              阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
-                              阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
+                              <view class="text_justify">
+                                    阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
+                                    阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
+                              </view>
                         </_Card>
                   </view>
             </view>

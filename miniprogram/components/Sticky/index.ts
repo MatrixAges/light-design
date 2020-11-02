@@ -2,6 +2,7 @@
 
 type BoundingClientRect = WechatMiniprogram.BoundingClientRectCallbackResult
 type IntersectionObserver = WechatMiniprogram.IntersectionObserver
+type NodesRef = WechatMiniprogram.NodesRef
 
 const target = '#sticky'
 
@@ -17,44 +18,60 @@ Component({
 		},
 		zIndex: {
 			type: Number,
-			value: 99
+			value: 100
 		},
 		container: {
-			type: null
+			type: String,
+			value: ''
+		},
+		disabled: {
+			type: Boolean,
+			value: false
 		}
 	},
 	data: {
 		fixed: false,
+		width: 0,
 		height: 0,
 		_attached: false,
 		_relativeTop: 0,
 		_containerHeight: 0,
-		//@ts-ignore
-		contentObserver,
-		//@ts-ignore
-		containerObserver
+		_container: null,
+		_contentObserver: null,
+		_containerObserver: null
 	} as {
 		fixed: boolean
+		width: number
 		height: number
 		_attached: boolean
 		_relativeTop: number
 		_containerHeight: number
-		contentObserver: IntersectionObserver
-		containerObserver: IntersectionObserver
+		_container: (() => NodesRef) | null
+		_contentObserver: IntersectionObserver | null
+		_containerObserver: IntersectionObserver | null
 	},
 	observers: {
-		container (new_val) {
-			if (typeof new_val !== 'function' || !this.data.height) return
+		disabled (new_val) {
+			if (!this._attached) return
 
-			this.observerContainer()
+			new_val ? this.disconnectObserver() : this.initObserver()
 		}
 	},
 	lifetimes: {
-		attached: function attached (){
+		attached () {
 			this.data._attached = true
+
+			if (this.data.disabled) return
+
+			if (this.data.container) {
+				this.data._container = () =>
+					wx.createSelectorQuery().select(this.data.container)
+				this.observerContainer()
+			}
+
 			this.initObserver()
 		},
-		detached: function detached (){
+		detached () {
 			this.data._attached = false
 			this.disconnectObserver()
 		}
@@ -66,16 +83,16 @@ Component({
 			return new Promise((resolve) => {
 				_that
 					.createSelectorQuery()
-					.select('#sticky')
+					.select(target)
 					.boundingClientRect(resolve)
 					.exec()
 			})
 		},
-		getContainerRect: function getContainerRect (){
+		getContainerRect () {
 			const _that = this
-			const ref = _that.data.container()
+			const ref = _that.data._container && _that.data._container()
 
-			return new Promise((resolve) => ref.boundingClientRect(resolve).exec())
+			return new Promise((resolve) => ref && ref.boundingClientRect(resolve).exec())
 		},
 		initObserver () {
 			const _that = this
@@ -83,8 +100,8 @@ Component({
 			_that.disconnectObserver()
 			_that
 				.getRect()
-				.then(({ height }: { height: number }) => {
-					_that.setData({ height })
+				.then(({ width, height }: { width: number; height: number }) => {
+					_that.setData({ width, height })
 					_that.observerContent()
 					_that.observerContainer()
 				})
@@ -92,30 +109,32 @@ Component({
 					console.log(err)
 				})
 		},
-		observerContent: function observerContent (){
+		observerContent () {
 			const _that = this
-			const offsetTop = _that.data.offsetTop
+			const { offsetTop } = _that.data
 
-			_that.disconnectObserver('contentObserver')
+			_that.disconnectObserver('_contentObserver')
 
-			const contentObserver = _that.createIntersectionObserver({
+			const _contentObserver = _that.createIntersectionObserver({
 				thresholds: [ 1 ],
 				initialRatio: 1
 			})
-			contentObserver.relativeToViewport({ top: -offsetTop })
-			contentObserver.observe(target, (res) =>
-				_that.setFixed(res.boundingClientRect.top)
-			)
+			_contentObserver.relativeToViewport({ top: -offsetTop })
+			_contentObserver.observe(target, (res) => {
+				if (_that.data.disabled) return
 
-			_that.data.contentObserver = contentObserver
+				_that.setFixed(res.boundingClientRect.top)
+			})
+
+			_that.data._contentObserver = _contentObserver
 		},
-		observerContainer: function observerContainer (){
+		observerContainer () {
 			const _that = this
 			const { container, height, offsetTop } = _that.data
 
-			if (typeof container !== 'function') return
+			if (!container) return
 
-			_that.disconnectObserver('containerObserver')
+			_that.disconnectObserver('_containerObserver')
 
 			_that.getContainerRect().then((rect: BoundingClientRect) => {
 				_that.getRect(target).then((contentRect: BoundingClientRect) => {
@@ -123,26 +142,28 @@ Component({
 					const _containerTop = rect.top
 					const _containerHeight = rect.height
 					const _relativeTop = _contentTop - _containerTop
-					const containerObserver = _that.createIntersectionObserver({
+					const _containerObserver = _that.createIntersectionObserver({
 						thresholds: [ 1 ],
 						initialRatio: 1
 					})
-					containerObserver.relativeToViewport({
+					_containerObserver.relativeToViewport({
 						top: _containerHeight - height - offsetTop - _relativeTop
 					})
-					containerObserver.observe(target, function (res){
+					_containerObserver.observe(target, (res) => {
+						if (_that.data.disabled) return
+
 						_that.setFixed(res.boundingClientRect.top)
 					})
 
 					_that.data._relativeTop = _relativeTop
 					_that.data._containerHeight = _containerHeight
-					_that.data.containerObserver = containerObserver
+					_that.data._containerObserver = _containerObserver
 				})
 			})
 		},
-		setFixed: function setFixed (top){
+		setFixed (top) {
 			const _that = this
-			const { height, _relativeTop, offsetTop, _containerHeight } = _that.data
+			const { height, offsetTop, _relativeTop, _containerHeight } = _that.data
 
 			const getFixed = () => {
 				if (height && _containerHeight) {
@@ -161,16 +182,16 @@ Component({
 			_that.setData({ fixed })
 			_that.triggerEvent('scroll', { scrollTop: top, isFixed: fixed })
 		},
-		disconnectObserver (observerName: 'contentObserver' | 'containerObserver') {
+		disconnectObserver (observerName: '_contentObserver' | '_containerObserver') {
 			const _that = this
 
 			if (observerName) {
-                        const observer = _that.data[observerName]
-                        
+				const observer = _that.data[observerName]
+
 				observer && observer.disconnect()
 			} else {
-				_that.data.contentObserver.disconnect()
-				_that.data.containerObserver.disconnect()
+				_that.data._contentObserver && _that.data._contentObserver.disconnect()
+				_that.data._containerObserver && _that.data._containerObserver.disconnect()
 			}
 		}
 	}

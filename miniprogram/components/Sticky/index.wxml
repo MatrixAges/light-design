@@ -5,7 +5,7 @@
 >
       <view
             class="{{fixed?'fixed':''}}"
-            style="{{fixed?'top:'+offsetTop+'px':''}}"
+            style="{{fixed?'width:'+width+'px;'+'top:'+offsetTop+'px':''}}"
       >
             <slot></slot>
       </view>

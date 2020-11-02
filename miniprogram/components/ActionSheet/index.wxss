@@ -178,7 +178,7 @@
 }
 .fixed_dialog_wrap .dialog_wrap .dialog .btn_cancel {
   width: 100%;
-  height: 88rpx;
+  height: 90rpx;
   padding: 0;
   display: flex;
   justify-content: center;
