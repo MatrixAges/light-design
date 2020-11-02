@@ -1,7 +1,7 @@
 <view
       id="ripple"
       class="content_wrap"
-      catchtap="trigger"
+      bindtap="trigger"
       bindlongpress="trigger"
       bindtouchend="reset"
 >

@@ -28,7 +28,8 @@ page {
 .menu_items_wrap .menu_items .menu_item .components .component:nth-of-type(2n) {
   margin-right: 0;
 }
-.menu_items_wrap .menu_items .menu_item .components .component:active {
+.menu_items_wrap .menu_items .menu_item .components .component.navigator-hover {
+  opacity: 1;
   background-color: white;
   box-shadow: var(--box_shadow_morphic_active);
 }

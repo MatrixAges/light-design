@@ -21,7 +21,7 @@
                   </view>
                   <view class="components w_100 border_box flex flex_wrap">
                         <navigator
-                              class="component w_100 border_box flex flex_column"
+                              class="component w_100 border_box flex flex_column overflow_hidden"
                               wx:for="{{item.components}}"
                               wx:key="idx"
                               wx:for-item="it"
@@ -29,10 +29,8 @@
                               url="{{'/pages/'+it.name+'/index'}}"
                               wx:if="{{it.active}}"
                         >
-                              <view class="left flex flex_column">
-                                    <span class="name"> {{it.name}}</span>
-                                    <span class="description"> {{it.description}}</span>
-                              </view>
+                              <span class="name"> {{it.name}}</span>
+                              <span class="description"> {{it.description}}</span>
                         </navigator>
                   </view>
             </view>
