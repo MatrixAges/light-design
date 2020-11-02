@@ -6,11 +6,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_Button
-                              mark:type="default"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Loading visible="{{visible_default}}"></_Loading>
+                        <_Loading visible></_Loading>
                   </view>
             </view>
       </view>

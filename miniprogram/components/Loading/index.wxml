@@ -1,11 +1,12 @@
 <view
-      class="loading_wrap {{maskVisible?'maskVisible':''}}"
-      catchtouchmove="catchtouchmove"
-      style="z-index:{{zIndex}}"
+      class="loading_wrap"
       wx:if="{{visible}}"
 >
       <view class="loading">
-            <view class="icon_source_bottom icon_source"></view>
-            <view class="icon_source_top icon_source"></view>
+            <view
+                  class='inner'
+                  style="width:{{40*size}}rpx;height:{{40*size}}rpx"
+            ></view>
+            <view class='text'>loading</view>
       </view>
 </view>

@@ -5,17 +5,12 @@ Component({
             type: Boolean,
             value: false
         },
-        zIndex: {
+        size: {
             type: Number,
-            value: 100
-        },
-        maskVisible: {
-            type: Boolean,
-            value: false
+            value: 1
         }
     },
     methods: {
-        catchtouchmove: function () { },
         onShow: function () {
             var _that = this;
             _that.setData({ visible: true });
