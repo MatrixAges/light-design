@@ -1,7 +1,4 @@
 Component({
-	options: {
-		multipleSlots: true
-	},
 	properties: {
 		p: Boolean,
 		b: Boolean,
