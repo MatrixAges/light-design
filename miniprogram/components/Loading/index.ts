@@ -1,12 +1,46 @@
 Component({
+	options: {
+		//@ts-ignore
+		pureDataPattern: /^visible|delay$/
+	},
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
 		},
+		type: {
+			type: String,
+			value: 'refresh' // refresh | loading | dots | flower | dashboard | heartbeat | taiji
+		},
 		size: {
 			type: Number,
 			value: 1
+		},
+		text: {
+			type: String,
+			value: ''
+		},
+		delay: {
+			type: Number,
+			value: 0
+		}
+	},
+	observers: {
+		visible (new_val) {
+			const _that = this
+			const { delay, timer_show } = _that.data
+
+			clearTimeout(timer_show)
+
+			if (new_val) {
+				const timer_show = setTimeout(() => {
+					_that.setData({ _visible: true })
+				}, delay)
+
+				_that.setData({ timer_show })
+			} else {
+				_that.setData({ _visible: false })
+			}
 		}
 	},
 	methods: {

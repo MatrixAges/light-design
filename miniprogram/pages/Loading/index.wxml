@@ -1,29 +1,138 @@
 <view class="example_items w_100 border_box flex flex_column">
+      <Tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></Tips>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">默认效果</text>
-                  <text class="attr">default</text>
+                  <text class="title">默认</text>
+                  <text class="attr">refresh</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Loading visible></_Loading>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="refresh"
+                              visible
+                        ></_Loading>
                   </view>
             </view>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">显示遮罩</text>
-                  <text class="attr">maskVisible</text>
+                  <text class="title">设定文字</text>
+                  <text class="attr">text</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="maskVisible"
-                              catchtap="onOption"
-                        >显示</_Button>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
                         <_Loading
-                              visible="{{visible_maskVisible}}"
-                              maskVisible
+                              type="refresh"
+                              text="加载中"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">加载中</text>
+                  <text class="attr">loading</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="loading"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">点点</text>
+                  <text class="attr">dots</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="dots"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">花朵儿</text>
+                  <text class="attr">flower</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="flower"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">仪表盘</text>
+                  <text class="attr">dashboard</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="dashboard"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">心跳</text>
+                  <text class="attr">heartbeat</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="heartbeat"
+                              visible
+                        ></_Loading>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">太极</text>
+                  <text class="attr">taiji</text>
+            </view>
+            <view class="examples flex">
+                  <view
+                        class="example w_100 flex justify_center"
+                        style="padding: 72rpx 0;"
+                  >
+                        <_Loading
+                              type="taiji"
+                              visible
                         ></_Loading>
                   </view>
             </view>

@@ -1,0 +1,28 @@
+.tips_wrap {
+      @width_left: 72rpx;
+
+      position: relative;
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 32rpx 36rpx;
+      padding-left: @width_left;
+      margin-bottom: 36px;
+      border-top-right-radius: 48rpx;
+      border-bottom-left-radius: 48rpx;
+      text-align: justify;
+      border-left: 6rpx solid var(--color_warning);
+      box-shadow: var(--box_shadow_morphic);
+
+      .icon_info {
+            position: absolute;
+            top: 36rpx;
+            left: 24rpx;
+            width: 32rpx;
+            height: 32rpx;
+      }
+
+      .text {
+            font-size: 26rpx;
+      }
+}

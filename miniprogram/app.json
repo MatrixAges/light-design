@@ -24,6 +24,7 @@
       "style": "v2",
       "sitemapLocation": "sitemap.json",
       "usingComponents": {
+            "Tips": "/page_components/Tips/index",
             "_Button": "/components/Button/index",
             "_ActionSheet": "/components/ActionSheet/index",
             "_Card": "/components/Card/index",

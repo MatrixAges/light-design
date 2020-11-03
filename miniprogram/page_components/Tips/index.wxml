@@ -1,0 +1,8 @@
+<view class="tips_wrap">
+      <image
+            class="icon_info"
+            mode="widthFix"
+            src="/image/icon_info.svg"
+      ></image>
+      <view class="text">{{text}}</view>
+</view>

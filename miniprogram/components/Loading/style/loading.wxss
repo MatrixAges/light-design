@@ -1,0 +1,40 @@
+@keyframes loading_loading {
+  0% {
+    background: rgba(255, 0, 0, 0.1);
+  }
+  10% {
+    background: rgba(255, 0, 0, 0.6);
+  }
+  40% {
+    background: rgba(255, 0, 0, 0.1);
+  }
+}
+.loading_loading:not(:required) {
+  animation: loading_loading 2000ms 300ms infinite ease-out;
+  background: whitesmoke;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+}
+.loading_loading:not(:required):before,
+.loading_loading:not(:required):after {
+  content: '';
+  background: whitesmoke;
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+.loading_loading:not(:required):before {
+  animation: loading_loading 2000ms 150ms infinite ease-out;
+  left: -32rpx;
+}
+.loading_loading:not(:required):after {
+  animation: loading_loading 2000ms 450ms infinite ease-out;
+  right: -32rpx;
+}

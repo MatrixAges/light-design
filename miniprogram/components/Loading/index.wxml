@@ -1,12 +1,8 @@
 <view
       class="loading_wrap"
-      wx:if="{{visible}}"
+      style="scale: {{size}};"
+      wx:if="{{_visible}}"
 >
-      <view class="loading">
-            <view
-                  class='inner'
-                  style="width:{{40*size}}rpx;height:{{40*size}}rpx"
-            ></view>
-            <view class='text'>loading</view>
-      </view>
+      <view class="loading_{{type}}"></view>
+      <text class="text">{{text}}</text>
 </view>

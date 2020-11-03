@@ -1,12 +1,5 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <view class="tips_wrap w_100 border_box flex relative">
-            <image
-                  class="icon_info absolute"
-                  mode="widthFix"
-                  src="/image/icon_info.svg"
-            ></image>
-            <view class="text">Ripple组件自身没有宽高，需要通过子元素来撑开它</view>
-      </view>
+      <Tips text="Ripple组件自身没有宽高，需要通过子元素来撑开它"></Tips>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>

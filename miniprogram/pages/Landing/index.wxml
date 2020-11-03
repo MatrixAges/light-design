@@ -10,7 +10,7 @@
                               mark:type="default"
                               catchtap="onOption"
                         >显示</_Button>
-                        <_Loading visible="{{visible_default}}"></_Loading>
+                        <_Landing visible="{{visible_default}}"></_Landing>
                   </view>
             </view>
       </view>
@@ -25,10 +25,10 @@
                               mark:type="maskVisible"
                               catchtap="onOption"
                         >显示</_Button>
-                        <_Loading
+                        <_Landing
                               visible="{{visible_maskVisible}}"
                               maskVisible
-                        ></_Loading>
+                        ></_Landing>
                   </view>
             </view>
       </view>

@@ -141,6 +141,11 @@
           "pathName": "pages/Sticky/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/Landing/index",
+          "pathName": "pages/Landing/index",
+          "scene": null
         }
       ]
     }
