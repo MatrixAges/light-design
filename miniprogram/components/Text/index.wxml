@@ -1,22 +1,11 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <view
-      class="card_wrap {{bordered?'bordered':''}} {{shadow?'shadow':''}}"
-      style="width:{{width?width:'100%'}};background:{{bgColor?bgColor:'white'}};border-radius:{{radius?radius+'rpx':0}};color:{{color?color:'black'}};"
+      class="text_wrap {{wxs.getStyles({p,b,i,del,h1,h2,h3,h4,h5,h6,h7,quote,success,warning,error,lineClamp})}}"
+      style="{{color?'color:'+color:''}};{{fontSize?'font-size:'+fontSize:''}};{{textAlign?'text-align:'+textAlign:''}};{{style}}"
 >
-      <view class="card">
-            <slot name="title"></slot>
-            <view
-                  class="title_wrap"
-                  style="border-radius:{{radius?radius+'rpx':0}};border-bottom-left-radius: 0;border-bottom-right-radius: 0;"
-                  wx:if="{{title}}"
-            >
-                  <text class="title">{{title}}</text>
-                  <slot name="option"></slot>
-            </view>
-            <view
-                  class="content {{noPadding?'no_padding':''}} {{title?'has_title':'no_title'}} {{media?'media':''}}"
-                  style="border-radius:{{radius?radius+'rpx':0}};"
-            >
-                  <slot></slot>
-            </view>
-      </view>
+      <slot></slot>
 </view>

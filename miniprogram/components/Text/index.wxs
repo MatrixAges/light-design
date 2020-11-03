@@ -1,0 +1,26 @@
+function getStyles (props){
+	var styles = ''
+
+	if (props.p) styles += ' p'
+	if (props.b) styles += ' b'
+	if (props.i) styles += ' i'
+	if (props.del) styles += ' del'
+	if (props.h1) styles += ' h1'
+	if (props.h2) styles += ' h2'
+	if (props.h3) styles += ' h3'
+	if (props.h4) styles += ' h4'
+	if (props.h5) styles += ' h5'
+	if (props.h6) styles += ' h6'
+	if (props.h7) styles += ' h7'
+	if (props.quote) styles += ' quote'
+	if (props.success) styles += ' success'
+	if (props.warning) styles += ' warning'
+	if (props.error) styles += ' error'
+	if (props.lineClamp) styles += ' line_clamp_' + props.lineClamp
+
+	return styles
+}
+
+module.exports = {
+	getStyles: getStyles
+}

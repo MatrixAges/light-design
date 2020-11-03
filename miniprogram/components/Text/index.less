@@ -1,81 +1,115 @@
+@color_success: #81C784;
+@color_warning: #FFB74D;
+@color_error: #E57373;
+
 .init {
       font-size: 30rpx;
       line-height: 1.6;
       color: black;
 }
 
-.card_wrap {
+.text_wrap {
       .init();
-      
-      display: flex;
-      box-sizing: border-box;
-      width: 100%;
-      background-color: white;
-      overflow: hidden;
 
-      &.bordered {
-            .card {
-                  .title_wrap {
-                        border: 2rpx solid rgba(245, 245, 245, 0.72);
-                        border-bottom: none;
-
-                  }
-
-                  .content {
-                        border: 2rpx solid rgba(245, 245, 245, 0.72);
-                        border-top: none;
-                  }
-            }
+      &.p {
+            display: inline-block;
+            margin: 16rpx 0;
+            line-height: 1.8;
       }
 
-      &.shadow {
-            box-shadow: 0 0 30rpx #eee;
+      &.b {
+            font-weight: bold;
       }
 
-      .card {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+      &.i {
+            font-style: italic;
+      }
 
-            .title_wrap {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  width: 100%;
-                  padding: 0 48rpx;
-                  padding-top: 48rpx;
-                  box-sizing: border-box;
+      &.del {
+            text-decoration: line-through;
+      }
 
-                  .title {
-                        font-size: 32rpx;
-                  }
-            }
+      &.h7 {
+            font-size: 0.6em;
+      }
 
-            .content {
-                  width: 100%;
-                  padding: 48rpx;
-                  padding-top: 24rpx;
-                  box-sizing: border-box;
+      &.h6 {
+            font-size: 0.8em;
+      }
 
-                  &.no_padding {
-                        padding: 0;
-                  }
+      &.h5 {
+            font-size: 1em;
+      }
 
-                  &.has_title {
-                        border-top-left-radius: 0;
-                        border-top-right-radius: 0;
-                  }
+      &.h4 {
+            font-size: 1.2em;
+      }
 
-                  &.no_title {
-                        border-top: 2rpx solid rgba(245, 245, 245, 0.72);
-                  }
+      &.h3 {
+            font-size: 1.5em;
+      }
 
-                  &.media {
-                        padding: 36rpx 48rpx;
-                        border-top-left-radius: 0;
-                        border-top-right-radius: 0;
-                        border-top: none;
-                  }
-            }
+      &.h2 {
+            font-size: 1.8em;
+      }
+
+      &.h1 {
+            font-size: 2.1em;
+      }
+
+      &.quote {
+            box-sizing: border-box;
+            padding: 24rpx;
+            background-color: whitesmoke;
+            font-size: 0.9em;
+            color: #888;
+      }
+
+      &.success {
+            color: @color_success;
+      }
+
+      &.warning {
+            color: @color_warning;
+      }
+
+      &.error {
+            color: @color_error;
+      }
+
+      &.line_clamp_1 {
+            display: block;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            white-space: nowrap
+      }
+
+      &.line_clamp_2 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 2
+      }
+
+      &.line_clamp_3 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 3
+      }
+
+      &.line_clamp_4 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 4
+      }
+
+      &.line_clamp_5 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 5
       }
 }

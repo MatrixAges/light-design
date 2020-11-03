@@ -13,7 +13,8 @@
             "pages/Ripple/index",
             "pages/Toast/index",
             "pages/Popover/index",
-            "pages/Sticky/index"
+            "pages/Sticky/index",
+            "pages/Text/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -38,6 +39,7 @@
             "_Line": "/components/Line/index",
             "_Toast": "/components/Toast/index",
             "_Popover": "/components/Popover/index",
-            "_Sticky": "/components/Sticky/index"
+            "_Sticky": "/components/Sticky/index",
+            "_Text": "/components/Text/index"
       }
 }
