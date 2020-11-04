@@ -1,6 +1,11 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <view
-      class="card_wrap {{bordered?'bordered':''}} {{shadow?'shadow':''}}"
-      style="width:{{width?width:'100%'}};background:{{bgColor?bgColor:'white'}};border-radius:{{radius?radius+'rpx':0}};color:{{color?color:'black'}};"
+      class="card_wrap {{wxs.getClasses({bordered,shadow})}}"
+      style="{{wxs.getStyles({width,color,bgColor,radius})}}"
 >
       <view class="card">
             <slot name="title"></slot>

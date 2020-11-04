@@ -1,26 +1,37 @@
+function getClasses (props){
+	var classes = ''
+
+	if (props.p) classes += ' p'
+	if (props.b) classes += ' b'
+	if (props.i) classes += ' i'
+	if (props.del) classes += ' del'
+	if (props.h1) classes += ' h1'
+	if (props.h2) classes += ' h2'
+	if (props.h3) classes += ' h3'
+	if (props.h4) classes += ' h4'
+	if (props.h5) classes += ' h5'
+	if (props.h6) classes += ' h6'
+	if (props.h7) classes += ' h7'
+	if (props.quote) classes += ' quote'
+	if (props.success) classes += ' success'
+	if (props.warning) classes += ' warning'
+	if (props.error) classes += ' error'
+	if (props.lineClamp) classes += ' line_clamp_' + props.lineClamp
+
+	return classes
+}
+
 function getStyles (props){
 	var styles = ''
 
-	if (props.p) styles += ' p'
-	if (props.b) styles += ' b'
-	if (props.i) styles += ' i'
-	if (props.del) styles += ' del'
-	if (props.h1) styles += ' h1'
-	if (props.h2) styles += ' h2'
-	if (props.h3) styles += ' h3'
-	if (props.h4) styles += ' h4'
-	if (props.h5) styles += ' h5'
-	if (props.h6) styles += ' h6'
-	if (props.h7) styles += ' h7'
-	if (props.quote) styles += ' quote'
-	if (props.success) styles += ' success'
-	if (props.warning) styles += ' warning'
-	if (props.error) styles += ' error'
-	if (props.lineClamp) styles += ' line_clamp_' + props.lineClamp
+	if (props.color) styles += ';color:' + props.color
+	if (props.fontSize) styles += ';font-size:' + props.fontSize
+	if (props.textAlign) styles += ';text-align:' + props.textAlign
 
 	return styles
 }
 
 module.exports = {
+	getClasses: getClasses,
 	getStyles: getStyles
 }

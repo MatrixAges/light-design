@@ -1,11 +1,16 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <view
       id="sticky"
       class="sticky_wrap"
-      style="{{fixed?'height:'+height+'px;'+'z-index:'+zIndex:''}}"
+      style="{{wxs.getWrapStyles({fixed,height,zIndex})}}"
 >
       <view
             class="{{fixed?'fixed':''}}"
-            style="{{fixed?'width:'+width+'px;'+'top:'+offsetTop+'px':''}}"
+            style="{{wxs.getContentStyles({fixed,width,offsetTop})}}"
       >
             <slot></slot>
       </view>

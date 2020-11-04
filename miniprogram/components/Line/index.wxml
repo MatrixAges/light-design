@@ -1,11 +1,16 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <view
-      class="line_wrap {{thin?'thin':''}} {{box?'box':''}}"
-      style="width:{{box?'auto':width}};height:{{box?'auto':height}};background-color:{{box?'transparent':color}};border-radius:{{radius}}rpx;"
+      class="line_wrap {{wxs.getClasses({thin,box})}}"
+      style="{{wxs.getStyles({box,width,height,color,radius})}}"
 >
       <slot></slot>
       <view
             class="box {{thin?'thin':''}}"
-            style="border:{{borderSize}}rpx solid {{color}};border-radius:{{radius*(thin?2:1)}}rpx;"
+            style="{{wxs.getContentStyles({borderSize,color,radius,thin})}}"
             wx:if="{{box}}"
       ></view>
 </view>

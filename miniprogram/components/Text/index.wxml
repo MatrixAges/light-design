@@ -4,8 +4,8 @@
 ></wxs>
 
 <view
-      class="text_wrap {{wxs.getStyles({p,b,i,del,h1,h2,h3,h4,h5,h6,h7,quote,success,warning,error,lineClamp})}}"
-      style="{{color?'color:'+color:''}};{{fontSize?'font-size:'+fontSize:''}};{{textAlign?'text-align:'+textAlign:''}};{{style}}"
+      class="text_wrap {{wxs.getClasses({p,b,i,del,h1,h2,h3,h4,h5,h6,h7,quote,success,warning,error,lineClamp})}}"
+      style="{{wxs.getStyles({color,fontSize,textAlign})}};{{style}}"
 >
       <slot></slot>
 </view>

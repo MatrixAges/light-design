@@ -1,0 +1,26 @@
+function getWrapStyles (props){
+	var styles = ''
+
+	if (props.fixed) {
+		styles += ';height:' + props.height + 'px'
+		styles += ';z-index:' + props.zIndex
+	}
+
+	return styles
+}
+
+function getContentStyles (props){
+	var styles = ''
+
+	if (props.fixed) {
+		styles += ';width:' + props.width + 'px'
+		styles += ';top:' + props.offsetTop + 'px'
+	}
+
+	return styles
+}
+
+module.exports = {
+	getWrapStyles: getWrapStyles,
+	getContentStyles: getContentStyles
+}

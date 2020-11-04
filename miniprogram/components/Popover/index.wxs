@@ -1,7 +1,41 @@
-function formatName(name) {
-      return name.substring(0,5)
+function formatName (name){
+	return name.substring(0, 5)
+}
+
+function getDialogStyles (props){
+	var styles = ''
+
+	if (props.position) {
+		if (props.position[0]) styles += ';top:' + props.position[0]
+		if (props.position[1]) styles += ';bottom:' + props.position[1]
+		if (props.position[2]) styles += ';left:' + props.position[2]
+		if (props.position[3]) styles += ';right:' + props.position[3]
+	}
+
+	styles += ';color:' + props.color
+	styles += ';background:' + props.bgColor
+	styles += ';transform-origin:' + props.transformOrigin
+
+	return styles
+}
+
+function getMarkStyles (props){
+	var styles = ''
+
+	if (props.mark) {
+		if (props.mark[0]) styles += ';top:' + props.mark[0]
+		if (props.mark[1]) styles += ';bottom:' + props.mark[1]
+		if (props.mark[2]) styles += ';left:' + props.mark[2]
+		if (props.mark[3]) styles += ';right:' + props.mark[3]
+	}
+
+	styles += ';background:' + props.bgColor
+
+	return styles
 }
 
 module.exports = {
-      formatName:formatName
+	formatName: formatName,
+	getDialogStyles: getDialogStyles,
+	getMarkStyles: getMarkStyles
 }

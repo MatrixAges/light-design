@@ -15,12 +15,12 @@
       ></view>
       <view
             class="dialog {{_visible_dialog?'visible':'hidden'}}"
-            style="{{position[0]?'top:'+position[0]:''}};{{position[1]?'bottom:'+position[1]:''}};{{position[2]?'left:'+position[2]:''}};{{position[3]?'right:'+position[3]:''}};transform-origin:{{transformOrigin}};background:{{bgColor}};color:{{color}};"
+            style="{{wxs.getDialogStyles({position,color,bgColor,transformOrigin})}}"
             catchtap="onActionItem"
       >
             <view
                   class="mark"
-                  style="{{mark[0]?'top:'+mark[0]:''}};{{mark[1]?'bottom:'+mark[1]:''}};{{mark[2]?'left:'+mark[2]:''}};{{mark[3]?'right:'+mark[3]:''}};background:{{bgColor}};"
+                  style="{{wxs.getMarkStyles({mark,bgColor})}}"
             ></view>
             <button
                   class="action_item"
@@ -39,7 +39,10 @@
                               src="{{item.icon}}"
                         ></image>
                   </view>
-                  <text class="name" style="border-bottom:2rpx solid {{divideColor}};">{{wxs.formatName(item.name)}}</text>
+                  <text
+                        class="name"
+                        style="border-bottom:2rpx solid {{divideColor}};"
+                  >{{wxs.formatName(item.name)}}</text>
             </button>
       </view>
 </view>

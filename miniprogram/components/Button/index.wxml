@@ -1,7 +1,11 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <button
-      class="btn mode_{{mode}} {{ghost?'ghost':''}} size_{{size}} type_{{type}} shape_{{shape}} {{disabled?'disabled':''}}"
-      style="{{width?'width:'+width:''}};{{height?'height:'+height:''}};{{color?'color:'+color:''}};{{bgColor?'background:'+bgColor:''}}"
-      wx:if="{{!url}}"
+      class="btn {{wxs.getClasses({mode,size,type,shape,ghost,disabled})}}"
+      style="{{wxs.getStyles({width,height,color,bgColor})}}"
 >
       <view
             class="loading"

@@ -1,0 +1,24 @@
+function getClasses (props){
+	var classes = ''
+
+	if (props.bordered) classes += ' bordered'
+	if (props.shadow) classes += ' shadow'
+
+	return classes
+}
+
+function getStyles (props){
+	var styles = ''
+
+      if (props.width) styles += ';width:' + props.width
+	if (props.color) styles += ';color:' + props.color
+	if (props.bgColor) styles += ';background:' + props.bgColor
+      if (props.radius) styles += ';border-radius:' + props.radius + 'rpx'
+
+	return styles
+}
+
+module.exports = {
+	getClasses: getClasses,
+	getStyles: getStyles
+}

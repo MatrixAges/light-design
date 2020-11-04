@@ -1,0 +1,28 @@
+function getClasses (props){
+	var classes = ''
+
+	if (props.mode) classes += ' mode_' + props.mode
+	if (props.size) classes += ' size_' + props.size
+	if (props.type) classes += ' type_' + props.type
+	if (props.shape) classes += ' shape_' + props.shape
+	if (props.ghost) classes += ' ghost'
+	if (props.disabled) classes += ' disabled'
+
+	return classes
+}
+
+function getStyles (props){
+	var styles = ''
+
+	if (props.width) styles += ';width:' + props.width
+	if (props.height) styles += ';height:' + props.height
+	if (props.color) styles += ';color:' + props.color
+	if (props.bgColor) styles += ';background:' + props.bgColor
+
+	return styles
+}
+
+module.exports = {
+	getClasses: getClasses,
+	getStyles: getStyles
+}
