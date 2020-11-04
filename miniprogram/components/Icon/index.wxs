@@ -1,0 +1,14 @@
+function getStyles (props){
+	var styles = ''
+
+	styles += ';width:' + props.size + 'px'
+	styles += ';height:' + props.size + 'px'
+	styles += ';background:' + props.color
+	styles += ';mask-image:url(' + props.src + ')'
+
+	return styles
+}
+
+module.exports = {
+	getStyles:getStyles
+}

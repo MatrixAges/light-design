@@ -23,7 +23,8 @@ export default [
 			},
 			{
 				name: 'Icon',
-				description: '图标'
+				description: '图标',
+				active: true
 			}
 		]
 	},

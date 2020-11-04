@@ -1,0 +1,4 @@
+<view
+      class="icon {{extClass}}"
+      style="{{wxs.getStyles({size,color,src})}}"
+></view>
