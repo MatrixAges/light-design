@@ -1,0 +1,20 @@
+{
+      "packages": [
+            "miniprogram/components/*"
+      ],
+      "version": "independent",
+      "npmClient": "yarn",
+      "useWorkspaces": true,
+      "command": {
+            "publish": {
+                  "ignoreChanges": [
+                        "ignored-file"
+                  ]
+            },
+            "bootstrap": {
+                  "npmClientArgs": [
+                        "--no-package-lock"
+                  ]
+            }
+      }
+}
