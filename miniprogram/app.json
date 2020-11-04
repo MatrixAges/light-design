@@ -14,7 +14,8 @@
             "pages/Toast/index",
             "pages/Popover/index",
             "pages/Sticky/index",
-            "pages/Text/index"
+            "pages/Text/index",
+            "pages/Icon/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -40,6 +41,7 @@
             "_Toast": "/components/Toast/index",
             "_Popover": "/components/Popover/index",
             "_Sticky": "/components/Sticky/index",
-            "_Text": "/components/Text/index"
+            "_Text": "/components/Text/index",
+            "_Icon": "/components/Icon/index"
       }
 }

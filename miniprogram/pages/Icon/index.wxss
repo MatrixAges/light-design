@@ -1,0 +1,7 @@
+.icon_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333333%;
+  padding: 32rpx 0;
+}

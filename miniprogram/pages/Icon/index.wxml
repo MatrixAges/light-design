@@ -1,0 +1,19 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">标题</text>
+                  <text class="attr">h7-h1</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100 border_box flex flex_column">
+                        <view class="icon_wrap">
+                              <_Icon
+                                    icon="add"
+                                    color="black"
+                                    size="{{25}}"
+                              ></_Icon>
+                        </view>
+                  </view>
+            </view>
+      </view>
+</view>

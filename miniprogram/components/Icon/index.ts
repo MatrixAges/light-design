@@ -3,17 +3,12 @@ import data from './data'
 
 const _data: { [key: string]: { [key: string]: string } } = data
 
-const getFixedIconType = function (type: string): string{
-	// 兼容旧版本 typo
-	return type === 'field' ? 'filled' : type
-}
-
 Component({
 	options: {},
 	properties: {
 		type: {
 			type: String,
-			value: 'outline'
+			value: 'outline' // outline | filled
 		},
 		icon: {
 			type: String,
@@ -30,10 +25,10 @@ Component({
 	},
 	observers: {
 		type (v) {
-			this._genSrc(_data[v][getFixedIconType(this.data.type)])
+			this.getSrc(_data[this.data.icon][v])
 		},
 		icon (v) {
-			this._genSrc(_data[this.data.icon][getFixedIconType(v)])
+			this.getSrc(_data[v][this.data.type])
 		}
 	},
 	data: {
@@ -42,8 +37,10 @@ Component({
 		width: 20
 	},
 	methods: {
-		_genSrc (svg) {
-			if (!svg) return
+		getSrc (svg) {
+                  if (!svg) return
+                  
+                  console.log(Base64.encode(svg));
 
 			this.setData({ src: 'data:image/svg+xml;base64,' + Base64.encode(svg) })
 		}

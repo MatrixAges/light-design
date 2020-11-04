@@ -152,6 +152,12 @@
         {
           "name": "pages/Text/index",
           "pathName": "pages/Text/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Icon/index",
+          "pathName": "pages/Icon/index",
           "scene": null
         }
       ]
