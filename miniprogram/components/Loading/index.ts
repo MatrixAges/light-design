@@ -8,9 +8,19 @@ Component({
 			type: Boolean,
 			value: false
 		},
-		type: {
+		type: <{
+			type: StringConstructor
+			value:
+				| 'refresh'
+				| 'loading'
+				| 'dots'
+				| 'flower'
+				| 'dashboard'
+				| 'heartbeat'
+				| 'taiji'
+		}>{
 			type: String,
-			value: 'refresh' // refresh | loading | dots | flower | dashboard | heartbeat | taiji
+			value: 'refresh'
 		},
 		size: {
 			type: Number,

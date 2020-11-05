@@ -1,7 +1,7 @@
 "use strict";
 Component({
     options: {
-        pureDataPattern: /^visible$/
+        pureDataPattern: /^visible|timer_show|timer_close$/
     },
     properties: {
         list: {
@@ -19,29 +19,7 @@ Component({
     },
     data: {
         _visible: false,
-        _list: [
-            {
-                rank: 0,
-                title: '',
-                imgSrc: '',
-                target: '',
-                url: '',
-                appId: '',
-                version: '',
-                path: '',
-                daily: false,
-                durations: [
-                    {
-                        startTime: '2020/8/1 00:00:00',
-                        endTime: '2020/8/2 23:59:59'
-                    },
-                    {
-                        startTime: '2020/8/5 00:00:00',
-                        endTime: '2020/8/7 23:59:59'
-                    }
-                ]
-            }
-        ],
+        _list: [],
         maskBackgroundColor: '',
         style: '',
         current: 0,

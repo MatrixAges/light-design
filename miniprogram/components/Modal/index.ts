@@ -7,16 +7,19 @@ type enum_position = 'center' | 'top' | 'bottom' | 'left' | 'right'
 type IgetPositionStyle = { [key in enum_position]: IPositionStyle }
 
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_show|timer_close$/
 	},
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
 		},
-		position: {
+		position: <{
+			type: StringConstructor
+			value: enum_position
+		}>{
 			type: String,
 			value: 'center'
 		},

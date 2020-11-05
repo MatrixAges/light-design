@@ -1,10 +1,41 @@
+interface IList {
+	rank: number
+	// 排序值 值越大越靠前
+	title: string
+	// 弹窗标题
+	imgSrc: string
+	// 弹窗图片
+	target: string
+	// 跳转类型 同navigator的target 默认为self
+	url: string
+	// 跳转链接 同navigator的url
+	appId: string
+	// appId 同navigator的app-id 仅当target="miniProgram"有效
+	version: string
+	// 版本 同navigator的version 仅当target="miniProgram"有效
+	path: string
+	// 路径 同navigator的path 仅当target="miniProgram"有效
+	daily: boolean
+	// 是否为每日弹窗
+	durations: Array<{
+		startTime: string
+		endTime: string
+	}>
+	// 弹出时间 支持多个
+	// 当daily为true时 格式为18:00:00
+	// 当daily为false时 格式为2020/8/1 00:00:00
+}
+
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_show|timer_close$/
 	},
 	properties: {
-		list: {
+		list: <{
+			type: ArrayConstructor
+			value: Array<IList>
+		}>{
 			type: Array,
 			value: []
 		},
@@ -17,43 +48,18 @@ Component({
 			value: 100
 		}
 	},
-	data: {
+	data: <{
+		_visible: boolean
+		_list: Array<IList>
+		maskBackgroundColor: string
+		style: string
+		current: number
+		indicatorDots: boolean
+		timer_show: number
+		timer_close: number
+	}>{
 		_visible: false,
-		_list: [
-			{
-				rank: 0,
-				// 排序值 值越大越靠前
-				title: '',
-				// 弹窗标题
-				imgSrc: '',
-				// 弹窗图片 禁止使用异形图片（严重影响用户体验）图片宽:高 = 4:5'
-				target: '',
-				// 跳转类型 同navigator的target 默认为self
-				url: '',
-				// 跳转链接 同navigator的url
-				appId: '',
-				// appId 同navigator的app-id 仅当target="miniProgram"有效
-				version: '',
-				// 版本 同navigator的version 仅当target="miniProgram"有效
-				path: '',
-				// 路径 同navigator的path 仅当target="miniProgram"有效
-				daily: false,
-				// 是否为每日弹窗
-				durations: [
-					{
-						startTime: '2020/8/1 00:00:00',
-						endTime: '2020/8/2 23:59:59'
-					},
-					{
-						startTime: '2020/8/5 00:00:00',
-						endTime: '2020/8/7 23:59:59'
-					}
-				]
-				// 弹出时间 支持多个
-				// 当daily为true时 格式为18:00:00
-				// 当daily为false时 格式为2020/8/1 00:00:00
-			}
-		],
+		_list: [],
 		maskBackgroundColor: '',
 		style: '',
 		current: 0,

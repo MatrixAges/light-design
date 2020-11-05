@@ -19,7 +19,8 @@
             "pretty": true,
             "strictPropertyInitialization": true,
             "lib": [
-                  "ES2015"
+                  "es5",
+                  "es2016"
             ],
             "typeRoots": [
                   "./typings"

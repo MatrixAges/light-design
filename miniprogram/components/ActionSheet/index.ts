@@ -1,12 +1,7 @@
-interface IList {
-	name: String
-	icon: String
-}
-
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_close$/
 	},
 	properties: {
 		visible: {
@@ -17,7 +12,13 @@ Component({
 			type: String,
 			value: ''
 		},
-		list: {
+		list: <{
+			type: ArrayConstructor
+			value: Array<{
+				name: String
+				icon: String
+			}>
+		}>{
 			type: Array,
 			value: []
 		},
@@ -28,11 +29,11 @@ Component({
 		vertical: {
 			type: Boolean,
 			value: false
-            },
-            textOnly: {
-                  type: Boolean,
+		},
+		textOnly: {
+			type: Boolean,
 			value: false
-            },
+		},
 		visibleCancel: {
 			type: Boolean,
 			value: false
@@ -56,7 +57,7 @@ Component({
 		visible (new_val) {
 			const _that = this
 
-                  clearTimeout(_that.data.timer_close)
+			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData({ _visible_dialog_wrap: true }, () => {
@@ -92,7 +93,7 @@ Component({
 			const _that = this
 			const { mark: { index } } = e
 
-			if (index===undefined) return
+			if (index === undefined) return
 
 			_that.setData({ visible: false })
 

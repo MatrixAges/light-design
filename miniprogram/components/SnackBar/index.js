@@ -1,20 +1,20 @@
 "use strict";
 Component({
     options: {
-        pureDataPattern: /^visible$/
+        pureDataPattern: /^visible|timer_duration|timer_close$/
     },
     properties: {
         visible: {
             type: Boolean,
             value: false
         },
-        type: {
-            type: String,
-            value: ''
-        },
         position: {
             type: String,
             value: 'bottom'
+        },
+        type: {
+            type: String,
+            value: ''
         },
         top: {
             type: Number,

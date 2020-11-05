@@ -1,7 +1,7 @@
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_show|timer_close$/
 	},
 	properties: {
 		custom: {

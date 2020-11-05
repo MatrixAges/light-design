@@ -1,23 +1,24 @@
-interface IList {
-	name: String
-	icon: String
-}
-
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_close$/
 	},
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
 		},
-		position: {
+		position: <{
+			type: ArrayConstructor
+			value: [string, string, string, string]
+		}>{
 			type: Array,
 			value: [ '', '', '', '' ] // top , bottom , left , right
 		},
-		mark: {
+		mark: <{
+			type: ArrayConstructor
+			value: [string, string, string, string]
+		}>{
 			type: Array,
 			value: [ '-8rpx', '', '', '30rpx' ] // top , bottom , left , right
 		},
@@ -25,7 +26,13 @@ Component({
 			type: String,
 			value: 'top right'
 		},
-		list: {
+		list: <{
+			type: ArrayConstructor
+			value: Array<{
+				name: String
+				icon: String
+			}>
+		}>{
 			type: Array,
 			value: []
 		},

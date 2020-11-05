@@ -3,27 +3,33 @@ interface IPositionStyle {
 	hide: string
 }
 
-type Toastenum_position = 'top' | 'bottom'
-type Toastenum_type = 'success' | 'warning' | 'error'
-type ToastIgetPositionStyle = { [key in Toastenum_position]: IPositionStyle }
+type Toast_position = 'top' | 'bottom'
+type Toast_type = '' | 'success' | 'warning' | 'error'
+type Toast_IgetPositionStyle = { [key in Toast_position]: IPositionStyle }
 
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_duration|timer_close$/
 	},
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
 		},
-		position: {
+		position: <{
+			type: StringConstructor
+			value: Toast_position
+		}>{
 			type: String,
-			value: 'bottom' // top | bottom
+			value: 'bottom'
 		},
-		type: {
+		type: <{
+			type: StringConstructor
+			value: Toast_type
+		}>{
 			type: String,
-			value: '' // success | warning | error
+			value: ''
 		},
 		useColor: {
 			type: Boolean,
@@ -94,7 +100,7 @@ Component({
 	},
 	methods: {
 		catchtouchmove () {},
-		getPositionStyle (): ToastIgetPositionStyle {
+		getPositionStyle (): Toast_IgetPositionStyle {
 			return {
 				top: {
 					show: `opacity:1;transform:translateY(0);top:15vh;`,

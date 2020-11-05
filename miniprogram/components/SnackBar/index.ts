@@ -4,26 +4,32 @@ interface IPositionStyle {
 }
 
 type SnackBar_position = 'top' | 'bottom'
-type SnackBar_type = 'success' | 'warning' | 'error'
+type SnackBar_type = '' | 'success' | 'warning' | 'error'
 type SnackBar_IgetPositionStyle = { [key in SnackBar_position]: IPositionStyle }
 
 Component({
-      options: {
+	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible$/
+		pureDataPattern: /^visible|timer_duration|timer_close$/
 	},
 	properties: {
 		visible: {
 			type: Boolean,
 			value: false
-            },
-            type: {
-			type: String,
-			value: '' // success | warning | error
 		},
-		position: {
+		position: <{
+			type: StringConstructor
+			value: SnackBar_position
+		}>{
 			type: String,
-			value: 'bottom' // top | bottom
+			value: 'bottom' 
+		},
+		type: <{
+			type: StringConstructor
+			value: SnackBar_type
+		}>{
+			type: String,
+			value: ''
 		},
 		top: {
 			type: Number,
@@ -88,10 +94,10 @@ Component({
 		visible (new_val) {
 			const _that = this
 			const { position, autoClose, duration } = _that.data
-                  const position_style: any = _that.getPositionStyle()
-                  
+			const position_style: any = _that.getPositionStyle()
+
 			clearTimeout(_that.data.timer_duration)
-                  clearTimeout(_that.data.timer_close)
+			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData(
@@ -152,8 +158,8 @@ Component({
 			_that.setData({ visible: false })
 
 			_that.triggerEvent('onClose')
-            },
-            onLeft () {
+		},
+		onLeft () {
 			const _that = this
 
 			_that.triggerEvent('onLeft')

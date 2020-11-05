@@ -3,21 +3,40 @@ Component({
 		multipleSlots: true
 	},
 	properties: {
-		type: {
+		type: <{
+			type: StringConstructor
+			value:
+				| 'default'
+				| 'primary'
+				| 'border'
+				| 'dashed'
+				| 'warning'
+				| 'success'
+				| 'error'
+		}>{
 			type: String,
-			value: 'default' // primary | border | default | dashed | warning | success | error
+			value: 'default'
 		},
-		size: {
+		size: <{
+			type: StringConstructor
+			value: 'normal' | 'small' | 'large'
+		}>{
 			type: String,
-			value: 'normal' // small | normal | large
+			value: 'normal'
 		},
-		shape: {
+		shape: <{
+			type: StringConstructor
+			value: 'normal' | 'circle' | 'rect'
+		}>{
 			type: String,
-			value: 'normal' // circle | normal | rect
+			value: 'normal'
 		},
-		mode: {
+		mode: <{
+			type: StringConstructor
+			value: 'fixed' | 'padding'
+		}>{
 			type: String,
-			value: 'fixed' // 'fixed' | 'padding'
+			value: 'fixed'
 		},
 		width: {
 			type: String,

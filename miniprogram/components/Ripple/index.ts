@@ -8,6 +8,10 @@ const default_styles = `
 `
 
 Component({
+      options: {
+		//@ts-ignore
+		pureDataPattern: /^timer_hide$/
+	},
 	properties: {
 		color: {
 			type: String,
