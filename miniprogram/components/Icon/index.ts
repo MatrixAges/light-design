@@ -2,8 +2,9 @@ import Base64 from './rest/base64'
 import _data from './rest/data'
 
 type Icon = '' | 'add'
+type Data = Record<Icon, { outline: string; filled: string }>
 
-let data: any = _data
+let data: Data | any = _data
 
 Component({
 	properties: {

@@ -1,8 +1,8 @@
 <view
-      class="landing_wrap {{maskVisible?'maskVisible':''}}"
+      class="landing_wrap"
       catchtouchmove="catchtouchmove"
-      style="z-index:{{zIndex}}"
-      wx:if="{{visible}}"
+      style="z-index:{{zIndex}};{{maskVisible?'background:'+maskColor:''}}"
+      wx:if="{{_visible}}"
 >
       <view class="landing">
             <view class="icon_source_bottom icon_source"></view>

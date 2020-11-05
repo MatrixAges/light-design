@@ -1,10 +1,5 @@
 @import './style/refresh.wxss';
 @import './style/loading.wxss';
-@import './style/dots.wxss';
-@import './style/flower.wxss';
-@import './style/dashboard.wxss';
-@import './style/heartbeat.wxss';
-@import './style/taiji.wxss';
 .loading_wrap {
   display: flex;
   flex-direction: column;

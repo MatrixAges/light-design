@@ -1,7 +1,7 @@
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible|delay$/
+		pureDataPattern: /^visible|delay|timeout|timer_show|timer_hide$/
 	},
 	properties: {
 		visible: {
@@ -10,14 +10,7 @@ Component({
 		},
 		type: <{
 			type: StringConstructor
-			value:
-				| 'refresh'
-				| 'loading'
-				| 'dots'
-				| 'flower'
-				| 'dashboard'
-				| 'heartbeat'
-				| 'taiji'
+			value: 'refresh' | 'loading'
 		}>{
 			type: String,
 			value: 'refresh'
@@ -33,14 +26,24 @@ Component({
 		delay: {
 			type: Number,
 			value: 0
+		},
+		timeout: {
+			type: Number,
+			value: 0
 		}
+	},
+	data: {
+		_visible: false,
+		timer_show: 0,
+		timer_hide: 0
 	},
 	observers: {
 		visible (new_val) {
 			const _that = this
-			const { delay, timer_show } = _that.data
+			const { delay, timeout, timer_show, timer_hide } = _that.data
 
 			clearTimeout(timer_show)
+			clearTimeout(timer_hide)
 
 			if (new_val) {
 				const timer_show = setTimeout(() => {
@@ -49,7 +52,11 @@ Component({
 
 				_that.setData({ timer_show })
 			} else {
-				_that.setData({ _visible: false })
+				const timer_hide = setTimeout(() => {
+					_that.setData({ _visible: false })
+				}, timeout)
+
+				_that.setData({ timer_hide })
 			}
 		}
 	},

@@ -32,4 +32,23 @@
                   </view>
             </view>
       </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">遮罩颜色</text>
+                  <text class="attr">maskColor</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Button
+                              mark:type="maskColor"
+                              catchtap="onOption"
+                        >显示</_Button>
+                        <_Landing
+                              visible="{{visible_maskColor}}"
+                              maskColor="rgba(255, 255, 255, 0.8)"
+                              maskVisible
+                        ></_Landing>
+                  </view>
+            </view>
+      </view>
 </view>
