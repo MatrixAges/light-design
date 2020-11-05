@@ -9,7 +9,8 @@
                   class="mask {{_visible_mask?'visible':'hidden'}}"
                   catchtap="onClose"
             ></view>
-            <view class="dialog {{_visible_dialog?'visible':'hidden'}} {{vertical?'vertical':''}} {{textOnly?'textOnly':''}}">
+            <view
+                  class="dialog {{_visible_dialog?'visible':'hidden'}} {{vertical?'vertical':''}} {{textOnly?'textOnly':''}}">
                   <text
                         class="title"
                         wx:if="{{!textOnly&&title}}"
