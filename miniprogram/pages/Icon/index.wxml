@@ -1,19 +1,25 @@
 <view class="example_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">标题</text>
-                  <text class="attr">h7-h1</text>
+                  <text class="title">常规</text>
+                  <text class="attr">icon</text>
             </view>
             <view class="examples flex flex_wrap">
-                  <view class="example w_100 border_box flex flex_column">
-                        <view class="icon_wrap">
+                  <view class="example icons_wrap w_100 border_box flex flex_wrap">
+                        <view
+                              class="icon_wrap flex flex_column align_center transition_normal"
+                              wx:for="{{normal_icons}}"
+                              wx:key="index"
+                        >
                               <_Icon
-                                    icon="add"
+                                    icon="{{item}}"
                                     color="black"
-                                    size="{{25}}"
+                                    size="{{32}}"
                               ></_Icon>
+                              <text class="icon_name mt_20">{{item}}</text>
                         </view>
                   </view>
             </view>
       </view>
 </view>
+

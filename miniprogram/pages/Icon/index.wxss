@@ -1,7 +1,35 @@
+.example_items {
+  padding: 0 !important;
+}
+.example_items .example_item {
+  padding: 0 !important;
+  border-radius: 0;
+}
+.example_items .example_item .title_wrap {
+  padding: 36rpx;
+}
+.example_items .example_item .examples {
+  padding-top: 0;
+}
+.icons_wrap {
+  padding: 0 !important;
+}
 .icon_wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.33333333%;
-  padding: 32rpx 0;
+  width: 25%;
+  padding: 48rpx 0;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid var(--color_border);
+}
+.icon_wrap:nth-last-of-type(1),
+.icon_wrap:nth-last-of-type(2),
+.icon_wrap:nth-last-of-type(3),
+.icon_wrap:nth-last-of-type(4) {
+  border-bottom: none;
+}
+.icon_wrap .icon_name {
+  font-size: 20rpx;
 }

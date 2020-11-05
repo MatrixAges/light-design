@@ -24,6 +24,30 @@ Component({
             type: String,
             value: ''
         },
+        visibleWrap: {
+            type: Boolean,
+            value: false
+        },
+        bordered: {
+            type: Boolean,
+            value: false
+        },
+        filled: {
+            type: Boolean,
+            value: false
+        },
+        round: {
+            type: Boolean,
+            value: false
+        },
+        borderColor: {
+            type: String,
+            value: 'whitesmoke'
+        },
+        fillColor: {
+            type: String,
+            value: 'whitesmoke'
+        },
         size: {
             type: Number,
             value: 20

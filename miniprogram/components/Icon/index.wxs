@@ -1,3 +1,16 @@
+function getWrapStyles (props){
+	var styles = ''
+
+	if (props.bordered) styles += ';border:2rpx solid ' + props.borderColor
+	if (props.filled) styles += ';background:' + props.fillColor
+	if (props.round) styles += ';border-radius:50%'
+
+	styles += ';width:' + props.size * 1.5 + 'px'
+	styles += ';height:' + props.size * 1.5 + 'px'
+
+	return styles
+}
+
 function getStyles (props){
 	var styles = ''
 
@@ -11,5 +24,6 @@ function getStyles (props){
 }
 
 module.exports = {
-	getStyles:getStyles
+	getWrapStyles: getWrapStyles,
+	getStyles: getStyles
 }

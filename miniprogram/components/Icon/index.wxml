@@ -4,6 +4,17 @@
 ></wxs>
 
 <view
-      class="icon {{extClass}}"
+      class="icon_wrap"
+      style="{{wxs.getWrapStyles({size,bordered,filled,round,borderColor,fillColor})}}"
+      wx:if="{{visibleWrap}}"
+>
+      <view
+            class="icon"
+            style="{{wxs.getStyles({size,color,src})}}"
+      ></view>
+</view>
+<view
+      class="icon"
       style="{{wxs.getStyles({size,color,src})}}"
+      wx:else
 ></view>

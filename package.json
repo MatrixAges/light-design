@@ -7,12 +7,18 @@
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
       },
       "keywords": [
+            "微信小程序",
+            "微信",
             "小程序",
             "组件",
+            "组件库",
+            "ui",
+            "component",
             "design",
             "miniapp",
             "wxapp",
-            "weapp"
+            "weapp",
+            "miniprogram"
       ],
       "author": "Matrixage",
       "license": "MIT",
