@@ -1,4 +1,4 @@
-<view class="example_items w_100 border_box flex flex_column">
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
@@ -12,8 +12,7 @@
                               radius="{{8}}"
                               bordered
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur
                         </_Card>
                   </view>
             </view>
@@ -32,37 +31,7 @@
                               color="white"
                               radius="{{8}}"
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
-                        </_Card>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">完全自定义</text>
-                  <text class="attr">override</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Card
-                              width="100%"
-                              bgColor="#222"
-                              color="white"
-                              radius="{{8}}"
-                              noPadding
-                        >
-                              <view
-                                    style="padding:30rpx 48rpx;padding-bottom: 24rpx;font-size: 48rpx;font-weight: 200;">
-                                    Secondary</view>
-                              <view
-                                    class="text_justify"
-                                    style="padding:40rpx 48rpx;padding-top: 0;color: #aaa;"
-                              >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua.
-                              </view>
+                              Lorem ipsum dolor sit amet, consectetur
                         </_Card>
                   </view>
             </view>
@@ -80,8 +49,33 @@
                               radius="{{8}}"
                               shadow
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur
+                        </_Card>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">完全自定义</text>
+                  <text class="attr">override</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example">
+                        <_Card
+                              bgColor="#222"
+                              color="white"
+                              radius="{{8}}"
+                              noPadding
+                        >
+                              <view
+                                    style="padding:30rpx 48rpx;padding-bottom: 24rpx;font-size: 32rpx;font-weight: 200;">
+                                    Secondary</view>
+                              <view
+                                    class="text_justify"
+                                    style="padding:40rpx 48rpx;padding-top: 0;color: #aaa;"
+                              >
+                                    Lorem ipsum dolor sit amet, consectetur
+                              </view>
                         </_Card>
                   </view>
             </view>
@@ -100,8 +94,7 @@
                               shadow
                               bordered
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         </_Card>
                   </view>
             </view>
@@ -128,7 +121,7 @@
                                     style="height: 300rpx;"
                               ></image>
                               <view>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor sit amet, consectetur
                               </view>
                         </_Card>
                   </view>
@@ -148,8 +141,7 @@
                               radius="{{8}}"
                               bordered
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur
                         </_Card>
                   </view>
             </view>
@@ -174,8 +166,7 @@
                                     style="width: 24rpx;height: 24rpx;"
                               ></image>
                               <view class="text_justify">
-                                    阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
-                                    阿娇圣诞节啊就是大家，阿设计简介阿圣诞节啊，就是大家就阿设计大奖
+                                    Lorem ipsum dolor sit amet, consectetur
                               </view>
                         </_Card>
                   </view>
@@ -201,9 +192,7 @@
                                     class="text_justify"
                                     style="padding: 36rpx 48rpx;"
                               >
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua.
+                                    Lorem ipsum dolor sit amet, consectetur
                               </view>
                         </_Card>
                   </view>
@@ -221,8 +210,7 @@
                               bordered
                               noPadding
                         >
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                              ut labore et dolore magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur
                         </_Card>
                   </view>
             </view>

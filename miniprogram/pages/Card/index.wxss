@@ -1,0 +1,6 @@
+.example_items .example_item {
+  flex-direction: column !important;
+}
+.example_items .example_item .title_wrap {
+  margin-bottom: 18rpx!important;
+}
