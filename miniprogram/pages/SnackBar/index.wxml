@@ -121,7 +121,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="description"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -142,7 +142,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="autoClose"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -165,7 +165,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="duration"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -189,7 +189,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="position"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -212,7 +212,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="bottom"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -235,7 +235,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="mini"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -258,7 +258,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="slot"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -288,7 +288,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="cover"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -311,7 +311,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="composition"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar
@@ -343,7 +343,7 @@
                         visibleWrap
                         filled
                         round
-                        mark:type="default"
+                        mark:type="styles"
                         catchtap="onOption"
                   ></_Icon>
                   <_SnackBar

@@ -1,4 +1,4 @@
-<Tips text="常规类型的图标的type仅支持'outline'"></Tips>
+<Tips text="常规类型的图标的type仅支持'outline'。"></Tips>
 
 <view class="example_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
@@ -23,5 +23,54 @@
                   </view>
             </view>
       </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex">
+                  <_Button
+                        class="mb_40"
+                        type="primary"
+                        mode="padding"
+                        size="small"
+                        ghost
+                        catchtap="onChangeType"
+                  >
+                        <view class="flex align_center">
+                              <_Icon
+                                    icon="toggle"
+                                    color="black"
+                                    size="{{20}}"
+                                    type="{{filled?'filled':'outline'}}"
+                              ></_Icon>
+                              <text
+                                    class="ml_12"
+                                    style="line-height: 1;"
+                              >切换样式</text>
+                        </view>
+                  </_Button>
+                  <text class="title">功能</text>
+                  <text class="attr">outline & filled</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example icons_wrap w_100 border_box flex flex_wrap">
+                        <view
+                              class="icon_wrap flex flex_column align_center transition_normal"
+                              wx:for="{{more_icons}}"
+                              wx:key="index"
+                        >
+                              <_Icon
+                                    icon="{{item}}"
+                                    color="black"
+                                    size="{{30}}"
+                                    type="{{filled?'filled':'outline'}}"
+                              ></_Icon>
+                              <text class="icon_name mt_20">{{item}}</text>
+                        </view>
+                  </view>
+            </view>
+      </view>
 </view>
 
+<Tips
+      topShadow
+      text="按需引入：可直接通过svg属性，传入从Icon/rest/data.ts导入的变量，然后进入Icon去除掉数据的导入，这样icon属性作废，其后仅支持直接传入svg数据。"
+>
+</Tips>

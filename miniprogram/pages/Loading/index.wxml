@@ -1,5 +1,6 @@
+<Tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></Tips>
+
 <view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
-      <Tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></Tips>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认</text>

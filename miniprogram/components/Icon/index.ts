@@ -1,7 +1,7 @@
 import Base64 from './rest/base64'
 import _data from './rest/data'
+import { Icon } from './icon_types'
 
-type Icon = '' | 'add'
 type Data = Record<Icon, { outline: string; filled: string }>
 
 let data: Data | any = _data
@@ -22,6 +22,10 @@ Component({
 			type: String,
 			value: ''
 		},
+		svg: {
+			type: String,
+			value: ''
+		},
 		visibleWrap: {
 			type: Boolean,
 			value: false
@@ -33,8 +37,8 @@ Component({
 		filled: {
 			type: Boolean,
 			value: false
-            },
-            round: {
+		},
+		round: {
 			type: Boolean,
 			value: false
 		},
@@ -65,6 +69,9 @@ Component({
 		},
 		icon (v) {
 			this.getSrc(data[v][this.data.type])
+		},
+		svg (v) {
+			this.getSrc(v)
 		},
 		extend (v) {
 			data = { ...v, ..._data }

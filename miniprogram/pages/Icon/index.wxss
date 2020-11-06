@@ -4,7 +4,7 @@
   margin-bottom: 12rpx;
 }
 .example_items .example_item .title_wrap .title {
-  margin-bottom: 12rpx;
+  margin-bottom: 18rpx;
 }
 .icon_wrap {
   position: relative;

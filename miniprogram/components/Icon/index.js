@@ -24,6 +24,10 @@ Component({
             type: String,
             value: ''
         },
+        svg: {
+            type: String,
+            value: ''
+        },
         visibleWrap: {
             type: Boolean,
             value: false
@@ -67,6 +71,9 @@ Component({
         },
         icon: function (v) {
             this.getSrc(data[v][this.data.type]);
+        },
+        svg: function (v) {
+            this.getSrc(v);
         },
         extend: function (v) {
             data = __assign(__assign({}, v), data_1.default);

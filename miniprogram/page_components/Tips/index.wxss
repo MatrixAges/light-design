@@ -8,6 +8,9 @@
   text-align: justify;
   box-shadow: var(--box_shadow_morphic);
 }
+.tips_wrap.topShadow {
+  box-shadow: var(--box_shadow_morphic_top);
+}
 .tips_wrap .icon_info {
   position: absolute;
   top: 36rpx;
