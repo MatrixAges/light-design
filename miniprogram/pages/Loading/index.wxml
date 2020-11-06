@@ -1,4 +1,4 @@
-<view class="example_items w_100 border_box flex flex_column">
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <Tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></Tips>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -6,30 +6,9 @@
                   <text class="attr">refresh</text>
             </view>
             <view class="examples flex">
-                  <view
-                        class="example w_100 flex justify_center"
-                        style="padding: 72rpx 0;"
-                  >
+                  <view class="example w_100 flex justify_center">
                         <_Loading
                               type="refresh"
-                              visible
-                        ></_Loading>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">设定文字</text>
-                  <text class="attr">text</text>
-            </view>
-            <view class="examples flex">
-                  <view
-                        class="example w_100 flex justify_center"
-                        style="padding: 72rpx 0;"
-                  >
-                        <_Loading
-                              type="refresh"
-                              text="加载中"
                               visible
                         ></_Loading>
                   </view>
@@ -41,10 +20,7 @@
                   <text class="attr">loading</text>
             </view>
             <view class="examples flex">
-                  <view
-                        class="example w_100 flex justify_center"
-                        style="padding: 72rpx 0;"
-                  >
+                  <view class="example w_100 flex justify_center">
                         <_Loading
                               type="loading"
                               visible

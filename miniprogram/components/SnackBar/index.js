@@ -1,7 +1,7 @@
 "use strict";
 Component({
     options: {
-        pureDataPattern: /^visible|timer_duration|timer_close$/
+        pureDataPattern: /^(visible|timer_duration|timer_close)$/
     },
     properties: {
         visible: {

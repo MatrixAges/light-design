@@ -5,7 +5,7 @@ export interface IMenuItems {
 	components: Array<{ name: string; path: string; description: string }>
 }
 
-export default [
+export default <Array<IMenuItems>>[
 	{
 		name: '通用',
 		path: 'common',
@@ -52,6 +52,10 @@ export default [
 				name: 'Button',
 				description: '按钮',
 				active: true
+			},
+			{
+				name: 'ButtonGroup',
+				description: '按钮组'
 			},
 			{
 				name: 'Form',
@@ -249,4 +253,4 @@ export default [
 			}
 		]
 	}
-] as Array<IMenuItems>
+]

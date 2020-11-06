@@ -29,7 +29,7 @@ interface IList {
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^visible|timer_show|timer_close$/
+		pureDataPattern: /^(visible|timer_show|timer_close)$/
 	},
 	properties: {
 		list: <{
@@ -91,7 +91,7 @@ Component({
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'transparent',
-					style: 'opacity:0;transform:scale(0.8);transform-origin:center'
+					style: 'opacity:0;transform:scale(0);transform-origin:center'
 				})
 
 				const timer_close = setTimeout(() => {

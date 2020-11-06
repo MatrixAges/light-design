@@ -1,3 +1,5 @@
+<Tips text="常规类型的图标的type仅支持'outline'"></Tips>
+
 <view class="example_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -14,7 +16,7 @@
                               <_Icon
                                     icon="{{item}}"
                                     color="black"
-                                    size="{{32}}"
+                                    size="{{30}}"
                               ></_Icon>
                               <text class="icon_name mt_20">{{item}}</text>
                         </view>

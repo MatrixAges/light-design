@@ -1,140 +1,154 @@
-<view class="example_items w_100 border_box flex flex_column">
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="default"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_default}}"
-                              title="分享"
-                              list="{{list}}"
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="default"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_default}}"
+                  title="分享"
+                  list="{{list}}"
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">没有标题</text>
                   <text class="attr">title</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="title"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_title}}"
-                              list="{{list}}"
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="title"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_title}}"
+                  list="{{list}}"
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">横向滚动</text>
                   <text class="attr">scroll</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="scroll"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_scroll}}"
-                              title="分享"
-                              list="{{list}}"
-                              scroll
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="scroll"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_scroll}}"
+                  title="分享"
+                  list="{{list}}"
+                  scroll
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">纵向显示</text>
                   <text class="attr">vertical</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="vertical"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_vertical}}"
-                              list="{{list}}"
-                              vertical
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="vertical"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_vertical}}"
+                  list="{{list}}"
+                  vertical
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">仅有文字</text>
                   <text class="attr">textOnly</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="textOnly"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_textOnly}}"
-                              title="分享"
-                              list="{{list}}"
-                              vertical
-                              textOnly
-                              visibleCancel
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="textOnly"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_textOnly}}"
+                  title="分享"
+                  list="{{list}}"
+                  vertical
+                  textOnly
+                  visibleCancel
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">显示取消</text>
                   <text class="attr">visibleCancel</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="visibleCancel"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_visibleCancel}}"
-                              list="{{list}}"
-                              vertical
-                              visibleCancel
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="visibleCancel"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_visibleCancel}}"
+                  list="{{list}}"
+                  vertical
+                  visibleCancel
+            ></_ActionSheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">行个数</text>
                   <text class="attr">column</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="column"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_ActionSheet
-                              visible="{{visible_column}}"
-                              title="分享"
-                              list="{{list}}"
-                              column="{{4}}"
-                        ></_ActionSheet>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="column"
+                  catchtap="onOption"
+            ></_Icon>
+            <_ActionSheet
+                  visible="{{visible_column}}"
+                  title="分享"
+                  list="{{list}}"
+                  column="{{4}}"
+            ></_ActionSheet>
       </view>
 </view>

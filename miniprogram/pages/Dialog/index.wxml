@@ -1,231 +1,253 @@
-<view class="example_items w_100 border_box flex flex_column">
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="default"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog visible="{{visible_default}}">
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="default"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog visible="{{visible_default}}">
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">没有标题</text>
                   <text class="attr">title</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="no_title"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              title=""
-                              visible="{{visible_no_title}}"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="no_title"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  title=""
+                  visible="{{visible_no_title}}"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">自定义内容</text>
                   <text class="attr">custom</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="custom"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_custom}}"
-                              custom
-                        >
-                              <view
-                                    class="w_100 border_box white text_center"
-                                    style="padding: 240rpx 0;background-color: black;"
-                              >我们的目标是：星辰大海！</view>
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="custom"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_custom}}"
+                  custom
+            >
+                  <view
+                        class="w_100 border_box text_center"
+                        style="padding: 240rpx 0;background-color: whitesmoke;"
+                  >我们的目标是：星辰大海！</view>
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">底部弹出</text>
                   <text class="attr">bottom</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="bottom"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_bottom}}"
-                              bottom
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="bottom"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_bottom}}"
+                  bottom
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">隐藏取消</text>
                   <text class="attr">cancelVisible</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="cancelVisible"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_cancelVisible}}"
-                              custom
-                              cancelVisible="{{false}}"
-                        >
-                              <view
-                                    class="w_100 border_box white text_center"
-                                    style="padding: 240rpx 0;background-color: black;"
-                              >我们的目标是：星辰大海！</view>
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="cancelVisible"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_cancelVisible}}"
+                  custom
+                  cancelVisible="{{false}}"
+            >
+                  <view
+                        class="w_100 border_box text_center"
+                        style="padding: 240rpx 0;background-color: whitesmoke;"
+                  >我们的目标是：星辰大海！</view>
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">显示关闭</text>
                   <text class="attr">closeVisible</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="closeVisible"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_closeVisible}}"
-                              custom
-                              closeVisible
-                        >
-                              <view
-                                    class="w_100 border_box white text_center black"
-                                    style="padding: 240rpx 0;background-color: whitesmoke;"
-                              >我们的目标是：星辰大海！</view>
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="closeVisible"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_closeVisible}}"
+                  custom
+                  closeVisible
+            >
+                  <view
+                        class="w_100 border_box text_center"
+                        style="padding: 240rpx 0;background-color: whitesmoke;"
+                  >我们的目标是：星辰大海！</view>
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">隐藏遮罩</text>
                   <text class="attr">maskVisible</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="maskVisible"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_maskVisible}}"
-                              maskVisible="{{false}}"
-                              bodyStyle="background-color:#333;color:white"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="maskVisible"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_maskVisible}}"
+                  maskVisible="{{false}}"
+                  bodyStyle="background-color:#333;color:white"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">点击遮罩</text>
                   <text class="attr">maskClosable</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="maskClosable"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_maskClosable}}"
-                              maskClosable="{{false}}"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="maskClosable"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_maskClosable}}"
+                  maskClosable="{{false}}"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">自定义样式</text>
                   <text class="attr">bodyStyle</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="bodyStyle"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_bodyStyle}}"
-                              bodyStyle="border-radius:0;background-color:red;color:white"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="bodyStyle"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_bodyStyle}}"
+                  bodyStyle="border-radius:0;background-color:whitesmoke;color:black"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">确定文字</text>
                   <text class="attr">okText</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="okText"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_okText}}"
-                              okText="是的哟～"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="okText"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_okText}}"
+                  okText="是的哟～"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">取消文字</text>
                   <text class="attr">cancelText</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="cancelText"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Dialog
-                              visible="{{visible_cancelText}}"
-                              cancelText="～bu bu～"
-                        >
-                              结果并不重要，重要的是过程？
-                        </_Dialog>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="cancelText"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Dialog
+                  visible="{{visible_cancelText}}"
+                  cancelText="～bu bu～"
+            >
+                  结果并不重要，重要的是过程？
+            </_Dialog>
       </view>
 </view>

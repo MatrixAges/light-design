@@ -1,22 +1,15 @@
 .example_items {
-      padding: 0 !important;
-
       .example_item {
-            padding: 0 !important;
-            border-radius: 0;
-
             .title_wrap {
-                  padding: 36rpx;
-            }
+                  flex-direction: column;
+                  align-items: center;
+                  margin-bottom: 12rpx;
 
-            .examples {
-                  padding-top: 0;
+                  .title{
+                        margin-bottom: 12rpx;
+                  }
             }
       }
-}
-
-.icons_wrap {
-      padding: 0 !important;
 }
 
 .icon_wrap {
@@ -25,14 +18,12 @@
       justify-content: center;
       align-items: center;
       width: 100%/4;
-      padding: 48rpx 0;
+      padding: 36rpx 0;
       box-sizing: border-box;
-      border-bottom: 2rpx solid var(--color_border);
 
       &:nth-last-of-type(1),
       &:nth-last-of-type(2),
-      &:nth-last-of-type(3),
-      &:nth-last-of-type(4) {
+      &:nth-last-of-type(3) {
             border-bottom: none;
       }
 

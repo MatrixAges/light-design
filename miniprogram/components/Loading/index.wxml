@@ -4,5 +4,8 @@
       wx:if="{{_visible}}"
 >
       <view class="loading_{{type}}"></view>
-      <text class="text">{{text}}</text>
+      <text
+            class="text"
+            wx:if="{{text}}"
+      >{{text}}</text>
 </view>

@@ -78,11 +78,10 @@
       }
 
       &.line_clamp_1 {
-            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
             overflow: hidden;
-            -o-text-overflow: ellipsis;
-            text-overflow: ellipsis;
-            white-space: nowrap
+            -webkit-line-clamp: 1
       }
 
       &.line_clamp_2 {

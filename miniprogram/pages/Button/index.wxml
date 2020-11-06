@@ -1,276 +1,283 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">按钮类型</text>
-                  <text class="attr">type</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button type="primary">primary</_Button>
+      <view class="mini_items column_2 flex flex_wrap">
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">按钮类型</text>
+                        <text class="attr">type</text>
                   </view>
-                  <view class="example">
-                        <_Button type="success">success</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button type="warning">warning</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button type="error">error</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button type="border">border</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button type="dashed">dashed</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button type="default">default</_Button>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">幽灵按钮</text>
-                  <text class="attr">ghost</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              type="primary"
-                              ghost
-                        >primary</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              type="warning"
-                              ghost
-                        >warning</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              type="success"
-                              ghost
-                        >success</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              type="error"
-                              ghost
-                        >error</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              type="default"
-                              ghost
-                        >default</_Button>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button type="primary">primary</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="success">success</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="warning">warning</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="error">error</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="border">border</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="dashed">dashed</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button type="default">default</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">按钮大小</text>
-                  <text class="attr">size</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              size="large"
-                              type="default"
-                        >large</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">幽灵按钮</text>
+                        <text class="attr">ghost</text>
                   </view>
-                  <view class="example">
-                        <_Button
-                              size="normal"
-                              type="default"
-                        >normal</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              size="small"
-                              type="default"
-                        >small</_Button>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">按钮形状</text>
-                  <text class="attr">shape</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              shape="normal"
-                              type="default"
-                        >normal</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              shape="circle"
-                              type="default"
-                        >circle</_Button>
-                  </view>
-                  <view class="example">
-                        <_Button
-                              shape="rect"
-                              type="default"
-                        >rect</_Button>
+                  <view
+                        class="examples flex flex_wrap"
+                        style="justify-content: flex-start;"
+                  >
+                        <view class="example">
+                              <_Button
+                                    type="primary"
+                                    ghost
+                              >primary</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    type="warning"
+                                    ghost
+                              >warning</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    type="success"
+                                    ghost
+                              >success</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    type="error"
+                                    ghost
+                              >error</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    type="default"
+                                    ghost
+                              >default</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">不可点击</text>
-                  <text class="attr">disabled</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              disabled="{{true}}"
-                              type="default"
-                        >true</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">按钮大小</text>
+                        <text class="attr">size</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    size="large"
+                                    type="default"
+                              >large</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    size="normal"
+                                    type="default"
+                              >normal</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    size="small"
+                                    type="default"
+                              >small</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义样式</text>
-                  <text class="attr">custom</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              bgColor="red"
-                              color="white"
-                        >custom</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">按钮形状</text>
+                        <text class="attr">shape</text>
+                  </view>
+                  <view class="examples flex">
+                        <view class="example">
+                              <_Button
+                                    shape="normal"
+                                    type="default"
+                              >normal</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    shape="circle"
+                                    type="default"
+                              >circle</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    shape="rect"
+                                    type="default"
+                              >rect</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">加载中</text>
-                  <text class="attr">loading</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              loading="{{true}}"
-                              mode="fixed"
-                              type="default"
-                        >true</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">添加图标</text>
+                        <text class="attr">iconPath</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    mode="padding"
+                                    iconPath="https://matrixages.github.io/atom.css/assets/images/microsoft.png"
+                                    type="default"
+                              >Microsoft</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">添加图标</text>
-                  <text class="attr">iconPath</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mode="padding"
-                              iconPath="https://matrixage.github.io/atom.css/assets/images/microsoft.png"
-                              type="default"
-                        >Microsoft</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">宽度自适应</text>
+                        <text class="attr">mode</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    mode="fixed"
+                                    type="default"
+                              >fixed</_Button>
+                        </view>
+                        <view class="example">
+                              <_Button
+                                    mode="padding"
+                                    type="default"
+                              >padding padding</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义图标</text>
-                  <text class="attr">icon</text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">自定义宽度</text>
+                        <text class="attr">width</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Button width="100%">custom width</_Button>
+                        </view>
+                  </view>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mode="padding"
-                              type="default"
-                        >
-                              <image
-                                    slot="icon"
-                                    mode="widthFix"
-                                    style="width: 24rpx;height: 24rpx;margin-right: 10rpx;"
-                                    src="https://matrixage.github.io/atom.css/assets/images/apple.png"
-                              ></image>
-                              apple
-                        </_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">自定义高度</text>
+                        <text class="attr">height</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Button
+                                    width="100%"
+                                    height="100rpx"
+                              >custom height</_Button>
+                        </view>
                   </view>
             </view>
       </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">配合使用</text>
-                  <text class="attr">for button</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button type="default">
-                              <button
-                                    style="background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
-                              >button</button>
-                        </_Button>
+      <view class="mini_items no_border flex flex_wrap">
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">不可点击</text>
+                        <text class="attr">disabled</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    disabled="{{true}}"
+                                    type="default"
+                              >true</_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">配合使用</text>
-                  <text class="attr">for navigator</text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">自定义样式</text>
+                        <text class="attr">custom</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    bgColor="red"
+                                    color="white"
+                              >custom</_Button>
+                        </view>
+                  </view>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button type="default">
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">加载中</text>
+                        <text class="attr">loading</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    loading="{{true}}"
+                                    mode="fixed"
+                                    type="default"
+                              >true</_Button>
+                        </view>
+                  </view>
+            </view>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">配合使用</text>
+                        <text class="attr">for navigator</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
                               <navigator
                                     class="w_100 h_100 flex justify_center align_center"
                                     url="/pages/index/index"
-                              >button</navigator>
-                        </_Button>
+                              >
+                                    <_Button type="default">button</_Button>
+                              </navigator>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">宽度自适应</text>
-                  <text class="attr">mode</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mode="fixed"
-                              type="default"
-                        >fixed</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">自定义图标</text>
+                        <text class="attr">icon</text>
                   </view>
-                  <view class="example">
-                        <_Button
-                              mode="padding"
-                              type="default"
-                        >padding padding</_Button>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义宽度</text>
-                  <text class="attr">width</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Button width="100%">custom width</_Button>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button
+                                    mode="padding"
+                                    type="default"
+                              >
+                                    <image
+                                          slot="icon"
+                                          mode="widthFix"
+                                          style="width: 24rpx;height: 24rpx;margin-right: 10rpx;"
+                                          src="https://matrixages.github.io/atom.css/assets/images/apple.png"
+                                    ></image>
+                                    apple
+                              </_Button>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">自定义高度</text>
-                  <text class="attr">height</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Button
-                              width="100%"
-                              height="100rpx"
-                        >custom height</_Button>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">配合使用</text>
+                        <text class="attr">for button</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example">
+                              <_Button type="default">
+                                    <button
+                                          style="background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
+                                    >button</button>
+                              </_Button>
+                        </view>
                   </view>
             </view>
       </view>

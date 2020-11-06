@@ -49,6 +49,10 @@ exports.default = [
                 active: true
             },
             {
+                name: 'ButtonGroup',
+                description: '按钮组'
+            },
+            {
                 name: 'Form',
                 description: '表单'
             },

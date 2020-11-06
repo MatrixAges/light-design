@@ -32,130 +32,132 @@
                   </view>
             </view>
       </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">换行</text>
-                  <text class="attr">lineClamp</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100 flex flex_column">
-                        <_Text
-                              p
-                              lineClamp="{{1}}"
-                        >lineClamp = 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor
-                              incididunt
-                              ut labore et dolore magna aliqua.</_Text>
-                        <_Text
-                              p
-                              lineClamp="{{2}}"
-                        >lineClamp = 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                              tempor
-                              incididunt
-                              ut labore et dolore magna aliqua.</_Text>
+      <view class="mini_items column_2 no_border">
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">换行省略</text>
+                        <text class="attr">lineClamp</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100 flex flex_column">
+                              <_Text
+                                    p
+                                    lineClamp="{{1}}"
+                              >lineClamp = 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</_Text>
+                              <_Text
+                                    p
+                                    lineClamp="{{2}}"
+                              >lineClamp = 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">粗的</text>
-                  <text class="attr">p</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example flex flex_column">
-                        <_Text b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                              incididunt
-                              ut labore et dolore magna aliqua.</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">粗的</text>
+                        <text class="attr">p</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example flex flex_column">
+                              <_Text b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">斜体</text>
-                  <text class="attr">i</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example flex flex_column">
-                        <_Text i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                              incididunt
-                              ut labore et dolore magna aliqua.</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">斜体</text>
+                        <text class="attr">i</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example flex flex_column">
+                              <_Text i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">引用</text>
-                  <text class="attr">quote</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text quote>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">引用</text>
+                        <text class="attr">quote</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text quote>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">成功</text>
-                  <text class="attr">success</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text success>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">成功</text>
+                        <text class="attr">success</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text success>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">警告</text>
-                  <text class="attr">warning</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text warning>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">警告</text>
+                        <text class="attr">warning</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text warning>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">错误</text>
-                  <text class="attr">error</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text error>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">错误</text>
+                        <text class="attr">error</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text error>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">删除线</text>
-                  <text class="attr">del</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text del>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">删除线</text>
+                        <text class="attr">del</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text del>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">设置颜色</text>
-                  <text class="attr">color</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text color="purple">巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">设置颜色</text>
+                        <text class="attr">color</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text color="purple">巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                        </view>
                   </view>
             </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">文字行为</text>
-                  <text class="attr">textAlign</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <_Text textAlign="center">人生是开放游戏</_Text>
+            <view class="example_item w_100 border_box flex">
+                  <view class="title_wrap w_100 border_box flex flex_column">
+                        <text class="title">文字行为</text>
+                        <text class="attr">textAlign</text>
+                  </view>
+                  <view class="examples flex flex_wrap">
+                        <view class="example w_100">
+                              <_Text textAlign="center">人生是开放游戏</_Text>
+                        </view>
                   </view>
             </view>
       </view>

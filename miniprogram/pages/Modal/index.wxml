@@ -1,139 +1,153 @@
-<view class="example_items w_100 border_box flex flex_column">
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
                   <text class="attr">center</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="default"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal visible="{{visible_default}}">
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="default"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal visible="{{visible_default}}">
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">顶部弹出</text>
                   <text class="attr">top</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="top"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_top}}"
-                              position="top"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="top"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_top}}"
+                  position="top"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">底部弹出</text>
                   <text class="attr">bottom</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="bottom"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_bottom}}"
-                              position="bottom"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="bottom"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_bottom}}"
+                  position="bottom"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">左侧弹出</text>
                   <text class="attr">left</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="left"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_left}}"
-                              position="left"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="left"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_left}}"
+                  position="left"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">右侧弹出</text>
                   <text class="attr">right</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="right"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_right}}"
-                              position="right"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="right"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_right}}"
+                  position="right"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">没有遮罩</text>
                   <text class="attr">maskVisible</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="maskVisible"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_maskVisible}}"
-                              maskVisible="{{false}}"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="maskVisible"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_maskVisible}}"
+                  maskVisible="{{false}}"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">蒙层关闭</text>
                   <text class="attr">maskClosable</text>
             </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example">
-                        <_Button
-                              mark:type="maskClosable"
-                              catchtap="onOption"
-                        >显示</_Button>
-                        <_Modal
-                              visible="{{visible_maskClosable}}"
-                              maskClosable="{{false}}"
-                        >
-                              <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-                        </_Modal>
-                  </view>
-            </view>
+            <_Icon
+                  icon="blockRight"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="maskClosable"
+                  catchtap="onOption"
+            ></_Icon>
+            <_Modal
+                  visible="{{visible_maskClosable}}"
+                  maskClosable="{{false}}"
+            >
+                  <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
+            </_Modal>
       </view>
 </view>

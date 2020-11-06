@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var default_styles = "\n      left: '';\n      top: '';\n      opacity: 0.8;\n      transform: translate(-50%, -50%);\n";
 Component({
     options: {
-        pureDataPattern: /^timer_hide$/
+        pureDataPattern: /^(timer_hide)$/
     },
     properties: {
         color: {
