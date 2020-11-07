@@ -3,6 +3,8 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
+            "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.js --watch",
+            "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
             "compile": "./node_modules/typescript/bin/tsc",
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
       },
@@ -24,8 +26,20 @@
       "license": "MIT",
       "dependencies": {},
       "devDependencies": {
+            "@babel/core": "^7.12.3",
+            "@babel/plugin-transform-runtime": "^7.12.1",
+            "@babel/preset-env": "^7.12.1",
+            "@babel/runtime": "^7.12.5",
+            "babel-loader": "^8.1.0",
+            "chalk": "^4.1.0",
+            "css-loader": "^5.0.1",
             "lerna": "^3.22.1",
+            "less-loader": "^7.0.2",
+            "lodash.difference": "^4.5.0",
+            "mini-css-extract-plugin": "^1.3.0",
             "miniprogram-api-typings": "3.1.3",
+            "replace-ext": "^2.0.0",
+            "ts-loader": "^8.0.9",
             "typescript": "4.0.3",
             "webpack": "^5.4.0"
       }

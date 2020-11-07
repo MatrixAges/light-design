@@ -9,8 +9,9 @@
 /coverage
 
 # production
+/dist
 /build
-build.zip
+*.zip
 
 # env
 .DS_Store
