@@ -26,7 +26,6 @@
       "style": "v2",
       "sitemapLocation": "sitemap.json",
       "usingComponents": {
-            "Tips": "/page_components/Tips/index",
             "_Button": "/components/Button/index",
             "_ActionSheet": "/components/ActionSheet/index",
             "_Card": "/components/Card/index",
@@ -42,6 +41,7 @@
             "_Popover": "/components/Popover/index",
             "_Sticky": "/components/Sticky/index",
             "_Text": "/components/Text/index",
-            "_Icon": "/components/Icon/index"
+            "_Icon": "/components/Icon/index",
+            "Tips": "/components/_Tips/index"
       }
 }
