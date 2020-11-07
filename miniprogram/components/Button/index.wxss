@@ -41,8 +41,8 @@
   display: inline-block;
 }
 .btn .icon {
-  width: 36rpx;
-  height: 36rpx;
+  width: 30rpx;
+  height: 30rpx;
 }
 .btn .text.has_left {
   margin-left: 10rpx;

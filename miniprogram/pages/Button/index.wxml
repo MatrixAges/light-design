@@ -128,7 +128,7 @@
                         <text class="attr">iconPath</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example">
+                        <view class="example flex">
                               <_Button
                                     mode="padding"
                                     iconPath="https://matrixages.github.io/atom.css/assets/images/microsoft.png"
@@ -143,13 +143,13 @@
                         <text class="attr">mode</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example">
+                        <view class="example flex">
                               <_Button
                                     mode="fixed"
                                     type="default"
                               >fixed</_Button>
                         </view>
-                        <view class="example">
+                        <view class="example flex">
                               <_Button
                                     mode="padding"
                                     type="default"
@@ -163,7 +163,7 @@
                         <text class="attr">width</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example w_100">
+                        <view class="example w_100 flex">
                               <_Button width="100%">custom width</_Button>
                         </view>
                   </view>
@@ -174,16 +174,14 @@
                         <text class="attr">height</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example w_100">
+                        <view class="example flex">
                               <_Button
-                                    width="100%"
+                                    mode="padding"
                                     height="100rpx"
                               >custom height</_Button>
                         </view>
                   </view>
             </view>
-      </view>
-      <view class="mini_items no_border flex flex_wrap">
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">不可点击</text>
@@ -233,11 +231,8 @@
                         <text class="attr">for navigator</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example">
-                              <navigator
-                                    class="w_100 h_100 flex justify_center align_center"
-                                    url="/pages/index/index"
-                              >
+                        <view class="example flex">
+                              <navigator url="/pages/index/index">
                                     <_Button type="default">button</_Button>
                               </navigator>
                         </view>
@@ -250,10 +245,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Button
-                                    mode="padding"
-                                    type="default"
-                              >
+                              <_Button type="default">
                                     <image
                                           slot="icon"
                                           mode="widthFix"

@@ -25,7 +25,6 @@ page {
 }
 .mini_items.column_2 .example_item .examples {
   flex-direction: column;
-  justify-content: center;
 }
 .mini_items.column_2 .example_item .examples .example {
   align-items: center;
@@ -86,7 +85,6 @@ page {
 }
 .example_items.mini_items.column_2 .example_item .examples {
   flex-direction: column;
-  justify-content: center;
 }
 .example_items.mini_items.column_2 .example_item .examples .example {
   align-items: center;
@@ -128,9 +126,13 @@ page {
   padding: 60rpx;
   background-color: var(--color_background);
   border-bottom: 2rpx solid var(--color_border);
+  transition: all ease 0.3s;
 }
 .example_items .example_item:last-child {
   border-bottom: none;
+}
+.example_items .example_item:hover {
+  background-color: var(--color_sub_bg);
 }
 .example_items .example_item .title_wrap {
   flex-direction: row;
@@ -171,7 +173,6 @@ page {
 }
 .example_items .mini_items.column_2 .example_item .examples {
   flex-direction: column;
-  justify-content: center;
 }
 .example_items .mini_items.column_2 .example_item .examples .example {
   align-items: center;

@@ -1,11 +1,15 @@
 .example_items {
       .example_item {
+            &:hover {
+                  background-color: transparent;
+            }
+
             .title_wrap {
                   flex-direction: column;
                   align-items: center;
                   margin-bottom: 12rpx;
 
-                  .title{
+                  .title {
                         margin-bottom: 18rpx;
                   }
             }
@@ -25,6 +29,10 @@
       &:nth-last-of-type(2),
       &:nth-last-of-type(3) {
             border-bottom: none;
+      }
+
+      &:hover {
+            background-color: var(--color_sub_bg);
       }
 
       .icon_name {

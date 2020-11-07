@@ -31,7 +31,6 @@ page {
 
                   .examples {
                         flex-direction: column;
-                        justify-content: center;
 
                         .example {
                               align-items: center;
@@ -97,9 +96,14 @@ page {
             padding: 60rpx;
             background-color: var(--color_background);
             border-bottom: 2rpx solid var(--color_border);
+            transition: all ease 0.3s;
 
             &:last-child {
                   border-bottom: none;
+            }
+
+            &:hover {
+                  background-color: var(--color_sub_bg);
             }
 
             .title_wrap {

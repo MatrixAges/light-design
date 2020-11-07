@@ -1,0 +1,3 @@
+.mini_items .example_item .examples .example {
+  justify-content: center;
+}
