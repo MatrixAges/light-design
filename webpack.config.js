@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs-extra');
 const glob = require("glob");
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -7,6 +8,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isProd = process.env.NODE_ENV === 'production';
 
 const getComponents = (path) => {
+      fs.emptyDirSync('dist');
+
       const files = glob.sync(path);
 
       let entry = {};
@@ -79,9 +82,11 @@ module.exports = {
                               toType: 'dir',
                               globOptions: {
                                     ignore: [
+                                          '**/node_modules/**/*.json',
                                           '**/lerna.json',
                                           '**/package.json',
                                           '**/tsconfig.json',
+                                          '**/project.config.json',
                                     ]
                               }
                         }
