@@ -3,8 +3,12 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
-            "dev": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch",
-            "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+            "Dev_transformTs": "tsc dist/**/*.ts",
+            "Prod_transformTs": "tsc dist/**/*.ts",
+            "Dev_transformLess": "wxlesscli ./dist",
+            "Prod_transformLess": "wxlesscli ./dist ctrl+c",
+            "copyFiles": "webpack --config webpack.config.js",
+            "dev": "npm run copyFiles && npm run Dev_transformTs && npm run Dev_transformLess",
             "compile": "./node_modules/typescript/bin/tsc",
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
       },

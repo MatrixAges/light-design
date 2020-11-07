@@ -18,6 +18,9 @@
             "removeComments": true,
             "pretty": true,
             "strictPropertyInitialization": true,
+            "skipLibCheck": true,
+            "skipDefaultLibCheck": true,
+            "noStrictGenericChecks": true,
             "lib": [
                   "es5",
                   "es2016"

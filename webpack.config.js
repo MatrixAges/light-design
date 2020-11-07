@@ -1,74 +1,41 @@
 const path = require('path');
 const fs = require('fs-extra');
-const glob = require("glob");
-const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isProd = process.env.NODE_ENV === 'production';
-
-const getComponents = (path) => {
+const clearDist = () => {
       fs.emptyDirSync('dist');
 
-      const files = glob.sync(path);
-
-      let entry = {};
-
-      files.map((item) => {
-            const array_package_path = item.split('/');
-            const package_name = array_package_path[array_package_path.length - 2];
-
-            entry[package_name] = item;
-      });
-
-      return entry;
+      return {};
 };
 
-console.log('--------');
-console.log(getComponents(path.resolve(__dirname, 'miniprogram/**/*.ts')));
-console.log('--------');
-
 module.exports = {
-      mode: process.env.NODE_ENV,
-      entry: getComponents(path.resolve(__dirname, '*.ts')),
+      entry: clearDist(),
       output: {
             filename: '[name].js',
             path: path.resolve(process.cwd(), 'dist')
       },
-      resolve: {
-            extensions: ['.ts', '.js']
-      },
-      module: {
-            rules: [{
-                  test: /\.ts$/,
-                  exclude: /node_modules/,
-                  loader: 'ts-loader'
-            }],
-            rules: [{
-                  test: /\.less$/,
-                  use: [
-                        {
-                              loader: MiniCssExtractPlugin.loader
-                        },
-                        {
-                              loader: 'css-loader'
-                        },
-                        {
-                              loader: 'less-loader'
-                        }
-                  ]
-            }]
-      },
       plugins: [
-            new MiniCssExtractPlugin({filename: '[name].wxss'}),
-            new webpack.BannerPlugin({
-                  banner:
-                        'const commons = require("./commons");\nconst runtime = require("./runtime");',
-                  raw: true,
-                  include: 'app.js'
-            }),
             new CopyPlugin({
                   patterns: [
+                        {
+                              from: '**/*.ts',
+                              toType: 'dir',
+                              globOptions: {
+                                    ignore: [
+                                          '**/node_modules/**/*.ts',
+                                          '**/*.d.ts',
+                                    ]
+                              }
+                        },
+                        {
+                              from: '**/*.less',
+                              toType: 'dir',
+                              globOptions: {
+                                    ignore: [
+                                          '**/node_modules/**/*.less',
+                                    ]
+                              }
+                        },
                         {
                               from: '**/*.wxml',
                               toType: 'dir',
