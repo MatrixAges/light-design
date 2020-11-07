@@ -3,12 +3,8 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
-            "Dev_transformTs": "tsc dist/**/*.ts",
-            "Prod_transformTs": "tsc dist/**/*.ts",
-            "Dev_transformLess": "wxlesscli ./dist",
-            "Prod_transformLess": "wxlesscli ./dist ctrl+c",
-            "copyFiles": "webpack --config webpack.config.js",
-            "dev": "npm run copyFiles && npm run Dev_transformTs && npm run Dev_transformLess",
+            "dev": "NODE_ENV=development webpack --watch --progress --mode=development --config config/webpack.config.dev.js",
+            "build": "NODE_ENV=production webpack --progress --mode=production --config config/webpack.config.prod.js",
             "compile": "./node_modules/typescript/bin/tsc",
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
       },
@@ -35,20 +31,16 @@
             "@babel/preset-env": "^7.12.1",
             "@babel/runtime": "^7.12.5",
             "babel-loader": "^8.1.0",
-            "chalk": "^4.1.0",
             "clean-webpack-plugin": "^3.0.0",
-            "copy-webpack-plugin": "^6.3.0",
-            "cross-env": "^7.0.2",
-            "css-loader": "^5.0.1",
+            "dotenv-webpack": "^5.1.0",
+            "file-loader": "^6.2.0",
             "lerna": "^3.22.1",
             "less-loader": "^7.0.2",
-            "lodash.difference": "^4.5.0",
-            "mini-css-extract-plugin": "^1.3.0",
+            "mini-program-webpack-loader": "^1.1.1",
             "miniprogram-api-typings": "3.1.3",
-            "replace-ext": "^2.0.0",
-            "ts-loader": "^8.0.9",
             "typescript": "4.0.3",
             "webpack": "^5.4.0",
-            "webpack-cli": "^4.2.0"
+            "webpack-cli": "^4.2.0",
+            "webpack-merge": "^5.3.0"
       }
 }
