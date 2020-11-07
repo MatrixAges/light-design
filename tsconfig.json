@@ -4,7 +4,7 @@
             "noImplicitAny": true,
             "module": "CommonJS",
             "target": "ES5",
-            "allowJs": false,
+            "allowJs": true,
             "experimentalDecorators": true,
             "noImplicitThis": true,
             "noImplicitReturns": true,
@@ -16,7 +16,7 @@
             "noUnusedParameters": true,
             "strict": true,
             "removeComments": true,
-            "pretty": true,
+            "pretty": false,
             "strictPropertyInitialization": true,
             "skipLibCheck": true,
             "skipDefaultLibCheck": true,
@@ -30,7 +30,7 @@
             ]
       },
       "include": [
-            "./**/*.ts"
+            "**/*.ts"
       ],
       "exclude": [
             "node_modules"
