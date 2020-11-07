@@ -9,8 +9,12 @@
 /coverage
 
 # production
+/miniprogram/pages_components/*.js
+/miniprogram/pages_components/*.wxss
 /miniprogram/components/*.js
 /miniprogram/components/*.wxss
+/miniprogram/pages/*.js
+/miniprogram/pages/*.wxss
 /dist
 /build
 *.zip

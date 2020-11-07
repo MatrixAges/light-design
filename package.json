@@ -3,8 +3,8 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
-            "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.js --watch",
-            "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+            "dev": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch",
+            "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
             "compile": "./node_modules/typescript/bin/tsc",
             "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
       },
@@ -32,6 +32,8 @@
             "@babel/runtime": "^7.12.5",
             "babel-loader": "^8.1.0",
             "chalk": "^4.1.0",
+            "clean-webpack-plugin": "^3.0.0",
+            "copy-webpack-plugin": "^6.3.0",
             "cross-env": "^7.0.2",
             "css-loader": "^5.0.1",
             "lerna": "^3.22.1",
