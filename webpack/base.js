@@ -1,6 +1,6 @@
 const webpack = require('webpack')
-const baseResolve = require('./webpack.config.base.resolve')
-const baseLoaders = require('./webpack.config.base.loaders')
+const baseResolve = require('./resolve')
+const baseLoaders = require('./loaders')
 
 module.exports = {
 	mode: 'development',

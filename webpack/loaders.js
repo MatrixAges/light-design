@@ -45,8 +45,8 @@ module.exports = [
 		use: [ fileLoader('[path][name].[ext]') ]
 	},
 	{
-		test: /\.(png|jpg|gif)$/,
-		include: /miniprogram/,
+		test: /\.(svg|png|jpg|jpeg|gif)$/,
+		include:  path.resolve(__dirname, '../miniprogram'),
 		use: fileLoader('[path][name].[ext]')
 	}
 ]

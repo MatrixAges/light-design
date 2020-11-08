@@ -3,7 +3,7 @@
   "packOptions": {
     "ignore": []
   },
-  "miniprogramRoot": "miniprogram/",
+  "miniprogramRoot": "dist/",
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
   "projectname": "light-design",

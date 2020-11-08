@@ -3,17 +3,11 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
-            "dev": "npm run dev:mini",
-            "build": "npm run build:mini && npm run build:plugin",
-            "ctrl + c": "退出后还会监听，需要手动 kill 进程",
-            "dev:mini": "webpack --mode development --watch --config ./config/webpack.config.mini.js",
-            "dev:plugin": "webpack --mode development --watch --config ./config/webpack.config.plugin.js",
-            "build:mini": "webpack --mode production --config ./config/webpack.config.mini.js",
-            "build:plugin": "webpack --mode production --config ./config/webpack.config.plugin.js",
-            "compile": "./node_modules/typescript/bin/tsc",
-            "tsc": "node ./node_modules/typescript/lib/tsc.js -w"
+            "dev": "webpack --mode development --watch --config ./webpack/webpack.config.js",
+            "build": "webpack --mode production --config ./webpack/webpack.config.js",
+            "ctrl + c": "退出后还会监听，需要手动 kill 进程"
       },
-      "main": "dist/app.js",
+      "main": "miniprogram/app.ts",
       "keywords": [
             "微信小程序",
             "微信",
