@@ -16,7 +16,7 @@ module.exports = merge(baseConfig, {
 		path: resolve('dist')
 	},
 	plugins: [
-		process.env.NODE_ENV === 'production' ? '' : new CleanWebpackPlugin(),
+		new CleanWebpackPlugin(),
 		new MiniProgramPlugin({
 			extfile: false
 		}),
