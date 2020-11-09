@@ -8,7 +8,7 @@ const default_styles = `
 `
 
 Component({
-      options: {
+	options: {
 		//@ts-ignore
 		pureDataPattern: /^(timer_hide)$/
 	},
@@ -54,7 +54,7 @@ Component({
 			if (!e || typeof e !== 'object') return
 			if (!e.currentTarget.offsetLeft || !e.currentTarget.offsetTop) return
 
-                  clearTimeout(_that.data.timer_hide)
+			clearTimeout(_that.data.timer_hide)
 			_that.reset()
 
 			_that.setData({ visible: true }, () => {
@@ -73,14 +73,14 @@ Component({
 			const limit = Math.max(limit_x, limit_y)
 			const scale = limit / 6
 			const duration_ratio = Math.floor(Math.max(width, height) / 81)
-			const duration_time = 0.3 + duration_ratio * 0.1
+			const duration_time = 0.1 + duration_ratio * 0.1
 
 			const styles = `
 				left: ${offset_x}px;
 				top: ${offset_y}px;
                         opacity: 0.25;
                         transition-duration: ${e.type === 'longpress'
-					? duration_time * 3
+					? duration_time * 2
 					: duration_time}s;
                         transform: translate(-50%, -50%) scale(${scale});
 			`

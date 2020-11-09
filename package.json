@@ -7,7 +7,7 @@
             "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.common.js",
             "ctrl + c": "退出后还会监听，需要手动 kill 进程"
       },
-      "main": "miniprogram/app.ts",
+      "main": "dist/miniprogram/app.js",
       "keywords": [
             "微信小程序",
             "微信",
@@ -44,7 +44,6 @@
             "postcss": "^8.1.6",
             "postcss-loader": "^4.0.4",
             "purgecss-webpack-plugin": "^3.0.0",
-            "thread-loader": "^3.0.1",
             "ts-loader": "^8.0.10",
             "typescript": "4.0.3",
             "webpack": "^4.9.1",

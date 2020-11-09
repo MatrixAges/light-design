@@ -1,16 +1,29 @@
-import data from '../../components/Icon/rest/data'
+import data, { toggle} from 'components/Icon/data'
 
-const normal_icons: Array<string> = []
-const more_icons: Array<string> = []
+type Icon = {
+	name: string
+	value: { outline: string; filled: string }
+}
+
+const normal_icons: Array<Icon> = []
+const more_icons: Array<Icon> = []
 
 for (const i in data) {
 	if (!i) break
 
 	//@ts-ignore
 	if (!data[i].filled) {
-		normal_icons.push(i)
+		normal_icons.push({
+			name: i,
+			//@ts-ignore
+			value: data[i]
+		})
 	} else {
-		more_icons.push(i)
+		more_icons.push({
+			name: i,
+			//@ts-ignore
+			value: data[i]
+		})
 	}
 }
 
@@ -18,7 +31,8 @@ Page({
 	data: {
 		filled: false,
 		normal_icons: normal_icons,
-		more_icons: more_icons
+            more_icons: more_icons,
+            toggle
 	},
 	onChangeType () {
 		this.setData({ filled: !this.data.filled })

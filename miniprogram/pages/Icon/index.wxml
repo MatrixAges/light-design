@@ -14,11 +14,11 @@
                               wx:key="index"
                         >
                               <_Icon
-                                    icon="{{item}}"
+                                    svg="{{item.value}}"
                                     color="black"
                                     size="{{30}}"
                               ></_Icon>
-                              <text class="icon_name mt_20">{{item}}</text>
+                              <text class="icon_name mt_20">{{item.name}}</text>
                         </view>
                   </view>
             </view>
@@ -35,7 +35,7 @@
                   >
                         <view class="flex align_center">
                               <_Icon
-                                    icon="toggle"
+                                    svg="{{toggle}}"
                                     color="black"
                                     size="{{20}}"
                                     type="{{filled?'filled':'outline'}}"
@@ -57,12 +57,12 @@
                               wx:key="index"
                         >
                               <_Icon
-                                    icon="{{item}}"
+                                    svg="{{item.value}}"
                                     color="black"
                                     size="{{30}}"
                                     type="{{filled?'filled':'outline'}}"
                               ></_Icon>
-                              <text class="icon_name mt_20">{{item}}</text>
+                              <text class="icon_name mt_20">{{item.name}}</text>
                         </view>
                   </view>
             </view>

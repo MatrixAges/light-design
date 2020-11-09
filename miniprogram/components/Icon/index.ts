@@ -1,19 +1,17 @@
 import Base64 from './rest/base64'
-import _data from './rest/data'
-import { Icon } from './icon_types'
+import _data from './data'
+import { Icon } from './rest/icon_types'
 
 type Data = Record<Icon, { outline: string; filled: string }>
 
-let data: Data | any = _data
+const data: Data | any = _data
 
 Component({
 	properties: {
-		type: <{
-			type: StringConstructor
-			value: 'outline' | 'filled'
-		}>{
-			type: String,
-			value: 'outline'
+		//当treeShaking设定为true时，icon属性失效，svg属性生效，可直接传入对象
+		treeShaking: {
+			type: Boolean,
+			value: true
 		},
 		icon: <{
 			type: StringConstructor
@@ -22,9 +20,19 @@ Component({
 			type: String,
 			value: ''
 		},
-		svg: {
+		svg: <{
+			type: ObjectConstructor
+			value: { outline: string; filled: string }
+		}>{
+			type: Object,
+			value: {}
+		},
+		type: <{
+			type: StringConstructor
+			value: 'outline' | 'filled'
+		}>{
 			type: String,
-			value: ''
+			value: 'outline'
 		},
 		visibleWrap: {
 			type: Boolean,
@@ -57,24 +65,29 @@ Component({
 		color: {
 			type: String,
 			value: '#000000'
-		},
-		extend: {
-			type: Object,
-			value: {}
 		}
 	},
 	observers: {
 		type (v) {
-			this.getSrc(data[this.data.icon][v])
+			if (this.data.treeShaking) {
+				this.getSrc(this.data.svg[v])
+			} else {
+				this.getSrc(data[this.data.icon][v])
+			}
 		},
+		// treeShaking=false时，生效
 		icon (v) {
+			if (!v) return
+			if (!this.data.type) return
+
 			this.getSrc(data[v][this.data.type])
 		},
+		// treeShaking=true时，生效
 		svg (v) {
-			this.getSrc(v)
-		},
-		extend (v) {
-			data = { ...v, ..._data }
+			if (!v) return
+			if (!this.data.type) return
+
+			this.getSrc(v[this.data.type])
 		}
 	},
 	data: {
