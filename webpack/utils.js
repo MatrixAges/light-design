@@ -19,9 +19,19 @@ const copyAppJson = () => {
 	})
 }
 
+const fileLoader = (name) => ({
+	loader: 'file-loader',
+	options: {
+		publicPath: '',
+		context: paths.miniprogram || paths.root,
+		name
+	}
+})
+
 module.exports = {
 	is_dev,
 	paths,
 	resolve,
-	copyAppJson
+	copyAppJson,
+	fileLoader
 }

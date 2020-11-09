@@ -1,10 +1,10 @@
-const MiniProgramPlugin = require('mini-program-webpack-loader').plugin
-const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { merge } = require('webpack-merge')
-const { is_dev, paths, resolve, copyAppJson } = require('./utils')
+const resolve = require('./resolve')
+const loaders = require('./loaders')
+const plugins = require('./plugins')
 const devConfig = require('./webpack.config.dev')
 const prodConfig = require('./webpack.config.prod')
+const { is_dev, paths } = require('./utils')
 
 global.context = paths.miniprogram
 
@@ -12,25 +12,7 @@ module.exports = merge(is_dev ? devConfig : prodConfig, {
 	context: paths.miniprogram,
 	entry: paths.app_json,
 	output: { path: paths.dist },
-	plugins: [
-		new MiniProgramPlugin({
-			extfile: false,
-                  compilationFinish() {
-				copyAppJson()
-			}
-		}),
-		new IgnoreEmitPlugin('.DS_Store'),
-		new CopyWebpackPlugin({
-			patterns: [
-				{
-					from: resolve('miniprogram/image'),
-					to: resolve('dist/image')
-				},
-				{
-					from: resolve('miniprogram/sitemap.json'),
-					to: resolve('dist/sitemap.json')
-				}
-			]
-		})
-	]
+	resolve: resolve,
+	module: { rules: loaders },
+	plugins: plugins
 })

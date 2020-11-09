@@ -1,6 +1,5 @@
 const webpack = require('webpack')
-const baseResolve = require('./resolve')
-const baseLoaders = require('./loaders')
+
 
 module.exports = {
 	mode: 'development',
@@ -10,8 +9,6 @@ module.exports = {
 		ignored: /node_modules|dist/,
 		poll: 1000
 	},
-	resolve: baseResolve,
-	module: { rules: baseLoaders },
 	optimization: {
 		splitChunks: {
 			cacheGroups: {

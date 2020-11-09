@@ -1,14 +1,11 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const webpack = require('webpack')
-const baseResolve = require('./resolve')
-const baseLoaders = require('./loaders')
 
 module.exports = {
 	mode: 'production',
 	target: 'node',
 	devtool: false,
-	resolve: baseResolve,
-	module: { rules: baseLoaders },
 	optimization: {
 		minimize: true,
 		splitChunks: {
@@ -23,6 +20,7 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
+		new BundleAnalyzerPlugin(),
 		new webpack.DefinePlugin({
 			PRODUCTION: JSON.stringify(process.env.NODE_ENV === 'production')
 		})
