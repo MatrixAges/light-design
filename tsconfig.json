@@ -27,7 +27,19 @@
             ],
             "typeRoots": [
                   "./typings"
-            ]
+            ],
+            "baseUrl": "./",
+            "paths": {
+                  "@/*": [
+                        "miniprogram/*"
+                  ],
+                  "components/*": [
+                        "miniprogram/components/*"
+                  ],
+                  "page_components/*": [
+                        "miniprogram/page_components/*"
+                  ]
+            },
       },
       "include": [
             "**/*.ts"

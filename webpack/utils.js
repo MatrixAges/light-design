@@ -10,8 +10,7 @@ const paths = {
 	app_json: resolve('miniprogram/app.json'),
 	dist_app_json: resolve('dist/app.json'),
 	components: resolve('miniprogram/components'),
-	page_components: resolve('miniprogram/page_components'),
-	root: path.resolve(__dirname, '.')
+	page_components: resolve('miniprogram/page_components')
 }
 
 const copyAppJson = () => {
