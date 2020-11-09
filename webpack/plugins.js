@@ -1,7 +1,7 @@
 const MiniProgramPlugin = require('mini-program-webpack-loader').plugin
 const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const { resolve, copyAppJson, fileLoader } = require('./utils')
+const { resolve, copyAppJson } = require('./utils')
 
 module.exports = [
 	new IgnoreEmitPlugin('.DS_Store'),
