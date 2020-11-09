@@ -11,6 +11,7 @@
             "pages/Modal/index",
             "pages/SnackBar/index",
             "pages/Ripple/index",
+            "pages/Line/index",
             "pages/Toast/index",
             "pages/Popover/index",
             "pages/Sticky/index",
