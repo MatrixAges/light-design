@@ -1,166 +1,165 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "miniprogramRoot": "dist/",
-  "compileType": "miniprogram",
-  "libVersion": "2.14.0",
-  "projectname": "light-design",
-  "scripts": {
-    "beforeCompile": "npm run tsc",
-    "beforePreview": "npm run compile",
-    "beforeUpload": "npm run compile"
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": false,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": true,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "bundle": true,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
-  },
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "appid": "wx8e159e25f6ee6b4e",
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "pages/Button/index",
-          "pathName": "pages/Button/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/ActionSheet/index",
-          "pathName": "pages/ActionSheet/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/Card/index",
-          "pathName": "pages/Card/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/Dialog/index",
-          "pathName": "pages/Dialog/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/DialogQueue/index",
-          "pathName": "pages/DialogQueue/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Loading/index",
-          "pathName": "pages/Loading/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Modal/index",
-          "pathName": "pages/Modal/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/SnackBar/index",
-          "pathName": "pages/SnackBar/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Ripple/index",
-          "pathName": "pages/Ripple/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Line/index",
-          "pathName": "pages/Line/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Toast/index",
-          "pathName": "pages/Toast/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Popover/index",
-          "pathName": "pages/Popover/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Sticky/index",
-          "pathName": "pages/Sticky/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Landing/index",
-          "pathName": "pages/Landing/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Text/index",
-          "pathName": "pages/Text/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/Icon/index",
-          "pathName": "pages/Icon/index",
-          "scene": null
-        }
-      ]
-    }
-  }
+      "description": "项目配置文件",
+      "packOptions": {
+            "ignore": []
+      },
+      "miniprogramRoot": "dist/",
+      "compileType": "miniprogram",
+      "libVersion": "2.14.0",
+      "projectname": "light-design",
+      "scripts": {
+            "beforePreview": "npm run compile",
+            "beforeUpload": "npm run compile"
+      },
+      "setting": {
+            "urlCheck": false,
+            "es6": false,
+            "enhance": false,
+            "postcss": true,
+            "preloadBackgroundData": false,
+            "minified": false,
+            "newFeature": false,
+            "coverView": true,
+            "nodeModules": true,
+            "autoAudits": false,
+            "showShadowRootInWxmlPanel": true,
+            "scopeDataCheck": false,
+            "uglifyFileName": false,
+            "checkInvalidKey": true,
+            "checkSiteMap": true,
+            "uploadWithSourceMap": true,
+            "compileHotReLoad": true,
+            "useMultiFrameRuntime": false,
+            "useApiHook": true,
+            "babelSetting": {
+                  "ignore": [],
+                  "disablePlugins": [],
+                  "outputPath": ""
+            },
+            "bundle": true,
+            "useIsolateContext": true,
+            "useCompilerModule": true,
+            "userConfirmedUseCompilerModuleSwitch": false,
+            "packNpmManually": false,
+            "packNpmRelationList": [],
+            "minifyWXSS": false
+      },
+      "simulatorType": "wechat",
+      "simulatorPluginLibVersion": {},
+      "appid": "wx8e159e25f6ee6b4e",
+      "condition": {
+            "plugin": {
+                  "list": []
+            },
+            "game": {
+                  "list": []
+            },
+            "gamePlugin": {
+                  "list": []
+            },
+            "miniprogram": {
+                  "list": [
+                        {
+                              "id": -1,
+                              "name": "pages/Button/index",
+                              "pathName": "pages/Button/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "id": -1,
+                              "name": "pages/ActionSheet/index",
+                              "pathName": "pages/ActionSheet/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "id": -1,
+                              "name": "pages/Card/index",
+                              "pathName": "pages/Card/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "id": -1,
+                              "name": "pages/Dialog/index",
+                              "pathName": "pages/Dialog/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "id": -1,
+                              "name": "pages/DialogQueue/index",
+                              "pathName": "pages/DialogQueue/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Loading/index",
+                              "pathName": "pages/Loading/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Modal/index",
+                              "pathName": "pages/Modal/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/SnackBar/index",
+                              "pathName": "pages/SnackBar/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Ripple/index",
+                              "pathName": "pages/Ripple/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Line/index",
+                              "pathName": "pages/Line/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Toast/index",
+                              "pathName": "pages/Toast/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Popover/index",
+                              "pathName": "pages/Popover/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Sticky/index",
+                              "pathName": "pages/Sticky/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Landing/index",
+                              "pathName": "pages/Landing/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Text/index",
+                              "pathName": "pages/Text/index",
+                              "query": "",
+                              "scene": null
+                        },
+                        {
+                              "name": "pages/Icon/index",
+                              "pathName": "pages/Icon/index",
+                              "scene": null
+                        }
+                  ]
+            }
+      }
 }
