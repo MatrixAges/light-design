@@ -42,6 +42,6 @@
             "_Sticky": "components/Sticky/index",
             "_Text": "components/Text/index",
             "_Icon": "components/Icon/index",
-            "Tips": "components/_Tips/index"
+            "Tips": "page_components/_Tips/index"
       }
 }
