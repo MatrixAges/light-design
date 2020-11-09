@@ -1,4 +1,4 @@
-import data, { toggle} from 'components/Icon/data'
+import data,{ toggle } from 'components/Icon/data'
 
 type Icon = {
 	name: string

@@ -96,3 +96,5 @@ export type Icon =
 	| 'female'
 	| 'circle'
 	| 'bluetooth'
+
+export type Data = Record<Icon, { outline: string; filled: string }>

@@ -4,7 +4,7 @@ module.exports = [
 	{
 		test: /\.ts$/,
 		exclude: paths.node_modules,
-		use: [ 'cache-loader', 'ts-loader' ]
+		use: [ 'cache-loader', 'ts-loader?transpileOnly' ]
 	},
 	{
 		test: /.wxml/,
