@@ -1,10 +1,8 @@
-const path = require('path')
-
-const resolve = (p) => path.resolve(__dirname, '../', p)
+const {paths} = require('./utils');
 
 module.exports = {
-	extensions: [ '.ts', '.js' ],
-	alias: {
-		components: resolve('miniprogram/components')
-	}
-}
+      extensions: ['.ts', '.js'],
+      alias: {
+            components: paths.components
+      }
+};

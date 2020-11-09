@@ -3,8 +3,8 @@
       "version": "1.0.0",
       "description": "Components close to nature.",
       "scripts": {
-            "dev": "cross-env NODE_ENV=development webpack --mode development --watch --config ./webpack/webpack.config.js",
-            "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.js",
+            "dev": "cross-env NODE_ENV=development webpack --mode development --watch --config ./webpack/webpack.config.common.js",
+            "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.common.js",
             "ctrl + c": "退出后还会监听，需要手动 kill 进程"
       },
       "main": "miniprogram/app.ts",
@@ -37,6 +37,7 @@
             "cross-env": "^7.0.2",
             "dotenv-webpack": "^5.1.0",
             "file-loader": "^6.2.0",
+            "ignore-emit-webpack-plugin": "^2.0.5",
             "lerna": "^3.22.1",
             "less": "^3.12.2",
             "less-loader": "^7.0.2",

@@ -1,6 +1,8 @@
 import Base64 from './rest/base64'
-import _data from './rest/data'
+// import _data from './rest/data'
 import { Icon } from './icon_types'
+
+const _data={}
 
 type Data = Record<Icon, { outline: string; filled: string }>
 
