@@ -1,8 +1,8 @@
-const {paths} = require('./utils');
+const { paths } = require('./utils')
 
 module.exports = {
-      extensions: ['.ts', '.js'],
-      alias: {
-            components: paths.components
-      }
-};
+	extensions: [ '.ts', '.js', '.json' ],
+	alias: {
+		components: paths.components
+	}
+}
