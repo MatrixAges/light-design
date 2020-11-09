@@ -8,7 +8,7 @@ module.exports = [
 	new MiniProgramPlugin({
 		extfile: false,
 		compilationFinish () {
-			copyAppJson()
+			// copyAppJson()
 		}
 	}),
 	new CopyWebpackPlugin({
