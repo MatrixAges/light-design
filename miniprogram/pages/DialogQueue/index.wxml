@@ -5,7 +5,7 @@
                   <text class="attr">default</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap

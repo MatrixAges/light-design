@@ -93,7 +93,7 @@
                         <text class="attr">default</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -115,7 +115,7 @@
                         <text class="attr">description</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -136,7 +136,7 @@
                         <text class="attr">autoClose</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -159,7 +159,7 @@
                         <text class="attr">duration</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -183,7 +183,7 @@
                         <text class="attr">position</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -206,7 +206,7 @@
                         <text class="attr">bottom</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -229,7 +229,7 @@
                         <text class="attr">mini</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -252,7 +252,7 @@
                         <text class="attr">slot</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -282,7 +282,7 @@
                         <text class="attr">cover</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -305,7 +305,7 @@
                         <text class="attr">composition</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -337,7 +337,7 @@
                         <text class="attr">styles</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap

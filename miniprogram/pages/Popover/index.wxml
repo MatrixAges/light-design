@@ -5,7 +5,7 @@
                   <text class="attr">center</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -27,7 +27,7 @@
                   <text class="attr">position</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -49,7 +49,7 @@
                   <text class="attr">mark</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -72,7 +72,7 @@
                   <text class="attr">transformOrigin</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -96,7 +96,7 @@
                   <text class="attr">custom</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap

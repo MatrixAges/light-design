@@ -6,7 +6,7 @@
                         <text class="attr">default</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -26,7 +26,7 @@
                         <text class="attr">position</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -47,7 +47,7 @@
                         <text class="attr">custom</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap
@@ -69,7 +69,7 @@
                         <text class="attr">duration</text>
                   </view>
                   <_Icon
-                        icon="blockRight"
+                        icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
                         visibleWrap

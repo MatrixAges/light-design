@@ -1,5 +1,7 @@
+import { blockRight } from 'components/Icon/data'
+
 Page({
 	data: {
-		visible_default: false
+		blockRight:blockRight,visible_default: false
 	}
 })

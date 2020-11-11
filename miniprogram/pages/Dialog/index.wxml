@@ -5,7 +5,7 @@
                   <text class="attr">default</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -24,7 +24,7 @@
                   <text class="attr">title</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -46,7 +46,7 @@
                   <text class="attr">custom</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -71,7 +71,7 @@
                   <text class="attr">bottom</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -93,7 +93,7 @@
                   <text class="attr">cancelVisible</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -119,7 +119,7 @@
                   <text class="attr">closeVisible</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -145,7 +145,7 @@
                   <text class="attr">maskVisible</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -168,7 +168,7 @@
                   <text class="attr">maskClosable</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -190,7 +190,7 @@
                   <text class="attr">bodyStyle</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -212,7 +212,7 @@
                   <text class="attr">okText</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap
@@ -234,7 +234,7 @@
                   <text class="attr">cancelText</text>
             </view>
             <_Icon
-                  icon="blockRight"
+                  icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
                   visibleWrap

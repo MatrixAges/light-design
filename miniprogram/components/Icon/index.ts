@@ -1,7 +1,7 @@
 import Base64 from './rest/base64'
 
 Component({
-      options: {
+	options: {
 		//@ts-ignore
 		pureDataPattern: /^(type)$/
 	},
@@ -19,6 +19,14 @@ Component({
 		}>{
 			type: String,
 			value: 'outline'
+		},
+		size: {
+			type: Number,
+			value: 20
+		},
+		color: {
+			type: String,
+			value: '#000000'
 		},
 		visibleWrap: {
 			type: Boolean,
@@ -43,25 +51,17 @@ Component({
 		fillColor: {
 			type: String,
 			value: 'whitesmoke'
-		},
-		size: {
-			type: Number,
-			value: 20
-		},
-		color: {
-			type: String,
-			value: '#000000'
 		}
 	},
 	observers: {
 		type (v) {
-                  this.getSrc(this.data.icon[v])
+			this.getSrc(this.data.icon[v])
 		},
 		icon (v) {
 			if (!v) return
 			if (!this.data.type) return
-                  
-                  this.getSrc(v[this.data.type])
+
+			this.getSrc(v[this.data.type])
 		}
 	},
 	data: {

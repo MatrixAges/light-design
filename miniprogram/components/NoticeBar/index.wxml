@@ -1,0 +1,10 @@
+<view class="notice_wrap">
+      <view class="left_wrap">
+            <slot name="left"></slot>
+      </view>
+      <view class="content">
+      </view>
+      <view class="right_wrap">
+            <slot name="right"></slot>
+      </view>
+</view>

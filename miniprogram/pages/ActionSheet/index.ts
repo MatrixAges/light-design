@@ -1,5 +1,8 @@
+import { blockRight } from 'components/Icon/data'
+
 Page({
 	data: {
+		blockRight: blockRight,
 		visible_default: false,
 		list: [
 			{
@@ -48,8 +51,7 @@ Page({
 
 		_that.setData({
 			[`visible_${type}`]: true
-            })
-                
+		})
 	},
 	onAction (e: any) {
 		console.log(e)

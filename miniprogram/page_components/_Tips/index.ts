@@ -4,7 +4,7 @@ Component({
 			type: String,
 			value: ''
 		},
-		topShadow: {
+		topBorder: {
 			type: Boolean,
 			value: false
 		}

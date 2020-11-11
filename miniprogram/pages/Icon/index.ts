@@ -1,4 +1,4 @@
-import data,{ toggle } from 'components/Icon/data'
+import data,{ toggle,cube } from 'components/Icon/data'
 
 type Icon = {
 	name: string
@@ -32,7 +32,8 @@ Page({
 		filled: false,
 		normal_icons: normal_icons,
             more_icons: more_icons,
-            toggle
+            toggle,
+            cube
 	},
 	onChangeType () {
 		this.setData({ filled: !this.data.filled })

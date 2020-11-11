@@ -1,4 +1,4 @@
-<view class="tips_wrap {{topShadow?'topShadow':''}}">
+<view class="tips_wrap {{topBorder?'topBorder':''}}">
       <image
             class="icon_info"
             mode="widthFix"

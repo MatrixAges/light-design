@@ -73,7 +73,7 @@ Component({
 			const limit = Math.max(limit_x, limit_y)
 			const scale = limit / 6
 			const duration_ratio = Math.floor(Math.max(width, height) / 81)
-			const duration_time = 0.1 + duration_ratio * 0.1
+			const duration_time = 0.3 + duration_ratio * 0.05
 
 			const styles = `
 				left: ${offset_x}px;
