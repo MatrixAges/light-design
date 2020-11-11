@@ -1,5 +1,76 @@
-.init {
-      font-size: 30rpx;
-      line-height: 1.6;
-      color: black;
+@height: 60rpx;
+
+.notice_wrap {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 12rpx;
+
+      .left_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60rpx;
+
+            .icon_notice {
+                  width: 40rpx;
+                  height: 40rpx;
+            }
+      }
+
+      .content {
+            width: calc(~'100% - 60rpx - 40rpx');
+            box-sizing: border-box;
+            padding: 0 8rpx;
+
+            .swiper {
+                  height: @height;
+
+                  &.horizontal {
+                        .swiper_item {
+                              .item {
+                                    width: auto;
+                                    display: inline;
+                                    overflow: visible;
+                                    box-sizing: border-box;
+                                    padding-left: 24rpx;
+
+                                    &:nth-of-type(1){
+                                          padding-left: 0;
+                                    }
+                              }
+                        }
+                  }
+
+                  .swiper_item {
+                        width: 100%;
+                        height: 100%;
+
+                        .item {
+                              width: 100%;
+                              height: @height;
+                              display: -webkit-box;
+                              -webkit-box-orient: vertical;
+                              overflow: hidden;
+                              -webkit-line-clamp: 1;
+                              font-size: 24rpx;
+                              line-height: @height;
+                        }
+                  }
+            }
+      }
+
+      .right_wrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 40rpx;
+
+            .icon_right {
+                  width: 32rpx;
+                  height: 32rpx;
+                  opacity: 0.6;
+            }
+      }
 }

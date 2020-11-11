@@ -1,0 +1,86 @@
+<view class="example_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">default</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar list="{{list}}"></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">横向滚动</text>
+                  <text class="attr">horizontal</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar
+                              list="{{list}}"
+                              interval="{{5000}}"
+                              horizontal
+                        ></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">颜色</text>
+                  <text class="attr">color</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar
+                              list="{{list}}"
+                              color="white"
+                              bgColor="black"
+                        ></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">背景</text>
+                  <text class="attr">bgColor</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar
+                              list="{{list}}"
+                              color="white"
+                              bgColor="linear-gradient(to right,red,purple)"
+                        ></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">时间间隔</text>
+                  <text class="attr">interval</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar
+                              list="{{list}}"
+                              interval="{{1000}}"
+                        ></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">自定义样式</text>
+                  <text class="attr">styles</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <_NoticeBar
+                              list="{{list}}"
+                              styles="height:90rpx;background:transparent;border:2rpx solid black;border-radius:30rpx;"
+                        ></_NoticeBar>
+                  </view>
+            </view>
+      </view>
+</view>

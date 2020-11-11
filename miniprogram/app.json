@@ -16,7 +16,8 @@
             "pages/Popover/index",
             "pages/Sticky/index",
             "pages/Text/index",
-            "pages/Icon/index"
+            "pages/Icon/index",
+            "pages/NoticeBar/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -43,6 +44,7 @@
             "_Sticky": "components/Sticky/index",
             "_Text": "components/Text/index",
             "_Icon": "components/Icon/index",
+            "_NoticeBar": "components/NoticeBar/index",
             "Tips": "page_components/_Tips/index"
       }
 }

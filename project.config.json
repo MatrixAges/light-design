@@ -28,7 +28,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
+    "compileHotReLoad": true,
     "useMultiFrameRuntime": false,
     "useApiHook": true,
     "babelSetting": {
@@ -157,6 +157,12 @@
         {
           "name": "pages/Icon/index",
           "pathName": "pages/Icon/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/NoticeBar/index",
+          "pathName": "pages/NoticeBar/index",
           "scene": null
         }
       ]

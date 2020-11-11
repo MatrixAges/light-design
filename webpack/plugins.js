@@ -14,8 +14,8 @@ module.exports = [
 	new CopyWebpackPlugin({
 		patterns: [
 			{
-				from: resolve('miniprogram/image'),
-				to: resolve('dist/image')
+				from: resolve('miniprogram/**/*.(svg|png|jpe?g|gif)'),
+				to: '[path][name].[ext]'
 			},
 			{
 				from: resolve('miniprogram/sitemap.json'),

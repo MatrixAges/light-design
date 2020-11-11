@@ -1,10 +1,54 @@
-<view class="notice_wrap">
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
+<view
+      class="notice_wrap"
+      style="{{wxs.getStyles({color,bgColor})}};{{styles}}"
+>
       <view class="left_wrap">
-            <slot name="left"></slot>
+            <view
+                  class="icon icon_notice"
+                  style="-webkit-mask-image:url('{{icon_notice}}');background:{{color}}"
+            ></view>
       </view>
-      <view class="content">
+      <view
+            class="content"
+            catchtap="onDetail"
+      >
+            <swiper
+                  class="swiper {{horizontal?'horizontal':''}}"
+                  circular
+                  autoplay
+                  vertical="{{horizontal?false:true}}"
+                  interval="{{interval}}"
+                  duration="{{horizontal?interval:500}}"
+                  easing-function="{{horizontal?'linear':'default'}}"
+            >
+                  <block
+                        wx:for="{{list}}"
+                        wx:key="index"
+                  >
+                        <swiper-item
+                              class="swiper_item"
+                              skip-hidden-item-layout
+                        >
+                              <text
+                                    class="item"
+                                    mark:index="{{index}}"
+                              >{{item}}</text>
+                        </swiper-item>
+                  </block>
+            </swiper>
       </view>
-      <view class="right_wrap">
-            <slot name="right"></slot>
+      <view
+            class="right_wrap"
+            catchtap="onMore"
+      >
+            <view
+                  class="icon icon_right"
+                  style="-webkit-mask-image:url('{{icon_right}}');background:{{color}}"
+            ></view>
       </view>
 </view>

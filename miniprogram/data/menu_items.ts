@@ -105,6 +105,11 @@ export default <Array<IMenuItems>>[
 				name: 'Loading',
 				description: '加载中',
 				active: true
+                  },
+                  {
+				name: 'NoticeBar',
+				description: '公告栏',
+				active: true
 			},
 			{
 				name: 'Card',
@@ -208,10 +213,6 @@ export default <Array<IMenuItems>>[
 				name: 'SnackBar',
 				description: '提示栏',
 				active: true
-			},
-			{
-				name: 'NoticeBar',
-				description: '通告栏'
 			},
 			{
 				name: 'Popover',

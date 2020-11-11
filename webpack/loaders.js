@@ -30,13 +30,8 @@ module.exports = [
 		use: [ fileLoader('[path][name].[ext]'), 'babel-loader', 'mini-program-webpack-loader' ]
 	},
 	{
-		test: /\.json/,
+		test: /\.json$/,
 		type: 'javascript/auto',
-		use: [ fileLoader('[path][name].[ext]') ]
-	},
-	{
-		test: /\.(svg|png|jpg|jpeg|gif)$/,
-		include: paths.miniprogram,
 		use: [ fileLoader('[path][name].[ext]') ]
 	}
 ]

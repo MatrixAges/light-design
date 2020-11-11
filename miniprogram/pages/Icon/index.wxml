@@ -93,7 +93,7 @@
                         <view class="example w_100 border_box flex flex_wrap">
                               <_Icon
                                     icon="{{cube}}"
-                                    color="linear-gradient(-60deg,red,orange)"
+                                    color="linear-gradient(to right,red,purple)"
                                     size="{{40}}"
                                     type="filled"
                               ></_Icon>
