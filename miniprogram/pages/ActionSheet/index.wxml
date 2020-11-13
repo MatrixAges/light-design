@@ -131,7 +131,7 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">行个数</text>
+                  <text class="title">列数</text>
                   <text class="attr">column</text>
             </view>
             <_Icon
