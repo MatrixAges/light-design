@@ -2,6 +2,11 @@
       "name": "light-design",
       "version": "1.0.0",
       "description": "Components close to nature.",
+      "homepage": "lightd.matrixages.com",
+      "repository": {
+            "type": "git",
+            "url": "git@github.com:MatrixAges/light-design.git"
+      },
       "scripts": {
             "dev": "cross-env NODE_ENV=development webpack --mode development --watch --config ./webpack/webpack.config.common.js",
             "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.common.js",
