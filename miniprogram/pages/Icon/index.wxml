@@ -1,4 +1,4 @@
-<tips text="常规类型的图标的type仅支持'outline'。"></tips>
+<_tips text="常规类型的图标的type仅支持'outline'。"></_tips>
 
 <view class="example_items icon_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
@@ -13,11 +13,11 @@
                               wx:for="{{normal_icons}}"
                               wx:key="index"
                         >
-                              <_icon
+                              <light-icon
                                     icon="{{item.value}}"
                                     color="black"
                                     size="{{30}}"
-                              ></_icon>
+                              ></light-icon>
                               <text class="icon_name mt_20">{{item.name}}</text>
                         </view>
                   </view>
@@ -25,7 +25,7 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex">
-                  <_button
+                  <light-button
                         class="mb_40"
                         type="primary"
                         size="small"
@@ -34,18 +34,18 @@
                         catchtap="onChangeType"
                   >
                         <view class="flex align_center">
-                              <_icon
+                              <light-icon
                                     icon="{{toggle}}"
                                     color="black"
                                     size="{{20}}"
                                     type="{{filled?'filled':'outline'}}"
-                              ></_icon>
+                              ></light-icon>
                               <text
                                     class="ml_12"
                                     style="line-height: 1;"
                               >切换样式</text>
                         </view>
-                  </_button>
+                  </light-button>
                   <text class="title">功能</text>
                   <text class="attr">outline & filled</text>
             </view>
@@ -56,12 +56,12 @@
                               wx:for="{{more_icons}}"
                               wx:key="index"
                         >
-                              <_icon
+                              <light-icon
                                     icon="{{item.value}}"
                                     color="black"
                                     size="{{30}}"
                                     type="{{filled?'filled':'outline'}}"
-                              ></_icon>
+                              ></light-icon>
                               <text class="icon_name mt_20">{{item.name}}</text>
                         </view>
                   </view>
@@ -75,12 +75,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="red"
                                     size="{{40}}"
                                     type="filled"
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -91,12 +91,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="linear-gradient(to right,red,purple)"
                                     size="{{40}}"
                                     type="filled"
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -107,12 +107,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="black"
                                     size="{{40}}"
                                     type="filled"
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -123,12 +123,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="black"
                                     size="{{20}}"
                                     type="filled"
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -139,14 +139,14 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="black"
                                     size="{{30}}"
                                     type="filled"
                                     visibleWrap
                                     bordered
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -157,14 +157,14 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="black"
                                     size="{{30}}"
                                     type="filled"
                                     visibleWrap
                                     filled
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -175,7 +175,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="black"
                                     size="{{30}}"
@@ -184,7 +184,7 @@
                                     visibleWrap
                                     bordered
                                     round
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
@@ -195,7 +195,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 border_box flex flex_wrap">
-                              <_icon
+                              <light-icon
                                     icon="{{cube}}"
                                     color="white"
                                     size="{{30}}"
@@ -204,12 +204,12 @@
                                     visibleWrap
                                     filled
                                     round
-                              ></_icon>
+                              ></light-icon>
                         </view>
                   </view>
             </view>
       </view>
 </view>
 
-<tips text="按需引入：可直接通过icon属性，传入从Icon/data.ts导入的变量；如需全量引入，请自行改写组件">
-</tips>
+<_tips text="按需引入：可直接通过icon属性，传入从Icon/data.ts导入的变量；如需全量引入，请自行改写组件">
+</_tips>

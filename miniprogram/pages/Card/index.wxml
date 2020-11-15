@@ -6,14 +6,14 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="标题"
                               width="100%"
                               radius="{{8}}"
                               bordered
                         >
                               Lorem ipsum dolor sit amet, consectetur
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -24,7 +24,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="Primary"
                               width="100%"
                               bgColor="red"
@@ -32,7 +32,7 @@
                               radius="{{8}}"
                         >
                               Lorem ipsum dolor sit amet, consectetur
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -43,14 +43,14 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="标题"
                               width="100%"
                               radius="{{8}}"
                               shadow
                         >
                               Lorem ipsum dolor sit amet, consectetur
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -61,7 +61,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               bgColor="#222"
                               color="white"
                               radius="{{8}}"
@@ -76,7 +76,7 @@
                               >
                                     Lorem ipsum dolor sit amet, consectetur
                               </view>
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -87,7 +87,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="标题"
                               width="100%"
                               radius="{{24}}"
@@ -95,7 +95,7 @@
                               bordered
                         >
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -106,7 +106,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               width="100%"
                               radius="{{8}}"
                               bordered
@@ -123,7 +123,7 @@
                               <view>
                                     Lorem ipsum dolor sit amet, consectetur
                               </view>
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -134,7 +134,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="标题"
                               width="100%"
                               color="gray"
@@ -142,7 +142,7 @@
                               bordered
                         >
                               Lorem ipsum dolor sit amet, consectetur
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -153,7 +153,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               title="标题"
                               width="100%"
                               radius="{{8}}"
@@ -168,7 +168,7 @@
                               <view class="text_justify">
                                     Lorem ipsum dolor sit amet, consectetur
                               </view>
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -179,7 +179,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               width="100%"
                               bordered
                               noPadding
@@ -194,7 +194,7 @@
                               >
                                     Lorem ipsum dolor sit amet, consectetur
                               </view>
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>
@@ -205,13 +205,13 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_card
+                        <card
                               width="100%"
                               bordered
                               noPadding
                         >
                               Lorem ipsum dolor sit amet, consectetur
-                        </_card>
+                        </card>
                   </view>
             </view>
       </view>

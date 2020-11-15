@@ -7,7 +7,7 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example w_100">
-                              <_line></_line>
+                              <line></line>
                         </view>
                   </view>
             </view>
@@ -18,7 +18,7 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example w_100">
-                              <_line height="10rpx"></_line>
+                              <line height="10rpx"></line>
                         </view>
                   </view>
             </view>
@@ -29,7 +29,7 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example w_100">
-                              <_line width="50%"></_line>
+                              <line width="50%"></line>
                         </view>
                   </view>
             </view>
@@ -40,7 +40,7 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example w_100">
-                              <_line thin></_line>
+                              <line thin></line>
                         </view>
                   </view>
             </view>
@@ -51,10 +51,10 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example w_100">
-                              <_line
+                              <line
                                     height="10rpx"
                                     radius="{{10}}"
-                              ></_line>
+                              ></line>
                         </view>
                   </view>
             </view>
@@ -65,15 +65,15 @@
                   </view>
                   <view class="examples flex align_center">
                         <view class="example flex">
-                              <_line
+                              <line
                                     class="mr_24"
                                     radius="{{8}}"
                                     box
                                     thin
                                     catchtap="click"
                               >
-                                    <_button ghost>Primary</_button>
-                              </_line>
+                                    <light-button ghost>Primary</light-button>
+                              </line>
                         </view>
                   </view>
             </view>
@@ -85,19 +85,19 @@
             </view>
             <view class="examples flex align_center">
                   <view class="example w_100">
-                        <_line
+                        <line
                               radius="{{8}}"
                               box
                         >
-                              <_card
+                              <card
                                     title="Primary"
                                     width="100%"
                               >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </_card>
-                        </_line>
+                              </card>
+                        </line>
                   </view>
             </view>
       </view>
@@ -108,20 +108,20 @@
             </view>
             <view class="examples flex align_center">
                   <view class="example w_100">
-                        <_line
+                        <line
                               radius="{{8}}"
                               box
                               thin
                         >
-                              <_card
+                              <card
                                     title="Primary"
                                     width="100%"
                               >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </_card>
-                        </_line>
+                              </card>
+                        </line>
                   </view>
             </view>
       </view>
@@ -132,20 +132,20 @@
             </view>
             <view class="examples flex align_center">
                   <view class="example w_100">
-                        <_line
+                        <line
                               color="red"
                               radius="{{8}}"
                               box
                         >
-                              <_card
+                              <card
                                     title="Primary"
                                     width="100%"
                               >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </_card>
-                        </_line>
+                              </card>
+                        </line>
                   </view>
             </view>
       </view>

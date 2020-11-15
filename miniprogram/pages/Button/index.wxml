@@ -7,25 +7,25 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button type="primary">primary</_button>
+                              <light-button type="primary">primary</light-button>
                         </view>
                         <view class="example">
-                              <_button type="success">success</_button>
+                              <light-button type="success">success</light-button>
                         </view>
                         <view class="example">
-                              <_button type="warning">warning</_button>
+                              <light-button type="warning">warning</light-button>
                         </view>
                         <view class="example">
-                              <_button type="error">error</_button>
+                              <light-button type="error">error</light-button>
                         </view>
                         <view class="example">
-                              <_button type="border">border</_button>
+                              <light-button type="border">border</light-button>
                         </view>
                         <view class="example">
-                              <_button type="dashed">dashed</_button>
+                              <light-button type="dashed">dashed</light-button>
                         </view>
                         <view class="example">
-                              <_button type="default">default</_button>
+                              <light-button type="default">default</light-button>
                         </view>
                   </view>
             </view>
@@ -39,34 +39,34 @@
                         style="justify-content: flex-start;"
                   >
                         <view class="example">
-                              <_button
+                              <light-button
                                     type="primary"
                                     ghost
-                              >primary</_button>
+                              >primary</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     type="warning"
                                     ghost
-                              >warning</_button>
+                              >warning</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     type="success"
                                     ghost
-                              >success</_button>
+                              >success</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     type="error"
                                     ghost
-                              >error</_button>
+                              >error</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     type="default"
                                     ghost
-                              >default</_button>
+                              >default</light-button>
                         </view>
                   </view>
             </view>
@@ -77,22 +77,22 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button
+                              <light-button
                                     size="large"
                                     type="default"
-                              >large</_button>
+                              >large</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     size="normal"
                                     type="default"
-                              >normal</_button>
+                              >normal</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     size="small"
                                     type="default"
-                              >small</_button>
+                              >small</light-button>
                         </view>
                   </view>
             </view>
@@ -103,22 +103,22 @@
                   </view>
                   <view class="examples flex">
                         <view class="example">
-                              <_button
+                              <light-button
                                     shape="normal"
                                     type="default"
-                              >normal</_button>
+                              >normal</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     shape="circle"
                                     type="default"
-                              >circle</_button>
+                              >circle</light-button>
                         </view>
                         <view class="example">
-                              <_button
+                              <light-button
                                     shape="rect"
                                     type="default"
-                              >rect</_button>
+                              >rect</light-button>
                         </view>
                   </view>
             </view>
@@ -129,11 +129,11 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
-                              <_button
+                              <light-button
                                     autoWidth
                                     iconPath="https://matrixages.github.io/atom.css/assets/images/microsoft.png"
                                     type="default"
-                              >Microsoft</_button>
+                              >Microsoft</light-button>
                         </view>
                   </view>
             </view>
@@ -144,13 +144,13 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
-                              <_button type="default">false</_button>
+                              <light-button type="default">false</light-button>
                         </view>
                         <view class="example flex">
-                              <_button
+                              <light-button
                                     type="default"
                                     autoWidth
-                              >autoWidth true</_button>
+                              >autoWidth true</light-button>
                         </view>
                   </view>
             </view>
@@ -161,7 +161,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_button width="100%">custom width</_button>
+                              <light-button width="100%">custom width</light-button>
                         </view>
                   </view>
             </view>
@@ -172,10 +172,10 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
-                              <_button
+                              <light-button
                                     autoWidth
                                     height="100rpx"
-                              >custom height</_button>
+                              >custom height</light-button>
                         </view>
                   </view>
             </view>
@@ -186,10 +186,10 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button
+                              <light-button
                                     disabled="{{true}}"
                                     type="default"
-                              >true</_button>
+                              >true</light-button>
                         </view>
                   </view>
             </view>
@@ -200,10 +200,10 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button
+                              <light-button
                                     bgColor="red"
                                     color="white"
-                              >custom</_button>
+                              >custom</light-button>
                         </view>
                   </view>
             </view>
@@ -214,10 +214,10 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button
+                              <light-button
                                     loading="{{true}}"
                                     type="default"
-                              >true</_button>
+                              >true</light-button>
                         </view>
                   </view>
             </view>
@@ -229,7 +229,7 @@
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
                               <navigator url="/pages/index/index">
-                                    <_button type="default">button</_button>
+                                    <light-button type="default">button</light-button>
                               </navigator>
                         </view>
                   </view>
@@ -241,7 +241,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_button type="default">
+                              <light-button type="default">
                                     <image
                                           slot="icon"
                                           mode="widthFix"
@@ -249,7 +249,7 @@
                                           src="https://matrixages.github.io/atom.css/assets/images/apple.png"
                                     ></image>
                                     apple
-                              </_button>
+                              </light-button>
                         </view>
                   </view>
             </view>
@@ -264,7 +264,7 @@
                                     style="width: auto;padding: 0;margin: 0;background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
                                     open-type="share"
                               >
-                                    <_button type="default" >button</_button>
+                                    <light-button type="default" >button</light-button>
                               </button>
                         </view>
                   </view>

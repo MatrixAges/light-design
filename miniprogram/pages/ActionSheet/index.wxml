@@ -4,7 +4,7 @@
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -13,19 +13,19 @@
                   round
                   mark:type="default"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_default}}"
                   title="分享"
                   list="{{list}}"
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">没有标题</text>
                   <text class="attr">title</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -34,18 +34,18 @@
                   round
                   mark:type="title"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_title}}"
                   list="{{list}}"
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">横向滚动</text>
                   <text class="attr">scroll</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -54,20 +54,20 @@
                   round
                   mark:type="scroll"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_scroll}}"
                   title="分享"
                   list="{{list}}"
                   scroll
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">纵向显示</text>
                   <text class="attr">vertical</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -76,19 +76,19 @@
                   round
                   mark:type="vertical"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_vertical}}"
                   list="{{list}}"
                   vertical
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">仅有文字</text>
                   <text class="attr">textOnly</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -97,22 +97,22 @@
                   round
                   mark:type="textOnly"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_textOnly}}"
                   title="分享"
                   list="{{list}}"
                   vertical
                   textOnly
                   visibleCancel
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">显示取消</text>
                   <text class="attr">visibleCancel</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -121,20 +121,20 @@
                   round
                   mark:type="visibleCancel"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_visibleCancel}}"
                   list="{{list}}"
                   vertical
                   visibleCancel
-            ></_action-sheet>
+            ></action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">列数</text>
                   <text class="attr">column</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -143,12 +143,12 @@
                   round
                   mark:type="column"
                   catchtap="onOption"
-            ></_icon>
-            <_action-sheet
+            ></light-icon>
+            <action-sheet
                   visible="{{visible_column}}"
                   title="分享"
                   list="{{list}}"
                   column="{{4}}"
-            ></_action-sheet>
+            ></action-sheet>
       </view>
 </view>

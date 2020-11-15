@@ -4,7 +4,7 @@
                   <text class="title">默认效果</text>
                   <text class="attr">center</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -13,20 +13,20 @@
                   round
                   mark:type="default"
                   catchtap="onOption"
-            ></_icon>
-            <_popover
+            ></light-icon>
+            <popover
                   visible="{{visible_default}}"
                   list="{{list}}"
                   position="{{['100rpx','','','30rpx']}}"
             >
-            </_popover>
+            </popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">设定位置</text>
                   <text class="attr">position</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -35,20 +35,20 @@
                   round
                   mark:type="position"
                   catchtap="onOption"
-            ></_icon>
-            <_popover
+            ></light-icon>
+            <popover
                   visible="{{visible_position}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
             >
-            </_popover>
+            </popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">设定标记</text>
                   <text class="attr">mark</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -57,21 +57,21 @@
                   round
                   mark:type="mark"
                   catchtap="onOption"
-            ></_icon>
-            <_popover
+            ></light-icon>
+            <popover
                   visible="{{visible_mark}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
                   mark="{{['-8rpx','','30rpx','']}}"
             >
-            </_popover>
+            </popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">动画原点</text>
                   <text class="attr">transformOrigin</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -80,22 +80,22 @@
                   round
                   mark:type="transformOrigin"
                   catchtap="onOption"
-            ></_icon>
-            <_popover
+            ></light-icon>
+            <popover
                   visible="{{visible_transformOrigin}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
                   mark="{{['-8rpx','','30rpx','']}}"
                   transformOrigin="top left"
             >
-            </_popover>
+            </popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">自定义颜色</text>
                   <text class="attr">custom</text>
             </view>
-            <_icon
+            <light-icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -104,8 +104,8 @@
                   round
                   mark:type="custom"
                   catchtap="onOption"
-            ></_icon>
-            <_popover
+            ></light-icon>
+            <popover
                   visible="{{visible_custom}}"
                   list="{{list_black}}"
                   position="{{['100rpx','','','30rpx']}}"
@@ -113,6 +113,6 @@
                   color="black"
                   divideColor="#eee"
             >
-            </_popover>
+            </popover>
       </view>
 </view>

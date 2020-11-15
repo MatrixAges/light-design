@@ -55,13 +55,13 @@
 ### [按钮类型](#按钮类型)
 
 ```html
-<_button type="primary">primary</_button>
-<_button type="success">success</_button>
-<_button type="warning">warning</_button>
-<_button type="error">error</_button>
-<_button type="border">border</_button>
-<_button type="dashed">dashed</_button>
-<_button type="default">default</_button>
+<light-button type="primary">primary</light-button>
+<light-button type="success">success</light-button>
+<light-button type="warning">warning</light-button>
+<light-button type="error">error</light-button>
+<light-button type="border">border</light-button>
+<light-button type="dashed">dashed</light-button>
+<light-button type="default">default</light-button>
 ```
 
 <p id="幽灵按钮" class='anchor'>/</p> 
@@ -69,13 +69,13 @@
 ### [幽灵按钮](#幽灵按钮)
 
 ```html
-<_button type="primary" ghost>primary</_button>
-<_button type="success" ghost>success</_button>
-<_button type="warning" ghost>warning</_button>
-<_button type="error" ghost>error</_button>
-<_button type="border" ghost>border</_button>
-<_button type="dashed" ghost>dashed</_button>
-<_button type="default" ghost>default</_button>
+<light-button type="primary" ghost>primary</light-button>
+<light-button type="success" ghost>success</light-button>
+<light-button type="warning" ghost>warning</light-button>
+<light-button type="error" ghost>error</light-button>
+<light-button type="border" ghost>border</light-button>
+<light-button type="dashed" ghost>dashed</light-button>
+<light-button type="default" ghost>default</light-button>
 ```
 
 <p id="按钮大小" class='anchor'>/</p> 
@@ -83,9 +83,9 @@
 ### [按钮大小](#按钮大小)
 
 ```html
-<_button size="large">large</_button>
-<_button size="normal">normal</_button>
-<_button size="small">small</_button>
+<light-button size="large">large</light-button>
+<light-button size="normal">normal</light-button>
+<light-button size="small">small</light-button>
 ```
 
 <p id="按钮形状" class='anchor'>/</p> 
@@ -93,9 +93,9 @@
 ### [按钮形状](#按钮形状)
 
 ```html
-<_button shape="normal">large</_button>
-<_button shape="circle">large</_button>
-<_button shape="rect">large</_button>
+<light-button shape="normal">large</light-button>
+<light-button shape="circle">large</light-button>
+<light-button shape="rect">large</light-button>
 ```
 
 <p id="添加图标" class='anchor'>/</p> 
@@ -103,10 +103,10 @@
 ### [添加图标](#添加图标)
 
 ```html
-<_button 
+<light-button 
       iconPath="microsoft.png"
       autoWidth
->Microsoft</_button>
+>Microsoft</light-button>
 ```
 
 <p id="宽度自适应" class='anchor'>/</p> 
@@ -114,7 +114,7 @@
 ### [宽度自适应](#宽度自适应)
 
 ```html
-<_button autoWidth>autoWidth true</_button>
+<light-button autoWidth>autoWidth true</light-button>
 ```
 
 <p id="自定义宽度" class='anchor'>/</p> 
@@ -122,7 +122,7 @@
 ### [自定义宽度](#自定义宽度)
 
 ```html
-<_button width="100%">custom width</_button>
+<light-button width="100%">custom width</light-button>
 ```
 
 <p id="自定义高度" class='anchor'>/</p> 
@@ -130,10 +130,10 @@
 ### [自定义高度](#自定义高度)
 
 ```html
-<_button 
+<light-button 
       autoWidth 
       height="100rpx"
->custom height</_button>
+>custom height</light-button>
 ```
 
 <p id="不可点击" class='anchor'>/</p> 
@@ -141,7 +141,7 @@
 ### [不可点击](#不可点击)
 
 ```html
-<_button disabled>true</_button>
+<light-button disabled>true</light-button>
 ```
 
 <p id="自定义样式" class='anchor'>/</p> 
@@ -149,10 +149,10 @@
 ### [自定义样式](#自定义样式)
 
 ```html
-<_button
+<light-button
       bgColor="red"
       color="white"
->custom</_button>
+>custom</light-button>
 ```
 
 <p id="加载中" class='anchor'>/</p> 
@@ -160,10 +160,10 @@
 ### [加载中](#加载中)
 
 ```html
-<_button
+<light-button
       loading="{{true}}"
       type="default"
->true</_button>
+>true</light-button>
 ```
 
 <p id="自定义图标" class='anchor'>/</p> 
@@ -171,7 +171,7 @@
 ### [自定义图标](#自定义图标)
 
 ```html
-<_button type="default">
+<light-button type="default">
       <image
             slot="icon"
             mode="widthFix"
@@ -179,7 +179,7 @@
             src="apple.png"
       ></image>
       apple
-</_button>
+</light-button>
 ```
 
 <p id="配合使用" class='anchor'>/</p> 
@@ -188,10 +188,10 @@
 
 ```html
 <navigator url="/pages/index/index">
-      <_button type="default">button</_button>
+      <light-button type="default">button</light-button>
 </navigator>
 
 <button open-type="share">
-      <_button type="default">button</_button>
+      <light-button type="default">button</light-button>
 </button>
 ```

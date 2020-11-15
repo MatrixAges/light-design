@@ -37,11 +37,11 @@ type List = {
 ### [默认效果](#默认效果)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_default}}"
       title="分享"
       list="{{list}}"
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="没有标题" class='anchor'>/</p> 
@@ -49,10 +49,10 @@ type List = {
 ### [没有标题](#没有标题)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_default}}"
       list="{{list}}"
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="横向滚动" class='anchor'>/</p> 
@@ -60,12 +60,12 @@ type List = {
 ### [横向滚动](#横向滚动)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_scroll}}"
       title="分享"
       list="{{list}}"
       scroll
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="纵向显示" class='anchor'>/</p> 
@@ -73,11 +73,11 @@ type List = {
 ### [纵向显示](#纵向显示)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_scroll}}"
       list="{{list}}"
       vertical
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="仅有文字" class='anchor'>/</p> 
@@ -85,14 +85,14 @@ type List = {
 ### [仅有文字](#仅有文字)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_textOnly}}"
       title="分享"
       list="{{list}}"
       vertical
       textOnly
       visibleCancel
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="显示取消" class='anchor'>/</p> 
@@ -100,12 +100,12 @@ type List = {
 ### [显示取消](#显示取消)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_visibleCancel}}"
       list="{{list}}"
       vertical
       visibleCancel
-></_action-sheet>
+></action-sheet>
 ```
 
 <p id="列数" class='anchor'>/</p> 
@@ -113,10 +113,10 @@ type List = {
 ### [列数](#列数)
 
 ```html
-<_action-sheet
+<action-sheet
       visible="{{visible_column}}"
       title="分享"
       list="{{list}}"
       column="{{4}}"
-></_action-sheet>
+></action-sheet>
 ```
