@@ -55,13 +55,13 @@
 ### [按钮类型](#按钮类型)
 
 ```html
-<_Button type="primary">primary</_Button>
-<_Button type="success">success</_Button>
-<_Button type="warning">warning</_Button>
-<_Button type="error">error</_Button>
-<_Button type="border">border</_Button>
-<_Button type="dashed">dashed</_Button>
-<_Button type="default">default</_Button>
+<_button type="primary">primary</_button>
+<_button type="success">success</_button>
+<_button type="warning">warning</_button>
+<_button type="error">error</_button>
+<_button type="border">border</_button>
+<_button type="dashed">dashed</_button>
+<_button type="default">default</_button>
 ```
 
 <p id="幽灵按钮" class='anchor'>/</p> 
@@ -69,13 +69,13 @@
 ### [幽灵按钮](#幽灵按钮)
 
 ```html
-<_Button type="primary" ghost>primary</_Button>
-<_Button type="success" ghost>success</_Button>
-<_Button type="warning" ghost>warning</_Button>
-<_Button type="error" ghost>error</_Button>
-<_Button type="border" ghost>border</_Button>
-<_Button type="dashed" ghost>dashed</_Button>
-<_Button type="default" ghost>default</_Button>
+<_button type="primary" ghost>primary</_button>
+<_button type="success" ghost>success</_button>
+<_button type="warning" ghost>warning</_button>
+<_button type="error" ghost>error</_button>
+<_button type="border" ghost>border</_button>
+<_button type="dashed" ghost>dashed</_button>
+<_button type="default" ghost>default</_button>
 ```
 
 <p id="按钮大小" class='anchor'>/</p> 
@@ -83,9 +83,9 @@
 ### [按钮大小](#按钮大小)
 
 ```html
-<_Button size="large">large</_Button>
-<_Button size="normal">normal</_Button>
-<_Button size="small">small</_Button>
+<_button size="large">large</_button>
+<_button size="normal">normal</_button>
+<_button size="small">small</_button>
 ```
 
 <p id="按钮形状" class='anchor'>/</p> 
@@ -93,9 +93,9 @@
 ### [按钮形状](#按钮形状)
 
 ```html
-<_Button shape="normal">large</_Button>
-<_Button shape="circle">large</_Button>
-<_Button shape="rect">large</_Button>
+<_button shape="normal">large</_button>
+<_button shape="circle">large</_button>
+<_button shape="rect">large</_button>
 ```
 
 <p id="添加图标" class='anchor'>/</p> 
@@ -103,10 +103,10 @@
 ### [添加图标](#添加图标)
 
 ```html
-<_Button 
-      mode="padding"
+<_button 
       iconPath="microsoft.png"
->Microsoft</_Button>
+      autoWidth
+>Microsoft</_button>
 ```
 
 <p id="宽度自适应" class='anchor'>/</p> 
@@ -114,7 +114,7 @@
 ### [宽度自适应](#宽度自适应)
 
 ```html
-<_Button autoWidth>autoWidth true</_Button>
+<_button autoWidth>autoWidth true</_button>
 ```
 
 <p id="自定义宽度" class='anchor'>/</p> 
@@ -122,7 +122,7 @@
 ### [自定义宽度](#自定义宽度)
 
 ```html
-<_Button width="100%">custom width</_Button>
+<_button width="100%">custom width</_button>
 ```
 
 <p id="自定义高度" class='anchor'>/</p> 
@@ -130,10 +130,10 @@
 ### [自定义高度](#自定义高度)
 
 ```html
-<_Button 
+<_button 
       autoWidth 
       height="100rpx"
->custom height</_Button>
+>custom height</_button>
 ```
 
 <p id="不可点击" class='anchor'>/</p> 
@@ -141,7 +141,7 @@
 ### [不可点击](#不可点击)
 
 ```html
-<_Button disabled>true</_Button>
+<_button disabled>true</_button>
 ```
 
 <p id="自定义样式" class='anchor'>/</p> 
@@ -149,10 +149,10 @@
 ### [自定义样式](#自定义样式)
 
 ```html
-<_Button
+<_button
       bgColor="red"
       color="white"
->custom</_Button>
+>custom</_button>
 ```
 
 <p id="加载中" class='anchor'>/</p> 
@@ -160,10 +160,10 @@
 ### [加载中](#加载中)
 
 ```html
-<_Button
+<_button
       loading="{{true}}"
       type="default"
->true</_Button>
+>true</_button>
 ```
 
 <p id="自定义图标" class='anchor'>/</p> 
@@ -171,7 +171,7 @@
 ### [自定义图标](#自定义图标)
 
 ```html
-<_Button type="default">
+<_button type="default">
       <image
             slot="icon"
             mode="widthFix"
@@ -179,7 +179,7 @@
             src="apple.png"
       ></image>
       apple
-</_Button>
+</_button>
 ```
 
 <p id="配合使用" class='anchor'>/</p> 
@@ -188,10 +188,10 @@
 
 ```html
 <navigator url="/pages/index/index">
-      <_Button type="default">button</_Button>
+      <_button type="default">button</_button>
 </navigator>
 
 <button open-type="share">
-      <_Button type="default">button</_Button>
+      <_button type="default">button</_button>
 </button>
 ```

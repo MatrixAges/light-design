@@ -6,13 +6,13 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example flex flex_column">
-                        <_Text h7>This is the way.</_Text>
-                        <_Text h6>This is the way.</_Text>
-                        <_Text h5>This is the way.</_Text>
-                        <_Text h4>This is the way.</_Text>
-                        <_Text h3>This is the way.</_Text>
-                        <_Text h2>This is the way.</_Text>
-                        <_Text h1>This is the way.</_Text>
+                        <_text h7>This is the way.</_text>
+                        <_text h6>This is the way.</_text>
+                        <_text h5>This is the way.</_text>
+                        <_text h4>This is the way.</_text>
+                        <_text h3>This is the way.</_text>
+                        <_text h2>This is the way.</_text>
+                        <_text h1>This is the way.</_text>
                   </view>
             </view>
       </view>
@@ -23,12 +23,12 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example flex flex_column">
-                        <_Text p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        <_text p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                               incididunt
-                              ut labore et dolore magna aliqua.</_Text>
-                        <_Text p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              ut labore et dolore magna aliqua.</_text>
+                        <_text p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                               incididunt
-                              ut labore et dolore magna aliqua.</_Text>
+                              ut labore et dolore magna aliqua.</_text>
                   </view>
             </view>
       </view>
@@ -40,20 +40,20 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100 flex flex_column">
-                              <_Text
+                              <_text
                                     p
                                     lineClamp="{{1}}"
                               >lineClamp = 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor
                                     incididunt
-                                    ut labore et dolore magna aliqua.</_Text>
-                              <_Text
+                                    ut labore et dolore magna aliqua.</_text>
+                              <_text
                                     p
                                     lineClamp="{{2}}"
                               >lineClamp = 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor
                                     incididunt
-                                    ut labore et dolore magna aliqua.</_Text>
+                                    ut labore et dolore magna aliqua.</_text>
                         </view>
                   </view>
             </view>
@@ -64,9 +64,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex flex_column">
-                              <_Text b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              <_text b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
-                                    ut labore et dolore magna aliqua.</_Text>
+                                    ut labore et dolore magna aliqua.</_text>
                         </view>
                   </view>
             </view>
@@ -77,9 +77,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex flex_column">
-                              <_Text i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                              <_text i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
-                                    ut labore et dolore magna aliqua.</_Text>
+                                    ut labore et dolore magna aliqua.</_text>
                         </view>
                   </view>
             </view>
@@ -90,7 +90,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text quote>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text quote>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -101,7 +101,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text success>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text success>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -112,7 +112,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text warning>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text warning>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -123,7 +123,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text error>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text error>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -134,7 +134,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text del>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text del>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -145,7 +145,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text color="purple">巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_Text>
+                              <_text color="purple">巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</_text>
                         </view>
                   </view>
             </view>
@@ -156,7 +156,7 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example w_100">
-                              <_Text textAlign="center">人生是开放游戏</_Text>
+                              <_text textAlign="center">人生是开放游戏</_text>
                         </view>
                   </view>
             </view>

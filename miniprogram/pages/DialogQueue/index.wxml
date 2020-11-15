@@ -4,7 +4,7 @@
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <_Icon
+            <_icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -13,10 +13,10 @@
                   round
                   mark:type="default"
                   catchtap="onOption"
-            ></_Icon>
-            <_DialogQueue
+            ></_icon>
+            <_dialog-queue
                   visible="{{visible_default}}"
                   list="{{list}}"
-            ></_DialogQueue>
+            ></_dialog-queue>
       </view>
 </view>

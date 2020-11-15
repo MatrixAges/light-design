@@ -6,29 +6,29 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example flex flex_wrap">
-                        <_Button
+                        <_button
                               class="mr_24 mb_24"
                               mark:type="type_none"
                               catchtap="onOption"
-                        >显示</_Button>
-                        <_Button
+                        >显示</_button>
+                        <_button
                               class="mr_24 mb_24"
                               type="success"
                               mark:type="type_success"
                               catchtap="onOption"
-                        >success</_Button>
-                        <_Button
+                        >success</_button>
+                        <_button
                               class="mr_24 mb_24"
                               type="warning"
                               mark:type="type_warning"
                               catchtap="onOption"
-                        >warning</_Button>
-                        <_Button
+                        >warning</_button>
+                        <_button
                               type="error"
                               mark:type="type_error"
                               catchtap="onOption"
-                        >error</_Button>
-                        <_SnackBar
+                        >error</_button>
+                        <_snack-bar
                               visible="{{visible_type_none}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -40,8 +40,8 @@
                                     mark:type="type_none"
                                     catchtap="hide"
                               >关闭</text>
-                        </_SnackBar>
-                        <_SnackBar
+                        </_snack-bar>
+                        <_snack-bar
                               visible="{{visible_type_success}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -54,8 +54,8 @@
                                     mark:type="type_success"
                                     catchtap="hide"
                               >关闭</text>
-                        </_SnackBar>
-                        <_SnackBar
+                        </_snack-bar>
+                        <_snack-bar
                               visible="{{visible_type_warning}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -68,8 +68,8 @@
                                     mark:type="type_warning"
                                     catchtap="hide"
                               >关闭</text>
-                        </_SnackBar>
-                        <_SnackBar
+                        </_snack-bar>
+                        <_snack-bar
                               visible="{{visible_type_error}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -82,7 +82,7 @@
                                     mark:type="type_error"
                                     catchtap="hide"
                               >关闭</text>
-                        </_SnackBar>
+                        </_snack-bar>
                   </view>
             </view>
       </view>
@@ -92,7 +92,7 @@
                         <text class="title">默认效果</text>
                         <text class="attr">default</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -101,20 +101,20 @@
                         round
                         mark:type="default"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_default}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">没有描述</text>
                         <text class="attr">description</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -123,19 +123,19 @@
                         round
                         mark:type="description"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_description}}"
                         title="更多内容请登录"
                         okText="登录"
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">自动关闭</text>
                         <text class="attr">autoClose</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -144,21 +144,21 @@
                         round
                         mark:type="autoClose"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_autoClose}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         autoClose
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">关闭时间</text>
                         <text class="attr">duration</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -167,22 +167,22 @@
                         round
                         mark:type="duration"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_duration}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         duration="{{5000}}"
                         autoClose
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">弹出位置</text>
                         <text class="attr">position</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -191,21 +191,21 @@
                         round
                         mark:type="position"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_position}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         position="top"
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">具体位置</text>
                         <text class="attr">bottom</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -214,21 +214,21 @@
                         round
                         mark:type="bottom"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_bottom}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         bottom="{{60}}"
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">小尺寸</text>
                         <text class="attr">mini</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -237,21 +237,21 @@
                         round
                         mark:type="mini"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_mini}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         mini
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">自定义</text>
                         <text class="attr">slot</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -260,8 +260,8 @@
                         round
                         mark:type="slot"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_slot}}"
                         title="您的账户余额不足，请尽快充值"
                         custom
@@ -274,14 +274,14 @@
                               mark:type="slot"
                               catchtap="hide"
                         ></image>
-                  </_SnackBar>
+                  </_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">全部覆盖</text>
                         <text class="attr">cover</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -290,21 +290,21 @@
                         round
                         mark:type="cover"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_cover}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         cover
-                  ></_SnackBar>
+                  ></_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">组合使用</text>
                         <text class="attr">composition</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -313,8 +313,8 @@
                         round
                         mark:type="composition"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_composition}}"
                         title="您的账户余额不足，请尽快充值"
                         position="top"
@@ -329,14 +329,14 @@
                               mark:type="composition"
                               catchtap="hide"
                         ></image>
-                  </_SnackBar>
+                  </_snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">自定义样式</text>
                         <text class="attr">styles</text>
                   </view>
-                  <_Icon
+                  <_icon
                         icon="{{blockRight}}"
                         color="white"
                         fillColor="black"
@@ -345,8 +345,8 @@
                         round
                         mark:type="styles"
                         catchtap="onOption"
-                  ></_Icon>
-                  <_SnackBar
+                  ></_icon>
+                  <_snack-bar
                         visible="{{visible_styles}}"
                         title="您的账户余额不足，请尽快充值"
                         position="top"
@@ -363,7 +363,7 @@
                               mark:type="styles"
                               catchtap="hide"
                         ></image>
-                  </_SnackBar>
+                  </_snack-bar>
             </view>
       </view>
 </view>

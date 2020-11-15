@@ -4,7 +4,7 @@
                   <text class="title">默认效果</text>
                   <text class="attr">default</text>
             </view>
-            <_Icon
+            <_icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -13,15 +13,15 @@
                   round
                   mark:type="default"
                   catchtap="onOption"
-            ></_Icon>
-            <_Landing visible="{{visible_default}}"></_Landing>
+            ></_icon>
+            <_landing visible="{{visible_default}}"></_landing>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">显示遮罩</text>
                   <text class="attr">maskVisible</text>
             </view>
-            <_Icon
+            <_icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -30,18 +30,18 @@
                   round
                   mark:type="maskVisible"
                   catchtap="onOption"
-            ></_Icon>
-            <_Landing
+            ></_icon>
+            <_landing
                   visible="{{visible_maskVisible}}"
                   maskVisible
-            ></_Landing>
+            ></_landing>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">遮罩颜色</text>
                   <text class="attr">maskColor</text>
             </view>
-            <_Icon
+            <_icon
                   icon="{{blockRight}}"
                   color="white"
                   fillColor="black"
@@ -50,11 +50,11 @@
                   round
                   mark:type="maskColor"
                   catchtap="onOption"
-            ></_Icon>
-            <_Landing
+            ></_icon>
+            <_landing
                   visible="{{visible_maskColor}}"
                   maskColor="rgba(255, 255, 255, 0.8)"
                   maskVisible
-            ></_Landing>
+            ></_landing>
       </view>
 </view>

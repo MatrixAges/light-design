@@ -1,8 +1,16 @@
-const fs = require('fs')
 const path = require('path')
 
-const is_dev = process.env.NODE_ENV === 'development'
 const resolve = (file) => path.resolve(__dirname, '../', file)
+const fileLoader = (name) => ({
+	loader: 'file-loader',
+	options: {
+		publicPath: '',
+		context: paths.miniprogram || paths.root,
+		name
+	}
+})
+
+const is_dev = process.env.NODE_ENV === 'development'
 const paths = {
 	dist: resolve('dist'),
 	node_modules: resolve('node_modules'),
@@ -13,25 +21,9 @@ const paths = {
 	page_components: resolve('miniprogram/page_components')
 }
 
-const copyAppJson = () => {
-	fs.copyFile(paths.app_json, paths.dist_app_json, (err) => {
-		if (err) console.log(err)
-	})
-}
-
-const fileLoader = (name) => ({
-	loader: 'file-loader',
-	options: {
-		publicPath: '',
-		context: paths.miniprogram || paths.root,
-		name
-	}
-})
-
 module.exports = {
-	is_dev,
-	paths,
 	resolve,
-	copyAppJson,
-	fileLoader
+	fileLoader,
+	is_dev,
+	paths
 }

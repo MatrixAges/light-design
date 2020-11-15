@@ -1,5 +1,5 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <Tips text="Sticky组件的父元素不能为flex，否则Sticky将无法侦测到子元素是否回到可见区域"></Tips>
+      <tips text="Sticky组件的父元素不能为flex，否则Sticky将无法侦测到子元素是否回到可见区域"></tips>
       <view class="mini_items column_2 visible_items">
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -8,9 +8,9 @@
                   </view>
                   <view class="examples flex flex_column">
                         <view class="example">
-                              <_Sticky>
-                                    <_Button>默认效果</_Button>
-                              </_Sticky>
+                              <_sticky>
+                                    <_button>默认效果</_button>
+                              </_sticky>
                         </view>
                   </view>
             </view>
@@ -21,9 +21,9 @@
                   </view>
                   <view class="examples flex flex_column">
                         <view class="example">
-                              <_Sticky offsetTop="{{30}}">
-                                    <_Button>顶部距离</_Button>
-                              </_Sticky>
+                              <_sticky offsetTop="{{30}}">
+                                    <_button>顶部距离</_button>
+                              </_sticky>
                         </view>
                   </view>
             </view>
@@ -40,11 +40,11 @@
                         style="height: 600px; background-color: #E0E0E0;"
                   >
                         <view style="height: 200px; background-color: #eee;"></view>
-                        <_Sticky
+                        <_sticky
                               offsetTop="{{30}}"
                               container="#container"
                         >
-                              <_Card
+                              <_card
                                     title="Primary"
                                     width="auto"
                                     bgColor="red"
@@ -54,8 +54,8 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </_Card>
-                        </_Sticky>
+                              </_card>
+                        </_sticky>
                   </view>
             </view>
       </view>

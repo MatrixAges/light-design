@@ -6,7 +6,7 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar list="{{list}}"></_NoticeBar>
+                        <_notice-bar list="{{list}}"></_notice-bar>
                   </view>
             </view>
       </view>
@@ -17,11 +17,11 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar
+                        <_notice-bar
                               list="{{list}}"
                               interval="{{5000}}"
                               horizontal
-                        ></_NoticeBar>
+                        ></_notice-bar>
                   </view>
             </view>
       </view>
@@ -32,11 +32,11 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar
+                        <_notice-bar
                               list="{{list}}"
                               color="white"
                               bgColor="black"
-                        ></_NoticeBar>
+                        ></_notice-bar>
                   </view>
             </view>
       </view>
@@ -47,11 +47,11 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar
+                        <_notice-bar
                               list="{{list}}"
                               color="white"
                               bgColor="linear-gradient(to right,red,purple)"
-                        ></_NoticeBar>
+                        ></_notice-bar>
                   </view>
             </view>
       </view>
@@ -62,10 +62,10 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar
+                        <_notice-bar
                               list="{{list}}"
                               interval="{{1000}}"
-                        ></_NoticeBar>
+                        ></_notice-bar>
                   </view>
             </view>
       </view>
@@ -76,10 +76,10 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <_NoticeBar
+                        <_notice-bar
                               list="{{list}}"
                               styles="height:90rpx;background:transparent;border:2rpx solid black;border-radius:30rpx;"
-                        ></_NoticeBar>
+                        ></_notice-bar>
                   </view>
             </view>
       </view>

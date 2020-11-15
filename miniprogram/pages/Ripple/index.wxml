@@ -1,5 +1,5 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <Tips text="Ripple组件自身没有宽高，需要通过子元素来撑开它"></Tips>
+      <tips text="Ripple组件自身没有宽高，需要通过子元素来撑开它"></tips>
       <view class="mini_items column_2 visible_items">
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -8,9 +8,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Ripple>
-                                    <_Button type="border">Ripple</_Button>
-                              </_Ripple>
+                              <_ripple>
+                                    <_button type="border">Ripple</_button>
+                              </_ripple>
                         </view>
                   </view>
             </view>
@@ -21,9 +21,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Ripple color="red">
-                                    <_Button type="border">Ripple</_Button>
-                              </_Ripple>
+                              <_ripple color="red">
+                                    <_button type="border">Ripple</_button>
+                              </_ripple>
                         </view>
                   </view>
             </view>
@@ -34,12 +34,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Ripple>
-                                    <_Button
+                              <_ripple>
+                                    <_button
                                           type="border"
                                           bindtap="click"
-                                    >Ripple</_Button>
-                              </_Ripple>
+                                    >Ripple</_button>
+                              </_ripple>
                         </view>
                   </view>
             </view>
@@ -50,12 +50,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Ripple radius="{{100}}">
-                                    <_Button
+                              <_ripple radius="{{100}}">
+                                    <_button
                                           type="border"
                                           shape="circle"
-                                    >Ripple</_Button>
-                              </_Ripple>
+                                    >Ripple</_button>
+                              </_ripple>
                         </view>
                   </view>
             </view>
@@ -66,9 +66,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <_Ripple>
-                                    <_Button ghost>Ripple</_Button>
-                              </_Ripple>
+                              <_ripple>
+                                    <_button ghost>Ripple</_button>
+                              </_ripple>
                         </view>
                   </view>
             </view>
@@ -80,8 +80,8 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <_Ripple color="white">
-                              <_Card
+                        <_ripple color="white">
+                              <_card
                                     title="Primary"
                                     width="100%"
                                     bgColor="#222"
@@ -92,8 +92,8 @@
                                     tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </_Card>
-                        </_Ripple>
+                              </_card>
+                        </_ripple>
                   </view>
             </view>
       </view>
