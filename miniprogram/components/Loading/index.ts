@@ -10,7 +10,7 @@ Component({
 		},
 		type: <{
 			type: StringConstructor
-			value: 'refresh' | 'light-loading'
+			value: 'refresh' | 'loading'
 		}>{
 			type: String,
 			value: 'refresh'

@@ -167,8 +167,6 @@ Component({
 		onOk () {
 			const _that = this
 
-			_that.setData({ visible: false })
-
 			_that.triggerEvent('onOk')
 		}
 	}

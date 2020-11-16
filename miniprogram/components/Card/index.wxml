@@ -7,7 +7,7 @@
       class="card_wrap {{wxs.getClasses({bordered,shadow})}}"
       style="{{wxs.getStyles({width,color,bgColor,radius})}}"
 >
-      <view class="light-card">
+      <view class="card">
             <slot name="title"></slot>
             <view
                   class="title_wrap"

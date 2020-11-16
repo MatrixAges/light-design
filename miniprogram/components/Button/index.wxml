@@ -8,8 +8,8 @@
       style="{{wxs.getStyles({width,height,color,bgColor})}}"
 >
       <view
-            class="light-loading"
-            wx:if="{{light-loading}}"
+            class="loading"
+            wx:if="{{loading}}"
       ></view>
       <image
             class="icon"
@@ -18,7 +18,7 @@
             wx:if="{{iconPath}}"
       ></image>
       <slot name="icon"></slot>
-      <view class="text {{iconPath||light-loading?'has_left':''}}">
+      <view class="text {{iconPath||loading?'has_left':''}}">
             <slot></slot>
       </view>
 </button>

@@ -18,12 +18,12 @@
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">加载中</text>
-                  <text class="attr">light-loading</text>
+                  <text class="attr">loading</text>
             </view>
             <view class="examples flex">
                   <view class="example w_100 flex justify_center">
                         <light-loading
-                              type="light-loading"
+                              type="loading"
                               visible
                         ></light-loading>
                   </view>

@@ -1,7 +1,8 @@
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^(visible|timer_show|timer_close)$/
+            pureDataPattern: /^(visible|timer_show|timer_close)$/,
+            multipleSlots: true
 	},
 	properties: {
 		custom: {
@@ -9,6 +10,14 @@ Component({
 			value: false
 		},
 		visible: {
+			type: Boolean,
+			value: false
+		},
+		title: {
+			type: String,
+			value: '提示'
+		},
+		confirmLoading: {
 			type: Boolean,
 			value: false
 		},
@@ -27,10 +36,6 @@ Component({
 		zIndex: {
 			type: Number,
 			value: 100
-		},
-		title: {
-			type: String,
-			value: '提示'
 		},
 		okText: {
 			type: String,
@@ -122,9 +127,7 @@ Component({
 			_that.triggerEvent('onClose')
 		},
 		onOk () {
-			const _that = this
-
-			_that.setData({ visible: false })
+                  const _that = this
 
 			_that.triggerEvent('onOk')
 		}

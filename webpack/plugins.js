@@ -11,10 +11,6 @@ module.exports = [
 	}),
 	new CopyWebpackPlugin({
 		patterns: [
-			// {
-			// 	from: resolve('miniprogram/**/*.(svg|png|jpg|jpeg|gif)'),
-			// 	to: '[path][name].[ext]'
-			// },
 			{
 				from: path.posix.join(
 					path.resolve(__dirname, '../miniprogram').replace(/\\/g, '/'),

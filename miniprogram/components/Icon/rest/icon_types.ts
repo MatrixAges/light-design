@@ -36,7 +36,7 @@ export type Icon =
 	| 'checkCircle'
 	| 'chat'
 	| 'cart'
-	| 'light-card'
+	| 'card'
 	| 'camera'
 	| 'call'
 	| 'calendar'

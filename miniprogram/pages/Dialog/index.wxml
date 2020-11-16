@@ -42,6 +42,28 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">loading</text>
+                  <text class="attr">confirmLoading</text>
+            </view>
+            <light-icon
+                  icon="{{blockRight}}"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="confirmLoading"
+                  catchtap="onOption"
+            ></light-icon>
+            <light-dialog
+                  visible="{{visible_confirmLoading}}"
+                  confirmLoading
+            >
+                  结果并不重要，重要的是过程？
+            </light-dialog>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">自定义内容</text>
                   <text class="attr">custom</text>
             </view>
@@ -248,6 +270,30 @@
                   cancelText="～bu bu～"
             >
                   结果并不重要，重要的是过程？
+            </light-dialog>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">confirm slot</text>
+                  <text class="attr">slot</text>
+            </view>
+            <light-icon
+                  icon="{{blockRight}}"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="slot"
+                  catchtap="onOption"
+            ></light-icon>
+            <light-dialog visible="{{visible_slot}}">
+                  结果并不重要，重要的是过程？
+                  <navigator
+                        class="w_100 h_100 flex justify_center align_center bg_black"
+                        slot="confirm"
+                        url="/pages/index/index"
+                  >去首页</navigator>
             </light-dialog>
       </view>
 </view>

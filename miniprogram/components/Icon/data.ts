@@ -119,7 +119,7 @@ export const cart = {
 	outline: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='176' cy='416' r='16' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><circle cx='400' cy='416' r='16' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M48 80h64l48 272h256'/><path d='M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/></svg>`,
 	filled: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='176' cy='416' r='32'/><circle cx='400' cy='416' r='32'/><path d='M456.8 120.78a23.92 23.92 0 00-18.56-8.78H133.89l-6.13-34.78A16 16 0 00112 64H48a16 16 0 000 32h50.58l45.66 258.78A16 16 0 00160 368h256a16 16 0 000-32H173.42l-5.64-32h241.66A24.07 24.07 0 00433 284.71l28.8-144a24 24 0 00-5-19.93z'/></svg>`
 }
-export const light-card = {
+export const card = {
 	outline: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect x='48' y='96' width='416' height='320' rx='56' ry='56' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><path fill='none' stroke='currentColor' stroke-linejoin='round' stroke-width='60' d='M48 192h416M128 300h48v20h-48z'/></svg>`,
 	filled: `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M32 376a56 56 0 0056 56h336a56 56 0 0056-56V222H32zm66-76a30 30 0 0130-30h48a30 30 0 0130 30v20a30 30 0 01-30 30h-48a30 30 0 01-30-30zM424 80H88a56 56 0 00-56 56v26h448v-26a56 56 0 00-56-56z'/></svg>`
 }
@@ -397,7 +397,7 @@ export default <Data|any>{
 	checkCircle,
 	chat,
 	cart,
-	light-card,
+	card,
 	camera,
 	call,
 	calendar,

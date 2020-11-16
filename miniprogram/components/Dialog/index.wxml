@@ -46,8 +46,17 @@
                               >{{cancelText}}</button>
                               <button
                                     class="btn btn_ok"
-                                    onOk="onOk"
-                              >{{okText}}</button>
+                                    catchtap="onOk"
+                              >
+                                    <view class="slot_wrap">
+                                          <slot name="confirm"></slot>
+                                    </view>
+                                    <text
+                                          class="icon_loading"
+                                          wx:if="{{confirmLoading}}"
+                                    ></text>
+                                    <text class="text">{{okText}}</text>
+                              </button>
                         </view>
                   </view>
             </view>

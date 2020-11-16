@@ -210,12 +210,12 @@
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">加载中</text>
-                        <text class="attr">light-loading</text>
+                        <text class="attr">loading</text>
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
                               <light-button
-                                    light-loading="{{true}}"
+                                    loading="{{true}}"
                                     type="default"
                               >true</light-button>
                         </view>
