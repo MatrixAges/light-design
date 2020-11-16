@@ -13,7 +13,7 @@
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
 | loading | 等待中 | boolean | false | 否 | 1.0.0 |
 
-<p id="type" class='anchor'>/</p>  
+<p id="type" class='anchor'  style="opactiy:0" style="opactiy:0">/</p>  
 
 ### [type](#type)
 
@@ -28,7 +28,7 @@
 | error | 错误 | 1.0.0 |
 | ghost | 幽灵按钮 | 1.0.0 |
 
-<p id="size" class='anchor'>/</p>  
+<p id="size" class='anchor'  style="opactiy:0">/</p>  
 
 ### [size](#size)
 
@@ -38,7 +38,7 @@
 | large | 大尺寸按钮 | 1.0.0 |
 | small | 小尺寸按钮 | 1.0.0 |
 
-<p id="shape" class='anchor'>/</p> 
+<p id="shape" class='anchor'  style="opactiy:0">/</p> 
 
 ### [shape](#shape)
 
@@ -50,128 +50,128 @@
 
 ## 例子
 
-<p id="按钮类型" class='anchor'>/</p> 
+<p id="按钮类型" class='anchor'  style="opactiy:0">/</p> 
 
 ### [按钮类型](#按钮类型)
 
 ```html
-<light-button type="primary">primary</light-button>
-<light-button type="success">success</light-button>
-<light-button type="warning">warning</light-button>
-<light-button type="error">error</light-button>
-<light-button type="border">border</light-button>
-<light-button type="dashed">dashed</light-button>
-<light-button type="default">default</light-button>
+<Button type="primary">primary</Button>
+<Button type="success">success</Button>
+<Button type="warning">warning</Button>
+<Button type="error">error</Button>
+<Button type="border">border</Button>
+<Button type="dashed">dashed</Button>
+<Button type="default">default</Button>
 ```
 
-<p id="幽灵按钮" class='anchor'>/</p> 
+<p id="幽灵按钮" class='anchor'  style="opactiy:0">/</p> 
 
 ### [幽灵按钮](#幽灵按钮)
 
 ```html
-<light-button type="primary" ghost>primary</light-button>
-<light-button type="success" ghost>success</light-button>
-<light-button type="warning" ghost>warning</light-button>
-<light-button type="error" ghost>error</light-button>
-<light-button type="border" ghost>border</light-button>
-<light-button type="dashed" ghost>dashed</light-button>
-<light-button type="default" ghost>default</light-button>
+<Button type="primary" ghost>primary</Button>
+<Button type="success" ghost>success</Button>
+<Button type="warning" ghost>warning</Button>
+<Button type="error" ghost>error</Button>
+<Button type="border" ghost>border</Button>
+<Button type="dashed" ghost>dashed</Button>
+<Button type="default" ghost>default</Button>
 ```
 
-<p id="按钮大小" class='anchor'>/</p> 
+<p id="按钮大小" class='anchor'  style="opactiy:0">/</p> 
 
 ### [按钮大小](#按钮大小)
 
 ```html
-<light-button size="large">large</light-button>
-<light-button size="normal">normal</light-button>
-<light-button size="small">small</light-button>
+<Button size="large">large</Button>
+<Button size="normal">normal</Button>
+<Button size="small">small</Button>
 ```
 
-<p id="按钮形状" class='anchor'>/</p> 
+<p id="按钮形状" class='anchor'  style="opactiy:0">/</p> 
 
 ### [按钮形状](#按钮形状)
 
 ```html
-<light-button shape="normal">large</light-button>
-<light-button shape="circle">large</light-button>
-<light-button shape="rect">large</light-button>
+<Button shape="normal">large</Button>
+<Button shape="circle">large</Button>
+<Button shape="rect">large</Button>
 ```
 
-<p id="添加图标" class='anchor'>/</p> 
+<p id="添加图标" class='anchor'  style="opactiy:0">/</p> 
 
 ### [添加图标](#添加图标)
 
 ```html
-<light-button 
+<Button 
       iconPath="microsoft.png"
       autoWidth
->Microsoft</light-button>
+>Microsoft</Button>
 ```
 
-<p id="宽度自适应" class='anchor'>/</p> 
+<p id="宽度自适应" class='anchor'  style="opactiy:0">/</p> 
 
 ### [宽度自适应](#宽度自适应)
 
 ```html
-<light-button autoWidth>autoWidth true</light-button>
+<Button autoWidth>autoWidth true</Button>
 ```
 
-<p id="自定义宽度" class='anchor'>/</p> 
+<p id="自定义宽度" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义宽度](#自定义宽度)
 
 ```html
-<light-button width="100%">custom width</light-button>
+<Button width="100%">custom width</Button>
 ```
 
-<p id="自定义高度" class='anchor'>/</p> 
+<p id="自定义高度" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义高度](#自定义高度)
 
 ```html
-<light-button 
+<Button 
       autoWidth 
       height="100rpx"
->custom height</light-button>
+>custom height</Button>
 ```
 
-<p id="不可点击" class='anchor'>/</p> 
+<p id="不可点击" class='anchor'  style="opactiy:0">/</p> 
 
 ### [不可点击](#不可点击)
 
 ```html
-<light-button disabled>true</light-button>
+<Button disabled>true</Button>
 ```
 
-<p id="自定义样式" class='anchor'>/</p> 
+<p id="自定义样式" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义样式](#自定义样式)
 
 ```html
-<light-button
+<Button
       bgColor="red"
       color="white"
->custom</light-button>
+>custom</Button>
 ```
 
-<p id="加载中" class='anchor'>/</p> 
+<p id="加载中" class='anchor'  style="opactiy:0">/</p> 
 
 ### [加载中](#加载中)
 
 ```html
-<light-button
+<Button
       loading="{{true}}"
       type="default"
->true</light-button>
+>true</Button>
 ```
 
-<p id="自定义图标" class='anchor'>/</p> 
+<p id="自定义图标" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义图标](#自定义图标)
 
 ```html
-<light-button type="default">
+<Button type="default">
       <image
             slot="icon"
             mode="widthFix"
@@ -179,19 +179,19 @@
             src="apple.png"
       ></image>
       apple
-</light-button>
+</Button>
 ```
 
-<p id="配合使用" class='anchor'>/</p> 
+<p id="配合使用" class='anchor'  style="opactiy:0">/</p> 
 
 ### [配合使用](#配合使用)
 
 ```html
 <navigator url="/pages/index/index">
-      <light-button type="default">button</light-button>
+      <Button type="default">button</Button>
 </navigator>
 
 <button open-type="share">
-      <light-button type="default">button</light-button>
+      <Button type="default">button</Button>
 </button>
 ```

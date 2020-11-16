@@ -10,7 +10,7 @@
 | column | 列数 | number | 3 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-<p id="types" class='anchor'>/</p>  
+<p id="types" class='anchor'  style="opactiy:0">/</p>  
 
 ### [types](#types)
 
@@ -21,7 +21,7 @@ type List = {
 }
 ```
 
-<p id="list" class='anchor'>/</p>  
+<p id="list" class='anchor'  style="opactiy:0">/</p>  
 
 ### [list](#list)
 
@@ -32,91 +32,91 @@ type List = {
 
 ## 例子
 
-<p id="默认效果" class='anchor'>/</p> 
+<p id="默认效果" class='anchor'  style="opactiy:0">/</p> 
 
 ### [默认效果](#默认效果)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_default}}"
       title="分享"
       list="{{list}}"
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="没有标题" class='anchor'>/</p> 
+<p id="没有标题" class='anchor'  style="opactiy:0">/</p> 
 
 ### [没有标题](#没有标题)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_default}}"
       list="{{list}}"
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="横向滚动" class='anchor'>/</p> 
+<p id="横向滚动" class='anchor'  style="opactiy:0">/</p> 
 
 ### [横向滚动](#横向滚动)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_scroll}}"
       title="分享"
       list="{{list}}"
       scroll
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="纵向显示" class='anchor'>/</p> 
+<p id="纵向显示" class='anchor'  style="opactiy:0">/</p> 
 
 ### [纵向显示](#纵向显示)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_scroll}}"
       list="{{list}}"
       vertical
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="仅有文字" class='anchor'>/</p> 
+<p id="仅有文字" class='anchor'  style="opactiy:0">/</p> 
 
 ### [仅有文字](#仅有文字)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_textOnly}}"
       title="分享"
       list="{{list}}"
       vertical
       textOnly
       visibleCancel
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="显示取消" class='anchor'>/</p> 
+<p id="显示取消" class='anchor'  style="opactiy:0">/</p> 
 
 ### [显示取消](#显示取消)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_visibleCancel}}"
       list="{{list}}"
       vertical
       visibleCancel
-></action-sheet>
+></ActionSheet>
 ```
 
-<p id="列数" class='anchor'>/</p> 
+<p id="列数" class='anchor'  style="opactiy:0">/</p> 
 
 ### [列数](#列数)
 
 ```html
-<action-sheet
+<ActionSheet
       visible="{{visible_column}}"
       title="分享"
       list="{{list}}"
       column="{{4}}"
-></action-sheet>
+></ActionSheet>
 ```
