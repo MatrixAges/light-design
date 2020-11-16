@@ -14,11 +14,11 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_default}}"
                   title="分享"
                   list="{{list}}"
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -35,10 +35,10 @@
                   mark:type="title"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_title}}"
                   list="{{list}}"
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -55,12 +55,12 @@
                   mark:type="scroll"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_scroll}}"
                   title="分享"
                   list="{{list}}"
                   scroll
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -77,11 +77,11 @@
                   mark:type="vertical"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_vertical}}"
                   list="{{list}}"
                   vertical
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -98,14 +98,14 @@
                   mark:type="textOnly"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_textOnly}}"
                   title="分享"
                   list="{{list}}"
                   vertical
                   textOnly
                   visibleCancel
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -122,12 +122,12 @@
                   mark:type="visibleCancel"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_visibleCancel}}"
                   list="{{list}}"
                   vertical
                   visibleCancel
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -144,11 +144,11 @@
                   mark:type="column"
                   catchtap="onOption"
             ></light-icon>
-            <action-sheet
+            <light-action-sheet
                   visible="{{visible_column}}"
                   title="分享"
                   list="{{list}}"
                   column="{{4}}"
-            ></action-sheet>
+            ></light-action-sheet>
       </view>
 </view>

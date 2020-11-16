@@ -1,4 +1,4 @@
-<_tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></_tips>
+<tips text="size属性仅改变loading的可见大小，不会改变loading的占位大小，原理为scale"></tips>
 
 <view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
@@ -8,24 +8,24 @@
             </view>
             <view class="examples flex">
                   <view class="example w_100 flex justify_center">
-                        <loading
+                        <light-loading
                               type="refresh"
                               visible
-                        ></loading>
+                        ></light-loading>
                   </view>
             </view>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">加载中</text>
-                  <text class="attr">loading</text>
+                  <text class="attr">light-loading</text>
             </view>
             <view class="examples flex">
                   <view class="example w_100 flex justify_center">
-                        <loading
-                              type="loading"
+                        <light-loading
+                              type="light-loading"
                               visible
-                        ></loading>
+                        ></light-loading>
                   </view>
             </view>
       </view>

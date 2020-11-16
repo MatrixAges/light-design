@@ -14,9 +14,9 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <modal visible="{{visible_default}}">
+            <light-modal visible="{{visible_default}}">
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -33,12 +33,12 @@
                   mark:type="top"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_top}}"
                   position="top"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -55,12 +55,12 @@
                   mark:type="bottom"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_bottom}}"
                   position="bottom"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -77,12 +77,12 @@
                   mark:type="left"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_left}}"
                   position="left"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -99,12 +99,12 @@
                   mark:type="right"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_right}}"
                   position="right"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -121,12 +121,12 @@
                   mark:type="maskVisible"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_maskVisible}}"
                   maskVisible="{{false}}"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -143,11 +143,11 @@
                   mark:type="maskClosable"
                   catchtap="onOption"
             ></light-icon>
-            <modal
+            <light-modal
                   visible="{{visible_maskClosable}}"
                   maskClosable="{{false}}"
             >
                   <view class="bg_white p_32 radius_10 border_box">居中显示的内容</view>
-            </modal>
+            </light-modal>
       </view>
 </view>

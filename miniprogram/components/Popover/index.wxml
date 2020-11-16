@@ -14,7 +14,7 @@
             catchtap="onClose"
       ></view>
       <view
-            class="dialog {{_visible_dialog?'visible':'hidden'}}"
+            class="light-dialog {{_visible_dialog?'visible':'hidden'}}"
             style="{{wxs.getDialogStyles({position,color,bgColor,transformOrigin})}}"
             catchtap="onActionItem"
       >

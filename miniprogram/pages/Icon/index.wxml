@@ -1,4 +1,4 @@
-<_tips text="常规类型的图标的type仅支持'outline'。"></_tips>
+<tips text="常规类型的图标的type仅支持'outline'。"></tips>
 
 <view class="example_items icon_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
@@ -42,7 +42,7 @@
                               ></light-icon>
                               <text
                                     class="ml_12"
-                                    style="line-height: 1;"
+                                    style="light-line-height: 1;"
                               >切换样式</text>
                         </view>
                   </light-button>
@@ -211,5 +211,5 @@
       </view>
 </view>
 
-<_tips text="按需引入：可直接通过icon属性，传入从Icon/data.ts导入的变量；如需全量引入，请自行改写组件">
-</_tips>
+<tips text="按需引入：可直接通过icon属性，传入从Icon/data.ts导入的变量；如需全量引入，请自行改写组件">
+</tips>

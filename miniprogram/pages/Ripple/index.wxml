@@ -1,5 +1,5 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <_tips text="Ripple组件自身没有宽高，需要通过子元素来撑开它"></_tips>
+      <tips text="Ripple组件自身没有宽高，需要通过子元素来撑开它"></tips>
       <view class="mini_items column_2 visible_items">
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -8,9 +8,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <ripple>
+                              <light-ripple>
                                     <light-button type="border">Ripple</light-button>
-                              </ripple>
+                              </light-ripple>
                         </view>
                   </view>
             </view>
@@ -21,9 +21,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <ripple color="red">
+                              <light-ripple color="red">
                                     <light-button type="border">Ripple</light-button>
-                              </ripple>
+                              </light-ripple>
                         </view>
                   </view>
             </view>
@@ -34,12 +34,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <ripple>
+                              <light-ripple>
                                     <light-button
                                           type="border"
                                           bindtap="click"
                                     >Ripple</light-button>
-                              </ripple>
+                              </light-ripple>
                         </view>
                   </view>
             </view>
@@ -50,12 +50,12 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <ripple radius="{{100}}">
+                              <light-ripple radius="{{100}}">
                                     <light-button
                                           type="border"
                                           shape="circle"
                                     >Ripple</light-button>
-                              </ripple>
+                              </light-ripple>
                         </view>
                   </view>
             </view>
@@ -66,9 +66,9 @@
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example">
-                              <ripple>
+                              <light-ripple>
                                     <light-button ghost>Ripple</light-button>
-                              </ripple>
+                              </light-ripple>
                         </view>
                   </view>
             </view>
@@ -80,8 +80,8 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example">
-                        <ripple color="white">
-                              <card
+                        <light-ripple color="white">
+                              <light-card
                                     title="Primary"
                                     width="100%"
                                     bgColor="#222"
@@ -92,8 +92,8 @@
                                     tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </card>
-                        </ripple>
+                              </light-card>
+                        </light-ripple>
                   </view>
             </view>
       </view>

@@ -4,7 +4,7 @@
       style="z-index:{{zIndex}};{{maskVisible?'background:'+maskColor:''}}"
       wx:if="{{_visible}}"
 >
-      <view class="landing">
+      <view class="light-landing">
             <view class="icon_source_bottom icon_source"></view>
             <view class="icon_source_top icon_source"></view>
       </view>

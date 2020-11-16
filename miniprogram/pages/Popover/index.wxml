@@ -14,12 +14,12 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <popover
+            <light-popover
                   visible="{{visible_default}}"
                   list="{{list}}"
                   position="{{['100rpx','','','30rpx']}}"
             >
-            </popover>
+            </light-popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -36,12 +36,12 @@
                   mark:type="position"
                   catchtap="onOption"
             ></light-icon>
-            <popover
+            <light-popover
                   visible="{{visible_position}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
             >
-            </popover>
+            </light-popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -58,13 +58,13 @@
                   mark:type="mark"
                   catchtap="onOption"
             ></light-icon>
-            <popover
+            <light-popover
                   visible="{{visible_mark}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
                   mark="{{['-8rpx','','30rpx','']}}"
             >
-            </popover>
+            </light-popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -81,14 +81,14 @@
                   mark:type="transformOrigin"
                   catchtap="onOption"
             ></light-icon>
-            <popover
+            <light-popover
                   visible="{{visible_transformOrigin}}"
                   list="{{list}}"
                   position="{{['100rpx','','30rpx','']}}"
                   mark="{{['-8rpx','','30rpx','']}}"
                   transformOrigin="top left"
             >
-            </popover>
+            </light-popover>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -105,7 +105,7 @@
                   mark:type="custom"
                   catchtap="onOption"
             ></light-icon>
-            <popover
+            <light-popover
                   visible="{{visible_custom}}"
                   list="{{list_black}}"
                   position="{{['100rpx','','','30rpx']}}"
@@ -113,6 +113,6 @@
                   color="black"
                   divideColor="#eee"
             >
-            </popover>
+            </light-popover>
       </view>
 </view>

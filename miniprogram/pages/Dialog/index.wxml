@@ -14,9 +14,9 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <dialog visible="{{visible_default}}">
+            <light-dialog visible="{{visible_default}}">
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -33,12 +33,12 @@
                   mark:type="no_title"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   title=""
                   visible="{{visible_no_title}}"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -55,7 +55,7 @@
                   mark:type="custom"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_custom}}"
                   custom
             >
@@ -63,7 +63,7 @@
                         class="w_100 border_box text_center"
                         style="padding: 240rpx 0;background-color: whitesmoke;"
                   >我们的目标是：星辰大海！</view>
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -80,12 +80,12 @@
                   mark:type="bottom"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_bottom}}"
                   bottom
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -102,7 +102,7 @@
                   mark:type="cancelVisible"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_cancelVisible}}"
                   custom
                   cancelVisible="{{false}}"
@@ -111,7 +111,7 @@
                         class="w_100 border_box text_center"
                         style="padding: 240rpx 0;background-color: whitesmoke;"
                   >我们的目标是：星辰大海！</view>
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -128,7 +128,7 @@
                   mark:type="closeVisible"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_closeVisible}}"
                   custom
                   closeVisible
@@ -137,7 +137,7 @@
                         class="w_100 border_box text_center"
                         style="padding: 240rpx 0;background-color: whitesmoke;"
                   >我们的目标是：星辰大海！</view>
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -154,13 +154,13 @@
                   mark:type="maskVisible"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_maskVisible}}"
                   maskVisible="{{false}}"
                   bodyStyle="background-color:#333;color:white"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -177,12 +177,12 @@
                   mark:type="maskClosable"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_maskClosable}}"
                   maskClosable="{{false}}"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -199,12 +199,12 @@
                   mark:type="bodyStyle"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_bodyStyle}}"
                   bodyStyle="border-radius:0;background-color:whitesmoke;color:black"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -221,12 +221,12 @@
                   mark:type="okText"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_okText}}"
                   okText="是的哟～"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -243,11 +243,11 @@
                   mark:type="cancelText"
                   catchtap="onOption"
             ></light-icon>
-            <dialog
+            <light-dialog
                   visible="{{visible_cancelText}}"
                   cancelText="～bu bu～"
             >
                   结果并不重要，重要的是过程？
-            </dialog>
+            </light-dialog>
       </view>
 </view>

@@ -11,7 +11,7 @@
                   catchtap="{{maskClosable?'onClose':''}}"
             ></view>
             <view
-                  class="dialog {{bottom?'bottom':''}}"
+                  class="light-dialog {{bottom?'bottom':''}}"
                   style="{{style}};{{bodyStyle}}"
             >
                   <view

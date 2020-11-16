@@ -39,7 +39,7 @@ Component({
 			return new Promise((resolve) => {
 				_that
 					.createSelectorQuery()
-					.select('#ripple')
+					.select('#light-ripple')
 					.boundingClientRect(({ width, height, left, top }) => {
 						resolve({ width, height, left, top })
 					})

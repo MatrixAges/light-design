@@ -11,7 +11,7 @@
 | iconPath | 图标路径 | string | '' | 否 | 1.0.0 |
 | ghost | 幽灵按钮 | boolean | false | 否 | 1.0.0 |
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
-| loading | 等待中 | boolean | false | 否 | 1.0.0 |
+| light-loading | 等待中 | boolean | false | 否 | 1.0.0 |
 
 <p id="type" class='anchor'  style="opactiy:0" style="opactiy:0">/</p>  
 
@@ -161,7 +161,7 @@
 
 ```html
 <Button
-      loading="{{true}}"
+      light-loading="{{true}}"
       type="default"
 >true</Button>
 ```

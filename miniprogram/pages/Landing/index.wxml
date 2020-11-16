@@ -14,7 +14,7 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <landing visible="{{visible_default}}"></landing>
+            <light-landing visible="{{visible_default}}"></light-landing>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -31,10 +31,10 @@
                   mark:type="maskVisible"
                   catchtap="onOption"
             ></light-icon>
-            <landing
+            <light-landing
                   visible="{{visible_maskVisible}}"
                   maskVisible
-            ></landing>
+            ></light-landing>
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
@@ -51,10 +51,10 @@
                   mark:type="maskColor"
                   catchtap="onOption"
             ></light-icon>
-            <landing
+            <light-landing
                   visible="{{visible_maskColor}}"
                   maskColor="rgba(255, 255, 255, 0.8)"
                   maskVisible
-            ></landing>
+            ></light-landing>
       </view>
 </view>

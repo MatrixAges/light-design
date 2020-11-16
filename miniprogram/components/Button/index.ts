@@ -57,6 +57,6 @@ Component({
             },
 		ghost: Boolean,
 		disabled: Boolean,
-		loading: Boolean
+		light-loading: Boolean
 	}
 })

@@ -5,7 +5,7 @@
       wx:if="{{_visible}}"
 >
       <view
-            class="dialog {{position}}"
+            class="light-dialog {{position}}"
             style="{{style}};"
       >
             <view

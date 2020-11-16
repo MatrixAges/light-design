@@ -15,10 +15,10 @@
                         mark:type="default"
                         catchtap="onOption"
                   ></light-icon>
-                  <toast
+                  <light-toast
                         visible="{{visible_default}}"
                         title="default Toast"
-                  ></toast>
+                  ></light-toast>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -35,11 +35,11 @@
                         mark:type="position"
                         catchtap="onOption"
                   ></light-icon>
-                  <toast
+                  <light-toast
                         visible="{{visible_position}}"
                         title="default Toast"
                         position="top"
-                  ></toast>
+                  ></light-toast>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -56,12 +56,12 @@
                         mark:type="custom"
                         catchtap="onOption"
                   ></light-icon>
-                  <toast
+                  <light-toast
                         visible="{{visible_custom}}"
                         title="default Toast"
                         color="white"
                         bgColor="linear-gradient(to right,red,blue)"
-                  ></toast>
+                  ></light-toast>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -78,11 +78,11 @@
                         mark:type="duration"
                         catchtap="onOption"
                   ></light-icon>
-                  <toast
+                  <light-toast
                         visible="{{visible_duration}}"
                         title="default Toast"
                         duration="{{1000}}"
-                  ></toast>
+                  ></light-toast>
             </view>
       </view>
       <view class="example_item w_100 border_box flex">
@@ -115,21 +115,21 @@
                               mark:type="error"
                               catchtap="onOption"
                         >error</light-button>
-                        <toast
+                        <light-toast
                               visible="{{visible_success}}"
                               title="success Toast"
                               type="success"
-                        ></toast>
-                        <toast
+                        ></light-toast>
+                        <light-toast
                               visible="{{visible_warning}}"
                               title="warning Toast"
                               type="warning"
-                        ></toast>
-                        <toast
+                        ></light-toast>
+                        <light-toast
                               visible="{{visible_error}}"
                               title="error Toast"
                               type="error"
-                        ></toast>
+                        ></light-toast>
                   </view>
             </view>
       </view>
@@ -162,24 +162,24 @@
                               mark:type="useColor_error"
                               catchtap="onOption"
                         >error</light-button>
-                        <toast
+                        <light-toast
                               visible="{{visible_useColor_success}}"
                               title="success Toast"
                               type="success"
                               useColor
-                        ></toast>
-                        <toast
+                        ></light-toast>
+                        <light-toast
                               visible="{{visible_useColor_warning}}"
                               title="warning Toast"
                               type="warning"
                               useColor
-                        ></toast>
-                        <toast
+                        ></light-toast>
+                        <light-toast
                               visible="{{visible_useColor_error}}"
                               title="error Toast"
                               type="error"
                               useColor
-                        ></toast>
+                        ></light-toast>
                   </view>
             </view>
       </view>

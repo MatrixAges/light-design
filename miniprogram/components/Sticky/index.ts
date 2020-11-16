@@ -1,10 +1,10 @@
-// copy from we-ui component sticky 😁
+// copy from we-ui component light-sticky 😁
 
 type BoundingClientRect = WechatMiniprogram.BoundingClientRectCallbackResult
 type IntersectionObserver = WechatMiniprogram.IntersectionObserver
 type NodesRef = WechatMiniprogram.NodesRef
 
-const target = '#sticky'
+const target = '#light-sticky'
 
 Component({
 	options: {

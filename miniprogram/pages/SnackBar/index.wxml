@@ -28,7 +28,7 @@
                               mark:type="type_error"
                               catchtap="onOption"
                         >error</light-button>
-                        <snack-bar
+                        <light-snack-bar
                               visible="{{visible_type_none}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -40,8 +40,8 @@
                                     mark:type="type_none"
                                     catchtap="hide"
                               >关闭</text>
-                        </snack-bar>
-                        <snack-bar
+                        </light-snack-bar>
+                        <light-snack-bar
                               visible="{{visible_type_success}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -54,8 +54,8 @@
                                     mark:type="type_success"
                                     catchtap="hide"
                               >关闭</text>
-                        </snack-bar>
-                        <snack-bar
+                        </light-snack-bar>
+                        <light-snack-bar
                               visible="{{visible_type_warning}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -68,8 +68,8 @@
                                     mark:type="type_warning"
                                     catchtap="hide"
                               >关闭</text>
-                        </snack-bar>
-                        <snack-bar
+                        </light-snack-bar>
+                        <light-snack-bar
                               visible="{{visible_type_error}}"
                               title="您的账户余额不足，请尽快充值"
                               position="top"
@@ -82,7 +82,7 @@
                                     mark:type="type_error"
                                     catchtap="hide"
                               >关闭</text>
-                        </snack-bar>
+                        </light-snack-bar>
                   </view>
             </view>
       </view>
@@ -102,12 +102,12 @@
                         mark:type="default"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_default}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -124,11 +124,11 @@
                         mark:type="description"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_description}}"
                         title="更多内容请登录"
                         okText="登录"
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -145,13 +145,13 @@
                         mark:type="autoClose"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_autoClose}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         autoClose
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -168,14 +168,14 @@
                         mark:type="duration"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_duration}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         duration="{{5000}}"
                         autoClose
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -192,13 +192,13 @@
                         mark:type="position"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_position}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         position="top"
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -215,13 +215,13 @@
                         mark:type="bottom"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_bottom}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         bottom="{{60}}"
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -238,13 +238,13 @@
                         mark:type="mini"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_mini}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         mini
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -261,7 +261,7 @@
                         mark:type="slot"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_slot}}"
                         title="您的账户余额不足，请尽快充值"
                         custom
@@ -274,7 +274,7 @@
                               mark:type="slot"
                               catchtap="hide"
                         ></image>
-                  </snack-bar>
+                  </light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -291,13 +291,13 @@
                         mark:type="cover"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_cover}}"
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         cover
-                  ></snack-bar>
+                  ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -314,7 +314,7 @@
                         mark:type="composition"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_composition}}"
                         title="您的账户余额不足，请尽快充值"
                         position="top"
@@ -329,7 +329,7 @@
                               mark:type="composition"
                               catchtap="hide"
                         ></image>
-                  </snack-bar>
+                  </light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -346,7 +346,7 @@
                         mark:type="styles"
                         catchtap="onOption"
                   ></light-icon>
-                  <snack-bar
+                  <light-snack-bar
                         visible="{{visible_styles}}"
                         title="您的账户余额不足，请尽快充值"
                         position="top"
@@ -363,7 +363,7 @@
                               mark:type="styles"
                               catchtap="hide"
                         ></image>
-                  </snack-bar>
+                  </light-snack-bar>
             </view>
       </view>
 </view>

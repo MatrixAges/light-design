@@ -19,14 +19,14 @@
 
 .init {
       font-size: 30rpx;
-      line-height: 1;
+      light-line-height: 1;
       color: black;
 }
 
 .loading_image(@loading_size, @loading_color) {
       @color: escape(@loading_color);
 
-      .loading {
+      .light-loading {
             width:calc(~'@{loading_size}rpx * 2');
             height: calc(~'@{loading_size}rpx * 2');
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='@{loading_size}' height='@{loading_size}' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='@{color}' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
@@ -60,7 +60,7 @@
             margin: 0;
       }
 
-      .loading {
+      .light-loading {
             display: inline-block;
       }
 
@@ -78,7 +78,7 @@
       &.size_small {
             font-size: 20rpx;
             height: 54rpx;
-            line-height: 1;
+            light-line-height: 1;
 
             &.mode_padding {
                   padding: 0 16rpx;
@@ -105,7 +105,7 @@
       &.size_normal {
             font-size: 26rpx;
             height: 64rpx;
-            line-height: 1;
+            light-line-height: 1;
 
             &.mode_padding {
                   padding: 0 24rpx;
@@ -132,7 +132,7 @@
       &.size_large {
             font-size: 30rpx;
             height: 80rpx;
-            line-height: 1;
+            light-line-height: 1;
 
             &.mode_padding {
                   padding: 0 32rpx;

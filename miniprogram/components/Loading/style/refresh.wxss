@@ -13,7 +13,7 @@
   border-left-color: transparent;
   color: transparent;
   display: inline-block;
-  line-height: 1.2;
+  light-line-height: 1.2;
   width: 48rpx;
   height: 48rpx;
   text-indent: 100%;

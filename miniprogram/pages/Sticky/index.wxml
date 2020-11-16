@@ -1,5 +1,5 @@
 <view class="example_items w_100 border_box flex flex_column">
-      <_tips text="Sticky组件的父元素不能为flex，否则Sticky将无法侦测到子元素是否回到可见区域"></_tips>
+      <tips text="Sticky组件的父元素不能为flex，否则Sticky将无法侦测到子元素是否回到可见区域"></tips>
       <view class="mini_items column_2 visible_items">
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
@@ -8,9 +8,9 @@
                   </view>
                   <view class="examples flex flex_column">
                         <view class="example">
-                              <sticky>
+                              <light-sticky>
                                     <light-button>默认效果</light-button>
-                              </sticky>
+                              </light-sticky>
                         </view>
                   </view>
             </view>
@@ -21,9 +21,9 @@
                   </view>
                   <view class="examples flex flex_column">
                         <view class="example">
-                              <sticky offsetTop="{{30}}">
+                              <light-sticky offsetTop="{{30}}">
                                     <light-button>顶部距离</light-button>
-                              </sticky>
+                              </light-sticky>
                         </view>
                   </view>
             </view>
@@ -40,11 +40,11 @@
                         style="height: 600px; background-color: #E0E0E0;"
                   >
                         <view style="height: 200px; background-color: #eee;"></view>
-                        <sticky
+                        <light-sticky
                               offsetTop="{{30}}"
                               container="#container"
                         >
-                              <card
+                              <light-card
                                     title="Primary"
                                     width="auto"
                                     bgColor="red"
@@ -54,8 +54,8 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt
                                     ut labore et dolore magna aliqua.
-                              </card>
-                        </sticky>
+                              </light-card>
+                        </light-sticky>
                   </view>
             </view>
       </view>

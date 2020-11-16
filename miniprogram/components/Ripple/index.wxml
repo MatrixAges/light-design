@@ -1,5 +1,5 @@
 <view
-      id="ripple"
+      id="light-ripple"
       class="content_wrap"
       bindtap="trigger"
       bindlongpress="trigger"
@@ -11,7 +11,7 @@
             wx:if="{{visible}}"
       >
             <view
-                  class="ripple"
+                  class="light-ripple"
                   style="background-color:{{color}};{{styles}}"
             ></view>
       </view>

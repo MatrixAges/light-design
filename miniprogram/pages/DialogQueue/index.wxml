@@ -14,9 +14,9 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <dialog-queue
+            <light-dialog-queue
                   visible="{{visible_default}}"
                   list="{{list}}"
-            ></dialog-queue>
+            ></light-dialog-queue>
       </view>
 </view>
