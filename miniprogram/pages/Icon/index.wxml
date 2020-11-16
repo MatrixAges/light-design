@@ -42,7 +42,7 @@
                               ></light-icon>
                               <text
                                     class="ml_12"
-                                    style="light-line-height: 1;"
+                                    style="line-height: 1;"
                               >切换样式</text>
                         </view>
                   </light-button>
