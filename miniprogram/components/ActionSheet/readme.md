@@ -10,8 +10,6 @@
 | column | 列数 | number | 3 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-<p id="types" class='anchor'  style="opactiy:0">/</p>  
-
 ### [types](#types)
 
 ```typescript
@@ -21,18 +19,12 @@ type List = {
 }
 ```
 
-<p id="list" class='anchor'  style="opactiy:0">/</p>  
-
 ### [list](#list)
 
 | 值 | 说明 | 版本 |
 | - | - | - |
 | name | 名称 | 1.0.0 |
 | icon | 图标链接 | 1.0.0 |
-
-## 例子
-
-<p id="默认效果" class='anchor'  style="opactiy:0">/</p> 
 
 ### [默认效果](#默认效果)
 
@@ -44,8 +36,6 @@ type List = {
 ></ActionSheet>
 ```
 
-<p id="没有标题" class='anchor'  style="opactiy:0">/</p> 
-
 ### [没有标题](#没有标题)
 
 ```html
@@ -54,8 +44,6 @@ type List = {
       list="{{list}}"
 ></ActionSheet>
 ```
-
-<p id="横向滚动" class='anchor'  style="opactiy:0">/</p> 
 
 ### [横向滚动](#横向滚动)
 
@@ -68,8 +56,6 @@ type List = {
 ></ActionSheet>
 ```
 
-<p id="纵向显示" class='anchor'  style="opactiy:0">/</p> 
-
 ### [纵向显示](#纵向显示)
 
 ```html
@@ -79,8 +65,6 @@ type List = {
       vertical
 ></ActionSheet>
 ```
-
-<p id="仅有文字" class='anchor'  style="opactiy:0">/</p> 
 
 ### [仅有文字](#仅有文字)
 
@@ -95,8 +79,6 @@ type List = {
 ></ActionSheet>
 ```
 
-<p id="显示取消" class='anchor'  style="opactiy:0">/</p> 
-
 ### [显示取消](#显示取消)
 
 ```html
@@ -107,8 +89,6 @@ type List = {
       visibleCancel
 ></ActionSheet>
 ```
-
-<p id="列数" class='anchor'  style="opactiy:0">/</p> 
 
 ### [列数](#列数)
 

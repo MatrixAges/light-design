@@ -13,8 +13,6 @@
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
 | loading | 等待中 | boolean | false | 否 | 1.0.0 |
 
-<p id="type" class='anchor'  style="opactiy:0" style="opactiy:0">/</p>  
-
 ### [type](#type)
 
 | 值 | 说明 | 版本 |
@@ -28,7 +26,6 @@
 | error | 错误 | 1.0.0 |
 | ghost | 幽灵按钮 | 1.0.0 |
 
-<p id="size" class='anchor'  style="opactiy:0">/</p>  
 
 ### [size](#size)
 
@@ -37,8 +34,6 @@
 | normal | 常规大小 | 1.0.0 |
 | large | 大尺寸按钮 | 1.0.0 |
 | small | 小尺寸按钮 | 1.0.0 |
-
-<p id="shape" class='anchor'  style="opactiy:0">/</p> 
 
 ### [shape](#shape)
 
@@ -49,8 +44,6 @@
 | rect | 矩形按钮 | 1.0.0 |
 
 ## 例子
-
-<p id="按钮类型" class='anchor'  style="opactiy:0">/</p> 
 
 ### [按钮类型](#按钮类型)
 
@@ -64,8 +57,6 @@
 <Button type="default">default</Button>
 ```
 
-<p id="幽灵按钮" class='anchor'  style="opactiy:0">/</p> 
-
 ### [幽灵按钮](#幽灵按钮)
 
 ```html
@@ -78,8 +69,6 @@
 <Button type="default" ghost>default</Button>
 ```
 
-<p id="按钮大小" class='anchor'  style="opactiy:0">/</p> 
-
 ### [按钮大小](#按钮大小)
 
 ```html
@@ -88,8 +77,6 @@
 <Button size="small">small</Button>
 ```
 
-<p id="按钮形状" class='anchor'  style="opactiy:0">/</p> 
-
 ### [按钮形状](#按钮形状)
 
 ```html
@@ -97,8 +84,6 @@
 <Button shape="circle">large</Button>
 <Button shape="rect">large</Button>
 ```
-
-<p id="添加图标" class='anchor'  style="opactiy:0">/</p> 
 
 ### [添加图标](#添加图标)
 
@@ -109,23 +94,17 @@
 >Microsoft</Button>
 ```
 
-<p id="宽度自适应" class='anchor'  style="opactiy:0">/</p> 
-
 ### [宽度自适应](#宽度自适应)
 
 ```html
 <Button autoWidth>autoWidth true</Button>
 ```
 
-<p id="自定义宽度" class='anchor'  style="opactiy:0">/</p> 
-
 ### [自定义宽度](#自定义宽度)
 
 ```html
 <Button width="100%">custom width</Button>
 ```
-
-<p id="自定义高度" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义高度](#自定义高度)
 
@@ -136,15 +115,11 @@
 >custom height</Button>
 ```
 
-<p id="不可点击" class='anchor'  style="opactiy:0">/</p> 
-
 ### [不可点击](#不可点击)
 
 ```html
 <Button disabled>true</Button>
 ```
-
-<p id="自定义样式" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义样式](#自定义样式)
 
@@ -155,8 +130,6 @@
 >custom</Button>
 ```
 
-<p id="加载中" class='anchor'  style="opactiy:0">/</p> 
-
 ### [加载中](#加载中)
 
 ```html
@@ -165,8 +138,6 @@
       type="default"
 >true</Button>
 ```
-
-<p id="自定义图标" class='anchor'  style="opactiy:0">/</p> 
 
 ### [自定义图标](#自定义图标)
 
@@ -181,8 +152,6 @@
       apple
 </Button>
 ```
-
-<p id="配合使用" class='anchor'  style="opactiy:0">/</p> 
 
 ### [配合使用](#配合使用)
 
