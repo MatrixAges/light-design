@@ -4,7 +4,7 @@
 ></wxs>
 
 <button
-      class="btn {{wxs.getClasses({mode,size,type,shape,ghost,disabled})}}"
+      class="btn {{wxs.getClasses({autoWidth,size,type,shape,ghost,disabled})}}"
       style="{{wxs.getStyles({width,height,color,bgColor})}}"
 >
       <view

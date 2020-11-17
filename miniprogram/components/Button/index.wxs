@@ -1,7 +1,8 @@
 function getClasses (props){
 	var classes = ''
 
-	if (props.mode) classes += ' mode_' + props.mode
+      if (props.autoWidth) classes += ' mode_padding'
+      if (!props.autoWidth) classes += ' mode_fixed'
 	if (props.size) classes += ' size_' + props.size
 	if (props.type) classes += ' type_' + props.type
 	if (props.shape) classes += ' shape_' + props.shape

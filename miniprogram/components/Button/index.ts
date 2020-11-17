@@ -31,12 +31,9 @@ Component({
 			type: String,
 			value: 'normal'
 		},
-		mode: <{
-			type: StringConstructor
-			value: 'fixed' | 'padding'
-		}>{
-			type: String,
-			value: 'fixed'
+		autoWidth: {
+			type: Boolean,
+			value: false
 		},
 		width: {
 			type: String,
@@ -53,9 +50,12 @@ Component({
 		bgColor: {
 			type: String,
 			value: ''
-		},
+            },
+            iconPath: {
+			type: String,
+			value: ''
+            },
 		ghost: Boolean,
-		iconPath: String,
 		disabled: Boolean,
 		loading: Boolean
 	}

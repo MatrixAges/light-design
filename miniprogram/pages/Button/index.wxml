@@ -130,7 +130,7 @@
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
                               <_Button
-                                    mode="padding"
+                                    autoWidth
                                     iconPath="https://matrixages.github.io/atom.css/assets/images/microsoft.png"
                                     type="default"
                               >Microsoft</_Button>
@@ -140,20 +140,17 @@
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
                         <text class="title">宽度自适应</text>
-                        <text class="attr">mode</text>
+                        <text class="attr">autoWidth</text>
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
-                              <_Button
-                                    mode="fixed"
-                                    type="default"
-                              >fixed</_Button>
+                              <_Button type="default">false</_Button>
                         </view>
                         <view class="example flex">
                               <_Button
-                                    mode="padding"
                                     type="default"
-                              >padding padding</_Button>
+                                    autoWidth
+                              >autoWidth true</_Button>
                         </view>
                   </view>
             </view>
@@ -163,7 +160,7 @@
                         <text class="attr">width</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example w_100 flex">
+                        <view class="example w_100">
                               <_Button width="100%">custom width</_Button>
                         </view>
                   </view>
@@ -176,7 +173,7 @@
                   <view class="examples flex flex_wrap">
                         <view class="example flex">
                               <_Button
-                                    mode="padding"
+                                    autoWidth
                                     height="100rpx"
                               >custom height</_Button>
                         </view>
@@ -219,7 +216,6 @@
                         <view class="example">
                               <_Button
                                     loading="{{true}}"
-                                    mode="fixed"
                                     type="default"
                               >true</_Button>
                         </view>
@@ -263,12 +259,13 @@
                         <text class="attr">for button</text>
                   </view>
                   <view class="examples flex flex_wrap">
-                        <view class="example">
-                              <_Button type="default">
-                                    <button
-                                          style="background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
-                                    >button</button>
-                              </_Button>
+                        <view class="example flex">
+                              <button
+                                    style="width: auto;padding: 0;margin: 0;background-color: transparent;color: black;font-weight: normal;font-size: 26rpx;"
+                                    open-type="share"
+                              >
+                                    <_Button type="default" >button</_Button>
+                              </button>
                         </view>
                   </view>
             </view>
