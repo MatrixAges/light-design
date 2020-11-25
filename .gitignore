@@ -17,6 +17,7 @@
 /miniprogram/pages/*.wxss
 /dist
 /build
+/miniprogram/components_es5
 *.zip
 
 # env

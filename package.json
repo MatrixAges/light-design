@@ -8,6 +8,7 @@
             "url": "git@github.com:MatrixAges/light-design.git"
       },
       "scripts": {
+            "build:es5": "webpack --mode production --config ./webpack/es5/webpack.config.js",
             "dev": "cross-env NODE_ENV=development webpack --mode development --watch --config ./webpack/webpack.config.common.js",
             "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.common.js",
             "ctrl + c": "退出后还会监听，需要手动 kill 进程"
@@ -40,6 +41,7 @@
             "cssnano": "^4.1.10",
             "dotenv-webpack": "^5.1.0",
             "file-loader": "^6.2.0",
+            "filemanager-webpack-plugin": "^3.0.0-beta.0",
             "ignore-emit-webpack-plugin": "^2.0.5",
             "lerna": "^3.22.1",
             "less": "^3.12.2",

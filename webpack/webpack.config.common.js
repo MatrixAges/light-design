@@ -6,6 +6,7 @@ const devConfig = require('./webpack.config.dev')
 const prodConfig = require('./webpack.config.prod')
 const { is_dev, paths } = require('./utils')
 
+//@ts-ignore
 global.context = paths.miniprogram
 
 module.exports = merge(is_dev ? devConfig : prodConfig, {

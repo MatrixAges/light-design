@@ -1,4 +1,4 @@
-const { paths, fileLoader } = require('./utils')
+const { paths, fileLoader } = require('../utils')
 
 module.exports = [
 	{
@@ -33,5 +33,5 @@ module.exports = [
 		test: /\.json$/,
 		type: 'javascript/auto',
 		use: [ fileLoader('[path][name].[ext]') ]
-      }
+	}
 ]
