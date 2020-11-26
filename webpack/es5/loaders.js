@@ -16,14 +16,7 @@ module.exports = [
 	},
 	{
 		test: /\.less$/,
-		use: [
-			fileLoader('[path][name].wxss'),
-			{
-				loader: 'postcss-loader',
-				options: { postcssOptions: { plugins: [ [ 'cssnano' ] ] } }
-			},
-			'less-loader'
-		]
+		use: [ fileLoader('[path][name].wxss'), 'less-loader' ]
 	},
 	{
 		test: /.wxs$/,

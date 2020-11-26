@@ -8,7 +8,7 @@
             "url": "git@github.com:MatrixAges/light-design.git"
       },
       "scripts": {
-            "build:es5": "webpack --mode production --config ./webpack/es5/webpack.config.js && node ./webpack/es5/build.js",
+            "build:es5": "webpack --mode production --config ./webpack/es5/webpack.config.js && cd webpack/es5 && node build",
             "dev": "cross-env NODE_ENV=development webpack --mode development --watch --config ./webpack/webpack.config.common.js",
             "build": "cross-env NODE_ENV=production webpack --mode production --config ./webpack/webpack.config.common.js",
             "ctrl + c": "退出后还会监听，需要手动 kill 进程"
