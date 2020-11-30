@@ -1,0 +1,26 @@
+name: Deploy Actions
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - test
+      - README.md
+      - LICENSE
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Start Service
+        uses: appleboy/ssh-action@master
+        with:
+          port: '22'
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: cd /app/ && npm run d:prod
