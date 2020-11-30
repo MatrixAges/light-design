@@ -15,6 +15,9 @@ module.exports = [
 		patterns: [
 			{
 				from: resolve('miniprogram/components/**/*/package.json')
+                  },
+                  {
+				from: resolve('miniprogram/components/**/*/readme.md')
 			}
 		]
 	}),
@@ -30,7 +33,7 @@ module.exports = [
 					resolve('miniprogram/components_es5/app.wxss'),
 					resolve('miniprogram/components_es5/webpack-require.js'),
 					resolve('miniprogram/components_es5/**/*.js')
-				]
+                        ]
 			}
 		}
 	})
