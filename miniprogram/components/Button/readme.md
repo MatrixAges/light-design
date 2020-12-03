@@ -151,7 +151,7 @@
 </Button>
 ```
 
-### [配合使用](#配合使用)
+### 配合使用
 
 ```html
 <navigator url="/pages/index/index">
