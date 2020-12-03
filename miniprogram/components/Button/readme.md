@@ -13,7 +13,7 @@
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
 | loading | 等待中 | boolean | false | 否 | 1.0.0 |
 
-### [type](#type)
+### type
 
 | 值 | 说明 | 版本 |
 | - | - | - |
