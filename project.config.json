@@ -5,7 +5,7 @@
   },
   "miniprogramRoot": "dist/",
   "compileType": "miniprogram",
-  "libVersion": "2.14.0",
+  "libVersion": "2.14.1",
   "projectname": "light-design",
   "scripts": {
     "beforePreview": "npm run compile",
@@ -40,6 +40,7 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": false

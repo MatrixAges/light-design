@@ -179,7 +179,6 @@
             <light-dialog
                   visible="{{visible_maskVisible}}"
                   maskVisible="{{false}}"
-                  bodyStyle="background-color:#333;color:white"
             >
                   结果并不重要，重要的是过程？
             </light-dialog>
@@ -223,7 +222,7 @@
             ></light-icon>
             <light-dialog
                   visible="{{visible_bodyStyle}}"
-                  bodyStyle="border-radius:0;background-color:whitesmoke;color:black"
+                  bodyStyle="padding:200rpx 0;margin-top:40rpx;border-radius:0;background-color:whitesmoke;color:black"
             >
                   结果并不重要，重要的是过程？
             </light-dialog>
@@ -290,7 +289,7 @@
             <light-dialog visible="{{visible_slot}}">
                   结果并不重要，重要的是过程？
                   <navigator
-                        class="w_100 h_100 flex justify_center align_center bg_black"
+                        class="w_100 h_100 flex justify_center align_center bg_black white"
                         slot="confirm"
                         url="/pages/index/index"
                   >去首页</navigator>

@@ -11,14 +11,16 @@
                   catchtap="{{maskClosable?'onClose':''}}"
             ></view>
             <view
-                  class="light-dialog {{bottom?'bottom':''}}"
-                  style="{{style}};{{bodyStyle}}"
+                  class="dialog {{bottom?'bottom':''}}"
+                  style="{{style}};"
             >
                   <view
                         class="icon_close"
                         catchtap="onClose"
                         wx:if="{{closeVisible}}"
-                  ></view>
+                  >
+                        <view class="icon"></view>
+                  </view>
                   <slot wx:if="{{custom}}"></slot>
                   <view
                         class="content_wrap"
@@ -30,7 +32,7 @@
                         >{{title}}</text>
                         <view
                               class="content"
-                              style="padding-top:{{title?'76rpx':'112rpx'}} ;"
+                              style="padding-top:{{title?'76rpx':'112rpx'}};{{bodyStyle}}"
                         >
                               <slot></slot>
                         </view>
@@ -53,7 +55,7 @@
                                     </view>
                                     <text
                                           class="icon_loading"
-                                          wx:if="{{confirmLoading}}"
+                                          wx:if="{{_confirmLoading}}"
                                     ></text>
                                     <text class="text">{{okText}}</text>
                               </button>

@@ -4,7 +4,7 @@
 ></wxs>
 
 <view
-      id="light-sticky"
+      id="sticky"
       class="sticky_wrap"
       style="{{wxs.getWrapStyles({fixed,height,zIndex})}}"
 >

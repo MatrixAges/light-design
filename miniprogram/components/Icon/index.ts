@@ -1,5 +1,3 @@
-import Base64 from './rest/base64'
-
 Component({
 	options: {
 		//@ts-ignore
@@ -73,7 +71,9 @@ Component({
 		getSrc (svg) {
 			if (!svg) return
 
-			this.setData({ src: 'data:image/svg+xml;base64,' + Base64.encode(svg) })
+			this.setData({
+				src: 'data:image/svg+xml,' + svg.replace(/</g, '%3C').replace(/>/g, '%3E')
+			})
 		}
 	}
 })

@@ -10,7 +10,7 @@
       wx:if="{{_visible}}"
 >
       <view
-            class="light-dialog {{position}} {{cover?'cover':''}}"
+            class="dialog {{position}} {{cover?'cover':''}}"
             style="{{style}};{{cover?'padding:0':''}}"
       >
             <view

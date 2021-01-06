@@ -2,7 +2,8 @@ import { blockRight } from 'components/Icon/data'
 
 Page({
 	data: {
-		blockRight:blockRight,visible_default: false
+		blockRight: blockRight,
+		visible_default: false
 	},
 	onOption (e: any) {
 		const _that = this

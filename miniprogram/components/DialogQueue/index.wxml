@@ -10,7 +10,7 @@
                   style="background-color: {{maskBackgroundColor}};"
             ></view>
             <view
-                  class="light-dialog"
+                  class="dialog"
                   style="{{style}};"
             >
                   <view class="dialog_items">

@@ -17,8 +17,8 @@ function getStyles (props){
 	styles += ';width:' + props.size + 'px'
 	styles += ';height:' + props.size + 'px'
 	styles += ';background:' + props.color
-	styles += ';mask-image:url(' + props.src + ')'
-	styles += ';-webkit-mask-image:url(' + props.src + ')'
+	styles += ';mask-image:url("' + props.src + '")'
+	styles += ';-webkit-mask-image:url("' + props.src + '")'
 
 	return styles
 }

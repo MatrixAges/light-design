@@ -33,7 +33,7 @@
                   transition: all ease 0.3s;
             }
 
-            .light-dialog {
+            .dialog {
                   width: 80vw;
                   padding-bottom: 0;
                   box-sizing: border-box;
@@ -62,18 +62,28 @@
                   }
 
                   .icon_close {
-                        width: 16rpx;
-                        height: 16rpx;
+                        width: 36rpx;
+                        height: 36rpx;
+                        padding: 6rpx;
                         border-radius: 32rpx;
-                        border: 12rpx solid transparent;
                         display: inline-block;
                         position: absolute;
                         top: 30rpx;
                         right: 30rpx;
-                        background-repeat: no-repeat;
-                        background-size: 100% 100%;
-                        background-color: rgba(0, 0, 0, 0.2);
-                        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5NTMzMzg3MjAzIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMxOTciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNODc3LjIxNiA0OTEuODA4TTU3NS4zMjggNTEwLjQ5NiA5NDYuNzg0IDE0MC42NzJjMTcuNTY4LTE3LjUwNCAxNy42NjQtNDUuODI0IDAuMTkyLTYzLjQyNC0xNy41MDQtMTcuNjMyLTQ1Ljc5Mi0xNy42NjQtNjMuMzYtMC4xOTJMNTEyLjAzMiA0NDYuOTQ0IDE0My43MTIgNzcuMjE2QzEyNi4zMDQgNTkuNzEyIDk3LjkyIDU5LjY0OCA4MC4zODQgNzcuMTIgNjIuODQ4IDk0LjYyNCA2Mi44MTYgMTIzLjAwOCA4MC4yODggMTQwLjU3NmwzNjguMjI0IDM2OS42MzJMNzcuMjE2IDg3OS44MDhjLTE3LjU2OCAxNy41MDQtMTcuNjY0IDQ1LjgyNC0wLjE5MiA2My40MjQgOC43MzYgOC44IDIwLjI1NiAxMy4yMTYgMzEuNzc2IDEzLjIxNiAxMS40MjQgMCAyMi44NDgtNC4zNTIgMzEuNTg0LTEzLjA1NmwzNzEuMzYtMzY5LjY5NiAzNzEuNjggMzczLjA4OEM4OTIuMTkyIDk1NS42MTYgOTAzLjY4IDk2MCA5MTUuMTY4IDk2MGMxMS40NTYgMCAyMi45MTItNC4zODQgMzEuNjQ4LTEzLjA4OCAxNy41MDQtMTcuNTA0IDE3LjU2OC00NS44MjQgMC4wOTYtNjMuMzkyTDU3NS4zMjggNTEwLjQ5NiA1NzUuMzI4IDUxMC40OTZ6TTU3NS4zMjggNTEwLjQ5NiIgcC1pZD0iMzE5OCIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==');
+                        background-color: white;
+                        box-sizing: border-box;
+
+                        .icon {
+                              width: 100%;
+                              height: 100%;
+                              mask-repeat: no-repeat;
+                              -webkit-mask-repeat: no-repeat;
+                              mask-size: cover;
+                              -webkit-mask-size: cover;
+                              background: black;
+                              mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
+                              -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
+                        }
                   }
 
                   .content_wrap {
@@ -82,7 +92,6 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        padding: 0 36rpx;
 
                         .title {
                               padding-top: 48rpx;
@@ -92,7 +101,8 @@
 
                         .content {
                               width: 100%;
-                              padding-bottom: 40rpx;
+                              padding: 0 36rpx;
+                              padding-bottom: 80rpx;
                               box-sizing: border-box;
                               display: flex;
                               flex-direction: column;
@@ -105,7 +115,6 @@
                   .options_wrap {
                         width: 100%;
                         box-sizing: border-box;
-                        padding: 36rpx;
 
                         .options {
                               width: 100%;
@@ -136,8 +145,8 @@
                               }
 
                               .btn {
-                                    width: calc(~'50% - 12rpx');
-                                    height: 88rpx;
+                                    width: 50%;
+                                    height: 90rpx;
                                     padding: 0;
                                     margin: 0;
                                     box-sizing: border-box;
@@ -149,25 +158,24 @@
                                     line-height: 1;
                                     letter-spacing: 2rpx;
                                     background-color: transparent;
-                                    border-radius: 100rpx;
+                                    border-radius: 0;
+                                    border-top: 2rpx solid whitesmoke;
 
                                     &::after {
                                           display: none;
                                     }
 
                                     &.btn_cancel {
-                                          color: black;
-                                          background-color: whitesmoke;
+                                          color: rgba(0, 0, 0, 0.8);
+                                          border-right: 2rpx solid whitesmoke;
 
                                           &:active {
-                                                background-color: #ddd;
+                                                background-color: whitesmoke;
                                           }
                                     }
 
                                     &.btn_ok {
                                           position: relative;
-                                          background-color: @color_main;
-                                          color: white;
 
                                           &:active {
                                                 filter: brightness(1.2);
@@ -183,7 +191,7 @@
                                                 -webkit-mask-repeat: no-repeat;
                                                 mask-size: cover;
                                                 -webkit-mask-size: cover;
-                                                background: white;
+                                                background: black;
                                                 mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='white' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
                                                 -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='black' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
 
@@ -198,7 +206,6 @@
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                background-color: black;
                                           }
                                     }
                               }

@@ -1,8 +1,8 @@
 Component({
 	options: {
 		//@ts-ignore
-            pureDataPattern: /^(visible|timer_show|timer_close)$/,
-            multipleSlots: true
+		pureDataPattern: /^(visible|confirmLoading|timer_show|timer_close|timer_hide_loading)$/,
+		multipleSlots: true
 	},
 	properties: {
 		custom: {
@@ -64,10 +64,12 @@ Component({
 	},
 	data: {
 		_visible: false,
+		_confirmLoading: false,
 		maskBackgroundColor: 'rgba(0,0,0,0)',
 		style: '',
 		timer_show: 0,
-		timer_close: 0
+		timer_close: 0,
+		timer_hide_loading: 0
 	},
 	observers: {
 		visible (new_val) {
@@ -108,6 +110,21 @@ Component({
 
 				_that.setData({ timer_close })
 			}
+		},
+		confirmLoading: function (new_val){
+			var _that = this
+
+			clearTimeout(_that.data.timer_hide_loading)
+
+			if (new_val) {
+				_that.setData({ _confirmLoading: true })
+			} else {
+				const timer_hide_loading = setTimeout(() => {
+					_that.setData({ _confirmLoading: false })
+				}, 300)
+
+				_that.setData({ timer_hide_loading: timer_hide_loading })
+			}
 		}
 	},
 	methods: {
@@ -127,7 +144,7 @@ Component({
 			_that.triggerEvent('onClose')
 		},
 		onOk () {
-                  const _that = this
+			const _that = this
 
 			_that.triggerEvent('onOk')
 		}
