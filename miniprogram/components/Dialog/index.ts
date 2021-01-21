@@ -5,10 +5,6 @@ Component({
 		multipleSlots: true
 	},
 	properties: {
-		custom: {
-			type: Boolean,
-			value: false
-		},
 		visible: {
 			type: Boolean,
 			value: false
@@ -16,6 +12,10 @@ Component({
 		title: {
 			type: String,
 			value: '提示'
+            },
+            custom: {
+			type: Boolean,
+			value: false
 		},
 		confirmLoading: {
 			type: Boolean,

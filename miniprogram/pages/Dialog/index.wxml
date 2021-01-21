@@ -126,8 +126,8 @@
             ></light-icon>
             <light-dialog
                   visible="{{visible_cancelVisible}}"
-                  custom
                   cancelVisible="{{false}}"
+                  custom
             >
                   <view
                         class="w_100 border_box text_center"
@@ -185,7 +185,7 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">点击遮罩</text>
+                  <text class="title">点击遮罩关闭</text>
                   <text class="attr">maskClosable</text>
             </view>
             <light-icon
