@@ -1,4 +1,3 @@
-import Base64 from './rest/base64'
 import icons from './rest/icons'
 
 Component({
@@ -42,9 +41,13 @@ Component({
 	data: {
 		duration: 0,
 		timer_interval: 0,
-		icon_notice: 'data:image/svg+xml;base64,' + Base64.encode(icons.iconNotice),
-		icon_right: 'data:image/svg+xml;base64,' + Base64.encode(icons.iconRight)
-      },
+		icon_notice:
+			'data:image/svg+xml,' +
+			icons.iconNotice.replace(/</g, '%3C').replace(/>/g, '%3E'),
+		icon_right:
+			'data:image/svg+xml;base64,' +
+			icons.iconRight.replace(/</g, '%3C').replace(/>/g, '%3E')
+	},
 	methods: {
 		onDetail ({ mark: { index } }) {
 			if (index === undefined) return
