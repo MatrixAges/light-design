@@ -2,7 +2,7 @@
 | - | - | - | - | - | - |
 | visible | 是否可见 | boolean | false | 否 | 1.0.0 |
 | title | 标题 | string | '' | 否 | 1.0.0 |
-| list | 数据项 | Array`<List>` | [] | 否 | 1.0.0 |
+| list | 数据项 | Array`<List>` | [] | 是 | 1.0.0 |
 | scroll | 横向显示 | boolean | false | 否 | 1.0.0 |
 | vertical | 纵向显示 | boolean | false | 否 | 1.0.0 |
 | textOnly | 仅有文字 | boolean | false | 否 | 1.0.0 |

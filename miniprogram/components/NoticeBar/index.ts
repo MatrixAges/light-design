@@ -32,14 +32,9 @@ Component({
 		interval: {
 			type: Number,
 			value: 3000
-		},
-		duration: {
-			type: Number,
-			value: 0
 		}
 	},
 	data: {
-		duration: 0,
 		timer_interval: 0,
 		icon_notice:
 			'data:image/svg+xml,' +
