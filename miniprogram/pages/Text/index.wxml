@@ -59,8 +59,8 @@
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
-                        <text class="title">粗的</text>
-                        <text class="attr">p</text>
+                        <text class="title">粗体</text>
+                        <text class="attr">b</text>
                   </view>
                   <view class="examples flex flex_wrap">
                         <view class="example flex flex_column">
@@ -151,7 +151,7 @@
             </view>
             <view class="example_item w_100 border_box flex">
                   <view class="title_wrap w_100 border_box flex flex_column">
-                        <text class="title">文字行为</text>
+                        <text class="title">文字对齐</text>
                         <text class="attr">textAlign</text>
                   </view>
                   <view class="examples flex flex_wrap">

@@ -1,4 +1,4 @@
-// copy from we-ui component sticky 😁
+// copy from we-ui component Sticky 😁
 
 type BoundingClientRect = WechatMiniprogram.BoundingClientRectCallbackResult
 type IntersectionObserver = WechatMiniprogram.IntersectionObserver
