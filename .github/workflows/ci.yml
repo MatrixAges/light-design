@@ -23,4 +23,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_KEY }}
-          script: cd /app/ && npm run update:submodule && npm run d:prod
+          script: cd /App/light-design-server/ && npm run update:submodule && npm run d:prod
