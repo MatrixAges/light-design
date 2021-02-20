@@ -2,7 +2,7 @@
 
 _<p align="center">可能是世界上最漂亮的微信小程序组件库</p>_
 
-### Develop routing
+### Dev route
 
 - Demo site made by Vuejs.
 - The number of components increased to 36+.
