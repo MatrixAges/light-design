@@ -10,6 +10,7 @@ export default <Array<IMenuItems>>[
 		name: '通用',
 		path: 'common',
 		description: '大部分场景下能够使用的组件',
+		active: true,
 		components: [
 			{
 				name: 'Text',
@@ -47,6 +48,7 @@ export default <Array<IMenuItems>>[
 		name: '表单',
 		path: 'form',
 		description: '进行数据录入时需要使用的组件',
+		active: true,
 		components: [
 			{
 				name: 'Button',
@@ -95,6 +97,7 @@ export default <Array<IMenuItems>>[
 		name: '内容',
 		path: 'content',
 		description: '用于展示内容的组件',
+		active: true,
 		components: [
 			{
 				name: 'Landing',
@@ -105,8 +108,8 @@ export default <Array<IMenuItems>>[
 				name: 'Loading',
 				description: '加载中',
 				active: true
-                  },
-                  {
+			},
+			{
 				name: 'NoticeBar',
 				description: '公告栏',
 				active: true
@@ -183,6 +186,7 @@ export default <Array<IMenuItems>>[
 		name: '交互',
 		path: 'action',
 		description: '用于界面交互的组件',
+		active: true,
 		components: [
 			{
 				name: 'ActionSheet',
