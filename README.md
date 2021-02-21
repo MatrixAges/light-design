@@ -1,8 +1,8 @@
-<p align="center"><a href="#" target="_blank" rel="noopener noreferrer"><img width="200" src="https://matrixage.github.io/img/projects/lightd/logo_light_design.png" alt="logo_light_design"></a></p>
+<p align="center"><a href="#" target="_blank" rel="noopener noreferrer"><img width="200" src="https://matrixage.github.io/img/projects/lightd/logo_light_design_black.png" alt="logo_light_design"></a></p>
 
 # <p align="center"> Light Design </p>
 
-_<p align="center">Website: [lightd.matrixages.com](https://lightd.matrixages.com/)</p>_
+_<p align="center">[lightd.matrixages.com](https://lightd.matrixages.com/)</p>_
 
 _<p align="center">可能是世界上最漂亮的微信小程序组件库</p>_
 
