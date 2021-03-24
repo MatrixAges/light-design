@@ -1,0 +1,20 @@
+<view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">默认效果</text>
+                  <text class="attr">center</text>
+            </view>
+            <light-icon
+                  icon="{{blockRight}}"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="default"
+                  catchtap="onOption"
+            ></light-icon>
+            <light-period visible="{{visible_default}}">
+            </light-period>
+      </view>
+</view>

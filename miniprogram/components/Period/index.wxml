@@ -1,0 +1,58 @@
+<view
+      class="fixed_dialog_wrap"
+      catchtouchmove="catchtouchmove"
+      style="z-index:{{zIndex}}"
+      wx:if="{{_visible_dialog_wrap}}"
+>
+      <view class="dialog_wrap">
+            <view
+                  class="mask {{_visible_mask?'visible':'hidden'}}"
+                  catchtap="onClose"
+            ></view>
+            <view class="dialog {{_visible_dialog?'visible':'hidden'}}">
+                  <view
+                        class="btn_close"
+                        catchtap="onClose"
+                  ></view>
+                  <view class="title_wrap">
+                        <text class="title">{{title}}</text>
+                  </view>
+                  <view class="period_wrap">
+                        <scroll-view
+                              class="date_items period_items"
+                              scroll-y="{{true}}"
+                              enable-flex="{{true}}"
+                              catchtap="onPeriodItem"
+                        >
+                              <button
+                                    class="date_item period_item {{active_date_index===index?'active':''}}"
+                                    wx:for="{{date_items}}"
+                                    wx:key="index"
+                                    mark:type="date"
+                                    mark:index="{{index}}"
+                              >{{item}}</button>
+                        </scroll-view>
+                        <scroll-view
+                              class="time_items period_items"
+                              scroll-y="{{true}}"
+                              enable-flex="{{true}}"
+                              catchtap="onPeriodItem"
+                        >
+                              <button
+                                    class="time_item period_item {{active_time_index===index?'active':''}}"
+                                    wx:for="{{time_items}}"
+                                    wx:key="index"
+                                    mark:type="time"
+                                    mark:index="{{index}}"
+                              >{{item}}</button>
+                        </scroll-view>
+                  </view>
+                  <view class="options_wrap">
+                        <button
+                              class="btn_confirm"
+                              catchtap="onSelected"
+                        >确定</button>
+                  </view>
+            </view>
+      </view>
+</view>

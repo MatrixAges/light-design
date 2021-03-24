@@ -1,55 +1,4 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": []
-  },
-  "miniprogramRoot": "dist/",
-  "compileType": "miniprogram",
-  "libVersion": "2.16.0",
-  "projectname": "light-design",
-  "scripts": {
-    "beforePreview": "npm run compile",
-    "beforeUpload": "npm run compile"
-  },
-  "setting": {
-    "urlCheck": false,
-    "es6": false,
-    "enhance": false,
-    "postcss": true,
-    "preloadBackgroundData": false,
-    "minified": false,
-    "newFeature": false,
-    "coverView": true,
-    "nodeModules": true,
-    "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
-    "scopeDataCheck": false,
-    "uglifyFileName": false,
-    "checkInvalidKey": true,
-    "checkSiteMap": true,
-    "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": false,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "enableEngineNative": false,
-    "bundle": true,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": true,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": false
-  },
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "appid": "wx3f496810b3990a46",
   "condition": {
     "plugin": {
       "list": []
@@ -166,6 +115,12 @@
         {
           "name": "pages/NoticeBar/index",
           "pathName": "pages/NoticeBar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/Period/index",
+          "pathName": "pages/Period/index",
           "scene": null
         }
       ]

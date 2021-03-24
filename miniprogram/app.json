@@ -17,7 +17,8 @@
             "pages/Sticky/index",
             "pages/Text/index",
             "pages/Icon/index",
-            "pages/NoticeBar/index"
+            "pages/NoticeBar/index",
+            "pages/Period/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -45,6 +46,7 @@
             "light-text": "components/Text/index",
             "light-icon": "components/Icon/index",
             "light-notice-bar": "components/NoticeBar/index",
+            "light-period": "components/Period/index",
             "tips": "page_components/_Tips/index"
       }
 }
