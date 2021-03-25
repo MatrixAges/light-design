@@ -36,12 +36,12 @@ Component({
 	},
 	data: {
 		timer_interval: 0,
-		icon_notice:
-			'data:image/svg+xml,' +
-			icons.iconNotice.replace(/</g, '%3C').replace(/>/g, '%3E'),
-		icon_right:
-			'data:image/svg+xml;base64,' +
-			icons.iconRight.replace(/</g, '%3C').replace(/>/g, '%3E')
+		icon_notice: `"data:image/svg+xml,${icons.iconNotice
+			.replace(/</g, '%3C')
+			.replace(/>/g, '%3E')}"`,
+		icon_right: `"data:image/svg+xml,${icons.iconRight
+			.replace(/</g, '%3C')
+			.replace(/>/g, '%3E')}"`
 	},
 	methods: {
 		onDetail ({ mark: { index } }) {

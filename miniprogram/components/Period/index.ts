@@ -33,14 +33,12 @@ Component({
 			const _that = this
 
 			if (new_val) {
-				_that.setData({ _visible_dialog_wrap: true })
-
-				setTimeout(() => {
-					_that.setData({
-						_visible_dialog: true,
-						_visible_mask: true
-					})
-				}, 30)
+                        _that.setData({ _visible_dialog_wrap: true }, () => {
+                              _that.setData({
+                                    _visible_dialog: true,
+                                    _visible_mask: true
+                              })
+                        })
 			} else {
 				_that.setData({
 					_visible_dialog: false,
@@ -118,7 +116,7 @@ Component({
 
 			_that.data.time_items.unshift('两小时以内')
 
-			const _time_items = _that.data.time_items.filter((item) => item)
+			const _time_items = _that.data.time_items.filter(item => item)
 
 			if (_time_items.length === 1) {
 				const start_time = new Date()

@@ -10,7 +10,7 @@
       <view class="left_wrap">
             <view
                   class="icon icon_notice"
-                  style="-webkit-mask-image:url('{{icon_notice}}');background:{{color}}"
+                  style="-webkit-mask-image:url({{icon_notice}});background:{{color}}"
             ></view>
       </view>
       <view
@@ -48,7 +48,7 @@
       >
             <view
                   class="icon icon_right"
-                  style="-webkit-mask-image:url('{{icon_right}}');background:{{color}}"
+                  style="-webkit-mask-image:url({{icon_right}});background:{{color}}"
             ></view>
       </view>
 </view>
