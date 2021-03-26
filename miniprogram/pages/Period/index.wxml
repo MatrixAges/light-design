@@ -1,8 +1,11 @@
+<tips text="可通过startTime，endTime和duration设置时间范围，也可通过timeItems直接设置，但二者是互斥的，timeItems优先">
+</tips>
+
 <view class="example_items mini_items column_2 visible_items w_100 border_box flex flex_column">
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
                   <text class="title">默认效果</text>
-                  <text class="attr">center</text>
+                  <text class="attr">default</text>
             </view>
             <light-icon
                   icon="{{blockRight}}"
@@ -14,7 +17,55 @@
                   mark:type="default"
                   catchtap="onOption"
             ></light-icon>
-            <light-period visible="{{visible_default}}">
+            <light-period
+                  visible="{{visible_default}}"
+                  days="{{3}}"
+            >
+            </light-period>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设置日期</text>
+                  <text class="attr">days</text>
+            </view>
+            <light-icon
+                  icon="{{blockRight}}"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="days"
+                  catchtap="onOption"
+            ></light-icon>
+            <light-period
+                  visible="{{visible_days}}"
+                  days="{{9}}"
+            >
+            </light-period>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">设置时间范围</text>
+                  <text class="attr">startTime</text>
+            </view>
+            <light-icon
+                  icon="{{blockRight}}"
+                  color="white"
+                  fillColor="black"
+                  visibleWrap
+                  filled
+                  round
+                  mark:type="startTime"
+                  catchtap="onOption"
+            ></light-icon>
+            <light-period
+                  visible="{{visible_startTime}}"
+                  days="{{3}}"
+                  startTime="{{9}}"
+                  endTime="{{18}}"
+                  duration="{{2}}"
+            >
             </light-period>
       </view>
 </view>

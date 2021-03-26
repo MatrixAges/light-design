@@ -11,7 +11,15 @@ Component({
 		zIndex: {
 			type: Number,
 			value: 100
-		}
+		},
+		timeItems: {
+			type: Array,
+			value: []
+		},
+		days: Number,
+		startTime: Number,
+		endTime: Number,
+		duration: Number
 	},
 	data: {
 		_visible_dialog_wrap: false,
@@ -19,26 +27,21 @@ Component({
 		_visible_mask: false,
 		active_date_index: 0,
 		active_time_index: 0,
-		date_items: [ '' ],
-		time_items: [
-			'08:00 - 10:00',
-			'10:00 - 12:00',
-			'12:00 - 14:00',
-			'14:00 - 16:00',
-			'16:00 - 18:00'
-		]
+		date_items: [] as Array<string>,
+		time_items: [] as Array<string>,
+		time_items_raw: [] as Array<string>
 	},
 	observers: {
 		visible (new_val) {
 			const _that = this
 
 			if (new_val) {
-                        _that.setData({ _visible_dialog_wrap: true }, () => {
-                              _that.setData({
-                                    _visible_dialog: true,
-                                    _visible_mask: true
-                              })
-                        })
+				_that.setData({ _visible_dialog_wrap: true }, () => {
+					_that.setData({
+						_visible_dialog: true,
+						_visible_mask: true
+					})
+				})
 			} else {
 				_that.setData({
 					_visible_dialog: false,
@@ -50,20 +53,62 @@ Component({
 				}, 300)
 			}
 		},
+		days (new_val) {
+			const _that = this
+			const _date_items = []
+
+			for (let i = 0; i < new_val; i++) {
+				const day = new Date()
+
+				day.setTime(day.getTime() + i * 24 * 60 * 60 * 1000)
+
+				const getDesc = () => {
+					if (i === 0) return '今天 '
+					if (i === 1) return '明天 '
+					if (i === 2) return '后天 '
+
+					return ''
+				}
+
+				_date_items.push(`${getDesc()}${day.getMonth() + 1}月${day.getDate()}日`)
+			}
+
+			_that.setData({
+				date_items: _date_items
+			})
+
+			_that.setTodayTimes()
+		},
+		'startTime,endTime,duration': function (startTime, endTime, duration){
+			const _that = this
+
+			if (_that.data.time_items.length) return
+
+			const _time_items = []
+			const _time_items_raw = []
+
+			for (let i = startTime; i < endTime; i = i + duration) {
+				_time_items.push(`${i}:00 - ${i + duration}:00`)
+				_time_items_raw.push(`${i}:00 - ${i + duration}:00`)
+			}
+
+			_that.setData({
+				time_items: _time_items,
+				time_items_raw: _time_items_raw
+			})
+
+			_that.setTodayTimes()
+		},
 		active_date_index (new_val) {
 			const _that = this
 
 			if (new_val === 0) {
 				_that.setTodayTimes()
 			} else {
+				console.log(_that.data.time_items_raw)
+
 				_that.setData({
-					time_items: [
-						'08:00 - 10:00',
-						'10:00 - 12:00',
-						'12:00 - 14:00',
-						'14:00 - 16:00',
-						'16:00 - 18:00'
-					]
+					time_items: _that.data.time_items_raw
 				})
 			}
 
@@ -72,36 +117,13 @@ Component({
 			})
 		}
 	},
-	lifetimes: {
-		attached () {
-			const _that = this
-
-			const day1 = new Date()
-			const day2 = new Date()
-			const day3 = new Date()
-
-			day1.setTime(day1.getTime())
-			day2.setTime(day1.getTime() + 24 * 60 * 60 * 1000)
-			day3.setTime(day1.getTime() + 24 * 60 * 60 * 1000 * 2)
-
-			_that.data.date_items = [
-				`今天 ${day1.getMonth() + 1}月${day1.getDate()}日`,
-				`明天 ${day2.getMonth() + 1}月${day2.getDate()}日`,
-				`后天 ${day2.getMonth() + 1}月${day3.getDate()}日`
-			]
-
-			_that.setData({
-				date_items: _that.data.date_items
-			})
-
-			_that.setTodayTimes()
-		}
-	},
 	methods: {
 		catchtouchmove () {},
 		setTodayTimes () {
 			const _that = this
 			const now = new Date().valueOf()
+
+			if (!_that.data.time_items.length) return
 
 			_that.data.time_items.map((item, index) => {
 				const start_time = new Date()
@@ -114,7 +136,8 @@ Component({
 				}
 			})
 
-			_that.data.time_items.unshift('两小时以内')
+			if (!_that.data.time_items.includes('两小时以内'))
+				_that.data.time_items.unshift('两小时以内')
 
 			const _time_items = _that.data.time_items.filter(item => item)
 
