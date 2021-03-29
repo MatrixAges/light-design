@@ -29,7 +29,7 @@ interface IList {
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^(visible|timer_show|timer_close)$/
+		pureDataPattern: /^(visible|timer_close)$/
 	},
 	properties: {
 		list: <{
@@ -55,7 +55,6 @@ Component({
 		style: string
 		current: number
 		indicatorDots: boolean
-		timer_show: number
 		timer_close: number
 	}>{
 		_visible: false,
@@ -64,30 +63,24 @@ Component({
 		style: '',
 		current: 0,
 		indicatorDots: true,
-		timer_show: 0,
 		timer_close: 0
 	},
 	observers: {
 		visible (new_val) {
 			const _that = this
 
-			clearTimeout(_that.data.timer_show)
 			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
 				_that.setData({
 					current: 0,
 					_visible: true
-				})
-
-				const timer_show = setTimeout(() => {
-					_that.setData({
+                        }, () => {
+                              _that.setData({
 						maskBackgroundColor: 'rgba(0,0,0,0.6)',
 						style: 'opacity:1;transform:scale(1);transform-origin:center'
 					})
-				}, 30)
-
-				_that.setData({ timer_show })
+                        })
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'transparent',

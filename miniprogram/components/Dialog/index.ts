@@ -1,7 +1,7 @@
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^(visible|confirmLoading|timer_show|timer_close|timer_hide_loading)$/,
+		pureDataPattern: /^(visible|confirmLoading|timer_close|timer_hide_loading)$/,
 		multipleSlots: true
 	},
 	properties: {
@@ -67,7 +67,6 @@ Component({
 		_confirmLoading: false,
 		maskBackgroundColor: 'rgba(0,0,0,0)',
 		style: '',
-		timer_show: 0,
 		timer_close: 0,
 		timer_hide_loading: 0
 	},
@@ -82,22 +81,17 @@ Component({
 				? 'transform:translateY(120%)'
 				: 'opacity:0;transform:scale(0);'
 
-			clearTimeout(_that.data.timer_show)
 			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
-				_that.setData({ _visible: true })
-
-				const timer_show = setTimeout(() => {
-					_that.setData({
+                        _that.setData({ _visible: true }, () => {
+                              _that.setData({
 						maskBackgroundColor: maskVisible
 							? 'rgba(0,0,0,0.6)'
 							: 'transparent',
 						style: style_visible
 					})
-				}, 30)
-
-				_that.setData({ timer_show })
+                        })
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'rgba(0,0,0,0)',

@@ -1,4 +1,3 @@
-@color_main: #222;
 @radius_normal: 24rpx;
 
 .init {
@@ -55,6 +54,33 @@
                         border-radius: 40rpx;
                         border-bottom-left-radius: 0;
                         border-bottom-right-radius: 0;
+
+                        .options_wrap {
+                              .options {
+                                    padding: 0 48rpx;
+                                    padding-bottom: calc(~'48rpx + 'env(safe-area-inset-bottom));
+
+                                    .btn {
+                                          width: calc(50% - 12rpx);
+                                          border-top: none;
+                                          border-radius: 90rpx;
+
+                                          &.btn_cancel {
+                                                border-right: none;
+                                                background-color: whitesmoke;
+                                          }
+
+                                          &.btn_ok {
+                                                background-color: black;
+                                                color: white;
+
+                                                .icon_loading {
+                                                      background: white;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
                   }
 
                   .icon_close {

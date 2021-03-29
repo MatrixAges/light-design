@@ -152,28 +152,28 @@
 <light-modal visible="{{visible_period_data}}">
       <view class="period_data bg_white w_100 border_box">
             <view class="period_items w_100 border_box flex flex_column">
-                  <div class="period_item w_100 border_box flex">
+                  <view class="period_item w_100 border_box flex">
                         <text class="label date flex justify_center align_center">日期</text>
                         <view class="value_items border_box flex flex_column justify_center">
-                              <span class="value_item text">
+                              <text class="value_item text">
                                     {{period_data.date.text}}
-                              </span>
-                              <span class="value_item raw">
+                              </text>
+                              <text class="value_item raw">
                                     {{period_data.date.raw}}
-                              </span>
+                              </text>
                         </view>
-                  </div>
-                  <div class="period_item w_100 border_box flex">
+                  </view>
+                  <view class="period_item w_100 border_box flex">
                         <text class="label time flex justify_center align_center">时间</text>
                         <view class="value_items border_box flex flex_column justify_center">
-                              <span class="value_item text">
+                              <text class="value_item text">
                                     {{period_data.time.text}}
-                              </span>
-                              <span class="value_item raw">
+                              </text>
+                              <text class="value_item raw">
                                     from:{{period_data.time.raw.from}} to:{{period_data.time.raw.to}}
-                              </span>
+                              </text>
                         </view>
-                  </div>
+                  </view>
             </view>
       </view>
 </light-modal>

@@ -15,6 +15,19 @@
 | maskClosable | 显示取消 | boolean | true | 否 | 1.0.0 |
 | bodyStyle | 内容样式 | string | '' | 否 | 1.0.0 |
 
+### [triggerEvents](#triggerEvents)
+
+```typescript
+// 展示时触发
+onShow:()=>void
+
+// 隐藏时触发
+onClose:()=>void
+
+// 点击确认时触发
+onOk:()=>void
+```
+
 ### [默认效果](#默认效果)
 
 ```html

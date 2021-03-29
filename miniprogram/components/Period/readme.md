@@ -12,7 +12,7 @@
 
 ### [types](#types)
 
-```ts
+```typescript
 interface IDate {
 	raw: Date
 	text: string

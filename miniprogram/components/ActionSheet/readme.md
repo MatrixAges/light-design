@@ -19,6 +19,27 @@ type List = {
 }
 ```
 
+### [triggerEvents](#triggerEvents)
+
+```typescript
+// 点击列表项时触发
+onSelectedPeriod:(
+      {
+            detail: {
+                  index
+            }:{
+                  index：number
+            }
+      }
+)=>void
+
+// 展示时触发
+onShow:()=>void
+
+// 隐藏时触发
+onClose:()=>void
+```
+
 ### [list](#list)
 
 | 值 | 说明 | 版本 |

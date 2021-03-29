@@ -9,7 +9,7 @@ type IgetPositionStyle = { [key in enum_position]: IPositionStyle }
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^(visible|timer_show|timer_close)$/
+		pureDataPattern: /^(visible|timer_close)$/
 	},
 	properties: {
 		visible: {
@@ -42,9 +42,8 @@ Component({
 	},
 	data: {
 		_visible: false,
-		maskBackgroundColor: '',
+		maskBackgroundColor: 'rgba(0,0,0,0)',
 		style: '',
-		timer_show: 0,
 		timer_close: 0
 	},
 	observers: {
@@ -53,22 +52,17 @@ Component({
 			const { position, duration, maskVisible } = _that.data
 			const position_style: any = _that.getPositionStyle()
 
-			clearTimeout(_that.data.timer_show)
 			clearTimeout(_that.data.timer_close)
 
 			if (new_val) {
-				_that.setData({ _visible: true })
-
-				const timer_show = setTimeout(() => {
+				_that.setData({ _visible: true }, () => {
 					_that.setData({
 						maskBackgroundColor: maskVisible
 							? 'rgba(0,0,0,0.6)'
 							: 'transparent',
 						style: position_style[position].show
 					})
-				}, 30)
-
-				_that.setData({ timer_show })
+				})
 			} else {
 				_that.setData({
 					maskBackgroundColor: 'transparent',
