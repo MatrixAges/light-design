@@ -1,0 +1,45 @@
+.period_data {
+      width: 80vw;
+      padding: 48rpx;
+      border-radius: 12rpx;
+      font-size: 26rpx;
+
+      .period_items {
+            .period_item {
+                  border: 2rpx solid black;
+                  border-radius: 6rpx;
+                  overflow: hidden;
+
+                  &:first-child {
+                        margin-bottom: 18rpx;
+                  }
+
+                  .label {
+                        width: 48rpx;
+                        height: 100rpx;
+                        text-align: center;
+                        box-sizing: border-box;
+                        background-color: black;
+                        color: white;
+                  }
+
+                  .value_items {
+                        width: calc(100% - 48rpx);
+                        height: 100rpx;
+                        padding: 0 24rpx;
+                        border-radius: 6rpx;
+
+                        .value_item {
+                              &.text {
+                                    font-size: 28rpx;
+                                    font-weight: bold;
+                              }
+
+                              &.raw {
+                                    font-size: 20rpx;
+                              }
+                        }
+                  }
+            }
+      }
+}

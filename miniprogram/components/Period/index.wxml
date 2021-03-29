@@ -30,7 +30,7 @@
                                     wx:key="index"
                                     mark:type="date"
                                     mark:index="{{index}}"
-                              >{{item}}</button>
+                              >{{item.text}}</button>
                         </scroll-view>
                         <scroll-view
                               class="time_items period_items"
@@ -44,7 +44,7 @@
                                     wx:key="index"
                                     mark:type="time"
                                     mark:index="{{index}}"
-                              >{{item}}</button>
+                              >{{item.text}}</button>
                         </scroll-view>
                   </view>
                   <view class="options_wrap">
