@@ -10,7 +10,7 @@ type SnackBar_IgetPositionStyle = { [key in SnackBar_position]: IPositionStyle }
 Component({
 	options: {
 		//@ts-ignore
-		pureDataPattern: /^(visible|timer_duration|timer_close)$/
+		pureDataPattern: /^(visible|closeable|timer_duration|timer_close)$/
 	},
 	properties: {
 		visible: {
@@ -22,7 +22,7 @@ Component({
 			value: SnackBar_position
 		}>{
 			type: String,
-			value: 'bottom' 
+			value: 'bottom'
 		},
 		type: <{
 			type: StringConstructor
@@ -64,6 +64,10 @@ Component({
 			value: 'OK'
 		},
 		autoClose: {
+			type: Boolean,
+			value: false
+		},
+		closeable: {
 			type: Boolean,
 			value: false
 		},
@@ -167,6 +171,8 @@ Component({
 		onOk () {
 			const _that = this
 
+                  if (_that.data.closeable) _that.setData({ visible: false })
+                  
 			_that.triggerEvent('onOk')
 		}
 	}

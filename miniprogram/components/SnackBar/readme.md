@@ -12,6 +12,7 @@
 | description | 描述 | string | '' | 否 | 1.0.0 |
 | okText | 确认文字 | string | '' | 否 | 1.0.0 |
 | autoClose | 自动关闭 | boolean | false | 否 | 1.0.0 |
+| closeable | 点击确认关闭 | boolean | false | 否 | 1.0.0 |
 | duration | 关闭时间 | number | 3000 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 | mini | 小尺寸 | boolean | false | 否 | 1.0.0 |

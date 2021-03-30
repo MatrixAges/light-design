@@ -15,7 +15,7 @@
       </view>
       <view
             class="content"
-            catchtap="onDetail"
+           
       >
             <swiper
                   class="swiper {{horizontal?'horizontal':''}}"
@@ -33,10 +33,13 @@
                         <swiper-item
                               class="swiper_item"
                               skip-hidden-item-layout
+                              catchtouchmove="catchtouchmove"
                         >
                               <text
                                     class="item"
                                     mark:index="{{index}}"
+                                    catchtouchmove="catchtouchmove"
+                                    catchtap="onDetail"
                               >{{item}}</text>
                         </swiper-item>
                   </block>

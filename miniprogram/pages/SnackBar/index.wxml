@@ -107,6 +107,7 @@
                         title="更多内容请登录"
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -128,6 +129,7 @@
                         visible="{{visible_description}}"
                         title="更多内容请登录"
                         okText="登录"
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -151,6 +153,7 @@
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         autoClose
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -175,6 +178,7 @@
                         okText="登录"
                         duration="{{5000}}"
                         autoClose
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -198,6 +202,7 @@
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         position="top"
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -221,6 +226,7 @@
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         bottom="{{60}}"
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -244,6 +250,7 @@
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         mini
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">
@@ -266,6 +273,7 @@
                         title="您的账户余额不足，请尽快充值"
                         custom
                         mini
+                        closeable
                   >
                         <image
                               style="width: 30rpx;height: 30rpx;background-color: white;border-radius: 30rpx;"
@@ -297,6 +305,7 @@
                         description="登录后可享受更多服务，快登录吧"
                         okText="登录"
                         cover
+                        closeable
                   ></light-snack-bar>
             </view>
             <view class="example_item w_100 border_box flex">

@@ -8,6 +8,24 @@
 | interval | 时间间隔 | number | 3000 | 否 | 1.0.0 |
 | duration | 时间间隔 | number | 3000 | 否 | 1.0.0 |
 
+### [triggerEvents](#triggerEvents)
+
+```typescript
+// 点击滚动项时触发
+onDetail:(
+      {
+            detail: {
+                  index
+            }:{
+                  index：number
+            }
+      }
+)=>void
+
+// 点击更多时触发
+onMore:()=>void
+```
+
 ### [默认效果](#默认效果)
 
 ```html

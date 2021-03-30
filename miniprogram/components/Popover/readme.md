@@ -16,7 +16,7 @@
 <Popover
       visible="{{visible_default}}"
       list="{{list}}"
-      position="{{['100rpx','','','30rpx']}}"
+      position="{{['30rpx','','','30rpx']}}"
 >
 </Popover>
 ```
@@ -27,7 +27,7 @@
 <Popover
       visible="{{visible_default}}"
       list="{{list}}"
-      position="{{['100rpx','','','30rpx']}}"
+      position="{{['30rpx','','','30rpx']}}"
 >
 </Popover>
 ```

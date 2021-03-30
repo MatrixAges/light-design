@@ -5,23 +5,9 @@
 
 <view
       class="card_wrap {{wxs.getClasses({bordered,shadow})}}"
-      style="{{wxs.getStyles({width,color,bgColor,radius})}}"
+      style="{{wxs.getStyles({width,padding,margin,radius,fontSize,color,bgColor,textAlign})}};{{style}}"
 >
       <view class="card">
-            <slot name="title"></slot>
-            <view
-                  class="title_wrap"
-                  style="border-radius:{{radius?radius+'rpx':0}};border-bottom-left-radius: 0;border-bottom-right-radius: 0;"
-                  wx:if="{{title}}"
-            >
-                  <text class="title">{{title}}</text>
-                  <slot name="option"></slot>
-            </view>
-            <view
-                  class="content {{noPadding?'no_padding':''}} {{title?'has_title':'no_title'}} {{media?'media':''}}"
-                  style="border-radius:{{radius?radius+'rpx':0}};"
-            >
-                  <slot></slot>
-            </view>
+            <slot></slot>
       </view>
 </view>

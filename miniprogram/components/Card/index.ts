@@ -3,14 +3,16 @@ Component({
 		multipleSlots: true
 	},
 	properties: {
-		title: String,
 		width: String,
+		padding: String,
+		margin: String,
+            radius: Number,
+		fontSize: Number,
 		color: String,
 		bgColor: String,
+		textAlign: String,
 		bordered: Boolean,
-		noPadding: Boolean,
 		shadow: Boolean,
-		media: Boolean,
-		radius: Number
+		style: String
 	}
 })

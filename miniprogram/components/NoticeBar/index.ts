@@ -1,10 +1,6 @@
 import icons from './rest/icons'
 
 Component({
-	options: {
-		//@ts-ignore
-		pureDataPattern: /^(timer_interval)$/
-	},
 	properties: {
 		list: <{
 			type: ArrayConstructor
@@ -35,7 +31,6 @@ Component({
 		}
 	},
 	data: {
-		timer_interval: 0,
 		icon_notice: `"data:image/svg+xml,${icons.iconNotice
 			.replace(/</g, '%3C')
 			.replace(/>/g, '%3E')}"`,
@@ -43,10 +38,11 @@ Component({
 			.replace(/</g, '%3C')
 			.replace(/>/g, '%3E')}"`
 	},
-	methods: {
+      methods: {
+            catchtouchmove(){},
 		onDetail ({ mark: { index } }) {
-			if (index === undefined) return
-
+                  if (index === undefined) return
+                  
 			this.triggerEvent('onDetail', { index })
 		},
 		onMore () {

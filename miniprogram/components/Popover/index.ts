@@ -73,7 +73,7 @@ Component({
 
 				const timer_close = setTimeout(() => {
 					_that.setData({ _visible_dialog_wrap: false })
-				}, 300)
+				}, 150)
 
 				_that.setData({ timer_close })
 			}

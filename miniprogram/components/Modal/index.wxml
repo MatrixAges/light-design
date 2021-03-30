@@ -7,14 +7,17 @@
       <view class="dialog_wrap">
             <view
                   class="mask"
-                  style="background-color: {{maskBackgroundColor}};transition: all ease {{duration/1000}}s;"
+                  style="background-color:{{maskBackgroundColor}};"
                   catchtap="{{maskClosable?'onClose':''}}"
             ></view>
             <view
                   class="dialog {{position}}"
-                  style="{{style}};transition: all ease {{duration/1000}}s;"
+                  style="{{style}};"
             >
                   <slot></slot>
+                  <text style="display: none;">
+                        <!-- 不可省略，否则动画无法进行 -->
+                  </text>
             </view>
       </view>
 </view>

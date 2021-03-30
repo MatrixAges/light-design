@@ -10,10 +10,14 @@ function getClasses (props){
 function getStyles (props){
 	var styles = ''
 
-      if (props.width) styles += ';width:' + props.width
+	if (props.width) styles += ';width:' + props.width
+	if (props.padding) styles += ';padding:' + props.padding
+	if (props.margin) styles += ';margin:' + props.margin
+	if (props.radius) styles += ';border-radius:' + props.radius + 'rpx'
+	if (props.fontSize) styles += ';font-size:' + props.fontSize + 'rpx'
 	if (props.color) styles += ';color:' + props.color
 	if (props.bgColor) styles += ';background:' + props.bgColor
-      if (props.radius) styles += ';border-radius:' + props.radius + 'rpx'
+	if (props.textAlign) styles += ';text-align:' + props.textAlign
 
 	return styles
 }

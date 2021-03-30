@@ -13,6 +13,17 @@
 type enum_position = 'center' | 'top' | 'bottom' | 'left' | 'right'
 ```
 
+### [triggerEvents](#triggerEvents)
+
+```typescript
+// 展示时触发
+onShow:()=>void
+
+// 隐藏时触发
+onClose:()=>void
+
+```
+
 ### [默认效果](#默认效果)
 
 ```html

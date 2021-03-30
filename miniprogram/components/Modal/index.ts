@@ -27,10 +27,6 @@ Component({
 			type: Number,
 			value: 100
 		},
-		duration: {
-			type: Number,
-			value: 300
-		},
 		maskVisible: {
 			type: Boolean,
 			value: true
@@ -49,7 +45,7 @@ Component({
 	observers: {
 		visible (new_val) {
 			const _that = this
-			const { position, duration, maskVisible } = _that.data
+			const { position, maskVisible } = _that.data
 			const position_style: any = _that.getPositionStyle()
 
 			clearTimeout(_that.data.timer_close)
@@ -71,7 +67,7 @@ Component({
 
 				const timer_close = setTimeout(() => {
 					_that.setData({ _visible: false })
-				}, duration)
+				}, 300)
 
 				_that.setData({ timer_close })
 			}
