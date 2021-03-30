@@ -235,6 +235,7 @@ export default <Array<IMenuItems>>[
 		name: '业务',
 		path: 'business',
 		description: '通常是仅针对特定业务的组件',
+		active: true,
 		components: [
 			{
 				name: 'Sku',
@@ -250,11 +251,16 @@ export default <Array<IMenuItems>>[
 			},
 			{
 				name: 'Period',
-				description: '预约选择器'
+				description: '预约选择器',
+				active: true
 			},
 			{
 				name: 'Pagenation',
 				description: '分页'
+			},
+			{
+				name: 'Waterfall',
+				description: '瀑布流列表'
 			}
 		]
 	}
