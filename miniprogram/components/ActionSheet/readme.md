@@ -10,7 +10,7 @@
 | column | 列数 | number | 3 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 type List = {
