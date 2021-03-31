@@ -13,7 +13,7 @@
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
 | loading | 等待中 | boolean | false | 否 | 1.0.0 |
 
-### type
+<Title>type</Title>
 
 | 值 | 说明 | 版本 |
 | - | - | - |
@@ -27,7 +27,7 @@
 | ghost | 幽灵按钮 | 1.0.0 |
 
 
-### size
+<Title>size</Title>
 
 | 值 | 说明 | 版本 |
 | - | - | - |
@@ -35,7 +35,7 @@
 | large | 大尺寸按钮 | 1.0.0 |
 | small | 小尺寸按钮 | 1.0.0 |
 
-### shape
+<Title>shape</Title>
 
 | 值 | 说明 | 版本 |
 | - | - | - |
@@ -43,7 +43,7 @@
 | circle | 圆边按钮 | 1.0.0 |
 | rect | 矩形按钮 | 1.0.0 |
 
-### 按钮类型
+<Title>按钮类型</Title>
 
 ```html
 <Button type="primary">primary</Button>
@@ -55,7 +55,7 @@
 <Button type="default">default</Button>
 ```
 
-### 幽灵按钮
+<Title>幽灵按钮</Title>
 
 ```html
 <Button type="primary" ghost>primary</Button>
@@ -67,7 +67,7 @@
 <Button type="default" ghost>default</Button>
 ```
 
-### 按钮大小
+<Title>按钮大小</Title>
 
 ```html
 <Button size="large">large</Button>
@@ -75,7 +75,7 @@
 <Button size="small">small</Button>
 ```
 
-### 按钮形状
+<Title>按钮形状</Title>
 
 ```html
 <Button shape="normal">large</Button>
@@ -83,7 +83,7 @@
 <Button shape="rect">large</Button>
 ```
 
-### 添加图标
+<Title>添加图标</Title>
 
 ```html
 <Button 
@@ -92,19 +92,19 @@
 >Microsoft</Button>
 ```
 
-### 宽度自适应
+<Title>宽度自适应</Title>
 
 ```html
 <Button autoWidth>autoWidth true</Button>
 ```
 
-### 自定义宽度
+<Title>自定义宽度</Title>
 
 ```html
 <Button width="100%">custom width</Button>
 ```
 
-### 自定义高度
+<Title>自定义高度</Title>
 
 ```html
 <Button 
@@ -113,13 +113,13 @@
 >custom height</Button>
 ```
 
-### 不可点击
+<Title>不可点击</Title>
 
 ```html
 <Button disabled>true</Button>
 ```
 
-### 自定义样式
+<Title>自定义样式</Title>
 
 ```html
 <Button
@@ -128,7 +128,7 @@
 >custom</Button>
 ```
 
-### 加载中
+<Title>加载中</Title>
 
 ```html
 <Button
@@ -137,7 +137,7 @@
 >true</Button>
 ```
 
-### 自定义图标
+<Title>自定义图标</Title>
 
 ```html
 <Button type="default">
@@ -151,7 +151,7 @@
 </Button>
 ```
 
-### 配合使用
+<Title>配合使用</Title>
 
 ```html
 <navigator url="/pages/index/index">

@@ -63,12 +63,10 @@
                   }
 
                   &.vertical {
-                        padding: 0 0rpx;
-                        padding-bottom: calc(~'0rpx + 'env(safe-area-inset-bottom));
+                        padding: 0;
+                        padding-bottom: env(safe-area-inset-bottom);
 
                         &.textOnly {
-                              padding: 0rpx;
-
                               .action_items {
                                     border-bottom: 2rpx solid #eee;
 
@@ -213,8 +211,7 @@
 
                   .btn_cancel {
                         width: 100%;
-                        height: 90rpx;
-                        padding: 0;
+                        padding: 30rpx 0;
                         display: flex;
                         justify-content: center;
                         align-content: center;

@@ -84,6 +84,7 @@
                               <light-card
                                     title="Primary"
                                     width="100%"
+                                    padding="20rpx"
                                     bgColor="#222"
                                     color="white"
                                     radius="{{8}}"
