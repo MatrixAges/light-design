@@ -12,7 +12,7 @@
 | shadow | 阴影 | boolean | false | 否 | 1.0.0 |
 | style | 自定义样式 | string | '' | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Card
@@ -26,7 +26,7 @@
 </Card>
 ```
 
-### [设置样式](#设置样式)
+<Title>设置样式</Title>
 
 ```html
 <Card
@@ -47,7 +47,7 @@
 </Card>
 ```
 
-### [悬浮阴影](#悬浮阴影)
+<Title>悬浮阴影</Title>
 
 ```html
 <Card

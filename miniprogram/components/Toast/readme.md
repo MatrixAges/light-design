@@ -10,13 +10,13 @@
 | duration | 关闭时间 | number | 3000 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 type Toast_type = '' | 'success' | 'warning' | 'error'
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <light-toast
@@ -25,7 +25,7 @@ type Toast_type = '' | 'success' | 'warning' | 'error'
 ></light-toast>
 ```
 
-### [顶部弹出](#顶部弹出)
+<Title>顶部弹出</Title>
 
 ```html
 <light-toast
@@ -35,7 +35,7 @@ type Toast_type = '' | 'success' | 'warning' | 'error'
 ></light-toast>
 ```
 
-### [自定义颜色](#自定义颜色)
+<Title>自定义颜色</Title>
 
 ```html
 <light-toast
@@ -46,7 +46,7 @@ type Toast_type = '' | 'success' | 'warning' | 'error'
 ></light-toast>
 ```
 
-### [关闭时间](#关闭时间)
+<Title>关闭时间</Title>
 
 ```html
 <light-toast
@@ -56,7 +56,7 @@ type Toast_type = '' | 'success' | 'warning' | 'error'
 ></light-toast>
 ```
 
-### [设定类型](#设定类型)
+<Title>设定类型</Title>
 
 ```html
 <light-toast
@@ -76,7 +76,7 @@ type Toast_type = '' | 'success' | 'warning' | 'error'
 ></light-toast>
 ```
 
-### [背景色](#背景色)
+<Title>背景色</Title>
 
 ```html
 <light-toast

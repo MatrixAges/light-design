@@ -18,13 +18,13 @@
 | mini | 小尺寸 | boolean | false | 否 | 1.0.0 |
 | custom | 自定义 | boolean | false | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <SnackBar
@@ -35,7 +35,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [没有描述](#没有描述)
+<Title>没有描述</Title>
 
 ```html
 <SnackBar
@@ -45,7 +45,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [自动关闭](#自动关闭)
+<Title>自动关闭</Title>
 
 ```html
 <SnackBar
@@ -57,7 +57,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [关闭时间](#关闭时间)
+<Title>关闭时间</Title>
 
 ```html
 <SnackBar
@@ -70,7 +70,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [弹出位置](#弹出位置)
+<Title>弹出位置</Title>
 
 ```html
 <SnackBar
@@ -82,7 +82,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [具体位置](#具体位置)
+<Title>具体位置</Title>
 
 ```html
 <SnackBar
@@ -94,7 +94,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [小尺寸](#小尺寸)
+<Title>小尺寸</Title>
 
 ```html
 <SnackBar
@@ -106,7 +106,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [自定义](#自定义)
+<Title>自定义</Title>
 
 ```html
 <SnackBar
@@ -117,7 +117,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [全部覆盖](#全部覆盖)
+<Title>全部覆盖</Title>
 
 ```html
 <SnackBar
@@ -129,7 +129,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 ></SnackBar>
 ```
 
-### [组合使用](#组合使用)
+<Title>组合使用</Title>
 
 ```html
 <SnackBar
@@ -150,7 +150,7 @@ type SnackBar_type = '' | 'success' | 'warning' | 'error'
 </SnackBar>
 ```
 
-### [自定义样式](#自定义样式)
+<Title>自定义样式</Title>
 
 ```html
 <SnackBar

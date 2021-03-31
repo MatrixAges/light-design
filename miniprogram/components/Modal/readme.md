@@ -7,13 +7,13 @@
 | maskVisible | 遮罩是否可见 | boolean | true | 否 | 1.0.0 |
 | maskClosable | 点击遮罩关闭 | boolean | true | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 type enum_position = 'center' | 'top' | 'bottom' | 'left' | 'right'
 ```
 
-### [triggerEvents](#triggerEvents)
+<Title>triggerEvents</Title>
 
 ```typescript
 // 展示时触发
@@ -24,7 +24,7 @@ onClose:()=>void
 
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Modal visible="{{visible_default}}">
@@ -32,7 +32,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [顶部弹出](#顶部弹出)
+<Title>顶部弹出</Title>
 
 ```html
 <Modal 
@@ -43,7 +43,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [底部弹出](#底部弹出)
+<Title>底部弹出</Title>
 
 ```html
 <Modal 
@@ -54,7 +54,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [左侧弹出](#左侧弹出)
+<Title>左侧弹出</Title>
 
 ```html
 <Modal 
@@ -65,7 +65,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [右侧弹出](#右侧弹出)
+<Title>右侧弹出</Title>
 
 ```html
 <Modal 
@@ -76,7 +76,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [没有遮罩](#没有遮罩)
+<Title>没有遮罩</Title>
 
 ```html
 <Modal 
@@ -87,7 +87,7 @@ onClose:()=>void
 </Modal>
 ```
 
-### [蒙层关闭](#蒙层关闭)
+<Title>蒙层关闭</Title>
 
 ```html
 <Modal 

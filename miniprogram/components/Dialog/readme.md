@@ -15,7 +15,7 @@
 | maskClosable | 显示取消 | boolean | true | 否 | 1.0.0 |
 | bodyStyle | 内容样式 | string | '' | 否 | 1.0.0 |
 
-### [triggerEvents](#triggerEvents)
+<Title>triggerEvents</Title>
 
 ```typescript
 // 展示时触发
@@ -28,7 +28,7 @@ onClose:()=>void
 onOk:()=>void
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Dialog visible="{{visible_default}}">
@@ -36,7 +36,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [没有标题](#没有标题)
+<Title>没有标题</Title>
 
 ```html
 <Dialog 
@@ -47,7 +47,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [loading](#loading)
+<Title>loading</Title>
 
 ```html
 <Dialog 
@@ -58,7 +58,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [自定义内容](#自定义内容)
+<Title>自定义内容</Title>
 
 ```html
 <Dialog 
@@ -69,7 +69,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [底部弹出](#底部弹出)
+<Title>底部弹出</Title>
 
 ```html
 <Dialog 
@@ -80,7 +80,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [隐藏取消](#隐藏取消)
+<Title>隐藏取消</Title>
 
 ```html
 <Dialog 
@@ -95,7 +95,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [显示关闭](#显示关闭)
+<Title>显示关闭</Title>
 
 ```html
 <Dialog 
@@ -110,7 +110,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [隐藏遮罩](#隐藏遮罩)
+<Title>隐藏遮罩</Title>
 
 ```html
 <Dialog 
@@ -121,7 +121,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [点击遮罩关闭](#点击遮罩关闭)
+<Title>点击遮罩关闭</Title>
 
 ```html
 <Dialog 
@@ -132,7 +132,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [自定义样式](#自定义样式)
+<Title>自定义样式</Title>
 
 ```html
 <Dialog 
@@ -143,7 +143,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [确定文字](#确定文字)
+<Title>确定文字</Title>
 
 ```html
 <Dialog 
@@ -154,7 +154,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [取消文字](#取消文字)
+<Title>取消文字</Title>
 
 ```html
 <Dialog 
@@ -165,7 +165,7 @@ onOk:()=>void
 </Dialog>
 ```
 
-### [slot](#slot)
+<Title>slot</Title>
 
 ```html
 <Dialog 

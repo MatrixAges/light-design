@@ -7,13 +7,13 @@
 | delay | 延迟显示时间 | number | 0 | 否 | 1.0.0 |
 | timeout | 延迟关闭时间 | number | 0 | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
  <Landing visible="{{visible_default}}"></Landing>
 ```
 
-### [显示遮罩](#显示遮罩)
+<Title>显示遮罩</Title>
 
 ```html
 <Landing 
@@ -22,7 +22,7 @@
  ></Landing>
 ```
 
-### [遮罩颜色](#遮罩颜色)
+<Title>遮罩颜色</Title>
 
 ```html
 <Landing 

@@ -10,7 +10,7 @@
 | endTime | 结束时间 | number | 0 | 否 | 1.0.0 |
 | duration | 时间间隔 | number | 0 | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 interface IDate {
@@ -24,7 +24,7 @@ type ITime = {
 }
 ```
 
-### [triggerEvents](#triggerEvents)
+<Title>triggerEvents</Title>
 
 ```ts
 onSelectedPeriod:(
@@ -40,7 +40,7 @@ onSelectedPeriod:(
 )=>void
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Period
@@ -53,7 +53,7 @@ onSelectedPeriod:(
 </Period>
 ```
 
-### [设置日期范围](#设置日期范围)
+<Title>设置日期范围</Title>
 
 ```html
 <Period
@@ -66,7 +66,7 @@ onSelectedPeriod:(
 </Period>
 ```
 
-### [设置时间范围](#设置时间范围)
+<Title>设置时间范围</Title>
 
 ```html
 <Period
@@ -79,7 +79,7 @@ onSelectedPeriod:(
 </Period>
 ```
 
-### [直接设置时间](#直接设置时间)
+<Title>直接设置时间</Title>
 
 ```html
 <Period
@@ -90,7 +90,7 @@ onSelectedPeriod:(
 </Period>
 ```
 
-### [两小时以内](#两小时以内)
+<Title>两小时以内</Title>
 
 ```html
 <Period
@@ -104,7 +104,7 @@ onSelectedPeriod:(
 </Period>
 ```
 
-### [获取数据](#获取数据)
+<Title>获取数据</Title>
 
 ```html
 <Period

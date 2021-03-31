@@ -21,7 +21,7 @@
 | style | 样式 | string | '' | 否 | 1.0.0 |
 | lineClamp | 换行省略 | string | '' | 否 | 1.0.0 |
 
-### [标题](#标题)
+<Title>标题</Title>
 
 ```html
 <Text h7>This is the way.</Text>
@@ -33,7 +33,7 @@
 <Text h1>This is the way.</Text>
 ```
 
-### [段落](#段落)
+<Title>段落</Title>
 
 ```html
 <Text p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -44,7 +44,7 @@
       ut labore et dolore magna aliqua.</Text>
 ```
 
-### [换行省略](#换行省略)
+<Title>换行省略</Title>
 
 ```html
 <Text
@@ -63,7 +63,7 @@
       ut labore et dolore magna aliqua.</Text>
 ```
 
-### [粗体](#粗体)
+<Title>粗体</Title>
 
 ```html
 <Text b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -71,7 +71,7 @@
       ut labore et dolore magna aliqua.</Text>
 ```
 
-### [斜体](#斜体)
+<Title>斜体</Title>
 
 ```html
 <Text i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -79,43 +79,43 @@
       ut labore et dolore magna aliqua.</Text>
 ```
 
-### [引用](#引用)
+<Title>引用</Title>
 
 ```html
 <Text quote>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [成功](#成功)
+<Title>成功</Title>
 
 ```html
 <Text success>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [警告](#警告)
+<Title>警告</Title>
 
 ```html
 <Text warning>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [错误](#错误)
+<Title>错误</Title>
 
 ```html
 <Text error>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [删除线](#删除线)
+<Title>删除线</Title>
 
 ```html
 <Text del>巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [设置颜色](#设置颜色)
+<Title>设置颜色</Title>
 
 ```html
 <Text color="purple">巨大的建筑，总是由一木一石叠起来的，我们何妨做做这一木一石呢？我时常做些零碎事，就是为此。</Text>
 ```
 
-### [文字对齐](#文字对齐)
+<Title>文字对齐</Title>
 
 ```html
 <Text textAlign="center">人生是开放游戏</Text>

@@ -8,7 +8,7 @@
 | interval | 时间间隔 | number | 3000 | 否 | 1.0.0 |
 | duration | 时间间隔 | number | 3000 | 否 | 1.0.0 |
 
-### [triggerEvents](#triggerEvents)
+<Title>triggerEvents</Title>
 
 ```typescript
 // 点击滚动项时触发
@@ -26,13 +26,13 @@ onDetail:(
 onMore:()=>void
 ```
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <NoticeBar list="{{list}}"></NoticeBar>
 ```
 
-### [横向滚动](#横向滚动)
+<Title>横向滚动</Title>
 
 ```html
 <NoticeBar 
@@ -42,7 +42,7 @@ onMore:()=>void
 ></NoticeBar>
 ```
 
-### [颜色](#颜色)
+<Title>颜色</Title>
 
 ```html
 <NoticeBar 
@@ -52,7 +52,7 @@ onMore:()=>void
 ></NoticeBar>
 ```
 
-### [背景](#背景)
+<Title>背景</Title>
 
 ```html
 <NoticeBar 
@@ -62,7 +62,7 @@ onMore:()=>void
 ></NoticeBar>
 ```
 
-### [时间间隔](#时间间隔)
+<Title>时间间隔</Title>
 
 ```html
 <NoticeBar 
@@ -71,7 +71,7 @@ onMore:()=>void
 ></NoticeBar>
 ```
 
-### [自定义样式](#自定义样式)
+<Title>自定义样式</Title>
 
 ```html
 <NoticeBar 

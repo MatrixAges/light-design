@@ -10,7 +10,7 @@
 | divideColor | 分割线颜色 | string | 'rgba(255, 255, 255, 0.15)' | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Popover
@@ -21,7 +21,7 @@
 </Popover>
 ```
 
-### [设定位置](#设定位置)
+<Title>设定位置</Title>
 
 ```html
 <Popover
@@ -32,7 +32,7 @@
 </Popover>
 ```
 
-### [设定标记](#设定标记)
+<Title>设定标记</Title>
 
 ```html
 <Popover
@@ -44,7 +44,7 @@
 </Popover>
 ```
 
-### [动画原点](#动画原点)
+<Title>动画原点</Title>
 
 ```html
 <Popover
@@ -57,7 +57,7 @@
 </Popover>
 ```
 
-### [自定义颜色](#自定义颜色)
+<Title>自定义颜色</Title>
 
 ```html
 <Popover

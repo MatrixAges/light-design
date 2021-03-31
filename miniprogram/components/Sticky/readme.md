@@ -5,7 +5,7 @@
 | container | 容器 | string | '' | 否 | 1.0.0 |
 | disabled | 禁用 | boolean | false | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Sticky>
@@ -13,7 +13,7 @@
 </Sticky>
 ```
 
-### [顶部距离](#顶部距离)
+<Title>顶部距离</Title>
 
 ```html
 <Sticky offsetTop="{{30}}">
@@ -21,7 +21,7 @@
 </Sticky>
 ```
 
-### [指定容器](#指定容器)
+<Title>指定容器</Title>
 
 ```html
 <view

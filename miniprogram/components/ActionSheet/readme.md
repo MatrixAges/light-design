@@ -19,7 +19,7 @@ type List = {
 }
 ```
 
-### [triggerEvents](#triggerEvents)
+<Title>triggerEvents</Title>
 
 ```typescript
 // 点击列表项时触发
@@ -40,14 +40,14 @@ onShow:()=>void
 onClose:()=>void
 ```
 
-### [list](#list)
+<Title>list</Title>
 
 | 值 | 说明 | 版本 |
 | - | - | - |
 | name | 名称 | 1.0.0 |
 | icon | 图标链接 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <ActionSheet
@@ -57,7 +57,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [没有标题](#没有标题)
+<Title>没有标题</Title>
 
 ```html
 <ActionSheet
@@ -66,7 +66,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [横向滚动](#横向滚动)
+<Title>横向滚动</Title>
 
 ```html
 <ActionSheet
@@ -77,7 +77,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [纵向显示](#纵向显示)
+<Title>纵向显示</Title>
 
 ```html
 <ActionSheet
@@ -87,7 +87,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [仅有文字](#仅有文字)
+<Title>仅有文字</Title>
 
 ```html
 <ActionSheet
@@ -100,7 +100,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [显示取消](#显示取消)
+<Title>显示取消</Title>
 
 ```html
 <ActionSheet
@@ -111,7 +111,7 @@ onClose:()=>void
 ></ActionSheet>
 ```
 
-### [列数](#列数)
+<Title>列数</Title>
 
 ```html
 <ActionSheet

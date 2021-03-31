@@ -3,7 +3,7 @@
 | color | 颜色 | string | 'rgba(0, 0, 0, 0.2)' | 否 | 1.0.0 |
 | radius | 圆角 | number | 8 | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Ripple>
@@ -11,7 +11,7 @@
 </Ripple>
 ```
 
-### [设定颜色](#设定颜色)
+<Title>设定颜色</Title>
 
 ```html
 <Ripple color="red">
@@ -19,7 +19,7 @@
 </Ripple>
 ```
 
-### [绑定方法](#绑定方法)
+<Title>绑定方法</Title>
 
 ```html
 <Ripple>
@@ -30,7 +30,7 @@
 </Ripple>
 ```
 
-### [设定圆角](#设定圆角)
+<Title>设定圆角</Title>
 
 ```html
 <Ripple radius="{{100}}">
@@ -41,7 +41,7 @@
 </Ripple>
 ```
 
-### [幽灵按钮](#幽灵按钮)
+<Title>幽灵按钮</Title>
 
 ```html
 <Ripple>
@@ -49,7 +49,7 @@
 </Ripple>
 ```
 
-### [任意使用](#任意使用)
+<Title>任意使用</Title>
 
 ```html
 <Ripple color="white">

@@ -4,7 +4,7 @@
 | list | 数据项 | Array`<List>` | [] | 是 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
-### [types](#types)
+<Title>types</Title>
 
 ```typescript
 type List = {
@@ -24,7 +24,7 @@ type List = {
 }
 ```
 
-### [list](#list)
+<Title>list</Title>
 
 | 值 | 说明 | 版本 |
 | - | - | - |
@@ -41,7 +41,7 @@ type List = {
 
 > 当daily为true时，durations中startTime、endTime格式为18:00:00，当daily为false时，durations中startTime、endTime格式为2020/8/1 00:00:00
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
  <DialogQueue

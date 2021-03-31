@@ -8,31 +8,31 @@
 | box | 包裹对象 | boolean | false | 否 | 1.0.0 |
 | borderSize | 边界大小 | number | 2 | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Line></Line>
 ```
 
-### [设定宽度](#设定宽度)
+<Title>设定宽度</Title>
 
 ```html
 <Line width="50%"></Line>
 ```
 
-### [设定高度](#设定高度)
+<Title>设定高度</Title>
 
 ```html
 <Line height="10rpx"></Line>
 ```
 
-### [0.5px线条](#0.5px线条)
+<Title>0.5px线条</Title>
 
 ```html
 <Line thin></Line>
 ```
 
-### [设定圆角](#设定圆角)
+<Title>设定圆角</Title>
 
 ```html
 <Line 
@@ -41,7 +41,7 @@
 ></Line>
 ```
 
-### [配合使用](#配合使用)
+<Title>配合使用</Title>
 
 ```html
 <Line
@@ -55,7 +55,7 @@
 </Line>
 ```
 
-### [包裹对象](#包裹对象)
+<Title>包裹对象</Title>
 
 ```html
 <Line
@@ -73,7 +73,7 @@
 </Line>
 ```
 
-### [0.5px边界](#0.5px边界)
+<Title>0.5px边界</Title>
 
 ```html
 <Line
@@ -92,7 +92,7 @@
 </Line>
 ```
 
-### [边界颜色](#边界颜色)
+<Title>边界颜色</Title>
 
 ```html
 <Line

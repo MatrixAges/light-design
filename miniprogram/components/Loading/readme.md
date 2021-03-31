@@ -7,7 +7,7 @@
 | delay | 延迟显示时间 | number | 0 | 否 | 1.0.0 |
 | timeout | 延迟关闭时间 | number | 0 | 否 | 1.0.0 |
 
-### [默认效果](#默认效果)
+<Title>默认效果</Title>
 
 ```html
 <Loading
@@ -16,7 +16,7 @@
 ></Loading>
 ```
 
-### [加载中](#加载中)
+<Title>加载中</Title>
 
 ```html
 <Loading
