@@ -29,7 +29,10 @@
                               wx:key="index"
                               mark:index="{{index}}"
                         >
-                              <view class="flex_wrap">
+                              <view
+                                    class="flex_wrap"
+                                    wx:if="{{!item.button}}"
+                              >
                                     <view
                                           class="icon_wrap"
                                           wx:if="{{!textOnly&&item.icon}}"
@@ -42,6 +45,37 @@
                                     </view>
                                     <text class="name">{{item.name}}</text>
                               </view>
+                              <button
+                                    class="flex_wrap"
+                                    lang="{{item.lang}}"
+                                    open-type="{{item.openType}}"
+                                    session-from="{{item.sessionFrom}}"
+                                    send-message-title="{{item.sendMessageTitle}}"
+                                    send-message-path="{{item.sendMessagePath}}"
+                                    send-message-img="{{item.sendMessageImg}}"
+                                    app-parameter="{{item.appParameter}}"
+                                    show-message-card="{{item.showMessageCard}}"
+                                    bindgetuserinfo="getuserinfo"
+                                    bindcontact="contact"
+                                    bindgetphonenumber="getphonenumber"
+                                    binderror="error"
+                                    bindopensetting="opensetting"
+                                    bindlaunchapp="launchapp"
+                                    data-index="{{index}}"
+                                    wx:else
+                              >
+                                    <view
+                                          class="icon_wrap"
+                                          wx:if="{{!textOnly&&item.icon}}"
+                                    >
+                                          <image
+                                                class="icon_action"
+                                                mode="widthFix"
+                                                src="{{item.icon}}"
+                                          ></image>
+                                    </view>
+                                    <text class="name">{{item.name}}</text>
+                              </button>
                         </view>
                   </scroll-view>
                   <button

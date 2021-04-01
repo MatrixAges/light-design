@@ -1,3 +1,15 @@
+<Description>
+      <Text type='desc'>
+           预约选择器来自于快递预约业务，是用来预约时间的组件。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>快递提交包裹时，预约时间选择。</li>
+            <li>提前预定外卖。</li>
+            <li>预约送货上门时间。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | visible | 是否可见 | boolean | false | 否 | 1.0.0 |

@@ -17,6 +17,14 @@ Component({
 			value: Array<{
 				name: String
 				icon: String
+				button?: Boolean
+				openType?: String
+				sessionFrom?: String
+				sendMessageTitle?: String
+				sendMessagePath?: String
+				sendMessageImg?: String
+				appParameter?: String
+				showMessageCard?: Boolean
 			}>
 		}>{
 			type: Array,
@@ -89,15 +97,15 @@ Component({
 	},
 	methods: {
 		catchtouchmove () {},
-		onActionItem (e) {
+		onActionItem (e: WechatMiniprogram.TouchEvent) {
 			const _that = this
-			const { mark: { index } } = e
+			const { mark } = e
 
-			if (index === undefined) return
+			if (!mark || mark.index === undefined) return
 
 			_that.setData({ visible: false })
 
-			_that.triggerEvent('onOption', { index: index })
+			_that.triggerEvent('onOption', { index: mark.index })
 		},
 		onShow () {
 			const _that = this
@@ -112,6 +120,26 @@ Component({
 			_that.setData({ visible: false })
 
 			_that.triggerEvent('onClose')
+		},
+		getuserinfo (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonGetUserInfo>) {
+			this.triggerEvent('getuserinfo', e)
+		},
+		contact (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonContact>) {
+			this.triggerEvent('contact', e)
+		},
+		getphonenumber (
+			e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonGetPhoneNumber>
+		) {
+			this.triggerEvent('getphonenumber', e)
+		},
+		error (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonError>) {
+			this.triggerEvent('error', e)
+		},
+		opensetting (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonOpenSetting>) {
+			this.triggerEvent('opensetting', e)
+		},
+		launchapp (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonLaunchApp>) {
+			this.triggerEvent('launchapp', e)
 		}
 	}
 })

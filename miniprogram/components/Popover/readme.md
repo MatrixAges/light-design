@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           弹框的灵感来源与微信的右上角点击弹框，她提供一个固定在页面上的局部列表内容选项，比 ActionSheet 更有辨识度。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>应用扩展功能的交互展示。</li>
+            <li>展示一些其他面板选项。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | visible | 是否可见 | boolean | false | 否 | 1.0.0 |

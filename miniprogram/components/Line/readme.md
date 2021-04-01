@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           线条是原子化的元素，可用来包裹其他任何类型的子元素，且能够单独使用。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>需要设定0.5px线条时。</li>
+            <li>包裹内容，以代替 border。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | width | 宽度 | string | '100%' | 否 | 1.0.0 |

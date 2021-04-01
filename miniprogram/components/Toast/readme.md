@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           消息提示是一种轻量的内容提示组件，由一个状态图标和文字内容组成。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>展示按钮点击之后触发的信息反馈。</li>
+            <li>展示应用运行时的错误信息。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | visible | 是否可见 | boolean | false | 否 | 1.0.0 |

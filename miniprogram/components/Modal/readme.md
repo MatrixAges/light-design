@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           加载中用来表示数据加载状态，对页面的不同内容之间进行过渡，她是连续性设计的一部分。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>配合按钮进行使用。</li>
+            <li>当加载列表数据项时。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | visible | 是否可见 | boolean | false | 否 | 1.0.0 |

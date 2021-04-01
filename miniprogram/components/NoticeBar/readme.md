@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           公告栏的灵感来源于现实世界的文字滚动LED屏幕，她是公告中心的功能延伸。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>在应用首页展示滚动新闻。</li>
+            <li>作为悬浮栏固定在页面顶部，展示公告信息。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | list | 数据项 | boolean | false | 否 | 1.0.0 |

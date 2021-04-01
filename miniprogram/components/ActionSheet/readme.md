@@ -22,14 +22,44 @@
 | column | 列数 | number | 3 | 否 | 1.0.0 |
 | zIndex | 层级 | number | 100 | 否 | 1.0.0 |
 
+<Title>list</Title>
+
+| 值 | 说明 | 版本 |
+| - | - | - |
+| name | 名称 | 1.0.0 |
+| icon | 图标链接 | 1.0.0 |
+| button | 是否为按钮 | 1.0.0 |
+| openType | 同小程序open-type | 1.0.0 |
+| sessionFrom | 同小程序open-type | 1.0.0 |
+| sessionFrom | 同小程序sessionFrom | 1.0.0 |
+| sendMessageTitle | 同小程序send-message-title | 1.0.0 |
+| sendMessagePath | 同小程序send-messagePath | 1.0.0 |
+| sendMessageImg | 同小程序sendMessageImg | 1.0.0 |
+| appParameter | 同小程序appParameter | 1.0.0 |
+| showMessageCard | 同小程序showMessageCard | 1.0.0 |
+
+<Title>默认效果</Title>
+
 <Title>types</Title>
 
 ```typescript
 type List = {
       name:string
       icon:string
+      button?: boolean
+      openType?: string
+      sessionFrom?: string
+      sendMessageTitle?: string
+      sendMessagePath?: string
+      sendMessageImg?: string
+      appParameter?: string
+      showMessageCard?: boolean
 }
 ```
+
+<Description type='warning'>
+      仅当 list item 的 button 设定为 true 时，button 相关的属性才生效。 
+</Description>
 
 <Title>triggerEvents</Title>
 
@@ -50,16 +80,33 @@ onShow:()=>void
 
 // 隐藏时触发
 onClose:()=>void
+
+getuserinfo (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonGetUserInfo>) {
+	this.triggerEvent('getuserinfo', e)
+}
+
+contact (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonContact>) {
+      this.triggerEvent('contact', e)
+}
+
+getphonenumber (
+      e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonGetPhoneNumber>
+) {
+      this.triggerEvent('getphonenumber', e)
+}
+
+error (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonError>) {
+      this.triggerEvent('error', e)
+}
+
+opensetting (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonOpenSetting>) {
+      this.triggerEvent('opensetting', e)
+}
+
+launchapp (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonLaunchApp>) {
+      this.triggerEvent('launchapp', e)
+}
 ```
-
-<Title>list</Title>
-
-| 值 | 说明 | 版本 |
-| - | - | - |
-| name | 名称 | 1.0.0 |
-| icon | 图标链接 | 1.0.0 |
-
-<Title>默认效果</Title>
 
 ```html
 <ActionSheet
@@ -131,5 +178,27 @@ onClose:()=>void
       title="分享"
       list="{{list}}"
       column="{{4}}"
+></ActionSheet>
+```
+
+<Title>分享功能</Title>
+
+```html
+<ActionSheet
+      visible="{{visible_share}}"
+      title="分享"
+      list="{{list_share}}"
+      bind:onOption="onAction"
+></ActionSheet>
+```
+
+<Title>获取手机号</Title>
+
+```html
+<ActionSheet
+      visible="{{visible_getPhoneNumber}}"
+      title="获取手机号"
+      list="{{list_getPhoneNumber}}"
+      bind:getphonenumber="getphonenumber"
 ></ActionSheet>
 ```

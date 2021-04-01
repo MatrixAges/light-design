@@ -9,7 +9,7 @@
 .loading_refresh:not(:required) {
   animation: loading_refresh 1000ms infinite linear;
   border-radius: 50%;
-  border: 8rpx solid rgba(255, 0, 0, 0.6);
+  border: 8rpx solid rgba(0, 0, 0, 0.6);
   border-left-color: transparent;
   color: transparent;
   display: inline-block;

@@ -1,5 +1,6 @@
 {
       "name": "@lightd/toast",
+      "cname":"消息提示",
       "version": "1.0.0",
       "main": "index.js",
       "homepage": "https://github.com/MatrixAges/light-design/tree/master/miniprogram/components/Toast",
