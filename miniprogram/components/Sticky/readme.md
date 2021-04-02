@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           粘性布局来源于css中的 position:sticky 属性，由于小程序浏览器内核的原因，该特性需要通过组件的形式来实现。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>当页面滚动时，将tabbar悬浮显示在页面顶部。</li>
+            <li>页面有长的 table 时，滚动页面，表头悬浮显示在页面顶部，获得更好的信息展示效果。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | offsetTop | 顶部距离 | number | 0 | 否 | 1.0.0 |

@@ -3,7 +3,7 @@
     background: rgba(0, 0, 0, 0.1);
   }
   20% {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 1.0);
   }
   60% {
     background: rgba(18, 18, 18, 0.1);

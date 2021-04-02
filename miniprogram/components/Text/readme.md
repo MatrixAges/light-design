@@ -1,3 +1,14 @@
+<Description>
+      <Text type='desc'>
+           文字用来提供统一标准的文字内容，她是 span/text 的加强版。
+      </Text>
+      <Text type='title'>使用场景</Text>
+      <ul>
+            <li>承载任何文字内容。</li>
+            <li>替代 p 标签，表示段落。</li>
+      </ul>
+</Description>
+
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
 | p | 段落 | boolean | false | 否 | 1.0.0 |

@@ -17,7 +17,7 @@ Page({
 			[`visible_${type}`]: true
 		})
 	},
-	onSelectedPeriod ({ detail }: any) {
+	onSelectedPeriod ({ detail }: WechatMiniprogram.TouchEvent) {
 		const _that = this
 
 		_that.setData({
