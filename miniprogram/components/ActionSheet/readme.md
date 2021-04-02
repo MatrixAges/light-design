@@ -38,8 +38,6 @@
 | appParameter | 同小程序appParameter | 1.0.0 |
 | showMessageCard | 同小程序showMessageCard | 1.0.0 |
 
-<Title>默认效果</Title>
-
 <Title>types</Title>
 
 ```typescript
@@ -107,6 +105,8 @@ launchapp (e: WechatMiniprogram.TouchEvent<WechatMiniprogram.ButtonLaunchApp>) {
       this.triggerEvent('launchapp', e)
 }
 ```
+
+<Title>默认效果</Title>
 
 ```html
 <ActionSheet
