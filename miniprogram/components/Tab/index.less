@@ -1,0 +1,41 @@
+@color_main: black;
+
+.init {
+      color: black;
+      font-size: 30rpx;
+      line-height: 1.6;
+}
+
+:host {
+      flex-shrink: 0;
+      box-sizing: border-box;
+      width: 100%;
+}
+
+.tab_wrap {
+      width: 100%;
+
+      .init();
+
+      .tab {
+            width: 100%;
+
+            .scroller {
+                  .bar_item_wrap {
+                        width: 100%;
+                        white-space: nowrap;
+
+                        .bar_item {
+                              display: inline-block;
+                              padding: 0 20rpx;
+                        }
+                  }
+            }
+
+            .content_wrap {
+                  position: relative;
+                  display: flex;
+                  overflow-x: hidden;
+            }
+      }
+}

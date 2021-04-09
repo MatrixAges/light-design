@@ -1,6 +1,5 @@
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|confirmLoading|timer_close|timer_hide_loading)$/,
 		multipleSlots: true
 	},

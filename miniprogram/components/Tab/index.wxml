@@ -1,0 +1,27 @@
+<view class="tab_wrap">
+      <view class="tab">
+            <scroll-view
+                  class="scroller"
+                  scroll-x="{{!vertical}}"
+                  scroll-y="{{vertical}}"
+                  scroll-into-view="item_{{current_tab}}"
+                  scroll-with-animation
+            >
+                  <div
+                        class="bar_item_wrap"
+                        catchtap="onBarItem"
+                  >
+                        <view
+                              id="item_{{index}}"
+                              class="bar_item"
+                              wx:for="{{titles}}"
+                              wx:key="index"
+                              mark:index="{{index}}"
+                        >{{item}}</view>
+                  </div>
+            </scroll-view>
+            <view class="content_wrap">
+                  <slot></slot>
+            </view>
+      </view>
+</view>

@@ -22,7 +22,7 @@
     "coverView": true,
     "nodeModules": false,
     "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
+    "showShadowRootInWxmlPanel": false,
     "scopeDataCheck": false,
     "uglifyFileName": true,
     "checkInvalidKey": true,
@@ -166,6 +166,11 @@
         {
           "name": "pages/NoticeBar/index",
           "pathName": "pages/NoticeBar/index",
+          "scene": null
+        },
+        {
+          "name": "pages/Tab/index",
+          "pathName": "pages/Tab/index",
           "scene": null
         }
       ]

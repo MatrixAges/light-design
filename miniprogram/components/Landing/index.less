@@ -15,22 +15,22 @@
       position: fixed;
       top: 0;
       left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100vw;
       height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
       .landing {
             position: relative;
-            width: 180rpx;
-            height: 180rpx;
             display: flex;
+            align-items: center;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            background-color: @bg_color_landing;
+            width: 180rpx;
+            height: 180rpx;
             border-radius: 24rpx;
+            background-color: @bg_color_landing;
 
             .icon {
                   width: 60rpx;
@@ -40,9 +40,9 @@
             .icon_source {
                   width: 60rpx;
                   height: 60rpx;
+                  background-image: @img_landing;
                   background-size: 100% 100%;
                   transform-origin: center bottom;
-                  background-image: @img_landing;
             }
 
             .icon_source_bottom {

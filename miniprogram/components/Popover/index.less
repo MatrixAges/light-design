@@ -4,11 +4,11 @@
 }
 
 .fixed_dialog_wrap {
-      .init();
-
       position: fixed;
       top: 0;
       left: 0;
+
+      .init();
 
       .mask {
             position: absolute;
@@ -39,26 +39,26 @@
                   position: absolute;
                   width: 20rpx;
                   height: 20rpx;
-                  transform: rotate(45deg);
                   border-radius: 4rpx;
+                  transform: rotate(45deg);
             }
 
             .action_item {
-                  .init();
-
                   display: flex;
-                  text-align: left;
                   align-items: center;
+                  margin: 0;
+                  padding: 0;
+                  padding-left: 32rpx;
                   width: auto;
                   height: auto;
-                  padding: 0;
-                  margin: 0;
-                  padding-left: 32rpx;
-                  background-color: transparent;
                   border: none;
-                  font-weight: normal;
                   border-radius: 0;
+                  background-color: transparent;
+                  text-align: left;
+                  font-weight: normal;
                   transition: all ease 0s;
+
+                  .init();
 
                   &:first-of-type {
                         border-top-left-radius: 12rpx;
@@ -66,8 +66,8 @@
                   }
 
                   &:last-child {
-                        border-bottom-left-radius: 12rpx;
                         border-bottom-right-radius: 12rpx;
+                        border-bottom-left-radius: 12rpx;
 
                         .name {
                               border-bottom: 2rpx solid transparent !important;
@@ -88,10 +88,10 @@
 
                   .icon_wrap {
                         display: flex;
-                        justify-content: left;
                         align-items: center;
-                        width: 40rpx;
+                        justify-content: left;
                         padding-right: 24rpx;
+                        width: 40rpx;
 
                         .icon_action {
                               width: 38rpx;
@@ -100,9 +100,9 @@
                   }
 
                   .name {
+                        padding: 32rpx 0;
                         width: 180rpx;
                         height: 100%;
-                        padding: 32rpx 0;
                   }
             }
       }

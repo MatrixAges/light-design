@@ -9,11 +9,11 @@
 
       .dialog_wrap {
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .mask {
                   position: absolute;
@@ -33,17 +33,17 @@
             }
 
             .dialog {
-                  width: 100%;
-                  box-sizing: border-box;
                   position: absolute;
                   bottom: 0;
                   display: flex;
                   flex-direction: column;
-                  transition: all ease 0.3s;
-                  background-color: white;
+                  box-sizing: border-box;
+                  width: 100%;
                   border-radius: 40rpx;
-                  border-bottom-left-radius: 0;
                   border-bottom-right-radius: 0;
+                  border-bottom-left-radius: 0;
+                  background-color: white;
+                  transition: all ease 0.3s;
 
                   &.visible {
                         transform: translateY(0);
@@ -60,28 +60,29 @@
                   }
 
                   .btn_close {
-                        width: 42rpx;
-                        height: 42rpx;
-                        box-sizing: border-box;
-                        padding: 15rpx;
-                        display: inline-block;
+                        position: absolute;
                         top: 36rpx;
                         right: 36rpx;
-                        position: absolute;
-                        background-repeat: no-repeat;
-                        background-size: 100% 100%;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: 15rpx;
+                        width: 42rpx;
+                        height: 42rpx;
                         background: black;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+
                         mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
                         -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
                   }
 
                   .title_wrap {
-                        width: 100%;
                         display: flex;
-                        justify-content: center;
                         align-items: center;
+                        justify-content: center;
                         box-sizing: border-box;
                         padding: 36rpx 0;
+                        width: 100%;
 
                         .title {
                               font-size: 28rpx;
@@ -89,25 +90,25 @@
                   }
 
                   .period_wrap {
-                        width: 100%;
-                        box-sizing: border-box;
                         display: flex;
+                        box-sizing: border-box;
+                        width: 100%;
                         border-top: 2rpx solid whitesmoke;
 
                         .period_items {
-                              height: 360rpx;
                               box-sizing: border-box;
+                              height: 360rpx;
 
                               .period_item {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                     width: 100%;
                                     height: 88rpx;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    background-color: transparent;
-                                    font-size: 24rpx;
-                                    font-weight: normal;
                                     border-radius: 0;
+                                    background-color: transparent;
+                                    font-weight: normal;
+                                    font-size: 24rpx;
 
                                     &:active {
                                           background-color: whitesmoke;
@@ -142,13 +143,13 @@
                                           font-weight: bold;
 
                                           &::before {
-                                                content: '';
+                                                position: absolute;
+                                                left: 26%;
                                                 width: 12rpx;
                                                 height: 12rpx;
                                                 border-radius: 12rpx;
-                                                position: absolute;
-                                                left: 26%;
                                                 background-color: @color_main;
+                                                content: '';
                                           }
                                     }
                               }
@@ -157,26 +158,26 @@
             }
 
             .options_wrap {
-                  width: 100%;
-                  padding: 24rpx;
                   box-sizing: border-box;
+                  padding: 24rpx;
                   padding-bottom: calc(~'24rpx + 'env(safe-area-inset-bottom));
+                  width: 100%;
 
                   .btn_confirm {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
                         width: 100%;
                         height: 88rpx;
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
                         border-radius: 88rpx;
-                        font-size: 30rpx;
-                        line-height: 1;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         background-color: transparent;
                         background-color: @color_main;
                         color: white;
+                        font-size: 30rpx;
+                        line-height: 1;
 
                         &:active {
                               background-color: whitesmoke;

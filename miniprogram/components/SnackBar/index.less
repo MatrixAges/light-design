@@ -4,22 +4,22 @@
 @color_error: #E57373;
 
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1;
-      color: black;
 }
 
 .fixed_dialog_wrap {
-      .init();
-
       position: relative;
+
+      .init();
 
       .dialog {
             position: fixed;
             left: 0;
-            width: 100%;
-            padding: 18rpx;
             box-sizing: border-box;
+            padding: 18rpx;
+            width: 100%;
             transition: all ease 0.3s;
 
             &.cover {
@@ -56,12 +56,12 @@
             }
 
             .content_wrap {
-                  width: 100%;
-                  padding: 36rpx;
-                  box-sizing: border-box;
                   display: flex;
-                  justify-content: space-between;
                   align-items: center;
+                  justify-content: space-between;
+                  box-sizing: border-box;
+                  padding: 36rpx;
+                  width: 100%;
                   border-radius: 24rpx;
                   background-color: @color_main;
                   color: white;
@@ -93,19 +93,20 @@
                   }
 
                   .left {
-                        width: calc(~'100% - 120rpx');
-                        padding-right: 24rpx;
-                        box-sizing: border-box;
                         display: flex;
                         flex-direction: column;
+                        box-sizing: border-box;
+                        padding-right: 24rpx;
+                        width: calc(~'100% - 120rpx');
 
                         .title {
-                              font-size: 28rpx;
-                              line-height: 1;
                               overflow: hidden;
-                              -o-text-overflow: ellipsis;
                               text-overflow: ellipsis;
                               white-space: nowrap;
+                              font-size: 28rpx;
+                              line-height: 1;
+
+                              -o-text-overflow: ellipsis;
 
                               &.has_description {
                                     font-weight: bold;
@@ -113,36 +114,37 @@
                         }
 
                         .description {
-                              font-size: 24rpx;
-                              margin-top: 20rpx;
                               overflow: hidden;
-                              -o-text-overflow: ellipsis;
+                              margin-top: 20rpx;
                               text-overflow: ellipsis;
                               white-space: nowrap;
+                              font-size: 24rpx;
                               opacity: 0.4;
+
+                              -o-text-overflow: ellipsis;
                         }
                   }
 
                   .right {
                         .btn_confirm {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              margin: 0;
+                              padding: 0;
                               width: 120rpx;
                               height: 60rpx;
-                              padding: 0;
-                              margin: 0;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                              border-radius: 200rpx;
                               border: 2rpx solid white;
-                              color: white;
-                              font-size: 28rpx;
-                              font-weight: bold;
+                              border-radius: 200rpx;
                               background-color: @color_main;
+                              color: white;
+                              font-weight: bold;
+                              font-size: 28rpx;
                               transition: all ease 0.3s;
 
                               &:active {
-                                    transform: scale(1.05);
                                     filter: brightness(1.2);
+                                    transform: scale(1.05);
                               }
                         }
                   }

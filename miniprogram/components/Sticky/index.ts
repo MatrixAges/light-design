@@ -8,7 +8,6 @@ const target = '#sticky'
 
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^_/
 	},
 	properties: {

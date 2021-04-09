@@ -1,6 +1,5 @@
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|delay|timeout|timer_show|timer_hide)$/
 	},
 	properties: {

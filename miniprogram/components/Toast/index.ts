@@ -9,7 +9,7 @@ type Toast_IgetPositionStyle = { [key in Toast_position]: IPositionStyle }
 
 Component({
 	options: {
-		//@ts-ignore
+		
 		pureDataPattern: /^(visible|timer_duration|timer_close)$/
 	},
 	properties: {

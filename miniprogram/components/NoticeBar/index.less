@@ -4,13 +4,13 @@
       display: flex;
       align-items: center;
       box-sizing: border-box;
-      width: 100%;
       padding: 0 12rpx;
+      width: 100%;
 
       .left_wrap {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             width: 60rpx;
 
             .icon_notice {
@@ -20,9 +20,9 @@
       }
 
       .content {
-            width: calc(~'100% - 60rpx - 40rpx');
             box-sizing: border-box;
             padding: 0 8rpx;
+            width: calc(~'100% - 60rpx - 40rpx');
 
             .swiper {
                   height: @height;
@@ -30,11 +30,11 @@
                   &.horizontal {
                         .swiper_item {
                               .item {
-                                    width: auto;
                                     display: inline;
                                     overflow: visible;
                                     box-sizing: border-box;
                                     padding-left: 24rpx;
+                                    width: auto;
 
                                     &:nth-of-type(1){
                                           padding-left: 0;
@@ -48,14 +48,15 @@
                         height: 100%;
 
                         .item {
+                              display: -webkit-box;
+                              overflow: hidden;
+                              -webkit-box-orient: vertical;
                               width: 100%;
                               height: @height;
-                              display: -webkit-box;
-                              -webkit-box-orient: vertical;
-                              overflow: hidden;
-                              -webkit-line-clamp: 1;
                               font-size: 24rpx;
                               line-height: @height;
+
+                              -webkit-line-clamp: 1;
                         }
                   }
             }
@@ -63,8 +64,8 @@
 
       .right_wrap {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
+            justify-content: flex-end;
             width: 40rpx;
 
             .icon_right {

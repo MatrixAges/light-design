@@ -28,7 +28,6 @@ interface IList {
 
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|timer_close)$/
 	},
 	properties: {

@@ -1,6 +1,5 @@
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(type)$/
 	},
 	properties: {

@@ -20,7 +20,7 @@
 /miniprogram/components_es5
 *.zip
 *.lock
-*.private.config.json
+project.private.config.json
 
 # env
 .DS_Store

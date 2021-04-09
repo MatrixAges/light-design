@@ -10,7 +10,6 @@ interface ITime {
 
 Component({
       options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|showTwoHours|timeItems|days|startTime|endTime|duration|time_items_raw)$/
 	},
 	properties: {

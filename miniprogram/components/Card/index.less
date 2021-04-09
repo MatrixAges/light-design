@@ -1,19 +1,19 @@
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1.6;
-      color: black;
 }
 
 .card_wrap {
-      .init();
-      
       display: flex;
+      overflow: hidden;
       box-sizing: border-box;
       width: 100%;
-      background-color: white;
       border-radius: 0;
-      overflow: hidden;
+      background-color: white;
       transition: all ease 0.3s;
+
+      .init();
 
       &.bordered {
             border: 2rpx solid rgba(245, 245, 245, 0.72);

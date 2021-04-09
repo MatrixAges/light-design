@@ -8,7 +8,6 @@ type IgetPositionStyle = { [key in enum_position]: IPositionStyle }
 
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|timer_close)$/
 	},
 	properties: {

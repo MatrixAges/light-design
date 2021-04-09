@@ -4,9 +4,9 @@
 @color_error: #E57373;
 
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1.6;
-      color: black;
 }
 
 .fixed_dialog_wrap {
@@ -15,17 +15,17 @@
       .dialog {
             position: fixed;
             left: 0;
-            box-sizing: border-box;
             display: flex;
-            width: 100%;
             justify-content: center;
+            box-sizing: border-box;
+            width: 100%;
             transition: all ease 0.3s;
 
             .content_wrap {
-                  box-sizing: border-box;
                   display: flex;
-                  justify-content: center;
                   align-items: center;
+                  justify-content: center;
+                  box-sizing: border-box;
                   padding: 24rpx 30rpx;
                   border-radius: 100rpx;
                   background-color: @color_main;
@@ -34,11 +34,11 @@
                   line-height: 1;
 
                   .icon {
-                        @loading_size: 18;
-
+                        margin-right: 16rpx;
                         width:calc(~'@{loading_size}rpx * 2');
                         height: calc(~'@{loading_size}rpx * 2');
-                        margin-right: 16rpx;
+
+                        @loading_size: 18;
                   }
 
                   &.success {

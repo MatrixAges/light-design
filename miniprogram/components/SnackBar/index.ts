@@ -9,7 +9,6 @@ type SnackBar_IgetPositionStyle = { [key in SnackBar_position]: IPositionStyle }
 
 Component({
 	options: {
-		//@ts-ignore
 		pureDataPattern: /^(visible|closeable|timer_duration|timer_close)$/
 	},
 	properties: {

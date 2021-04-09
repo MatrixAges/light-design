@@ -8,9 +8,9 @@
 @radius_normal: 8rpx;
 
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1;
-      color: black;
 }
 
 .loading_image(@loading_size, @loading_color) {
@@ -24,30 +24,30 @@
 }
 
 .btn {
-      .init();
-
       position: initial;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
       width: auto;
       height: auto;
-      padding: 0;
-      margin: 0;
       text-align: center;
       font-weight: normal;
-      box-sizing: border-box;
+
+      .init();
 
       &::after {
             display: none;
       }
 
       &:not([size='mini']) {
-            width: auto;
-            height: auto;
+            margin: 0;
             min-width: auto;
             min-height: auto;
-            margin: 0;
+            width: auto;
+            height: auto;
       }
 
       .loading {
@@ -66,8 +66,8 @@
       }
 
       &.size_small {
-            font-size: 20rpx;
             height: 54rpx;
+            font-size: 20rpx;
             line-height: 1;
 
             &.mode_padding {
@@ -93,8 +93,8 @@
       }
 
       &.size_normal {
-            font-size: 26rpx;
             height: 64rpx;
+            font-size: 26rpx;
             line-height: 1;
 
             &.mode_padding {
@@ -120,8 +120,8 @@
       }
 
       &.size_large {
-            font-size: 30rpx;
             height: 80rpx;
+            font-size: 30rpx;
             line-height: 1;
 
             &.mode_padding {
@@ -158,27 +158,27 @@
       }
 
       &.type_border {
+            border: 2rpx solid @color_main;
             background-color: transparent;
             color: @color_main;
-            border: 2rpx solid @color_main;
       }
 
       &.type_default {
+            border: 2rpx solid whitesmoke;
             background-color: white;
             color: black;
-            border: 2rpx solid whitesmoke;
 
             &.ghost {
+                  border: none;
                   background-color: transparent;
                   color: black;
-                  border: none;
             }
       }
 
       &.type_dashed {
+            border: 2rpx dashed #eee;
             background-color: transparent;
             color: black;
-            border: 2rpx dashed #eee;
       }
 
       &.type_warning {
@@ -227,7 +227,7 @@
       }
 
       &.disabled {
-            pointer-events: none;
             opacity: 0.5;
+            pointer-events: none;
       }
 }

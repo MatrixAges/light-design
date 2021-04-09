@@ -18,7 +18,8 @@
             "pages/Text/index",
             "pages/Icon/index",
             "pages/NoticeBar/index",
-            "pages/Period/index"
+            "pages/Period/index",
+            "pages/Tab/index"
       ],
       "window": {
             "backgroundTextStyle": "light",
@@ -47,6 +48,8 @@
             "light-icon": "components/Icon/index",
             "light-notice-bar": "components/NoticeBar/index",
             "light-period": "components/Period/index",
+            "light-tab": "components/Tab/index",
+            "light-tab-item": "components/Tab/TabItem/index",
             "tips": "page_components/_Tips/index"
       }
 }

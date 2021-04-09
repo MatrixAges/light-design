@@ -1,0 +1,3 @@
+<view class="tab_item">
+      <slot></slot>
+</view>

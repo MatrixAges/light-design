@@ -1,27 +1,27 @@
 @radius_normal: 24rpx;
 
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1.6;
-      color: black;
 }
 
 .fixed_dialog_wrap {
-      .init();
-
-      width: 100vw;
-      height: 100vh;
       position: fixed;
       top: 0;
       left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      .init();
 
       .dialog_wrap {
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .mask {
                   position: absolute;
@@ -33,27 +33,27 @@
             }
 
             .dialog {
-                  width: 80vw;
-                  padding-bottom: 0;
-                  box-sizing: border-box;
                   position: relative;
                   display: flex;
-                  flex-direction: column;
+                  overflow: hidden;
                   align-items: center;
-                  transition: all ease 0.3s;
-                  transform-origin: center center;
+                  flex-direction: column;
+                  box-sizing: border-box;
+                  padding-bottom: 0;
+                  width: 80vw;
+                  border-radius: @radius_normal;
                   background-color: white;
                   color: black;
-                  border-radius: @radius_normal;
-                  overflow: hidden;
+                  transition: all ease 0.3s;
+                  transform-origin: center center;
 
                   &.bottom {
-                        width: 100vw;
                         position: absolute;
                         bottom: 0;
+                        width: 100vw;
                         border-radius: 40rpx;
-                        border-bottom-left-radius: 0;
                         border-bottom-right-radius: 0;
+                        border-bottom-left-radius: 0;
 
                         .options_wrap {
                               .options {
@@ -84,36 +84,37 @@
                   }
 
                   .icon_close {
-                        width: 36rpx;
-                        height: 36rpx;
-                        padding: 6rpx;
-                        border-radius: 32rpx;
-                        display: inline-block;
                         position: absolute;
                         top: 30rpx;
                         right: 30rpx;
-                        background-color: white;
+                        display: inline-block;
                         box-sizing: border-box;
+                        padding: 6rpx;
+                        width: 36rpx;
+                        height: 36rpx;
+                        border-radius: 32rpx;
+                        background-color: white;
 
                         .icon {
                               width: 100%;
                               height: 100%;
+                              background: black;
+
                               mask-repeat: no-repeat;
                               -webkit-mask-repeat: no-repeat;
                               mask-size: cover;
                               -webkit-mask-size: cover;
-                              background: black;
                               mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
                               -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/%3E%3C/svg%3E");
                         }
                   }
 
                   .content_wrap {
-                        width: 100%;
-                        box-sizing: border-box;
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
+                        flex-direction: column;
+                        box-sizing: border-box;
+                        width: 100%;
 
                         .title {
                               padding-top: 48rpx;
@@ -122,38 +123,38 @@
                         }
 
                         .content {
-                              width: 100%;
+                              display: flex;
+                              align-items: center;
+                              flex-direction: column;
+                              box-sizing: border-box;
                               padding: 0 36rpx;
                               padding-bottom: 80rpx;
-                              box-sizing: border-box;
-                              display: flex;
-                              flex-direction: column;
-                              align-items: center;
+                              width: 100%;
                               font-size: 30rpx;
                         }
 
                   }
 
                   .options_wrap {
-                        width: 100%;
                         box-sizing: border-box;
+                        width: 100%;
 
                         .options {
-                              width: 100%;
-                              box-sizing: border-box;
                               display: flex;
                               justify-content: space-between;
+                              box-sizing: border-box;
+                              width: 100%;
 
                               &.cancelUnvisible {
+                                    align-items: center;
                                     flex-direction: column-reverse;
                                     justify-content: start;
-                                    align-items: center;
 
                                     .btn {
                                           &.btn_cancel {
                                                 display: none;
-                                                color: #aaa;
                                                 background-color: transparent;
+                                                color: #aaa;
 
                                                 &:active {
                                                       background-color: transparent;
@@ -167,29 +168,29 @@
                               }
 
                               .btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    box-sizing: border-box;
+                                    margin: 0;
+                                    padding: 0;
                                     width: 50%;
                                     height: 90rpx;
-                                    padding: 0;
-                                    margin: 0;
-                                    box-sizing: border-box;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    font-size: 30rpx;
-                                    font-weight: normal;
-                                    line-height: 1;
-                                    letter-spacing: 2rpx;
-                                    background-color: transparent;
-                                    border-radius: 0;
                                     border-top: 2rpx solid whitesmoke;
+                                    border-radius: 0;
+                                    background-color: transparent;
+                                    letter-spacing: 2rpx;
+                                    font-weight: normal;
+                                    font-size: 30rpx;
+                                    line-height: 1;
 
                                     &::after {
                                           display: none;
                                     }
 
                                     &.btn_cancel {
-                                          color: rgba(0, 0, 0, 0.8);
                                           border-right: 2rpx solid whitesmoke;
+                                          color: rgba(0, 0, 0, 0.8);
 
                                           &:active {
                                                 background-color: whitesmoke;
@@ -204,16 +205,17 @@
                                           }
 
                                           .icon_loading {
+                                                display: flex;
+                                                margin-right: 12rpx;
                                                 width: 42rpx;
                                                 height: 42rpx;
-                                                margin-right: 12rpx;
+                                                background: black;
                                                 vertical-align: middle;
-                                                display: flex;
+
                                                 mask-repeat: no-repeat;
                                                 -webkit-mask-repeat: no-repeat;
                                                 mask-size: cover;
                                                 -webkit-mask-size: cover;
-                                                background: black;
                                                 mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='white' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
                                                 -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50' xml:space='preserve'%3E %3Cpath fill='black' d='M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z' transform='rotate(275.098 25 25)'%3E %3CanimateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'%3E%3C/animateTransform%3E %3C/path%3E %3C/svg%3E");
 
@@ -223,11 +225,11 @@
                                                 position: absolute;
                                                 top: 0;
                                                 left: 0;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
                                                 width: 100%;
                                                 height: 100%;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
                                           }
                                     }
                               }

@@ -1,25 +1,25 @@
 .init {
+      color: black;
       font-size: 30rpx;
       line-height: 1.6;
-      color: black;
 }
 
 .fixed_dialog_wrap {
-      .init();
-      
       position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
 
+      .init();
+
       .dialog_wrap {
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .mask {
                   position: absolute;
@@ -31,13 +31,13 @@
             }
 
             .dialog {
-                  width: 80vw;
-                  box-sizing: border-box;
-                  border-radius: 24rpx;
                   display: flex;
-                  flex-direction: column;
-                  transition: all ease 0.3s;
                   overflow: hidden;
+                  flex-direction: column;
+                  box-sizing: border-box;
+                  width: 80vw;
+                  border-radius: 24rpx;
+                  transition: all ease 0.3s;
 
                   .dialog_items {
                         .swiper {
@@ -55,34 +55,34 @@
                   }
 
                   .footer {
-                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                         box-sizing: border-box;
                         padding: 24rpx;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        width: 100%;
                         background-color: white;
 
                         .title {
                               width: calc(~'100% - 288rpx');
-                              font-size: 30rpx;
                               color: black;
+                              font-size: 30rpx;
                         }
 
                         .right_options {
                               display: flex;
 
                               .btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    box-sizing: border-box;
+                                    margin: 0;
+                                    padding: 0;
                                     width: 120rpx;
                                     height: 60rpx;
-                                    box-sizing: border-box;
-                                    padding: 0;
-                                    margin: 0;
-                                    border-radius: 60rpx;
                                     border: 2rpx solid black;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
+                                    border-radius: 60rpx;
                                     background-color: transparent;
                                     font-size: 24rpx;
                                     line-height: 1;
