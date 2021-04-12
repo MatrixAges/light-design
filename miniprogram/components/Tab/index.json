@@ -1,4 +1,6 @@
 {
       "component": true,
-      "usingComponents": {}
+      "usingComponents": {
+            "local-sticky":"./Sticky/index"
+      }
 }

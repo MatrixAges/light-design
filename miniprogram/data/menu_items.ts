@@ -121,7 +121,8 @@ export default <Array<IMenuItems>>[
 			},
 			{
 				name: 'Tab',
-                        description: '选项卡'
+                        description: '选项卡',
+                        active: true
 			},
 			{
 				name: 'Table',

@@ -1,7 +1,8 @@
 Page({
       data: {
             visible_default: false,
-            titles: [ '标签1', '标签2', '标签3', '标签4', '标签5', '标签6', '标签7', '标签8', '标签9', '标签10', ]
+            titles: [ 'Tab 1', 'Tab2', 'Tab 3', 'Tab 4', 'Tab 5', 'Tab 6', 'Tab 7', 'Tab 8', 'Tab 9', 'Tab 10', ],
+            titles_1: [ 'this is tab title', 'Tab 2', 'Tab 3' ],
       },
       onOption(e: any) {
             const _that = this

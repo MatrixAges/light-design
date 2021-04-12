@@ -11,7 +11,214 @@
                                     wx:for="{{titles}}"
                                     wx:key="index"
                                     title="{{item}}"
-                              >{{item}}</light-tab-item>
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">固定导航</text>
+                  <text class="attr">sticky</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              sticky
+                              navZIndex="{{100}}"
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">懒加载</text>
+                  <text class="attr">lazyload</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              lazyload
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">内容保持</text>
+                  <text class="attr">persist</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              lazyload
+                              persist
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">标题不定长</text>
+                  <text class="attr">title</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab titles="{{titles}}">
+                              <light-tab-item
+                                    wx:for="{{titles_1}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">内容不地定高</text>
+                  <text class="attr">content</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              lazyload
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view
+                                          class="content_item w_100 flex justify_center align_center"
+                                          style="height: {{(index+1)*20}}px;"
+                                    >{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">指示条</text>
+                  <text class="attr">activeLine</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              activeLine
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view
+                                          class="content_item w_100 flex justify_center align_center"
+                                          style="margin-top: 30rpx;"
+                                    >{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">滑动内容切换</text>
+                  <text class="attr">swiper</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              swiper
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">垂直显示</text>
+                  <text class="attr">vertical</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              vertical
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">禁用选项</text>
+                  <text class="attr">disabled</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab titles="{{titles}}">
+                              <light-tab-item title="Tab 1">
+                                    <view class="content_item w_100 flex justify_center align_center">Tab 1内容</view>
+                              </light-tab-item>
+                              <light-tab-item title="Tab 2">
+                                    <view class="content_item w_100 flex justify_center align_center">Tab 2内容</view>
+                              </light-tab-item>
+                              <light-tab-item
+                                    title="Tab 3"
+                                    disabled
+                              >
+                                    <view class="content_item w_100 flex justify_center align_center">Tab 3内容</view>
+                              </light-tab-item>
                         </light-tab>
                   </view>
             </view>

@@ -1,26 +1,56 @@
-<view class="tab_wrap">
+<view
+      id="tab_wrap"
+      class="tab_wrap"
+      style="position:{{zIndex?'relative':'unset'}}; z-index: {{zIndex}};"
+>
       <view class="tab">
-            <scroll-view
-                  class="scroller"
-                  scroll-x="{{!vertical}}"
-                  scroll-y="{{vertical}}"
-                  scroll-into-view="item_{{current_tab}}"
-                  scroll-with-animation
+            <local-sticky
+                  disabled="{{!sticky}}"
+                  offsetTop="{{offsetTop}}"
+                  zIndex="{{navZIndex}}"
             >
-                  <div
-                        class="bar_item_wrap"
-                        catchtap="onBarItem"
+                  <scroll-view
+                        class="scroller"
+                        scroll-x="{{!vertical}}"
+                        scroll-y="{{vertical}}"
+                        scroll-into-view="item_{{current_tab}}"
+                        scroll-with-animation
+                        enable-flex
+                        style="{{scrollBarStyle}}"
+                        wx:if="{{visibleBar}}"
                   >
                         <view
-                              id="item_{{index}}"
-                              class="bar_item"
-                              wx:for="{{titles}}"
-                              wx:key="index"
-                              mark:index="{{index}}"
-                        >{{item}}</view>
-                  </div>
-            </scroll-view>
-            <view class="content_wrap">
+                              class="bar_item_wrap"
+                              catchtap="onBarItem"
+                        >
+                              <view
+                                    class="active_line"
+                                    style="width: calc({{bar_items[current].width}}px - {{current===bar_items.length-1?0:48}}rpx);left:calc({{bar_items[current].left}}px - {{bar_items[0].left}}px);"
+                                    wx:if="{{activeLine}}"
+                              ></view>
+                              <view
+                                    id="item_{{index}}"
+                                    class="bar_item {{current===index?'active':''}} {{item.disabled?'disabled':''}}"
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    mark:index="{{index}}"
+                                    style="{{titleStyle}};{{current===index?activeStyle:''}}"
+                              >{{item.text}}</view>
+                        </view>
+                  </scroll-view>
+            </local-sticky>
+            <view
+                  class="bottom_line"
+                  wx:if="{{visibleBar&&bordered}}"
+            ></view>
+            <view
+                  class="content_wrap"
+                  bind:touchstart="onTouchStart"
+                  bind:touchmove="onTouchMove"
+                  bind:touchend="onTouchEnd"
+                  bind:touchcancel="onTouchEnd"
+                  style="width: {{titles.length?100*titles.length:1000}}%;transform: translateX(-{{current*100/titles.length}}%);{{contentStyle}};"
+            >
                   <slot></slot>
             </view>
       </view>
