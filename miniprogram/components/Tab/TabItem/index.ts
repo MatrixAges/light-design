@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const Tab = '../index'
 
 Component({
@@ -13,19 +15,27 @@ Component({
             index: null,
             rendered: false
       },
+      tab: {} as WechatMiniprogram.Component.TrivialInstance,
       methods: {
+            reset() {
+                  this.setData({
+                        current: null,
+                        index: null,
+                        rendered: false
+                  })
+            },
             updateCurrent() {
                   const { index, rendered } = this.data
-                  const tab = this.getRelationNodes(Tab)[ 0 ]
-                  const { current } = tab.__data__
+                  const { current, persist } = this.tab.__data__
 
-                  this.setData({ current })
-
-                  if (rendered) return
-
-                  this.setData({
-                        rendered: index === current
-                  })
+                  if (persist && rendered) {
+                        this.setData({ current })
+                  } else {
+                        this.setData({
+                              current,
+                              rendered: index ? index === current : true
+                        })
+                  }
             }
       },
       lifetimes: {
@@ -34,6 +44,8 @@ Component({
                   const { titles, lazyload } = tab.__data__
                   const index = titles.findIndex((item: { text: string, disabled: boolean }) => item.text === this.data.title)
 
+                  this.tab = tab
+                  
                   this.setData({ index })
 
                   if (!lazyload) this.setData({ rendered: true })

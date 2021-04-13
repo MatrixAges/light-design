@@ -1,13 +1,14 @@
 <view
       id="tab_wrap"
       class="tab_wrap"
-      style="position:{{zIndex?'relative':'unset'}}; z-index: {{zIndex}};"
+      style="position:{{zIndex?'relative':'unset'}}; z-index: {{zIndex}};{{rootStyle}}"
 >
       <view class="tab">
             <local-sticky
                   disabled="{{!sticky}}"
                   offsetTop="{{offsetTop}}"
                   zIndex="{{navZIndex}}"
+                  wx:if="{{visibleBar}}"
             >
                   <scroll-view
                         class="scroller"
@@ -16,8 +17,10 @@
                         scroll-into-view="item_{{current_tab}}"
                         scroll-with-animation
                         enable-flex
-                        style="{{scrollBarStyle}}"
-                        wx:if="{{visibleBar}}"
+                        enhanced
+                        fast-deceleration
+                        show-scrollbar="{{false}}"
+                        style="{{scrollBarStyle}};border-bottom:{{bordered?'2rpx solid whitesmoke':'none'}}"
                   >
                         <view
                               class="bar_item_wrap"
@@ -25,7 +28,7 @@
                         >
                               <view
                                     class="active_line"
-                                    style="width: calc({{bar_items[current].width}}px - {{current===bar_items.length-1?0:48}}rpx);left:calc({{bar_items[current].left}}px - {{bar_items[0].left}}px);"
+                                    style="width: calc({{bar_items[current].width}}px - 48rpx);left:calc({{bar_items[current].left}}px - {{bar_items[0].left}}px + 24rpx);"
                                     wx:if="{{activeLine}}"
                               ></view>
                               <view
@@ -55,3 +58,5 @@
             </view>
       </view>
 </view>
+
+<view></view>

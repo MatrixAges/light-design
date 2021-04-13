@@ -2,20 +2,24 @@
 
 .init {
       color: black;
-      font-size: 30rpx;
+      font-size: 26rpx;
       line-height: 1.6;
 }
 
 .tab_wrap {
+      display: flex;
+      box-sizing: border-box;
       width: 100%;
 
       .init();
 
       .tab {
             overflow-x: hidden;
+            box-sizing: border-box;
             width: 100%;
 
             .scroller {
+                  width: 100%;
                   background-color: white;
 
                   ::-webkit-scrollbar {
@@ -27,7 +31,7 @@
                   .bar_item_wrap {
                         position: relative;
                         display: flex;
-                        padding-bottom: 24rpx;
+                        padding: 24rpx 0;
                         width: 100%;
                         white-space: nowrap;
 
@@ -43,14 +47,10 @@
 
                         .bar_item {
                               display: inline-block;
-                              padding-right: 48rpx;
+                              padding:0 24rpx;
                               color: #999;
                               line-height: 1;
                               transition: all ease 0.3s;
-
-                              &:last-child {
-                                    padding-right: 0;
-                              }
 
                               &.active {
                                     color: black;

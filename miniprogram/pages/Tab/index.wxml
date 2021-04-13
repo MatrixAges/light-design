@@ -6,7 +6,10 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <light-tab titles="{{titles}}">
+                        <light-tab
+                              titles="{{titles}}"
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+                        >
                               <light-tab-item
                                     wx:for="{{titles}}"
                                     wx:key="index"
@@ -29,6 +32,7 @@
                               titles="{{titles}}"
                               sticky
                               navZIndex="{{100}}"
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -51,29 +55,7 @@
                         <light-tab
                               titles="{{titles}}"
                               lazyload
-                        >
-                              <light-tab-item
-                                    wx:for="{{titles}}"
-                                    wx:key="index"
-                                    title="{{item}}"
-                              >
-                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-                              </light-tab-item>
-                        </light-tab>
-                  </view>
-            </view>
-      </view>
-      <view class="example_item w_100 border_box flex">
-            <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">内容保持</text>
-                  <text class="attr">persist</text>
-            </view>
-            <view class="examples flex flex_wrap">
-                  <view class="example w_100">
-                        <light-tab
-                              titles="{{titles}}"
-                              lazyload
-                              persist
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -93,7 +75,10 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <light-tab titles="{{titles}}">
+                        <light-tab
+                              titles="{{titles}}"
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+                        >
                               <light-tab-item
                                     wx:for="{{titles_1}}"
                                     wx:key="index"
@@ -107,7 +92,7 @@
       </view>
       <view class="example_item w_100 border_box flex">
             <view class="title_wrap w_100 border_box flex flex_column">
-                  <text class="title">内容不地定高</text>
+                  <text class="title">内容不定高</text>
                   <text class="attr">content</text>
             </view>
             <view class="examples flex flex_wrap">
@@ -115,6 +100,7 @@
                         <light-tab
                               titles="{{titles}}"
                               lazyload
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -123,7 +109,34 @@
                               >
                                     <view
                                           class="content_item w_100 flex justify_center align_center"
-                                          style="height: {{(index+1)*20}}px;"
+                                          style="height: {{(index*0.1+1)*300}}rpx;"
+                                    >{{item}}内容</view>
+                              </light-tab-item>
+                        </light-tab>
+                  </view>
+            </view>
+      </view>
+      <view class="example_item w_100 border_box flex">
+            <view class="title_wrap w_100 border_box flex flex_column">
+                  <text class="title">内容保持</text>
+                  <text class="attr">persist</text>
+            </view>
+            <view class="examples flex flex_wrap">
+                  <view class="example w_100">
+                        <light-tab
+                              titles="{{titles}}"
+                              lazyload
+                              persist
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+                        >
+                              <light-tab-item
+                                    wx:for="{{titles}}"
+                                    wx:key="index"
+                                    title="{{item}}"
+                              >
+                                    <view
+                                          class="content_item w_100 flex justify_center align_center"
+                                          style="height: {{(index*0.1+1)*300}}rpx;"
                                     >{{item}}内容</view>
                               </light-tab-item>
                         </light-tab>
@@ -140,6 +153,7 @@
                         <light-tab
                               titles="{{titles}}"
                               activeLine
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -165,6 +179,7 @@
                         <light-tab
                               titles="{{titles}}"
                               swiper
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -187,6 +202,7 @@
                         <light-tab
                               titles="{{titles}}"
                               vertical
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
                         >
                               <light-tab-item
                                     wx:for="{{titles}}"
@@ -206,18 +222,21 @@
             </view>
             <view class="examples flex flex_wrap">
                   <view class="example w_100">
-                        <light-tab titles="{{titles}}">
+                        <light-tab
+                              titles="{{titles}}"
+                              rootStyle="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+                        >
                               <light-tab-item title="Tab 1">
-                                    <view class="content_item w_100 flex justify_center align_center">Tab 1内容</view>
+                                    <view class="content_item w_100 flex justify_center align_center">新闻</view>
                               </light-tab-item>
                               <light-tab-item title="Tab 2">
-                                    <view class="content_item w_100 flex justify_center align_center">Tab 2内容</view>
+                                    <view class="content_item w_100 flex justify_center align_center">视频</view>
                               </light-tab-item>
                               <light-tab-item
                                     title="Tab 3"
                                     disabled
                               >
-                                    <view class="content_item w_100 flex justify_center align_center">Tab 3内容</view>
+                                    <view class="content_item w_100 flex justify_center align_center">图片</view>
                               </light-tab-item>
                         </light-tab>
                   </view>
