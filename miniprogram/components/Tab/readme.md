@@ -1,111 +1,282 @@
 <Description>
       <Text type='desc'>
-           消息提示是一种轻量的内容提示组件，由一个状态图标和文字内容组成。
+           选项卡由导航栏和内容区域组成，用户点击导航栏可实现内容的切换，也支持滑动内容区域切换内容，选项卡支持懒加载，在一些场景下可作为小型路由使用。
       </Text>
       <Text type='title'>使用场景</Text>
       <ul>
-            <li>展示按钮点击之后触发的信息反馈。</li>
-            <li>展示应用运行时的错误信息。</li>
+            <li>商城的订单中心展示订单相关信息。</li>
+            <li>作为页面导航使用。</li>
       </ul>
 </Description>
 
 | 属性 | 说明 | 类型 | 默认值 | 必填 | 版本 |
 | - | - | - | - | - | - |
-| visible | 是否可见 | boolean | false | 否 | 1.0.0 |
-| position | 位置 | 'top' or 'bottom' | 'bottom' | 否 | 1.0.0 |
-| type | 类型 | Toast_type | '' | 否 | 1.0.0 |
-| useColor | 背景色 | boolean | false | 否 | 1.0.0 |
-| color | 颜色 | string | '' | 否 | 1.0.0 |
-| bgColor | 背景颜色 | string | '' | 否 | 1.0.0 |
-| title | 标题 | string | '' | 否 | 1.0.0 |
-| duration | 关闭时间 | number | 3000 | 否 | 1.0.0 |
-| zIndex | 层级 | number | 100 | 否 | 1.0.0 |
+| current | 当前内容 | number | 0 | 否 | 1.0.0 |
+| vertical | 垂直显示 | boolean | false | 否 | 1.0.0 |
+| position | 导航位置 | 'left' | 'right' |  | 否 | 1.0.0 |
+| heightOfBar | 导航高度 | string |  | 否 | 1.0.0 |
+| heightOfContent | 内容高度 | string |  | 否 | 1.0.0 |
+| bordered | 分隔线条 | boolean | false | 否 | 1.0.0 |
+| sticky | 固定导航 | boolean | false | 否 | 1.0.0 |
+| offsetTop | 固定位置 | number | 0 | 否 | 1.0.0 |
+| navZIndex | 导航层级 | number |  | 否 | 1.0.0 |
+| lazyload | 懒加载 | boolean | false | 否 | 1.0.0 |
+| activeLine | 指示线条 | boolean | false | 否 | 1.0.0 |
+| swiper | 滑动切换 | boolean | false | 否 | 1.0.0 |
+| zIndex | 层级 | number |  | 否 | 1.0.0 |
+| styleOfRoot | 根节点样式 | string | '' | 否 | 1.0.0 |
+| styleOfTitle | 标题样式 | string | '' | 否 | 1.0.0 |
+| styleOfActive | 标题激活样式 | string | '' | 否 | 1.0.0 |
+| styleOfBar | 导航样式 | string | '' | 否 | 1.0.0 |
+| styleOfContent | 内容样式 | string | '' | 否 | 1.0.0 |
+| visibleBar | 导航可见 | boolean | true | 否 | 1.0.0 |
+| persist | 内容保持 | boolean | false | 否 | 1.0.0 |
+| AnimationOfBar | 导航动画 | boolean | true | 否 | 1.0.0 |
+| AnimationOfContent | 内容动画 | boolean | true | 否 | 1.0.0 |
 
-<Title>types</Title>
+<Title>TabItem</Title>
 
-```typescript
-type Toast_type = '' | 'success' | 'warning' | 'error'
-```
+| 值 | 说明 | 版本 |
+| - | - | - |
+| title | 标题 | 1.0.0 |
+| disabled | 是否禁用 | 1.0.0 |
 
 <Title>默认效果</Title>
 
 ```html
-<light-toast
-      visible="{{visible_default}}"
-      title="default Toast"
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
 ```
 
-<Title>顶部弹出</Title>
+<Title>垂直显示</Title>
 
 ```html
-<light-toast
-      visible="{{visible_position}}"
-      title="default Toast"
-      position="top"
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      vertical
+      heightOfBar="300rpx"
+      heightOfContent="400rpx"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
 ```
 
-<Title>自定义颜色</Title>
+<Title>垂直右边</Title>
 
 ```html
-<light-toast
-      visible="{{visible_custom}}"
-      title="default Toast"
-      color="white"
-      bgColor="linear-gradient(to right,red,blue)"
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      vertical
+      activeLine
+      bordered
+      position="right"
+      heightOfBar="300rpx"
+      heightOfContent="400rpx"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
 ```
 
-<Title>关闭时间</Title>
+<Title>固定导航</Title>
 
 ```html
-<light-toast
-      visible="{{visible_duration}}"
-      title="default Toast"
-      duration="{{1000}}"
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      sticky
+      navZIndex="{{100}}"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
 ```
 
-<Title>设定类型</Title>
+<Title>标题不定长</Title>
 
 ```html
-<light-toast
-      visible="{{visible_success}}"
-      title="success Toast"
-      type="success"
-></light-toast>
-<light-toast
-      visible="{{visible_warning}}"
-      title="warning Toast"
-      type="warning"
-></light-toast>
-<light-toast
-      visible="{{visible_error}}"
-      title="error Toast"
-      type="error"
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles_1}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
 ```
 
-<Title>背景色</Title>
+<Title>懒加载</Title>
 
 ```html
-<light-toast
-      visible="{{visible_useColor_success}}"
-      title="success Toast"
-      type="success"
-      useColor
-></light-toast>
-<light-toast
-      visible="{{visible_useColor_warning}}"
-      title="warning Toast"
-      type="warning"
-      useColor
-></light-toast>
-<light-toast
-      visible="{{visible_useColor_error}}"
-      title="error Toast"
-      type="error"
-      useColor
-></light-toast>
+<light-tab
+      titles="{{titles}}"
+      lazyload
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>内容不定高</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      lazyload
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view
+                  class="content_item w_100 flex justify_center align_center"
+                  style="height: {{(index*0.1+1)*300}}rpx;"
+            >{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>内容保持</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      lazyload
+      persist
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view
+                  class="content_item w_100 flex justify_center align_center"
+                  style="height: {{(index*0.1+1)*300}}rpx;"
+            >{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>指示条</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      activeLine
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view
+                  class="content_item w_100 flex justify_center align_center"
+                  style="margin-top: 30rpx;"
+            >{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>分隔线条</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      activeLine
+      bordered
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view
+                  class="content_item w_100 flex justify_center align_center"
+                  style="margin-top: 30rpx;"
+            >{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>滑动内容切换</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      swiper
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item
+            wx:for="{{titles}}"
+            wx:key="index"
+            title="{{item}}"
+      >
+            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+      </light-tab-item>
+</light-tab>
+```
+
+<Title>禁用选项</Title>
+
+```html
+<light-tab
+      titles="{{titles}}"
+      styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
+>
+      <light-tab-item title="Tab 1">
+            <view class="content_item w_100 flex justify_center align_center">新闻</view>
+      </light-tab-item>
+      <light-tab-item title="Tab 2">
+            <view class="content_item w_100 flex justify_center align_center">视频</view>
+      </light-tab-item>
+      <light-tab-item
+            title="Tab 3"
+            disabled
+      >
+            <view class="content_item w_100 flex justify_center align_center">图片</view>
+      </light-tab-item>
+</light-tab>
 ```

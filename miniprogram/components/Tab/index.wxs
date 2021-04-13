@@ -1,0 +1,75 @@
+function px( str ) {
+      return str + 'px'
+}
+
+function calc( str ) {
+      return 'calc(' + str + ')'
+}
+
+function add( a, b ) {
+      return a + ' + ' + b
+}
+
+function reduce( a, b ) {
+      return a + ' - ' + b
+}
+
+function getStylesOfActiveLine( props ) {
+      var styles = ''
+
+      if ( !props.bar_items.length ) return ''
+
+      function getSize( param ) {
+            return ';' + param + ':' + calc(
+                  reduce(
+                        px( props.bar_items[ props.current ][ param ] ),
+                        '48rpx'
+                  )
+            )
+      }
+
+      function getPosition( param ) {
+            return ';' + param + ':' + calc(
+                  add(
+                        reduce(
+                              px( props.bar_items[ props.current ][ param ] ),
+                              px( props.bar_items[ 0 ][ param ] )
+                        ),
+                        '24rpx'
+                  )
+            )
+      }
+
+      if ( !props.vertical ) {
+            styles += getSize( 'width' )
+            styles += getPosition( 'left' )
+      } else {
+            styles += getSize( 'height' )
+            styles += getPosition( 'top' )
+      }
+
+      return styles
+}
+
+function getStylesOfContentWrap( props ) {
+      var styles = ''
+
+      if ( !props.vertical ) {
+            if ( props.titles.length ) styles += ';width:' + 100 * props.titles.length + '%'
+            if ( !props.titles.length ) styles += ';width:' + 1000 + '%'
+
+            styles += ';transform:translateX(-' + props.current * 100 / props.titles.length + '%)'
+      } else {
+            if ( props.titles.length ) styles += ';height:' + 100 * props.titles.length + '%'
+            if ( !props.titles.length ) styles += ';height:' + 1000 + '%'
+
+            styles += ';transform:translateY(-' + props.current * 100 / props.titles.length + '%)'
+      }
+
+      return styles
+}
+
+module.exports = {
+      getStylesOfActiveLine: getStylesOfActiveLine,
+      getStylesOfContentWrap: getStylesOfContentWrap
+}

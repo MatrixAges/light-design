@@ -33,5 +33,5 @@ module.exports = [
 		test: /\.json$/,
 		type: 'javascript/auto',
 		use: [ fileLoader('[path][name].[ext]') ]
-      }
+	}
 ]

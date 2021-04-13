@@ -26,7 +26,7 @@ Component({
             },
             updateCurrent() {
                   const { index, rendered } = this.data
-                  const { current, persist } = this.tab.__data__
+                  const { current, persist, lazyload } = this.tab.__data__
 
                   if (persist && rendered) {
                         this.setData({ current })
@@ -45,12 +45,14 @@ Component({
                   const index = titles.findIndex((item: { text: string, disabled: boolean }) => item.text === this.data.title)
 
                   this.tab = tab
-                  
+
                   this.setData({ index })
 
-                  if (!lazyload) this.setData({ rendered: true })
-
-                  this.updateCurrent()
+                  if (lazyload) {
+                        this.updateCurrent()
+                  } else {
+                        this.setData({ rendered: true })
+                  }
             }
       }
 })

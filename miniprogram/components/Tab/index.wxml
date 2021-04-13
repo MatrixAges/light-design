@@ -1,9 +1,17 @@
+<wxs
+      src="./index.wxs"
+      module="wxs"
+></wxs>
+
 <view
       id="tab_wrap"
       class="tab_wrap"
-      style="position:{{zIndex?'relative':'unset'}}; z-index: {{zIndex}};{{rootStyle}}"
+      style="position: {{zIndex?'relative':'unset'}}; z-index: {{zIndex}};{{styleOfRoot}}"
 >
-      <view class="tab">
+      <view
+            class="tab {{vertical?'vertical':''}} {{position}}"
+            style="{{vertical?'height:'+heightOfContent:''}};"
+      >
             <local-sticky
                   disabled="{{!sticky}}"
                   offsetTop="{{offsetTop}}"
@@ -15,12 +23,12 @@
                         scroll-x="{{!vertical}}"
                         scroll-y="{{vertical}}"
                         scroll-into-view="item_{{current_tab}}"
-                        scroll-with-animation
+                        scroll-with-animation="{{AnimationOfBar}}"
                         enable-flex
                         enhanced
                         fast-deceleration
                         show-scrollbar="{{false}}"
-                        style="{{scrollBarStyle}};border-bottom:{{bordered?'2rpx solid whitesmoke':'none'}}"
+                        style="{{vertical?'height:'+heightOfBar:''}};{{styleOfBar}};"
                   >
                         <view
                               class="bar_item_wrap"
@@ -28,7 +36,7 @@
                         >
                               <view
                                     class="active_line"
-                                    style="width: calc({{bar_items[current].width}}px - 48rpx);left:calc({{bar_items[current].left}}px - {{bar_items[0].left}}px + 24rpx);"
+                                    style="{{wxs.getStylesOfActiveLine({bar_items,current,vertical})}}"
                                     wx:if="{{activeLine}}"
                               ></view>
                               <view
@@ -37,26 +45,25 @@
                                     wx:for="{{titles}}"
                                     wx:key="index"
                                     mark:index="{{index}}"
-                                    style="{{titleStyle}};{{current===index?activeStyle:''}}"
+                                    style="{{styleOfTitle}};{{current===index?styleOfActive:''}}"
                               >{{item.text}}</view>
                         </view>
                   </scroll-view>
             </local-sticky>
             <view
-                  class="bottom_line"
+                  class="scroll_line"
                   wx:if="{{visibleBar&&bordered}}"
+                  style="{{vertical?'height:'+heightOfBar:''}}"
             ></view>
             <view
-                  class="content_wrap"
+                  class="content_wrap {{AnimationOfContent?'':'no_animation'}} {{vertical?'vertical':''}}"
                   bind:touchstart="onTouchStart"
                   bind:touchmove="onTouchMove"
                   bind:touchend="onTouchEnd"
                   bind:touchcancel="onTouchEnd"
-                  style="width: {{titles.length?100*titles.length:1000}}%;transform: translateX(-{{current*100/titles.length}}%);{{contentStyle}};"
+                  style="{{wxs.getStylesOfContentWrap({titles,current,vertical})}};{{styleOfContent}};"
             >
                   <slot></slot>
             </view>
       </view>
 </view>
-
-<view></view>
