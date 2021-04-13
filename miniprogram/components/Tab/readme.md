@@ -45,7 +45,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
       <light-tab-item
@@ -62,7 +61,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       vertical
       heightOfBar="300rpx"
       heightOfContent="400rpx"
@@ -82,7 +80,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       vertical
       activeLine
       bordered
@@ -105,7 +102,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       sticky
       navZIndex="{{100}}"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
@@ -124,7 +120,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
       <light-tab-item
@@ -141,7 +136,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       lazyload
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
@@ -159,7 +153,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       lazyload
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
@@ -180,7 +173,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       lazyload
       persist
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
@@ -202,7 +194,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       activeLine
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
@@ -223,7 +214,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       activeLine
       bordered
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
@@ -245,7 +235,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       swiper
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
@@ -263,7 +252,6 @@
 
 ```html
 <light-tab
-      titles="{{titles}}"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
       <light-tab-item title="Tab 1">
