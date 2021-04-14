@@ -6,7 +6,7 @@
 <view
       id="sticky"
       class="sticky_wrap"
-      style="{{wxs.getWrapStyles({fixed,height,zIndex})}}"
+      style="{{wxs.getWrapStyles({fixed,height,zIndex,disabled})}}"
 >
       <view
             class="{{fixed?'fixed':''}}"

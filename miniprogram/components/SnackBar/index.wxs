@@ -1,18 +1,18 @@
-function formatName (name){
-	return name.substring(0, 5)
+function formatName( name ) {
+      return name.substring( 0, 5 )
 }
 
-function getContentStyles (props){
-	var styles = ''
+function getContentStyles( props ) {
+      var styles = ''
 
-	if (props.cover) styles += ';border-radius:0'
-	if (props.color) styles += ';color:' + props.color
-	if (props.bgColor) styles += ';background:' + props.bgColor
+      if ( props.cover ) styles += ';border-radius:0'
+      if ( props.color ) styles += ';color:' + props.color
+      if ( props.bgColor ) styles += ';background:' + props.bgColor
 
-	return styles
+      return styles
 }
 
 module.exports = {
-	formatName: formatName,
-	getContentStyles: getContentStyles
+      formatName: formatName,
+      getContentStyles: getContentStyles
 }

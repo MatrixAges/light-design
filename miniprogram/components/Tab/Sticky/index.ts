@@ -1,12 +1,8 @@
 // copy from we-ui component Sticky 😁
 
-type BoundingClientRect = WechatMiniprogram.BoundingClientRectCallbackResult
-type IntersectionObserver = WechatMiniprogram.IntersectionObserver
-type NodesRef = WechatMiniprogram.NodesRef
-
 const target = '#sticky'
 
-Component({
+Component( {
       options: {
             pureDataPattern: /^_/
       },
@@ -45,127 +41,127 @@ Component({
             _attached: boolean
             _relativeTop: number
             _containerHeight: number
-            _container: (() => NodesRef) | null
-            _contentObserver: IntersectionObserver | null
-            _containerObserver: IntersectionObserver | null
+            _container: ( () => WechatMiniprogram.NodesRef ) | null
+            _contentObserver: WechatMiniprogram.IntersectionObserver | null
+            _containerObserver: WechatMiniprogram.IntersectionObserver | null
       },
       observers: {
-            disabled(new_val) {
-                  if (!this.data._attached) return
+            disabled ( new_val ) {
+                  if ( !this.data._attached ) return
 
                   new_val ? this.disconnectObserver() : this.initObserver()
             }
       },
       lifetimes: {
-            attached() {
+            attached () {
                   this.data._attached = true
 
-                  if (this.data.disabled) return
+                  if ( this.data.disabled ) return
 
-                  if (this.data.container) {
+                  if ( this.data.container ) {
                         this.data._container = () =>
-                              wx.createSelectorQuery().select(this.data.container)
+                              wx.createSelectorQuery().select( this.data.container )
                         this.observerContainer()
                   }
 
                   this.initObserver()
             },
-            detached() {
+            detached () {
                   this.data._attached = false
                   this.disconnectObserver()
             }
       },
       methods: {
-            getRect(): Promise<BoundingClientRect> {
+            getRect (): Promise<WechatMiniprogram.BoundingClientRectCallbackResult> {
                   const _that = this
 
-                  return new Promise((resolve) => {
+                  return new Promise( ( resolve ) => {
                         _that
                               .createSelectorQuery()
-                              .select(target)
-                              .boundingClientRect(resolve)
+                              .select( target )
+                              .boundingClientRect( resolve )
                               .exec()
-                  })
+                  } )
             },
-            getContainerRect(): Promise<BoundingClientRect> {
+            getContainerRect (): Promise<WechatMiniprogram.BoundingClientRectCallbackResult> {
                   const _that = this
                   const ref = _that.data._container && _that.data._container()
 
-                  return new Promise((resolve) => ref && ref.boundingClientRect(resolve).exec())
+                  return new Promise( ( resolve ) => ref && ref.boundingClientRect( resolve ).exec() )
             },
-            initObserver() {
+            initObserver () {
                   const _that = this
 
                   _that.disconnectObserver()
                   _that
                         .getRect()
-                        .then(({ width, height }: { width: number; height: number }) => {
-                              _that.setData({ width, height })
+                        .then( ( { width, height }: { width: number; height: number } ) => {
+                              _that.setData( { width, height } )
                               _that.observerContent()
                               _that.observerContainer()
-                        })
-                        .catch((err: any) => {
-                              console.log(err)
-                        })
+                        } )
+                        .catch( ( err: any ) => {
+                              console.log( err )
+                        } )
             },
-            observerContent() {
+            observerContent () {
                   const _that = this
                   const { offsetTop } = _that.data
 
-                  _that.disconnectObserver('_contentObserver')
+                  _that.disconnectObserver( '_contentObserver' )
 
-                  const _contentObserver = _that.createIntersectionObserver({
+                  const _contentObserver = _that.createIntersectionObserver( {
                         thresholds: [ 1 ],
                         initialRatio: 1
-                  })
-                  _contentObserver.relativeToViewport({ top: -offsetTop })
-                  _contentObserver.observe(target, (res) => {
-                        if (_that.data.disabled) return
+                  } )
+                  _contentObserver.relativeToViewport( { top: -offsetTop } )
+                  _contentObserver.observe( target, ( res ) => {
+                        if ( _that.data.disabled ) return
 
-                        _that.setFixed(res.boundingClientRect.top)
-                  })
+                        _that.setFixed( res.boundingClientRect.top )
+                  } )
 
                   _that.data._contentObserver = _contentObserver
             },
-            observerContainer() {
+            observerContainer () {
                   const _that = this
                   const { container, height, offsetTop } = _that.data
 
-                  if (!container) return
+                  if ( !container ) return
 
-                  _that.disconnectObserver('_containerObserver')
+                  _that.disconnectObserver( '_containerObserver' )
 
-                  _that.getContainerRect().then((rect: BoundingClientRect) => {
-                        _that.getRect().then((contentRect: BoundingClientRect) => {
+                  _that.getContainerRect().then( ( rect: WechatMiniprogram.BoundingClientRectCallbackResult ) => {
+                        _that.getRect().then( ( contentRect: WechatMiniprogram.BoundingClientRectCallbackResult ) => {
                               const _contentTop = contentRect.top
                               const _containerTop = rect.top
                               const _containerHeight = rect.height
                               const _relativeTop = _contentTop - _containerTop
-                              const _containerObserver = _that.createIntersectionObserver({
+                              const _containerObserver = _that.createIntersectionObserver( {
                                     thresholds: [ 1 ],
                                     initialRatio: 1
-                              })
-                              _containerObserver.relativeToViewport({
+                              } )
+                              _containerObserver.relativeToViewport( {
                                     top: _containerHeight - height - offsetTop - _relativeTop
-                              })
-                              _containerObserver.observe(target, (res) => {
-                                    if (_that.data.disabled) return
+                              } )
+                              _containerObserver.observe( target, ( res ) => {
+                                    if ( _that.data.disabled ) return
 
-                                    _that.setFixed(res.boundingClientRect.top)
-                              })
+                                    _that.setFixed( res.boundingClientRect.top )
+                              } )
 
                               _that.data._relativeTop = _relativeTop
                               _that.data._containerHeight = _containerHeight
                               _that.data._containerObserver = _containerObserver
-                        })
-                  })
+                        } )
+                  } )
             },
-            setFixed(top: number) {
+            setFixed ( top: number ) {
                   const _that = this
                   const { height, offsetTop, _relativeTop, _containerHeight } = _that.data
 
                   const getFixed = () => {
-                        if (height && _containerHeight) {
+                        if ( height && _containerHeight ) {
                               const calc_top = height + offsetTop + _relativeTop - _containerHeight
                               const case_a = top < offsetTop
                               const case_b = top >= calc_top
@@ -178,13 +174,13 @@ Component({
 
                   const fixed = getFixed()
 
-                  _that.setData({ fixed })
-                  _that.triggerEvent('scroll', { scrollTop: top, isFixed: fixed })
+                  _that.setData( { fixed } )
+                  _that.triggerEvent( 'scroll', { scrollTop: top, isFixed: fixed } )
             },
-            disconnectObserver(observerName?: '_contentObserver' | '_containerObserver') {
+            disconnectObserver ( observerName?: '_contentObserver' | '_containerObserver' ) {
                   const _that = this
 
-                  if (observerName) {
+                  if ( observerName ) {
                         const observer = _that.data[ observerName ]
 
                         observer && observer.disconnect()
@@ -194,4 +190,4 @@ Component({
                   }
             }
       }
-})
+} )

@@ -44,42 +44,45 @@
 <Title>默认效果</Title>
 
 ```html
-<light-tab
+<Tab
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
             <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>垂直显示</Title>
 
 ```html
-<light-tab
+<Tab
       vertical
       heightOfBar="300rpx"
       heightOfContent="400rpx"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
-            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+            <view 
+                  class="content_item w_100 flex justify_center align_center"
+                  style="height: 100%;"
+            >{{item}}内容</view>
+      </TabItem>
+</Tab>
 ```
 
 <Title>垂直右边</Title>
 
 ```html
-<light-tab
+<Tab
       vertical
       activeLine
       bordered
@@ -88,75 +91,78 @@
       heightOfContent="400rpx"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
-            <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+            <view 
+                  class="content_item w_100 flex justify_center align_center"
+                  style="height: 100%;"
+            >{{item}}内容</view>
+      </TabItem>
+</Tab>
 ```
 
 <Title>固定导航</Title>
 
 ```html
-<light-tab
+<Tab
       sticky
       navZIndex="{{100}}"
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
             <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>标题不定长</Title>
 
 ```html
-<light-tab
+<Tab
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles_1}}"
             wx:key="index"
             title="{{item}}"
       >
             <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>懒加载</Title>
 
 ```html
-<light-tab
+<Tab
       lazyload
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
             <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>内容不定高</Title>
 
 ```html
-<light-tab
+<Tab
       lazyload
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
@@ -165,19 +171,19 @@
                   class="content_item w_100 flex justify_center align_center"
                   style="height: {{(index*0.1+1)*300}}rpx;"
             >{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>内容保持</Title>
 
 ```html
-<light-tab
+<Tab
       lazyload
       persist
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
@@ -186,18 +192,18 @@
                   class="content_item w_100 flex justify_center align_center"
                   style="height: {{(index*0.1+1)*300}}rpx;"
             >{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>指示条</Title>
 
 ```html
-<light-tab
+<Tab
       activeLine
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
@@ -206,19 +212,19 @@
                   class="content_item w_100 flex justify_center align_center"
                   style="margin-top: 30rpx;"
             >{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>分隔线条</Title>
 
 ```html
-<light-tab
+<Tab
       activeLine
       bordered
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
@@ -227,44 +233,44 @@
                   class="content_item w_100 flex justify_center align_center"
                   style="margin-top: 30rpx;"
             >{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>滑动内容切换</Title>
 
 ```html
-<light-tab
+<Tab
       swiper
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item
+      <TabItem
             wx:for="{{titles}}"
             wx:key="index"
             title="{{item}}"
       >
             <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```
 
 <Title>禁用选项</Title>
 
 ```html
-<light-tab
+<Tab
       styleOfRoot="border: 2rpx solid black;padding: 20rpx;border-radius: 12rpx"
 >
-      <light-tab-item title="Tab 1">
+      <TabItem title="Tab 1">
             <view class="content_item w_100 flex justify_center align_center">新闻</view>
-      </light-tab-item>
-      <light-tab-item title="Tab 2">
+      </TabItem>
+      <TabItem title="Tab 2">
             <view class="content_item w_100 flex justify_center align_center">视频</view>
-      </light-tab-item>
-      <light-tab-item
+      </TabItem>
+      <TabItem
             title="Tab 3"
             disabled
       >
             <view class="content_item w_100 flex justify_center align_center">图片</view>
-      </light-tab-item>
-</light-tab>
+      </TabItem>
+</Tab>
 ```

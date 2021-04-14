@@ -1,28 +1,28 @@
-function getClasses (props){
-	var classes = ''
+function getClasses( props ) {
+      var classes = ''
 
-	if (props.bordered) classes += ' bordered'
-	if (props.shadow) classes += ' shadow'
+      if ( props.bordered ) classes += ' bordered'
+      if ( props.shadow ) classes += ' shadow'
 
-	return classes
+      return classes
 }
 
-function getStyles (props){
-	var styles = ''
+function getStyles( props ) {
+      var styles = ''
 
-	if (props.width) styles += ';width:' + props.width
-	if (props.padding) styles += ';padding:' + props.padding
-	if (props.margin) styles += ';margin:' + props.margin
-	if (props.radius) styles += ';border-radius:' + props.radius + 'rpx'
-	if (props.fontSize) styles += ';font-size:' + props.fontSize + 'rpx'
-	if (props.color) styles += ';color:' + props.color
-	if (props.bgColor) styles += ';background:' + props.bgColor
-	if (props.textAlign) styles += ';text-align:' + props.textAlign
+      if ( props.width ) styles += ';width:' + props.width
+      if ( props.padding ) styles += ';padding:' + props.padding
+      if ( props.margin ) styles += ';margin:' + props.margin
+      if ( props.radius ) styles += ';border-radius:' + props.radius + 'rpx'
+      if ( props.fontSize ) styles += ';font-size:' + props.fontSize + 'rpx'
+      if ( props.color ) styles += ';color:' + props.color
+      if ( props.bgColor ) styles += ';background:' + props.bgColor
+      if ( props.textAlign ) styles += ';text-align:' + props.textAlign
 
-	return styles
+      return styles
 }
 
 module.exports = {
-	getClasses: getClasses,
-	getStyles: getStyles
+      getClasses: getClasses,
+      getStyles: getStyles
 }

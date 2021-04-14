@@ -1,26 +1,28 @@
-function getWrapStyles (props){
-	var styles = ''
+function getWrapStyles( props ) {
+      var styles = ''
 
-	if (props.fixed) {
-		styles += ';height:' + props.height + 'px'
-		styles += ';z-index:' + props.zIndex
-	}
+      if ( props.fixed ) {
+            styles += ';height:' + props.height + 'px'
+            styles += ';z-index:' + props.zIndex
+      }
 
-	return styles
+      if ( props.disabled ) styles += ';position:unset'
+
+      return styles
 }
 
-function getContentStyles (props){
-	var styles = ''
+function getContentStyles( props ) {
+      var styles = ''
 
-	if (props.fixed) {
-		styles += ';width:' + props.width + 'px'
-		styles += ';top:' + props.offsetTop + 'px'
-	}
+      if ( props.fixed ) {
+            styles += ';width:' + props.width + 'px'
+            styles += ';top:' + props.offsetTop + 'px'
+      }
 
-	return styles
+      return styles
 }
 
 module.exports = {
-	getWrapStyles: getWrapStyles,
-	getContentStyles: getContentStyles
+      getWrapStyles: getWrapStyles,
+      getContentStyles: getContentStyles
 }

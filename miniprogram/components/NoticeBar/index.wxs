@@ -1,12 +1,12 @@
-function getStyles (props){
-	var styles = ''
+function getStyles( props ) {
+      var styles = ''
 
-	if (props.color) styles += ';color:' + props.color
-	if (props.bgColor) styles += ';background:' + props.bgColor
+      if ( props.color ) styles += ';color:' + props.color
+      if ( props.bgColor ) styles += ';background:' + props.bgColor
 
-	return styles
+      return styles
 }
 
 module.exports = {
-	getStyles: getStyles
+      getStyles: getStyles
 }

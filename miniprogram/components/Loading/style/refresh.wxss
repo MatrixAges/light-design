@@ -1,20 +1,22 @@
 @keyframes loading_refresh {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+      0% {
+            transform: rotate(0deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+      }
 }
+
 .loading_refresh:not(:required) {
-  animation: loading_refresh 1000ms infinite linear;
-  border-radius: 50%;
-  border: 8rpx solid rgba(0, 0, 0, 1.0);
-  border-left-color: transparent;
-  color: transparent;
-  display: inline-block;
-  line-height: 1.2;
-  width: 48rpx;
-  height: 48rpx;
-  text-indent: 100%;
+      display: inline-block;
+      width: 48rpx;
+      height: 48rpx;
+      border: 8rpx solid rgba(0, 0, 0, 1.0);
+      border-left-color: transparent;
+      border-radius: 50%;
+      color: transparent;
+      text-indent: 100%;
+      line-height: 1.2;
+      animation: loading_refresh 1000ms infinite linear;
 }

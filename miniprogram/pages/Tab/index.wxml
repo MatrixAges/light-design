@@ -36,7 +36,10 @@
                                     wx:key="index"
                                     title="{{item}}"
                               >
-                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                                    <view
+                                          class="content_item w_100 flex justify_center align_center"
+                                          style="height: 100%;"
+                                    >{{item}}内容</view>
                               </light-tab-item>
                         </light-tab>
                   </view>
@@ -63,7 +66,10 @@
                                     wx:key="index"
                                     title="{{item}}"
                               >
-                                    <view class="content_item w_100 flex justify_center align_center">{{item}}内容</view>
+                                    <view
+                                          class="content_item w_100 flex justify_center align_center"
+                                          style="height: 100%;"
+                                    >{{item}}内容</view>
                               </light-tab-item>
                         </light-tab>
                   </view>

@@ -17,34 +17,34 @@
 }
 
 .loading_loading:not(:required) {
-      animation: loading_loading 2000ms 300ms infinite ease-out;
-      background: @color_bg;
-      display: inline-block;
       position: relative;
-      text-indent: -9999px;
+      display: inline-block;
       width: @size;
       height: @size;
       border-radius: 50%;
+      background: @color_bg;
+      text-indent: -9999px;
+      animation: loading_loading 2000ms 300ms infinite ease-out;
 }
 
 .loading_loading:not(:required):before,
 .loading_loading:not(:required):after {
-      content: '';
-      background: @color_bg;
+      position: absolute;
+      top: 0;
       display: inline-block;
       width: @size;
       height: @size;
       border-radius: 50%;
-      position: absolute;
-      top: 0;
+      background: @color_bg;
+      content: '';
 }
 
 .loading_loading:not(:required):before {
-      animation: loading_loading 2000ms 150ms infinite ease-out;
       left: -@size*2;
+      animation: loading_loading 2000ms 150ms infinite ease-out;
 }
 
 .loading_loading:not(:required):after {
-      animation: loading_loading 2000ms 450ms infinite ease-out;
       right: -@size*2;
+      animation: loading_loading 2000ms 450ms infinite ease-out;
 }

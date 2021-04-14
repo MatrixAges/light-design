@@ -1,41 +1,41 @@
-function getClasses (props){
-	var classes = ''
+function getClasses( props ) {
+      var classes = ''
 
-	if (props.thin) classes += ' thin'
-	if (props.box) classes += ' box'
+      if ( props.thin ) classes += ' thin'
+      if ( props.box ) classes += ' box'
 
-	return classes
+      return classes
 }
 
-function getStyles (props){
-	var styles = ''
+function getStyles( props ) {
+      var styles = ''
 
-	if (props.box) {
-		styles += ';width:auto'
-		styles += ';height:auto'
-		styles += ';background-color:transparent'
-	} else {
-		if (props.width) styles += ';width:' + props.width
-		if (props.height) styles += ';height:' + props.height
-		if (props.color) styles += ';background-color:' + props.color
-	}
+      if ( props.box ) {
+            styles += ';width:auto'
+            styles += ';height:auto'
+            styles += ';background-color:transparent'
+      } else {
+            if ( props.width ) styles += ';width:' + props.width
+            if ( props.height ) styles += ';height:' + props.height
+            if ( props.color ) styles += ';background-color:' + props.color
+      }
 
-	styles += ';border-radius:' + props.radius + 'rpx'
+      styles += ';border-radius:' + props.radius + 'rpx'
 
-	return styles
+      return styles
 }
 
-function getContentStyles (props){
-	var styles = ''
+function getContentStyles( props ) {
+      var styles = ''
 
-	styles += ';border:' + props.borderSize + 'rpx solid ' + props.color
-	styles += ';border-radius:' + props.radius * (props.thin ? 2 : 1) + 'rpx'
+      styles += ';border:' + props.borderSize + 'rpx solid ' + props.color
+      styles += ';border-radius:' + props.radius * ( props.thin ? 2 : 1 ) + 'rpx'
 
-	return styles
+      return styles
 }
 
 module.exports = {
-	getClasses: getClasses,
-	getStyles: getStyles,
-	getContentStyles: getContentStyles
+      getClasses: getClasses,
+      getStyles: getStyles,
+      getContentStyles: getContentStyles
 }
